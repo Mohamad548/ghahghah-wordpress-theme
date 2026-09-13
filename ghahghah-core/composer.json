@@ -1,0 +1,20 @@
+{
+    "name": "ghahghah/core",
+    "description": "Companion plugin for the قهقهه WordPress project — business logic independent of the theme.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ghahghah\\Core\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

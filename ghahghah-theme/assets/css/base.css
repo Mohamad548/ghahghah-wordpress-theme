@@ -1,0 +1,124 @@
+/**
+ * Base design tokens and element resets.
+ *
+ * Brand colors also defined in theme.json.
+ */
+
+:root {
+	--ghahghah-brand-red: #d71920;
+	--ghahghah-corn-yellow: #f5b400;
+	--ghahghah-natural-green: #3a8f45;
+	--ghahghah-dark-text: #222222;
+	--ghahghah-white: #ffffff;
+	--ghahghah-neutral-bg: #f7f7f5;
+	--ghahghah-content-width: 45rem;
+	--ghahghah-wide-width: 75rem;
+	--ghahghah-space-xs: 0.5rem;
+	--ghahghah-space-sm: 1rem;
+	--ghahghah-space-md: 1.5rem;
+	--ghahghah-space-lg: 2.5rem;
+	--ghahghah-space-xl: 4rem;
+	--ghahghah-font-primary: Tahoma, "Segoe UI", Arial, sans-serif;
+	--ghahghah-radius: 4px;
+	--ghahghah-border: 1px solid color-mix(in srgb, var(--ghahghah-dark-text) 12%, transparent);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: var(--ghahghah-font-primary);
+	font-size: 1rem;
+	line-height: 1.7;
+	color: var(--ghahghah-dark-text);
+	background: var(--ghahghah-neutral-bg);
+}
+
+img,
+svg,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: var(--ghahghah-brand-red);
+	text-decoration-thickness: 0.08em;
+	text-underline-offset: 0.15em;
+}
+
+a:hover,
+a:focus-visible {
+	color: var(--ghahghah-dark-text);
+}
+
+:focus-visible {
+	outline: 2px solid var(--ghahghah-brand-red);
+	outline-offset: 2px;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.skip-link:focus {
+	clip: auto;
+	clip-path: none;
+	height: auto;
+	width: auto;
+	left: auto;
+	right: var(--ghahghah-space-sm);
+	top: var(--ghahghah-space-sm);
+	z-index: 100000;
+	background: var(--ghahghah-white);
+	color: var(--ghahghah-dark-text);
+	padding: var(--ghahghah-space-xs) var(--ghahghah-space-sm);
+}
+
+.button,
+.wp-block-button__link {
+	display: inline-block;
+	padding: 0.65rem 1.25rem;
+	border-radius: var(--ghahghah-radius);
+	background: var(--ghahghah-brand-red);
+	color: var(--ghahghah-white);
+	text-decoration: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible,
+.wp-block-button__link:hover,
+.wp-block-button__link:focus-visible {
+	color: var(--ghahghah-white);
+	filter: brightness(0.92);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.3;
+	margin-top: 0;
+}

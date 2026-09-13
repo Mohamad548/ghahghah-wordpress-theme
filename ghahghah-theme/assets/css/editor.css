@@ -1,0 +1,20 @@
+/**
+ * Editor styles — mirrors front-end tokens for block editor preview.
+ */
+
+body {
+	font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+	color: #222222;
+	background: #f7f7f5;
+	line-height: 1.7;
+}
+
+.editor-styles-wrapper a {
+	color: #d71920;
+}
+
+.editor-styles-wrapper .wp-block-button__link {
+	background: #d71920;
+	color: #ffffff;
+	border-radius: 4px;
+}

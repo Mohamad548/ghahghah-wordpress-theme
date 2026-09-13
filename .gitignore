@@ -1,0 +1,65 @@
+# Dependencies
+/vendor/
+**/vendor/
+/ghahghah-core/vendor/
+/node_modules/
+
+# Local WordPress environment
+/.wp-env/
+.wp-env.override.json
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.cache
+*.swp
+*.swo
+*~
+
+# Local smoke-test evidence
+.smoke-evidence/
+
+# IDE local settings
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+# Local design source files (remain on disk; not committed)
+/design-sources/brand/
+/design-sources/raw-products/
+/design-sources/temporary/
+/design-sources/ui-reference/
+
+# WordPress runtime (if developed inside a WP install)
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/debug.log
+
+# Build and coverage output
+/build/
+/dist/
+/coverage/
+.phpunit.result.cache
+.phpunit.cache/
+tests/coverage/
+*.zip
+
+# npm noise
+npm-debug.log*
+yarn-lock.json
+
+# Local scratch notes
+/w.md
+
+# Organizer temporary stats
+/design-sources/_copy-stats.json

@@ -1,0 +1,15 @@
+{
+  "name": "ghahghah-wordpress",
+  "private": true,
+  "description": "Corporate WordPress monorepo for قهقهه — theme, core plugin, and local wp-env smoke tests.",
+  "scripts": {
+    "wp-env:start": "wp-env start",
+    "wp-env:stop": "wp-env stop",
+    "wp-env:destroy": "wp-env destroy",
+    "wp-env:cli": "wp-env run cli",
+    "test:smoke": "bash scripts/smoke-wordpress.sh"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^11.15.0"
+  }
+}

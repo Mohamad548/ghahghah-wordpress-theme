@@ -1,0 +1,120 @@
+{
+  "before": {
+    "layoutShiftCount": 1,
+    "primary": {
+      "ts": 117316386061,
+      "score": 0.2762561254488952,
+      "weighted_score": 0.2762561254488952,
+      "had_recent_input": true,
+      "sources": [
+        {
+          "new_rect": [
+            0,
+            310,
+            412,
+            513
+          ],
+          "node_id": 330,
+          "old_rect": [
+            0,
+            348,
+            412,
+            475
+          ]
+        },
+        {
+          "new_rect": [
+            12,
+            228,
+            389,
+            62
+          ],
+          "node_id": 329,
+          "old_rect": [
+            12,
+            266,
+            389,
+            62
+          ]
+        },
+        {
+          "new_rect": [
+            12,
+            172,
+            388,
+            52
+          ],
+          "node_id": 543,
+          "old_rect": [
+            12,
+            215,
+            388,
+            52
+          ]
+        },
+        {
+          "new_rect": [
+            12,
+            172,
+            388,
+            52
+          ],
+          "node_id": 542,
+          "old_rect": [
+            12,
+            177,
+            388,
+            52
+          ]
+        },
+        {
+          "new_rect": [
+            30,
+            795,
+            261,
+            25
+          ],
+          "node_id": 548,
+          "old_rect": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "rawKeys": [
+        "cumulative_score",
+        "frame_max_distance",
+        "had_recent_input",
+        "impacted_nodes",
+        "is_main_frame",
+        "last_input_timestamp",
+        "overall_max_distance",
+        "region_rects",
+        "score",
+        "weighted_score_delta"
+      ]
+    },
+    "impactedSelectorsProven": [
+      {
+        "node_id": 330,
+        "selector": "div.ghahghah-agency-page__visual",
+        "note": "impacted (moved); not the cause"
+      },
+      {
+        "node_id": 329,
+        "selector": "p.ghahghah-agency-page__lead",
+        "note": "impacted (moved)"
+      }
+    ],
+    "rootCause": "LayoutInvalidationTracking reason=Fonts changed after RemoteFontLoaded (Yekan Regular/SemiBold) with font-display:swap",
+    "fontsChangedInvalidationsSample": 434,
+    "lighthouseLayoutShiftsGathererError": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')",
+    "performanceObserverNoInputCls": 0
+  },
+  "after": {
+    "shifts": [],
+    "fontsChangedInvalidations": 0
+  }
+}

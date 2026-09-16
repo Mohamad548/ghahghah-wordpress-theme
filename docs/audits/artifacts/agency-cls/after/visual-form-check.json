@@ -1,0 +1,77 @@
+{
+  "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+  "widths": {
+    "390": {
+      "shot": "visual-390.png",
+      "dir": "rtl",
+      "titleText": "درخواست نمایندگی قهقهه",
+      "leadLen": 68,
+      "product": {
+        "naturalWidth": 1122,
+        "naturalHeight": 1402,
+        "complete": true,
+        "w": 320,
+        "h": 399.84375,
+        "src": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/agency/ghahghah_parsley_onion_pack_optimized.webp"
+      },
+      "formPresent": true,
+      "rtl": true
+    },
+    "768": {
+      "shot": "visual-768.png",
+      "dir": "rtl",
+      "titleText": "درخواست نمایندگی قهقهه",
+      "leadLen": 68,
+      "product": {
+        "naturalWidth": 1122,
+        "naturalHeight": 1402,
+        "complete": true,
+        "w": 320,
+        "h": 399.84375,
+        "src": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/agency/ghahghah_parsley_onion_pack_optimized.webp"
+      },
+      "formPresent": true,
+      "rtl": true
+    },
+    "1440": {
+      "shot": "visual-1440.png",
+      "dir": "rtl",
+      "titleText": "درخواست نمایندگی قهقهه",
+      "leadLen": 68,
+      "product": {
+        "naturalWidth": 1122,
+        "naturalHeight": 1402,
+        "complete": true,
+        "w": 344.296875,
+        "h": 430.203125,
+        "src": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/agency/ghahghah_parsley_onion_pack_optimized.webp"
+      },
+      "formPresent": true,
+      "rtl": true
+    }
+  },
+  "form": {
+    "selects": [
+      {
+        "name": "province",
+        "options": 32,
+        "disabled": false
+      },
+      {
+        "name": "city",
+        "options": 1,
+        "disabled": false
+      },
+      {
+        "name": "activity",
+        "options": 6,
+        "disabled": false
+      }
+    ],
+    "provinceChanged": true,
+    "cityOptionsBefore": 1,
+    "cityOptionsAfter": 6,
+    "cityGrew": true,
+    "noSmsSubmit": true
+  }
+}

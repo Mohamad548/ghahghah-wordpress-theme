@@ -458,3 +458,22 @@ function ghahghah_enqueue_assets(): void {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ghahghah_enqueue_assets' );
+
+/**
+ * Preload primary Yekan faces so font-display:optional can apply without late swap CLS.
+ */
+function ghahghah_preload_primary_fonts(): void {
+	$base = GHAHGHAH_THEME_URI . '/assets/fonts/yekan-bakh/';
+	$files = array(
+		'YekanBakhFaNum-Regular.woff',
+		'YekanBakhFaNum-SemiBold.woff',
+	);
+
+	foreach ( $files as $file ) {
+		printf(
+			'<link rel="preload" href="%s" as="font" type="font/woff" crossorigin>' . "\n",
+			esc_url( $base . $file )
+		);
+	}
+}
+add_action( 'wp_head', 'ghahghah_preload_primary_fonts', 1 );

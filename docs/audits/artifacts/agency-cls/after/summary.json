@@ -1,0 +1,58 @@
+{
+  "phase": "after",
+  "generatedAt": "2026-09-16T20:52:01.601Z",
+  "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+  "lighthouse": "12.2.1",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "runs": [
+    {
+      "run": 1,
+      "lighthouseVersion": "12.2.1",
+      "fetchTime": "2026-09-16T20:51:17.994Z",
+      "benchmarkIndex": 1563.5,
+      "performance": 86,
+      "cls": 0,
+      "lcp": 4133.4396,
+      "tbt": 0,
+      "observedCls": 0,
+      "runtimeError": null
+    },
+    {
+      "run": 2,
+      "lighthouseVersion": "12.2.1",
+      "fetchTime": "2026-09-16T20:51:33.532Z",
+      "benchmarkIndex": 1419,
+      "performance": 86,
+      "cls": 0,
+      "lcp": 4135.19955,
+      "tbt": 0,
+      "observedCls": 0,
+      "runtimeError": null
+    },
+    {
+      "run": 3,
+      "lighthouseVersion": "12.2.1",
+      "fetchTime": "2026-09-16T20:51:49.770Z",
+      "benchmarkIndex": 1547,
+      "performance": 82,
+      "cls": 0,
+      "lcp": 4168.15665,
+      "tbt": 17.228900000000067,
+      "observedCls": 0,
+      "runtimeError": null
+    }
+  ],
+  "medians": {
+    "cls": 0,
+    "lcp_ms": 4135.19955,
+    "tbt_ms": 0,
+    "performance": 86
+  },
+  "layoutShiftProbe": {
+    "total": 0,
+    "entryCount": 0,
+    "top": []
+  }
+}

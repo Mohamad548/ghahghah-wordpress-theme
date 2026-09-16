@@ -1,0 +1,19 @@
+{
+    "home": "http://localhost:8888/",
+    "products_archive": "http://localhost:8888/products/",
+    "single_product": "http://localhost:8888/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+    "single_product_title": "چیپس ذرت قهقهه طعم فلفلی",
+    "articles_archive": "http://localhost:8888/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+    "single_article": "http://localhost:8888/wholesale-request-guide/",
+    "single_article_title": "راهنمای درخواست خرید عمده",
+    "wholesale": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "agency": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+    "contact": "http://localhost:8888/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+    "factory": "http://localhost:8888/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+    "privacy": "http://localhost:8888/privacy-policy/",
+    "faq": "http://localhost:8888/faq/",
+    "search": "http://localhost:8888/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+    "not_found": "http://localhost:8888/this-page-definitely-does-not-exist-404-audit/",
+    "product_count": 9,
+    "post_count": 4
+}

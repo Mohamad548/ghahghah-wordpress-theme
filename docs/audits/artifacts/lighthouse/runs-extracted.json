@@ -1,0 +1,3834 @@
+{
+  "generatedAt": "2026-09-16T12:39:13.421Z",
+  "count": 51,
+  "runs": [
+    {
+      "file": "agency-desktop-run1.json",
+      "performance": 80,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 473.14735,
+      "lcp": 2353.14735,
+      "lcpError": null,
+      "observedLcp": 5201,
+      "cls": 0.015415971470487375,
+      "si": 3178.6054569188423,
+      "tbt": 0,
+      "ttfb": 4881,
+      "requestCount": 21,
+      "transferSize": 2408135,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21238,
+        "Stylesheet": 17096,
+        "Image": 2265353,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "agency-desktop-run2.json",
+      "performance": 85,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 391.2268737825395,
+      "lcp": 2351.2268737825398,
+      "lcpError": null,
+      "observedLcp": 2798,
+      "cls": 0.015415971470487375,
+      "si": 1770.8700941892946,
+      "tbt": 0,
+      "ttfb": 2462,
+      "requestCount": 21,
+      "transferSize": 2408136,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21238,
+        "Stylesheet": 17097,
+        "Image": 2265353,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "agency-desktop-run3.json",
+      "performance": 84,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 477.56604999999996,
+      "lcp": 2357.56605,
+      "lcpError": null,
+      "observedLcp": 3157,
+      "cls": 0.015412307108195796,
+      "si": 2019.381444167304,
+      "tbt": 0,
+      "ttfb": 2824,
+      "requestCount": 21,
+      "transferSize": 2408135,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21238,
+        "Stylesheet": 17096,
+        "Image": 2265353,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "agency-mobile-run1.json",
+      "performance": 54,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1270.28445,
+      "lcp": 13120.284450000001,
+      "lcpError": null,
+      "observedLcp": 4063,
+      "cls": 0.2972388199740078,
+      "si": 6167.776837985812,
+      "tbt": 0,
+      "ttfb": 3792,
+      "requestCount": 21,
+      "transferSize": 2388255,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21238,
+        "Stylesheet": 17096,
+        "Image": 2245473,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "agency-mobile-run2.json",
+      "performance": 54,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1265.10975,
+      "lcp": 13115.10975,
+      "lcpError": null,
+      "observedLcp": 4165,
+      "cls": 0.2972388199740078,
+      "si": 6205.822305996649,
+      "tbt": 0,
+      "ttfb": 3830,
+      "requestCount": 21,
+      "transferSize": 2388255,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21238,
+        "Stylesheet": 17096,
+        "Image": 2245473,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "agency-mobile-run3.json",
+      "performance": 54,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1258.79745,
+      "lcp": 13108.79745,
+      "lcpError": null,
+      "observedLcp": 4138,
+      "cls": 0.29748973416240176,
+      "si": 6263.435296012053,
+      "tbt": 0,
+      "ttfb": 3893,
+      "requestCount": 21,
+      "transferSize": 2388255,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21238,
+        "Stylesheet": 17096,
+        "Image": 2245473,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "articles_archive-desktop-run1.json",
+      "performance": 96,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 470.76340000000005,
+      "lcp": 950.7634,
+      "lcpError": null,
+      "observedLcp": 2571,
+      "cls": 0.0025297090181768365,
+      "si": 1782.0019788704146,
+      "tbt": 0,
+      "ttfb": 2237,
+      "requestCount": 24,
+      "transferSize": 623359,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 17424,
+        "Stylesheet": 15892,
+        "Image": 487861,
+        "Script": 19677,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/banners/articles-archive-banner-desktop.webp",
+          "transferSize": 201868,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/real-snack-bowl-photo.jpg",
+          "transferSize": 70922,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup-554x480.jpg",
+          "transferSize": 42432,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "articles_archive-desktop-run2.json",
+      "performance": 94,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 469.28215,
+      "lcp": 949.28215,
+      "lcpError": null,
+      "observedLcp": 3440,
+      "cls": 0.0025297090181768365,
+      "si": 2283.3671076103274,
+      "tbt": 0,
+      "ttfb": 3097,
+      "requestCount": 24,
+      "transferSize": 623359,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 17424,
+        "Stylesheet": 15892,
+        "Image": 487861,
+        "Script": 19677,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/banners/articles-archive-banner-desktop.webp",
+          "transferSize": 201868,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/real-snack-bowl-photo.jpg",
+          "transferSize": 70922,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup-554x480.jpg",
+          "transferSize": 42432,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "articles_archive-desktop-run3.json",
+      "performance": 94,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 471.94285,
+      "lcp": 951.94285,
+      "lcpError": null,
+      "observedLcp": 3193,
+      "cls": 0.003099175427082391,
+      "si": 2118.629230920562,
+      "tbt": 0,
+      "ttfb": 2860,
+      "requestCount": 24,
+      "transferSize": 623359,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 17424,
+        "Stylesheet": 15892,
+        "Image": 487861,
+        "Script": 19677,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/banners/articles-archive-banner-desktop.webp",
+          "transferSize": 201868,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/real-snack-bowl-photo.jpg",
+          "transferSize": 70922,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup-554x480.jpg",
+          "transferSize": 42432,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "articles_archive-mobile-run1.json",
+      "performance": 82,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 83,
+      "fcp": 1183.67295,
+      "lcp": 3749.0188500000004,
+      "lcpError": null,
+      "observedLcp": 2773,
+      "cls": 0.09142498867526655,
+      "si": 4334.670303949202,
+      "tbt": 180.00000000000023,
+      "ttfb": 2326,
+      "requestCount": 24,
+      "transferSize": 584809,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 17424,
+        "Stylesheet": 15892,
+        "Image": 449311,
+        "Script": 19677,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/banners/articles-archive-banner-mobile.webp",
+          "transferSize": 183198,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/real-snack-bowl-photo.jpg",
+          "transferSize": 70922,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup-554x480.jpg",
+          "transferSize": 42432,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "articles_archive-mobile-run2.json",
+      "performance": 80,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1255.5392000000002,
+      "lcp": 3775.6175999999996,
+      "lcpError": null,
+      "observedLcp": 3436,
+      "cls": 0.09142498867526655,
+      "si": 5271.597054909221,
+      "tbt": 175,
+      "ttfb": 2945,
+      "requestCount": 24,
+      "transferSize": 584809,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 17424,
+        "Stylesheet": 15892,
+        "Image": 449311,
+        "Script": 19677,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/banners/articles-archive-banner-mobile.webp",
+          "transferSize": 183198,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/real-snack-bowl-photo.jpg",
+          "transferSize": 70922,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup-554x480.jpg",
+          "transferSize": 42432,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "articles_archive-mobile-run3.json",
+      "performance": 81,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1176.70115,
+      "lcp": 3746.1034499999996,
+      "lcpError": null,
+      "observedLcp": 4146,
+      "cls": 0.08886349271007563,
+      "si": 6231.5987711847865,
+      "tbt": 118.99999999999977,
+      "ttfb": 3713,
+      "requestCount": 24,
+      "transferSize": 584809,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 17424,
+        "Stylesheet": 15892,
+        "Image": 449311,
+        "Script": 19677,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/banners/articles-archive-banner-mobile.webp",
+          "transferSize": 183198,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/blog-archive/real-snack-bowl-photo.jpg",
+          "transferSize": 70922,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup-554x480.jpg",
+          "transferSize": 42432,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "contact-desktop-run1.json",
+      "performance": 86,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 467.0070999999999,
+      "lcp": 1787.0070999999998,
+      "lcpError": null,
+      "observedLcp": 4132,
+      "cls": 0.006035172647566111,
+      "si": 2859.715316417542,
+      "tbt": 0,
+      "ttfb": 3904,
+      "requestCount": 84,
+      "transferSize": 2371955,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 2,
+        "Stylesheet": 10,
+        "Image": 41,
+        "Script": 21,
+        "Font": 3,
+        "Other": 2,
+        "XHR": 4,
+        "Preflight": 1
+      },
+      "transferByType": {
+        "Document": 19943,
+        "Stylesheet": 21613,
+        "Image": 1721176,
+        "Script": 476822,
+        "Font": 119668,
+        "Other": 6841,
+        "XHR": 5892,
+        "Preflight": 0
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "priority": "High"
+        },
+        {
+          "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660594&2i414190&2e1&3u12&4m2&1u687&2u256&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=121350",
+          "transferSize": 47917,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2582!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=23258",
+          "transferSize": 22664,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i9!2i322!3i202!4i256!2m1!1e1!3m12!2sfa!3sUS!5e289!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC52Om9mZg!4e0!5m1!1e3!23i47083502&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=118471",
+          "transferSize": 18988,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2583!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=129733",
+          "transferSize": 12495,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2581!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=47854",
+          "transferSize": 11463,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2580!3i1617!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=47651",
+          "transferSize": 11442,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "contact-desktop-run2.json",
+      "performance": 86,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 390.44225,
+      "lcp": 1790.44225,
+      "lcpError": null,
+      "observedLcp": 4070,
+      "cls": 0.00714097507433781,
+      "si": 2770.9801808352913,
+      "tbt": 0,
+      "ttfb": 3823,
+      "requestCount": 84,
+      "transferSize": 2328167,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 2,
+        "Stylesheet": 10,
+        "Image": 41,
+        "Script": 21,
+        "Font": 3,
+        "Other": 2,
+        "XHR": 4,
+        "Preflight": 1
+      },
+      "transferByType": {
+        "Document": 19944,
+        "Stylesheet": 21599,
+        "Image": 1721126,
+        "Script": 476822,
+        "Font": 75982,
+        "Other": 6841,
+        "XHR": 5853,
+        "Preflight": 0
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "priority": "High"
+        },
+        {
+          "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660594&2i414190&2e1&3u12&4m2&1u687&2u256&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=121350",
+          "transferSize": 47902,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2582!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=23258",
+          "transferSize": 22664,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i9!2i322!3i202!4i256!2m1!1e1!3m12!2sfa!3sUS!5e289!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC52Om9mZg!4e0!5m1!1e3!23i47083502&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=118471",
+          "transferSize": 18988,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2583!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=129733",
+          "transferSize": 12495,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2580!3i1617!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=47651",
+          "transferSize": 11444,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2581!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=47854",
+          "transferSize": 10973,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "contact-desktop-run3.json",
+      "performance": 85,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 411.28549999999996,
+      "lcp": 1811.2855,
+      "lcpError": null,
+      "observedLcp": 4258,
+      "cls": 0.00714097507433781,
+      "si": 2927.201683085663,
+      "tbt": 0,
+      "ttfb": 3998,
+      "requestCount": 83,
+      "transferSize": 2304830,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 2,
+        "Stylesheet": 10,
+        "Image": 41,
+        "Script": 21,
+        "Font": 2,
+        "Other": 2,
+        "XHR": 4,
+        "Preflight": 1
+      },
+      "transferByType": {
+        "Document": 19936,
+        "Stylesheet": 17045,
+        "Image": 1702271,
+        "Script": 476872,
+        "Font": 75982,
+        "Other": 6832,
+        "XHR": 5892,
+        "Preflight": 0
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "priority": "High"
+        },
+        {
+          "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660594&2i414190&2e1&3u12&4m2&1u687&2u256&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=121350",
+          "transferSize": 47899,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2582!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=23258",
+          "transferSize": 22702,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2583!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=129733",
+          "transferSize": 12495,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2580!3i1617!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=47651",
+          "transferSize": 11466,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2581!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=47854",
+          "transferSize": 11012,
+          "priority": "Low"
+        },
+        {
+          "url": "https://www.google.com/maps/vt?pb=!1m5!1m4!1i12!2i2580!3i1618!4i256!2m3!1e0!2sm!3i795561188!2m3!1e2!2sspotlit!5i1!3m13!2sfa!3sUS!5e289!12m5!1e68!2m2!1sset!2sRoadmap!4e2!12m3!1e37!2m1!1ssmartmaps!4e0!5m1!1e3!23i47083502!27m14!299174093m13!14m12!1m8!1m2!1y0!2y13764299152007282534!2s%2Ffake_latlng_mid!4m2!1x352866070!2x469149563!8b1!2b0!6b0!8b0&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=72450",
+          "transferSize": 10707,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "contact-mobile-run1.json",
+      "performance": 69,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1273.65615,
+      "lcp": 9073.65615,
+      "lcpError": null,
+      "observedLcp": 4017,
+      "cls": 0.010270753719650545,
+      "si": 6159.903367993615,
+      "tbt": 0,
+      "ttfb": 3828,
+      "requestCount": 39,
+      "transferSize": 2137798,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 2,
+        "Stylesheet": 8,
+        "Image": 4,
+        "Script": 20,
+        "Font": 2,
+        "Other": 2,
+        "XHR": 1
+      },
+      "transferByType": {
+        "Document": 19940,
+        "Stylesheet": 17045,
+        "Image": 1551198,
+        "Script": 466400,
+        "Font": 75982,
+        "Other": 6832,
+        "XHR": 401
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660767&2i414206&2e1&3u12&4m2&1u341&2u224&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=125884",
+          "transferSize": 15605,
+          "priority": "Low"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBo…",
+          "transferSize": 0,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "contact-mobile-run2.json",
+      "performance": 70,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1289.9195999999997,
+      "lcp": 9089.919600000001,
+      "lcpError": null,
+      "observedLcp": 3900,
+      "cls": 0.010270753719650545,
+      "si": 5994.454948520116,
+      "tbt": 0,
+      "ttfb": 3671,
+      "requestCount": 39,
+      "transferSize": 2137809,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 2,
+        "Stylesheet": 8,
+        "Image": 4,
+        "Script": 20,
+        "Font": 2,
+        "Other": 2,
+        "XHR": 1
+      },
+      "transferByType": {
+        "Document": 19933,
+        "Stylesheet": 17045,
+        "Image": 1551203,
+        "Script": 466403,
+        "Font": 75982,
+        "Other": 6842,
+        "XHR": 401
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660767&2i414206&2e1&3u12&4m2&1u341&2u224&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=125884",
+          "transferSize": 15610,
+          "priority": "Low"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBo…",
+          "transferSize": 0,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "contact-mobile-run3.json",
+      "performance": 70,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1269.48435,
+      "lcp": 9069.48435,
+      "lcpError": null,
+      "observedLcp": 3887,
+      "cls": 0.010270753719650545,
+      "si": 5976.532833997925,
+      "tbt": 0,
+      "ttfb": 3707,
+      "requestCount": 39,
+      "transferSize": 2137767,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 2,
+        "Stylesheet": 8,
+        "Image": 4,
+        "Script": 20,
+        "Font": 2,
+        "Other": 2,
+        "XHR": 1
+      },
+      "transferByType": {
+        "Document": 19941,
+        "Stylesheet": 17045,
+        "Image": 1551203,
+        "Script": 466363,
+        "Font": 75982,
+        "Other": 6832,
+        "XHR": 401
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660767&2i414206&2e1&3u12&4m2&1u341&2u224&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&token=125884",
+          "transferSize": 15610,
+          "priority": "Low"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBo…",
+          "transferSize": 0,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-desktop-run1.json",
+      "performance": 80,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 414.7026000000001,
+      "lcp": 2718.378249999999,
+      "lcpError": null,
+      "observedLcp": 3628,
+      "cls": 0.001243941614041497,
+      "si": 2309.246347252287,
+      "tbt": 0,
+      "ttfb": 3271,
+      "requestCount": 48,
+      "transferSize": 2464707,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 19,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 2303793,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+          "transferSize": 232764,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+          "transferSize": 230540,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+          "transferSize": 227484,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+          "transferSize": 222556,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+          "transferSize": 216988,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+          "transferSize": 216162,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+          "transferSize": 214428,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+          "transferSize": 199548,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-desktop-run2.json",
+      "performance": 83,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 424.3463999999999,
+      "lcp": 2610.4330000000004,
+      "lcpError": null,
+      "observedLcp": 2790,
+      "cls": 0.001243941614041497,
+      "si": 1854.7777881843404,
+      "tbt": 21,
+      "ttfb": 2366,
+      "requestCount": 48,
+      "transferSize": 2464707,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 19,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 2303793,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+          "transferSize": 232764,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+          "transferSize": 230540,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+          "transferSize": 227484,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+          "transferSize": 222556,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+          "transferSize": 216988,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+          "transferSize": 216162,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+          "transferSize": 214428,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+          "transferSize": 199548,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-desktop-run3.json",
+      "performance": 88,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 406.77240000000006,
+      "lcp": 1988.4655,
+      "lcpError": null,
+      "observedLcp": 2404,
+      "cls": 0.001243941614041497,
+      "si": 1676.5480150022188,
+      "tbt": 0,
+      "ttfb": 2091,
+      "requestCount": 48,
+      "transferSize": 2464707,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 19,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 2303793,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+          "transferSize": 232764,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+          "transferSize": 230540,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+          "transferSize": 227484,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+          "transferSize": 222556,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+          "transferSize": 216988,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+          "transferSize": 216162,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+          "transferSize": 214428,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+          "transferSize": 199548,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-mobile-devtools-run1.json",
+      "performance": null,
+      "accessibility": 97,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 5067.331,
+      "lcp": null,
+      "lcpError": "The page did not display content that qualifies as a Largest Contentful Paint (LCP). Ensure the page has a valid LCP element and then try again. (NO_LCP)",
+      "observedLcp": null,
+      "cls": 0.006177588584516018,
+      "si": 6893,
+      "tbt": 488.4309999999996,
+      "ttfb": 2551,
+      "requestCount": 44,
+      "transferSize": 1223618,
+      "renderBlockingCount": null,
+      "unusedCssBytes": null,
+      "unusedJsBytes": null,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 15,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 1062704,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+          "transferSize": 82278,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+          "transferSize": 76835,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-mobile-devtools-run2.json",
+      "performance": null,
+      "accessibility": 97,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 7243.774,
+      "lcp": null,
+      "lcpError": "The page did not display content that qualifies as a Largest Contentful Paint (LCP). Ensure the page has a valid LCP element and then try again. (NO_LCP)",
+      "observedLcp": null,
+      "cls": 0.006177588584516018,
+      "si": 9209,
+      "tbt": 750.327000000002,
+      "ttfb": 4319,
+      "requestCount": 44,
+      "transferSize": 1223618,
+      "renderBlockingCount": null,
+      "unusedCssBytes": null,
+      "unusedJsBytes": null,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 15,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 1062704,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+          "transferSize": 82278,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+          "transferSize": 76835,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-mobile-devtools-run3.json",
+      "performance": null,
+      "accessibility": 97,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 5081.929,
+      "lcp": null,
+      "lcpError": "The page did not display content that qualifies as a Largest Contentful Paint (LCP). Ensure the page has a valid LCP element and then try again. (NO_LCP)",
+      "observedLcp": null,
+      "cls": 0.006177588584516018,
+      "si": 7062,
+      "tbt": 682.1060000000016,
+      "ttfb": 2275,
+      "requestCount": 44,
+      "transferSize": 1223618,
+      "renderBlockingCount": null,
+      "unusedCssBytes": null,
+      "unusedJsBytes": null,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 15,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 1062704,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+          "transferSize": 82278,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+          "transferSize": 76835,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-mobile-run1.json",
+      "performance": null,
+      "accessibility": 97,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1282.3754,
+      "lcp": null,
+      "lcpError": "NO_LCP",
+      "observedLcp": null,
+      "cls": 0.006177588584516018,
+      "si": 6084.818713998142,
+      "tbt": null,
+      "ttfb": 3668,
+      "requestCount": 44,
+      "transferSize": 1223618,
+      "renderBlockingCount": null,
+      "unusedCssBytes": null,
+      "unusedJsBytes": null,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 15,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 1062704,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+          "transferSize": 82278,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+          "transferSize": 76835,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-mobile-run2.json",
+      "performance": null,
+      "accessibility": 97,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1273.2343999999998,
+      "lcp": null,
+      "lcpError": "NO_LCP",
+      "observedLcp": null,
+      "cls": 0.006177588584516018,
+      "si": 5977.794461996086,
+      "tbt": null,
+      "ttfb": 3619,
+      "requestCount": 44,
+      "transferSize": 1223618,
+      "renderBlockingCount": null,
+      "unusedCssBytes": null,
+      "unusedJsBytes": null,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 15,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 1062704,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+          "transferSize": 82278,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+          "transferSize": 76835,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "home-mobile-run3.json",
+      "performance": null,
+      "accessibility": 97,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1273.3829999999998,
+      "lcp": null,
+      "lcpError": "NO_LCP",
+      "observedLcp": null,
+      "cls": 0.006177588584516018,
+      "si": 5830.184310006807,
+      "tbt": null,
+      "ttfb": 3510,
+      "requestCount": 44,
+      "transferSize": 1223618,
+      "renderBlockingCount": null,
+      "unusedCssBytes": null,
+      "unusedJsBytes": null,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 13,
+        "Image": 15,
+        "Script": 12,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21003,
+        "Stylesheet": 26634,
+        "Image": 1062704,
+        "Script": 30772,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+          "transferSize": 82278,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+          "transferSize": 76835,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "products_archive-desktop-run1.json",
+      "performance": 97,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 83,
+      "fcp": 348.442,
+      "lcp": 828.442,
+      "lcpError": null,
+      "observedLcp": 2718,
+      "cls": 0.005916592211340534,
+      "si": 1738.3104676718526,
+      "tbt": 0,
+      "ttfb": 2462,
+      "requestCount": 29,
+      "transferSize": 428841,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 11,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18329,
+        "Stylesheet": 15880,
+        "Image": 292449,
+        "Script": 19678,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/%D8%A8%D9%86%D8%B1_%D9%82%D9%87%D9%82%D9%87%D9%87_%D8%A7%D8%B3%D9%86%DA%A9_%D9%88%D8%A7%D9%82%D8%B9%DB%8C_1920x430_optimized-1536x344.webp",
+          "transferSize": 145724,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+          "transferSize": 12954,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-213x300.jpg",
+          "transferSize": 12663,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "products_archive-desktop-run2.json",
+      "performance": 94,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 83,
+      "fcp": 374.74780000000004,
+      "lcp": 734.7478,
+      "lcpError": null,
+      "observedLcp": 4102,
+      "cls": 0.005916592211340534,
+      "si": 2563.820783914295,
+      "tbt": 0,
+      "ttfb": 3867,
+      "requestCount": 29,
+      "transferSize": 428841,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 11,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18329,
+        "Stylesheet": 15880,
+        "Image": 292449,
+        "Script": 19678,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/%D8%A8%D9%86%D8%B1_%D9%82%D9%87%D9%82%D9%87%D9%87_%D8%A7%D8%B3%D9%86%DA%A9_%D9%88%D8%A7%D9%82%D8%B9%DB%8C_1920x430_optimized-1536x344.webp",
+          "transferSize": 145724,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+          "transferSize": 12954,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-213x300.jpg",
+          "transferSize": 12663,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "products_archive-desktop-run3.json",
+      "performance": 92,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 83,
+      "fcp": 371.89824999999996,
+      "lcp": 851.89825,
+      "lcpError": null,
+      "observedLcp": 4647,
+      "cls": 0.005916592211340534,
+      "si": 2873.261420164734,
+      "tbt": 0,
+      "ttfb": 4349,
+      "requestCount": 29,
+      "transferSize": 428841,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 11,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18329,
+        "Stylesheet": 15880,
+        "Image": 292449,
+        "Script": 19678,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/%D8%A8%D9%86%D8%B1_%D9%82%D9%87%D9%82%D9%87%D9%87_%D8%A7%D8%B3%D9%86%DA%A9_%D9%88%D8%A7%D9%82%D8%B9%DB%8C_1920x430_optimized-1536x344.webp",
+          "transferSize": 145724,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+          "transferSize": 12954,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-213x300.jpg",
+          "transferSize": 12663,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "products_archive-mobile-run1.json",
+      "performance": 81,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 83,
+      "fcp": 1701.1444499999998,
+      "lcp": 3951.1444500000002,
+      "lcpError": null,
+      "observedLcp": 3896,
+      "cls": 0.007851879699883983,
+      "si": 6134.331938665919,
+      "tbt": 0,
+      "ttfb": 3652,
+      "requestCount": 29,
+      "transferSize": 635138,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 11,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18329,
+        "Stylesheet": 15880,
+        "Image": 498746,
+        "Script": 19678,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/%D8%A8%D9%86%D8%B1_%D9%82%D9%87%D9%82%D9%87%D9%87_%D8%A7%D8%B3%D9%86%DA%A9_%D9%88%D8%A7%D9%82%D8%B9%DB%8C_1933x814_optimized.webp",
+          "transferSize": 239338,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-733x1024.jpg",
+          "transferSize": 81075,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-726x1024.jpg",
+          "transferSize": 77105,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "products_archive-mobile-run2.json",
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 83,
+      "fcp": 1108.5792,
+      "lcp": 2908.5792,
+      "lcpError": null,
+      "observedLcp": 2596,
+      "cls": 0.08664662900192185,
+      "si": 4142.1175895209935,
+      "tbt": 13.947200000000066,
+      "ttfb": 2412,
+      "requestCount": 29,
+      "transferSize": 635138,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 11,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18329,
+        "Stylesheet": 15880,
+        "Image": 498746,
+        "Script": 19678,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/%D8%A8%D9%86%D8%B1_%D9%82%D9%87%D9%82%D9%87%D9%87_%D8%A7%D8%B3%D9%86%DA%A9_%D9%88%D8%A7%D9%82%D8%B9%DB%8C_1933x814_optimized.webp",
+          "transferSize": 239338,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-733x1024.jpg",
+          "transferSize": 81075,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-726x1024.jpg",
+          "transferSize": 77105,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "products_archive-mobile-run3.json",
+      "performance": 93,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1107.5903999999998,
+      "lcp": 2907.5904,
+      "lcpError": null,
+      "observedLcp": 2576,
+      "cls": 0.007851879699883983,
+      "si": 4116.471928708916,
+      "tbt": 10.606399999999894,
+      "ttfb": 2400,
+      "requestCount": 29,
+      "transferSize": 635138,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 11,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18329,
+        "Stylesheet": 15880,
+        "Image": 498746,
+        "Script": 19678,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/%D8%A8%D9%86%D8%B1_%D9%82%D9%87%D9%82%D9%87%D9%87_%D8%A7%D8%B3%D9%86%DA%A9_%D9%88%D8%A7%D9%82%D8%B9%DB%8C_1933x814_optimized.webp",
+          "transferSize": 239338,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-733x1024.jpg",
+          "transferSize": 81075,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-726x1024.jpg",
+          "transferSize": 77105,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": null,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_article-desktop-run1.json",
+      "performance": 94,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 355.73259999999993,
+      "lcp": 535.7326,
+      "lcpError": null,
+      "observedLcp": 4105,
+      "cls": 0.0039903474261046516,
+      "si": 2553.8065214831568,
+      "tbt": 0,
+      "ttfb": 3865,
+      "requestCount": 31,
+      "transferSize": 12126481,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 13,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21499,
+        "Stylesheet": 14544,
+        "Image": 11988245,
+        "Script": 19688,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+          "transferSize": 1943745,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent.png",
+          "transferSize": 1930418,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_article-desktop-run2.json",
+      "performance": 97,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 364.5104500000001,
+      "lcp": 544.51045,
+      "lcpError": null,
+      "observedLcp": 2711,
+      "cls": 0.0039903474261046516,
+      "si": 1759.820762915124,
+      "tbt": 0,
+      "ttfb": 2474,
+      "requestCount": 31,
+      "transferSize": 12132198,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 13,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21494,
+        "Stylesheet": 14544,
+        "Image": 11993967,
+        "Script": 19688,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+          "transferSize": 1943745,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent.png",
+          "transferSize": 1930418,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_article-desktop-run3.json",
+      "performance": 93,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 358.71774999999997,
+      "lcp": 538.71775,
+      "lcpError": null,
+      "observedLcp": 4448,
+      "cls": 0.0039903474261046516,
+      "si": 2792.8155413619575,
+      "tbt": 0,
+      "ttfb": 4106,
+      "requestCount": 31,
+      "transferSize": 12129423,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 13,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21500,
+        "Stylesheet": 14544,
+        "Image": 11991186,
+        "Script": 19688,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+          "transferSize": 1943745,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent.png",
+          "transferSize": 1930418,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_article-mobile-run1.json",
+      "performance": 98,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1115.1261000000002,
+      "lcp": 1865.1261,
+      "lcpError": null,
+      "observedLcp": 2187,
+      "cls": 0.0007872599515928406,
+      "si": 3545.0935824999833,
+      "tbt": 8,
+      "ttfb": 2004,
+      "requestCount": 27,
+      "transferSize": 8211895,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 9,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21497,
+        "Stylesheet": 14544,
+        "Image": 8073661,
+        "Script": 19688,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+          "transferSize": 37184,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+          "transferSize": 29497,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_article-mobile-run2.json",
+      "performance": 92,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1206.1833,
+      "lcp": 1860.5499,
+      "lcpError": null,
+      "observedLcp": 2961,
+      "cls": 0.0009074459933906293,
+      "si": 4731.368447516185,
+      "tbt": 234,
+      "ttfb": 2681,
+      "requestCount": 27,
+      "transferSize": 8211896,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 9,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21498,
+        "Stylesheet": 14544,
+        "Image": 8073661,
+        "Script": 19688,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+          "transferSize": 37184,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+          "transferSize": 29497,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_article-mobile-run3.json",
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1108.62,
+      "lcp": 2008.62,
+      "lcpError": null,
+      "observedLcp": 5269,
+      "cls": 0.0007872599515928406,
+      "si": 7844.103674306145,
+      "tbt": 31.920000000000073,
+      "ttfb": 5082,
+      "requestCount": 27,
+      "transferSize": 8211892,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 9,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 21494,
+        "Stylesheet": 14544,
+        "Image": 8073661,
+        "Script": 19688,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+          "transferSize": 37184,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+          "transferSize": 29497,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_product-desktop-run1.json",
+      "performance": 94,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 346.42404999999997,
+      "lcp": 546.42405,
+      "lcpError": null,
+      "observedLcp": 3898,
+      "cls": 0.006765792363597619,
+      "si": 2432.2162049225285,
+      "tbt": 0,
+      "ttfb": 3698,
+      "requestCount": 25,
+      "transferSize": 282581,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 7,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18357,
+        "Stylesheet": 14908,
+        "Image": 147011,
+        "Script": 19800,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-746x1024.webp",
+          "transferSize": 49782,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+          "transferSize": 12954,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-225x300.webp",
+          "transferSize": 10420,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cheese-220x300.webp",
+          "transferSize": 10121,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_product-desktop-run2.json",
+      "performance": 93,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 356.45394999999996,
+      "lcp": 616.45395,
+      "lcpError": null,
+      "observedLcp": 4429,
+      "cls": 0.002845131205524531,
+      "si": 2732.596044671299,
+      "tbt": 0,
+      "ttfb": 4193,
+      "requestCount": 25,
+      "transferSize": 352448,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 7,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18351,
+        "Stylesheet": 14908,
+        "Image": 216884,
+        "Script": 19800,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-726x1024.jpg",
+          "transferSize": 77105,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-746x1024.webp",
+          "transferSize": 49782,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/chicken-221x300.webp",
+          "transferSize": 11422,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_product-desktop-run3.json",
+      "performance": 95,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 352.64050000000003,
+      "lcp": 552.6405,
+      "lcpError": null,
+      "observedLcp": 3783,
+      "cls": 0.006765792363597619,
+      "si": 2366.8838741675027,
+      "tbt": 0,
+      "ttfb": 3575,
+      "requestCount": 25,
+      "transferSize": 351080,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 7,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18382,
+        "Stylesheet": 14908,
+        "Image": 215485,
+        "Script": 19800,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-726x1024.jpg",
+          "transferSize": 77105,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-746x1024.webp",
+          "transferSize": 49782,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+          "transferSize": 12954,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-225x300.webp",
+          "transferSize": 10420,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_product-mobile-run1.json",
+      "performance": 94,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1122.8035499999999,
+      "lcp": 2022.8035499999999,
+      "lcpError": null,
+      "observedLcp": 3818,
+      "cls": 0.001626393968161233,
+      "si": 5878.741960141364,
+      "tbt": 55.46429999999987,
+      "ttfb": 3598,
+      "requestCount": 24,
+      "transferSize": 246432,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18354,
+        "Stylesheet": 14908,
+        "Image": 110865,
+        "Script": 19800,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-746x1024.webp",
+          "transferSize": 49782,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-225x300.webp",
+          "transferSize": 10420,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cheese-220x300.webp",
+          "transferSize": 10121,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-150x150.webp",
+          "transferSize": 5797,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_product-mobile-run2.json",
+      "performance": 94,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1118.9457,
+      "lcp": 2018.9457,
+      "lcpError": null,
+      "observedLcp": 3582,
+      "cls": 0.001626393968161233,
+      "si": 5523.948285386652,
+      "tbt": 102.03620000000001,
+      "ttfb": 3389,
+      "requestCount": 24,
+      "transferSize": 247368,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18373,
+        "Stylesheet": 14908,
+        "Image": 111782,
+        "Script": 19800,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-746x1024.webp",
+          "transferSize": 49782,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+          "transferSize": 13351,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-225x300.webp",
+          "transferSize": 10420,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-150x150.webp",
+          "transferSize": 5797,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "single_product-mobile-run3.json",
+      "performance": 94,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1112.1498,
+      "lcp": 2087.1498,
+      "lcpError": null,
+      "observedLcp": 3568,
+      "cls": 0.001626393968161233,
+      "si": 5449.498496044233,
+      "tbt": 15.566800000000057,
+      "ttfb": 3372,
+      "requestCount": 24,
+      "transferSize": 248839,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 7,
+        "Image": 6,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 18367,
+        "Stylesheet": 14908,
+        "Image": 113259,
+        "Script": 19800,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-746x1024.webp",
+          "transferSize": 49782,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+          "transferSize": 12954,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-225x300.webp",
+          "transferSize": 10420,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pepper-150x150.webp",
+          "transferSize": 5797,
+          "priority": "Low"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "wholesale-desktop-run1.json",
+      "performance": 86,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 460.40905,
+      "lcp": 2300.40905,
+      "lcpError": null,
+      "observedLcp": 2694,
+      "cls": 0.007259921506366626,
+      "si": 1748.7073309183584,
+      "tbt": 0,
+      "ttfb": 2413,
+      "requestCount": 21,
+      "transferSize": 2361015,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 20709,
+        "Stylesheet": 16861,
+        "Image": 2218997,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "wholesale-desktop-run2.json",
+      "performance": 81,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 478.52230000000003,
+      "lcp": 2318.5223,
+      "lcpError": null,
+      "observedLcp": 4588,
+      "cls": 0.006732756970747005,
+      "si": 2860.7897271670313,
+      "tbt": 0,
+      "ttfb": 4273,
+      "requestCount": 21,
+      "transferSize": 2361015,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 20709,
+        "Stylesheet": 16861,
+        "Image": 2218997,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "wholesale-desktop-run3.json",
+      "performance": 82,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 384.77149999999995,
+      "lcp": 2304.7715,
+      "lcpError": null,
+      "observedLcp": 4126,
+      "cls": 0.006732756970747005,
+      "si": 2534.8062953323165,
+      "tbt": 0,
+      "ttfb": 3835,
+      "requestCount": 21,
+      "transferSize": 2361015,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 20709,
+        "Stylesheet": 16861,
+        "Image": 2218997,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "wholesale-mobile-run1.json",
+      "performance": 71,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1260.1557,
+      "lcp": 12810.1557,
+      "lcpError": null,
+      "observedLcp": 3212,
+      "cls": 0.03587585363680157,
+      "si": 4932.029418000607,
+      "tbt": 0,
+      "ttfb": 2909,
+      "requestCount": 21,
+      "transferSize": 2341135,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 20709,
+        "Stylesheet": 16861,
+        "Image": 2199117,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "wholesale-mobile-run2.json",
+      "performance": 69,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 92,
+      "fcp": 1273.94205,
+      "lcp": 12823.942050000001,
+      "lcpError": null,
+      "observedLcp": 4431,
+      "cls": 0.0346951414828494,
+      "si": 6652.798618008291,
+      "tbt": 0,
+      "ttfb": 4125,
+      "requestCount": 21,
+      "transferSize": 2341135,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 20709,
+        "Stylesheet": 16861,
+        "Image": 2199117,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 1,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    },
+    {
+      "file": "wholesale-mobile-run3.json",
+      "performance": 69,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 85,
+      "fcp": 1271.0932500000001,
+      "lcp": 12821.09325,
+      "lcpError": null,
+      "observedLcp": 4053,
+      "cls": 0.03587585363680157,
+      "si": 6119.486519991087,
+      "tbt": 0,
+      "ttfb": 3757,
+      "requestCount": 21,
+      "transferSize": 2341135,
+      "renderBlockingCount": null,
+      "unusedCssBytes": 0,
+      "unusedJsBytes": 0,
+      "countByType": {
+        "Document": 1,
+        "Stylesheet": 8,
+        "Image": 2,
+        "Script": 7,
+        "Font": 2,
+        "Other": 1
+      },
+      "transferByType": {
+        "Document": 20709,
+        "Stylesheet": 16861,
+        "Image": 2199117,
+        "Script": 21943,
+        "Font": 75982,
+        "Other": 6523
+      },
+      "topImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "priority": "High"
+        }
+      ],
+      "seoAudits": {
+        "metaDescription": 0,
+        "canonical": 1,
+        "robotsTxt": 0,
+        "isCrawlable": 1,
+        "documentTitle": 1
+      }
+    }
+  ]
+}

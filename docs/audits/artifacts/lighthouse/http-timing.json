@@ -1,0 +1,600 @@
+[
+  {
+    "key": "home",
+    "url": "http://localhost:8888/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 128507,
+    "ttfb": 1.200757,
+    "total": 1.201045,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 128507,
+        "ttfb": 2.139502,
+        "total": 3.192768
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 128507,
+        "ttfb": 0.986234,
+        "total": 0.986666
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 128507,
+        "ttfb": 1.200757,
+        "total": 1.201045
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "products_archive",
+    "url": "http://localhost:8888/products/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/products/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 105759,
+    "ttfb": 0.810986,
+    "total": 0.8113,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/products/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 105759,
+        "ttfb": 0.801231,
+        "total": 0.801457
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/products/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 105759,
+        "ttfb": 2.188568,
+        "total": 2.18875
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/products/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 105759,
+        "ttfb": 0.810986,
+        "total": 0.8113
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "single_product",
+    "url": "http://localhost:8888/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 94629,
+    "ttfb": 1.792789,
+    "total": 1.793022,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 94413,
+        "ttfb": 3.261127,
+        "total": 3.26141
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 94629,
+        "ttfb": 1.792789,
+        "total": 1.793022
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 94619,
+        "ttfb": 1.515231,
+        "total": 1.515744
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "articles_archive",
+    "url": "http://localhost:8888/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 87290,
+    "ttfb": 1.761976,
+    "total": 1.762348,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 87290,
+        "ttfb": 2.91641,
+        "total": 2.916761
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 87290,
+        "ttfb": 1.761976,
+        "total": 1.762348
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 87290,
+        "ttfb": 1.6729,
+        "total": 1.67317
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "single_article",
+    "url": "http://localhost:8888/wholesale-request-guide/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/wholesale-request-guide/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 110460,
+    "ttfb": 1.968335,
+    "total": 1.968614,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/wholesale-request-guide/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 110445,
+        "ttfb": 2.157424,
+        "total": 2.157846
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/wholesale-request-guide/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 110460,
+        "ttfb": 1.968335,
+        "total": 1.968614
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/wholesale-request-guide/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 110346,
+        "ttfb": 1.073291,
+        "total": 1.073548
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "wholesale",
+    "url": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 109900,
+    "ttfb": 2.154069,
+    "total": 2.154593,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 109900,
+        "ttfb": 1.81041,
+        "total": 1.811016
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 109900,
+        "ttfb": 2.518865,
+        "total": 2.533687
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 109900,
+        "ttfb": 2.154069,
+        "total": 2.154593
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "agency",
+    "url": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 110236,
+    "ttfb": 1.581185,
+    "total": 1.59368,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 110236,
+        "ttfb": 2.400286,
+        "total": 2.400527
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 110236,
+        "ttfb": 1.416062,
+        "total": 1.416274
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 110236,
+        "ttfb": 1.581185,
+        "total": 1.59368
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "contact",
+    "url": "http://localhost:8888/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 92242,
+    "ttfb": 1.395688,
+    "total": 1.396039,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 92242,
+        "ttfb": 1.395688,
+        "total": 1.396039
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 92242,
+        "ttfb": 2.170877,
+        "total": 2.171384
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 92242,
+        "ttfb": 1.280711,
+        "total": 1.294222
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "factory",
+    "url": "http://localhost:8888/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 89582,
+    "ttfb": 1.240323,
+    "total": 1.240549,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 89582,
+        "ttfb": 1.084402,
+        "total": 1.084606
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 89582,
+        "ttfb": 1.777694,
+        "total": 1.778035
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 89582,
+        "ttfb": 1.240323,
+        "total": 1.240549
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "privacy",
+    "url": "http://localhost:8888/privacy-policy/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/privacy-policy/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 84708,
+    "ttfb": 1.102982,
+    "total": 1.103403,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/privacy-policy/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 84708,
+        "ttfb": 0.998268,
+        "total": 0.998572
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/privacy-policy/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 84708,
+        "ttfb": 1.774928,
+        "total": 1.775762
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/privacy-policy/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 84708,
+        "ttfb": 1.102982,
+        "total": 1.103403
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "faq",
+    "url": "http://localhost:8888/faq/",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/faq/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 92477,
+    "ttfb": 1.186778,
+    "total": 1.186976,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/faq/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 92477,
+        "ttfb": 1.186778,
+        "total": 1.186976
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/faq/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 92477,
+        "ttfb": 2.012111,
+        "total": 2.012306
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/faq/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 92477,
+        "ttfb": 1.148796,
+        "total": 1.149003
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "search",
+    "url": "http://localhost:8888/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+    "code": 200,
+    "finalUrl": "http://localhost:8888/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 91115,
+    "ttfb": 1.783883,
+    "total": 1.784249,
+    "runs": [
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 91115,
+        "ttfb": 1.783883,
+        "total": 1.784249
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 91115,
+        "ttfb": 0.951352,
+        "total": 0.970403
+      },
+      {
+        "code": 200,
+        "finalUrl": "http://localhost:8888/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 91115,
+        "ttfb": 3.179785,
+        "total": 3.180195
+      }
+    ],
+    "cacheControl": null,
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": "Accept-Encoding",
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  },
+  {
+    "key": "not_found",
+    "url": "http://localhost:8888/this-page-definitely-does-not-exist-404-audit/",
+    "code": 404,
+    "finalUrl": "http://localhost:8888/this-page-definitely-does-not-exist-404-audit/",
+    "redir": 0,
+    "ctype": "text/html; charset=UTF-8",
+    "size": 76264,
+    "ttfb": 1.076766,
+    "total": 1.076948,
+    "runs": [
+      {
+        "code": 404,
+        "finalUrl": "http://localhost:8888/this-page-definitely-does-not-exist-404-audit/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 76264,
+        "ttfb": 1.002441,
+        "total": 1.002703
+      },
+      {
+        "code": 404,
+        "finalUrl": "http://localhost:8888/this-page-definitely-does-not-exist-404-audit/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 76264,
+        "ttfb": 1.577656,
+        "total": 1.577852
+      },
+      {
+        "code": 404,
+        "finalUrl": "http://localhost:8888/this-page-definitely-does-not-exist-404-audit/",
+        "redir": 0,
+        "ctype": "text/html; charset=UTF-8",
+        "size": 76264,
+        "ttfb": 1.076766,
+        "total": 1.076948
+      }
+    ],
+    "cacheControl": "no-cache, must-revalidate, max-age=0, no-store, private",
+    "contentEncoding": null,
+    "etag": null,
+    "xRobots": null,
+    "vary": null,
+    "link": "<http://localhost:8888/wp-json/>; rel=\"https://api.w.org/\""
+  }
+]

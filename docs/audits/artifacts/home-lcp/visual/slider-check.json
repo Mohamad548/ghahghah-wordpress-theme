@@ -1,0 +1,80 @@
+{
+  "widths": {
+    "390": {
+      "slides": 9,
+      "activeNw": 390,
+      "aspect": 1.7768918630312522,
+      "rtl": "rtl"
+    },
+    "768": {
+      "slides": 9,
+      "activeNw": 1933,
+      "aspect": 2.3777089783281733,
+      "rtl": "rtl"
+    },
+    "1440": {
+      "slides": 9,
+      "activeNw": 1933,
+      "aspect": 2.37764763550992,
+      "rtl": "rtl"
+    }
+  },
+  "slider": {
+    "srcs": [
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+        "nw": 390,
+        "idx": "0"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+        "nw": 390,
+        "idx": "1"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+        "nw": 390,
+        "idx": "2"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+        "nw": 390,
+        "idx": "3"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+        "nw": 390,
+        "idx": "4"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/06-lemon-flavour-banner-v2-768x432.webp",
+        "nw": 390,
+        "idx": "5"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/07-ketchup-flavour-banner-768x432.webp",
+        "nw": 390,
+        "idx": "6"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+        "nw": 390,
+        "idx": "7"
+      },
+      {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+        "nw": 390,
+        "idx": "8"
+      }
+    ],
+    "distinct": 9,
+    "allDecoded": true,
+    "afterKey": "0",
+    "afterSwipe": "1",
+    "reducedMotion": {
+      "i0": "0",
+      "i1": "0",
+      "held": true
+    }
+  }
+}

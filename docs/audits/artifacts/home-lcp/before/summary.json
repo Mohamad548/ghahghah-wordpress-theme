@@ -1,0 +1,116 @@
+{
+  "phase": "before",
+  "generatedAt": "2026-09-16T21:32:12.483Z",
+  "homeUrl": "http://localhost:8898/",
+  "lighthouse": "12.2.1",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "chrome": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "browserDiagnoses": [
+    {
+      "label": "baseline",
+      "lcpEntryCount": 0,
+      "lcpLast": null,
+      "visibilityState": "visible",
+      "heroImageResponseCount": 14,
+      "activeComplete": true,
+      "activeNaturalWidth": 390,
+      "slidesComplete": 9,
+      "slideCount": 9
+    },
+    {
+      "label": "no-hero-js",
+      "lcpEntryCount": 0,
+      "lcpLast": null,
+      "visibilityState": "visible",
+      "heroImageResponseCount": 14,
+      "activeComplete": true,
+      "activeNaturalWidth": 390,
+      "slidesComplete": 9,
+      "slideCount": 9
+    },
+    {
+      "label": "reduced-motion",
+      "lcpEntryCount": 2,
+      "lcpLast": {
+        "size": 85410,
+        "startTime": 2216,
+        "renderTime": 2216,
+        "loadTime": 2185.5999999940395,
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+        "id": "",
+        "selector": "img.ghahghah-hero__image"
+      },
+      "visibilityState": "visible",
+      "heroImageResponseCount": 14,
+      "activeComplete": true,
+      "activeNaturalWidth": 390,
+      "slidesComplete": 9,
+      "slideCount": 9
+    }
+  ],
+  "lighthouseRuns": [
+    {
+      "run": 1,
+      "label": "simulate",
+      "valid": false,
+      "noLcp": true,
+      "lighthouseVersion": "12.2.1",
+      "fetchTime": "2026-09-16T21:31:22.328Z",
+      "benchmarkIndex": 2082,
+      "performance": null,
+      "lcp": null,
+      "lcpError": "NO_LCP",
+      "cls": 0,
+      "tbt": null,
+      "observedLcp": null,
+      "observedCls": 0,
+      "runtimeError": null,
+      "path": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/home-lcp/before/home-mobile-simulate-run1.json"
+    },
+    {
+      "run": 2,
+      "label": "simulate",
+      "valid": false,
+      "noLcp": true,
+      "lighthouseVersion": "12.2.1",
+      "fetchTime": "2026-09-16T21:31:40.819Z",
+      "benchmarkIndex": 1954.5,
+      "performance": null,
+      "lcp": null,
+      "lcpError": "NO_LCP",
+      "cls": 0,
+      "tbt": null,
+      "observedLcp": null,
+      "observedCls": 0,
+      "runtimeError": null,
+      "path": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/home-lcp/before/home-mobile-simulate-run2.json"
+    },
+    {
+      "run": 3,
+      "label": "simulate",
+      "valid": false,
+      "noLcp": true,
+      "lighthouseVersion": "12.2.1",
+      "fetchTime": "2026-09-16T21:31:59.789Z",
+      "benchmarkIndex": 1650,
+      "performance": null,
+      "lcp": null,
+      "lcpError": "NO_LCP",
+      "cls": 0,
+      "tbt": null,
+      "observedLcp": null,
+      "observedCls": 0,
+      "runtimeError": null,
+      "path": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/home-lcp/before/home-mobile-simulate-run3.json"
+    }
+  ],
+  "validRunCount": 0,
+  "invalidRunCount": 3,
+  "medians": {
+    "lcp_ms": null,
+    "cls": null,
+    "tbt_ms": null,
+    "performance": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "label": "desktop-sim",
+      "lcp": null,
+      "err": "NO_LCP",
+      "cls": 0,
+      "tbt": null,
+      "perf": null,
+      "observedLcp": null
+    },
+    {
+      "label": "mobile-devtools",
+      "lcp": null,
+      "err": "The page did not display content that qualifies as a Largest Contentful Paint (LCP). Ensure the page has a valid LCP element and then try again. (NO_LCP)",
+      "cls": 0,
+      "tbt": 0,
+      "perf": null,
+      "observedLcp": null
+    }
+  ],
+  "poCompatibleMobileSized": [
+    {
+      "run": 1,
+      "lcpMs": null,
+      "lcp": null,
+      "bannerResponses": 0,
+      "slidesWithSrc": 2
+    },
+    {
+      "run": 2,
+      "lcpMs": null,
+      "lcp": null,
+      "bannerResponses": 0,
+      "slidesWithSrc": 2
+    },
+    {
+      "run": 3,
+      "lcpMs": null,
+      "lcp": null,
+      "bannerResponses": 0,
+      "slidesWithSrc": 2
+    }
+  ]
+}

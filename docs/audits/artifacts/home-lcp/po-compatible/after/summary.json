@@ -1,0 +1,92 @@
+{
+  "phase": "after",
+  "method": {
+    "viewport": "390x844",
+    "isMobile": false,
+    "deviceScaleFactor": "default",
+    "throttling": "none-lab",
+    "observer": "LCP+CLS before navigation",
+    "noScroll": true
+  },
+  "lighthouseMobileNote": "LH --form-factor=mobile reports NO_LCP under Chrome mobile emulation; treated as invalid for LCP comparison",
+  "runs": [
+    {
+      "run": 1,
+      "navMs": 6957,
+      "lcpMs": 3340,
+      "lcp": {
+        "size": 85410,
+        "startTime": 3340,
+        "renderTime": 3340,
+        "loadTime": 3311.7999999970198,
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp"
+      },
+      "cls": 0,
+      "bannerRequestCount": 2,
+      "bannerTransferBytes": 578,
+      "slidesWithSrc": 2,
+      "active": {
+        "complete": true,
+        "nw": 390,
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp"
+      },
+      "ready": true,
+      "valid": true
+    },
+    {
+      "run": 2,
+      "navMs": 9297,
+      "lcpMs": 5680,
+      "lcp": {
+        "size": 85410,
+        "startTime": 5680,
+        "renderTime": 5680,
+        "loadTime": 5645.20000000298,
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp"
+      },
+      "cls": 0,
+      "bannerRequestCount": 2,
+      "bannerTransferBytes": 578,
+      "slidesWithSrc": 2,
+      "active": {
+        "complete": true,
+        "nw": 390,
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp"
+      },
+      "ready": true,
+      "valid": true
+    },
+    {
+      "run": 3,
+      "navMs": 6981,
+      "lcpMs": 3344,
+      "lcp": {
+        "size": 85410,
+        "startTime": 3344,
+        "renderTime": 3344,
+        "loadTime": 3315.300000011921,
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp"
+      },
+      "cls": 0,
+      "bannerRequestCount": 2,
+      "bannerTransferBytes": 578,
+      "slidesWithSrc": 2,
+      "active": {
+        "complete": true,
+        "nw": 390,
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp"
+      },
+      "ready": true,
+      "valid": true
+    }
+  ],
+  "validRunCount": 3,
+  "invalidRunCount": 0,
+  "medians": {
+    "lcp_ms": 3344,
+    "cls": 0,
+    "bannerRequestCount": 2,
+    "bannerTransferBytes": 578,
+    "slidesWithSrc": 2
+  }
+}

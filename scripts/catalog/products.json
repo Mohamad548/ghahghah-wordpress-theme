@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "notes": [
+    "Products are flavor SKUs of Ghahghah corn pellet. Weight/packaging are options, not separate products.",
+    "Multiple packaging generations (parrot logo vs triangle mascot) map to the same flavor product.",
+    "Ambiguous: parrot «Salt Vinegar» vs triangle «Vinegar» — grouped as one vinegar product pending review.",
+    "featured_site files live under assets/images/products/catalog/ (theme). originals stay in design-sources/raw-products/."
+  ],
+  "excluded": [
+    { "file": "photo_2026-09-13_16-34-40.jpg", "reason": "snack close-up only; no packaging" },
+    { "file": "photo_2026-09-13_16-34-42.jpg", "reason": "snack close-up only; no packaging" },
+    { "file": "photo_2026-09-13_16-34-45.jpg", "reason": "brand logo; moved to design-sources/brand/" }
+  ],
+  "review": [
+    {
+      "topic": "vinegar-naming",
+      "detail": "Parrot packaging reads «طعم سرکه نمکی / Salt Vinegar»; triangle packaging reads «طعم سرکه‌ای / Vinegar». Grouped as one product."
+    },
+    {
+      "topic": "packaging-generations",
+      "detail": "Two visual systems (parrot + Corn Pellet ribbon vs triangle mascot). Same flavors kept as one product each."
+    },
+    {
+      "topic": "cheese-packaging",
+      "detail": "Cheese flavor currently only has parrot-generation artwork in sources."
+    }
+  ],
+  "products": [
+    {
+      "key": "corn-pellet-lemon",
+      "title": "چیپس ذرت قهقهه طعم لیمویی",
+      "featured_site": "limoo-corn-pellet-full.webp",
+      "source_images": [
+        "limoo-corn-pellet-full.webp",
+        "photo_2026-09-13_16-37-45.jpg",
+        "photo_2026-09-13_16-37-48.jpg",
+        "photo_2026-09-13_16-34-36 (2).jpg",
+        "photo_2026-09-13_16-34-38.jpg"
+      ]
+    },
+    {
+      "key": "corn-pellet-vinegar",
+      "title": "چیپس ذرت قهقهه طعم سرکه‌ای",
+      "featured_site": "vinegar-corn-pellet-full.webp",
+      "source_images": [
+        "vinegar-corn-pellet-full.webp",
+        "photo_2026-09-13_16-37-43.jpg",
+        "photo_2026-09-13_16-34-36 (3).jpg"
+      ]
+    },
+    {
+      "key": "corn-pellet-pizza",
+      "title": "چیپس ذرت قهقهه طعم پیتزا",
+      "featured_site": "pizza-corn-pellet-full.webp",
+      "source_images": [
+        "pizza-corn-pellet-full.webp",
+        "photo_2026-09-13_16-37-43 (2).jpg"
+      ]
+    },
+    {
+      "key": "corn-pellet-shallot-yogurt",
+      "title": "چیپس ذرت قهقهه طعم ماست موسیر",
+      "featured_site": "shallot-yogurt.jpg",
+      "source_images": [
+        "photo_2026-09-13_16-37-42.jpg",
+        "photo_2026-09-13_16-34-36.jpg"
+      ]
+    },
+    {
+      "key": "corn-pellet-parsley-onion",
+      "title": "چیپس ذرت قهقهه طعم پیاز جعفری",
+      "featured_site": "parsley-onion.jpg",
+      "source_images": [
+        "photo_2026-09-13_16-37-44.jpg",
+        "photo_2026-09-13_16-34-37 (2).jpg"
+      ]
+    },
+    {
+      "key": "corn-pellet-ketchup",
+      "title": "چیپس ذرت قهقهه طعم کچاپ",
+      "featured_site": "ketchup.jpg",
+      "source_images": [
+        "photo_2026-09-13_16-37-41.jpg"
+      ]
+    },
+    {
+      "key": "corn-pellet-cheese",
+      "title": "چیپس ذرت قهقهه طعم پنیری",
+      "featured_site": "cheese.webp",
+      "source_images": [
+        "ghahghah-cheese-card.webp"
+      ]
+    },
+    {
+      "key": "corn-pellet-chicken",
+      "title": "چیپس ذرت قهقهه طعم مرغ",
+      "featured_site": "chicken.webp",
+      "source_images": [
+        "ghahghah-chicken-card.webp"
+      ]
+    },
+    {
+      "key": "corn-pellet-pepper",
+      "title": "چیپس ذرت قهقهه طعم فلفلی",
+      "featured_site": "pepper.webp",
+      "source_images": [
+        "ghahghah-pepper-card.webp"
+      ]
+    }
+  ]
+}

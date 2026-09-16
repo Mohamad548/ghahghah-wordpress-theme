@@ -1,0 +1,87 @@
+[PASS] Theme file exists: style.css
+[PASS] Theme file exists: functions.php
+[PASS] Theme file exists: theme.json
+[PASS] Theme file exists: index.php
+[PASS] Theme file exists: front-page.php
+[PASS] Theme file exists: header.php
+[PASS] Theme file exists: footer.php
+[PASS] Theme file exists: page.php
+[PASS] Theme file exists: single.php
+[PASS] Theme file exists: archive.php
+[PASS] Theme file exists: 404.php
+[PASS] Theme file exists: inc/setup.php
+[PASS] Theme file exists: inc/assets.php
+[PASS] Theme file exists: inc/template-tags.php
+[PASS] Theme file exists: inc/header-settings.php
+[PASS] Theme file exists: inc/class-primary-nav-walker.php
+[PASS] Theme file exists: inc/admin/config.php
+[PASS] Theme file exists: inc/admin/panels/header.php
+[PASS] Theme file exists: inc/admin/panels/footer.php
+[PASS] Theme file exists: inc/admin/panels/agency-requests.php
+[PASS] Theme file exists: inc/admin/panels/sms-settings.php
+[PASS] Theme file exists: template-parts/header/site-header.php
+[PASS] Theme file exists: template-parts/footer/site-footer.php
+[PASS] Theme file exists: assets/css/base.css
+[PASS] Theme file exists: assets/css/layout.css
+[PASS] Theme file exists: assets/css/header.css
+[PASS] Theme file exists: assets/css/fonts.css
+[PASS] Theme file exists: assets/css/admin-config.css
+[PASS] Theme file exists: assets/js/theme.js
+[PASS] Theme file exists: assets/js/header.js
+[PASS] Theme file exists: assets/js/admin-config.js
+[PASS] Theme file exists: assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff
+[PASS] Theme file exists: assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff
+[PASS] Theme file exists: assets/images/brand/ghahghah-logo-desktop.webp
+[PASS] Theme file exists: assets/images/brand/ghahghah-logo-mobile.webp
+[PASS] Theme file exists: assets/images/brand/ghahghah-site-icon-512.png
+[PASS] Core file exists: ghahghah-core.php
+[PASS] Core file exists: composer.json
+[PASS] Core file exists: src/Plugin.php
+[PASS] Core file exists: src/Activator.php
+[PASS] Core file exists: src/Deactivator.php
+[PASS] Core file exists: src/Capabilities.php
+[PASS] Core file exists: src/PostTypes/Product.php
+[PASS] Theme text domain is ghahghah
+[PASS] Core text domain is ghahghah-core
+[PASS] Core defines GHAHGHAH_CORE_VERSION
+[PASS] Product CPT key is ghahghah_product
+[PASS] Product CPT enables REST
+[PASS] Archive slug is filterable
+[PASS] Flush on activation
+[PASS] Flush on deactivation
+[PASS] Theme does not register post types
+[PASS] Theme has Core inactive fallback helper
+[PASS] Theme registers configuration admin menu
+[PASS] Theme config uses tab URL param
+[PASS] Theme registers ghahghah_header Customizer section
+[PASS] Theme defines primary nav walker
+[PASS] Theme resolves header logo URLs
+[PASS] Theme bundles Yekan Bakh font face
+[PASS] Menu locations registered
+[PASS] No dependency reference: elementor
+[PASS] No dependency reference: woocommerce
+[PASS] No dependency reference: advanced-custom-fields
+[PASS] No dependency reference: acf/
+[PASS] No dependency reference: Bootstrap framework
+[PASS] No dependency reference: jQuery dependency
+[PASS] No dependency reference: Tailwind
+[PASS] theme.json contains #D71920
+[PASS] base.css contains #D71920
+[PASS] theme.json contains #F5B400
+[PASS] base.css contains #F5B400
+[PASS] theme.json contains #3A8F45
+[PASS] base.css contains #3A8F45
+[PASS] theme.json contains #222222
+[PASS] base.css contains #222222
+[PASS] theme.json contains #FFFFFF
+[PASS] base.css contains #FFFFFF
+[PASS] theme.json contains #F7F7F5
+[PASS] base.css contains #F7F7F5
+[PASS] No fabricated marker: kcal
+[PASS] No fabricated marker: nutrition
+[PASS] No fabricated marker: ISO 
+[PASS] No fabricated marker: factory capacity
+[PASS] No fabricated marker: 021-
+[PASS] No fabricated marker: +98
+
+Structural verification passed.

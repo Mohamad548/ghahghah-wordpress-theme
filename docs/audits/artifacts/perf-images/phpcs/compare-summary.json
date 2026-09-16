@@ -1,0 +1,69 @@
+{
+  "phpcsVersion": "3.13.6",
+  "baseTotals": {
+    "errors": 47,
+    "warnings": 78,
+    "fixable": 70
+  },
+  "headTotals": {
+    "errors": 47,
+    "warnings": 73,
+    "fixable": 65
+  },
+  "baseMsgCount": 125,
+  "headMsgCount": 120,
+  "addedByExactContentCount": 0,
+  "removedByExactContentCount": 5,
+  "addedByFileLineSourceCount": 0,
+  "removedByFileLineSourceCount": 5,
+  "newDebtOnChangedLines": [],
+  "preExistingSniffOnChangedLines": [
+    {
+      "file": "ghahghah-theme/single-post.php",
+      "line": 32,
+      "column": 5,
+      "severity": 5,
+      "type": "ERROR",
+      "source": "WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound",
+      "message": "Global variables defined by a theme/plugin should start with the theme/plugin prefix. Found: \"$deco_bowl\"."
+    },
+    {
+      "file": "ghahghah-theme/single-post.php",
+      "line": 32,
+      "column": 17,
+      "severity": 5,
+      "type": "WARNING",
+      "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+      "message": "Equals sign not aligned with surrounding assignments; expected 4 spaces but found 2 spaces"
+    },
+    {
+      "file": "ghahghah-theme/single-post.php",
+      "line": 33,
+      "column": 5,
+      "severity": 5,
+      "type": "ERROR",
+      "source": "WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound",
+      "message": "Global variables defined by a theme/plugin should start with the theme/plugin prefix. Found: \"$deco_corn\"."
+    },
+    {
+      "file": "ghahghah-theme/single-post.php",
+      "line": 33,
+      "column": 17,
+      "severity": 5,
+      "type": "WARNING",
+      "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+      "message": "Equals sign not aligned with surrounding assignments; expected 4 spaces but found 2 spaces"
+    },
+    {
+      "file": "ghahghah-theme/single-post.php",
+      "line": 34,
+      "column": 5,
+      "severity": 5,
+      "type": "ERROR",
+      "source": "WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound",
+      "message": "Global variables defined by a theme/plugin should start with the theme/plugin prefix. Found: \"$deco_cluster\"."
+    }
+  ],
+  "newDebtCount": 0,
+  "sampleAddedByLine": []
+}

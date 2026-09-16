@@ -1,0 +1,97 @@
+{
+  "tag": "before-pair2",
+  "phase": "before",
+  "pair": 2,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:45:52.241Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 970,
+  "hostUserAgent": null,
+  "performance": 67,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 12982.476586373174,
+    "fcp_ms": 1732.4765863731734,
+    "si_ms": 7105.518490544417,
+    "tti_ms": 12982.476586373174
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 4551,
+    "fcp_ms": 4501,
+    "load_ms": 4364,
+    "traceEnd_ms": 6870
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1253.4921954577244,
+      "duration": 314.9999999999998
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 878.4921954577245,
+      "duration": 223.0000000000001
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1101.4921954577246,
+      "duration": 151.99999999999977
+    },
+    {
+      "url": "Unattributable",
+      "startTime": 777.4921954577245,
+      "duration": 57
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 724.412
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 588.1719999999997
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 80.01999999999991
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 59.66400000000001
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 38.852000000000004
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 11.048000000000002
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 885.8520000000001,
+      "scripting": 17.772000000000002,
+      "scriptParseCompile": 3.248
+    },
+    {
+      "url": "Unattributable",
+      "total": 522.2200000000003,
+      "scripting": 4.888,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}

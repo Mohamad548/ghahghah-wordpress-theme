@@ -1,0 +1,84 @@
+Switching to BASELINE for desktop before shots
+[desktop-before] wholesale
+[desktop-before] agency
+[desktop-before] contact
+[desktop-before] article
+Restoring AFTER
+{
+  "phase": "before-desktop",
+  "generatedAt": "2026-09-16T19:47:47.154Z",
+  "pages": {
+    "wholesale": {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "performance": 83,
+      "lcp": 2356.4688312277212,
+      "tbt": 0,
+      "cls": 0.007259921506366626,
+      "screenshot": true,
+      "htmlImageRefs": [
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+      ]
+    },
+    "agency": {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "performance": 85,
+      "lcp": 2393.0612499999997,
+      "tbt": 20.292500000000018,
+      "cls": 0.01581893619334307,
+      "screenshot": true,
+      "htmlImageRefs": [
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+      ]
+    },
+    "contact": {
+      "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "performance": 90,
+      "lcp": 1812.1528173589759,
+      "tbt": 0,
+      "cls": 0.00714097507433781,
+      "screenshot": true,
+      "htmlImageRefs": [
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+      ]
+    },
+    "article": {
+      "url": "http://localhost:8898/wholesale-request-guide/",
+      "performance": 76,
+      "lcp": 5006.087437793616,
+      "tbt": 0,
+      "cls": 0.004858206056975756,
+      "screenshot": true,
+      "htmlImageRefs": [
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-site-icon-512-300x300.png",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+      ]
+    }
+  }
+}

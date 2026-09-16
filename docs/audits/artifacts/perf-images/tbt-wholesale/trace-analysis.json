@@ -1,0 +1,231 @@
+{
+  "generatedAt": "2026-09-16T19:47:19.545Z",
+  "traceFile": "docs/audits/artifacts/perf-images/tbt-wholesale/after-trace/report-0.trace.json",
+  "top30": [
+    {
+      "name": "RasterTask",
+      "cat": "cc,disabled-by-default-devtools.timeline",
+      "dur_ms": 166.74,
+      "ts": 114028218157,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RunTask",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 159.31,
+      "ts": 114028281888,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "EvaluateScript",
+      "cat": "devtools.timeline",
+      "dur_ms": 158.65,
+      "ts": 114028282382,
+      "url": "blob:http://localhost:8898/2e5d0853-fb3c-47f0-a922-817837fe2bf2",
+      "functionName": null,
+      "sampleTraceId": 3615357816376476
+    },
+    {
+      "name": "v8.run",
+      "cat": "v8",
+      "dur_ms": 158.18,
+      "ts": 114028282764,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Decode LazyPixelRef",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 156.24,
+      "ts": 114028226681,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RasterTask",
+      "cat": "cc,disabled-by-default-devtools.timeline",
+      "dur_ms": 133.52,
+      "ts": 114028216291,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Decode LazyPixelRef",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 122.02,
+      "ts": 114028225489,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RasterTask",
+      "cat": "cc,disabled-by-default-devtools.timeline",
+      "dur_ms": 113.14,
+      "ts": 114028201924,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Decode LazyPixelRef",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 108.8,
+      "ts": 114028202885,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RunTask",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 74.82,
+      "ts": 114028118173,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RunTask",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 72.82,
+      "ts": 114028315388,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RasterTask",
+      "cat": "cc,disabled-by-default-devtools.timeline",
+      "dur_ms": 66.51,
+      "ts": 114028201910,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Decode Image",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 59.34,
+      "ts": 114028202706,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Layout",
+      "cat": "devtools.timeline",
+      "dur_ms": 55.61,
+      "ts": 114028133082,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    }
+  ],
+  "runTasksTop": [
+    {
+      "name": "RunTask",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 159.31,
+      "ts": 114028281888,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RunTask",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 74.82,
+      "ts": 114028118173,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "RunTask",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 72.82,
+      "ts": 114028315388,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    }
+  ],
+  "decodeTop": [
+    {
+      "name": "Decode LazyPixelRef",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 156.24,
+      "ts": 114028226681,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Decode LazyPixelRef",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 122.02,
+      "ts": 114028225489,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Decode LazyPixelRef",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 108.8,
+      "ts": 114028202885,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    },
+    {
+      "name": "Decode Image",
+      "cat": "disabled-by-default-devtools.timeline",
+      "dur_ms": 59.34,
+      "ts": 114028202706,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    }
+  ],
+  "layoutTop": [
+    {
+      "name": "Layout",
+      "cat": "devtools.timeline",
+      "dur_ms": 55.61,
+      "ts": 114028133082,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    }
+  ],
+  "scriptTop": [
+    {
+      "name": "EvaluateScript",
+      "cat": "devtools.timeline",
+      "dur_ms": 158.65,
+      "ts": 114028282382,
+      "url": "blob:http://localhost:8898/2e5d0853-fb3c-47f0-a922-817837fe2bf2",
+      "functionName": null,
+      "sampleTraceId": 3615357816376476
+    },
+    {
+      "name": "v8.run",
+      "cat": "v8",
+      "dur_ms": 158.18,
+      "ts": 114028282764,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    }
+  ],
+  "note": "Unattributable in LH long-tasks often maps to RunTask without attributed URL (GC, idle, compositor, image decode sometimes)."
+}

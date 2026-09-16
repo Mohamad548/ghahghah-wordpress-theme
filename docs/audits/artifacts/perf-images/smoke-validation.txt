@@ -1,0 +1,104 @@
+Working directory: /e/word pares/ghahghah-fix-perf-images
+wp-env Node cwd: e:\word pares\ghahghah-fix-perf-images
+Using wp-env binary: /e/word pares/ghahghah-fix-perf-images/node_modules/@wordpress/env/bin/wp-env
+Resolved @wordpress/env version: 11.15.0
+Worktree docker name hint: ghahghah-fix-perf-images
+=== Starting wp-env (if needed) ===
+Found running worktree CLI container: wp-env-ghahghah-fix-perf-images-c3316861-cli-1
+Skipping wp-env start to avoid creating a second project hash
+[PASS] wp-env containers already running for this worktree
+Selected CLI container: wp-env-ghahghah-fix-perf-images-c3316861-cli-1
+Expected WordPress container: wp-env-ghahghah-fix-perf-images-c3316861-wordpress-1
+WordPress container ports: 80/tcp -> 0.0.0.0:8898
+80/tcp -> [::]:8898
+Theme-related mounts:
+E:\word pares\ghahghah-fix-perf-images\ghahghah-theme -> /var/www/html/wp-content/themes/ghahghah-theme
+WordPress version: 7.1
+siteurl=http://localhost:8898
+home=http://localhost:8898
+[PASS] siteurl/home match isolated port 8898
+Initial stylesheet: ghahghah-theme
+Initial ghahghah-core active: yes
+Bundled theme for Scenario B: twentytwenty
+
+=== Scenario A: Theme without Core ===
+Plugin 'ghahghah-core' deactivated.
+Success: Deactivated 1 of 1 plugins.
+Warning: The 'قهقهه' theme is already active.
+Active stylesheet: ghahghah-theme
+[PASS] Active stylesheet is ghahghah-theme
+[PASS] ghahghah-core is inactive
+HTTP (A-homepage): url=http://localhost:8898/ status=200 redirects=0 final=http://localhost:8898/
+[PASS] HTTP 200 for A-homepage (http://localhost:8898/)
+Assert PHP (A: CPT absent without Core): => yes
+[PASS] A: CPT absent without Core
+Debug log (A):
+EMPTY
+[PASS] Scenario A complete
+
+=== Scenario B: Core independently ===
+Success: Switched to 'Twenty Twenty' theme.
+Active stylesheet: twentytwenty
+[PASS] Bundled theme twentytwenty active
+Plugin 'ghahghah-core' activated.
+Success: Activated 1 of 1 plugins.
+[PASS] ghahghah-core is active without ghahghah-theme
+[PASS] Plugin activation does not require ghahghah-theme
+Assert PHP (B: CPT present with Core): => yes
+[PASS] B: CPT present with Core
+Debug log (B):
+EMPTY
+[PASS] Scenario B complete
+
+=== Scenario C: Theme and Core together ===
+Warning: Plugin 'ghahghah-core' is already active.
+Success: Plugin already activated.
+Success: Switched to 'قهقهه' theme.
+[PASS] Theme and Core both active
+Assert PHP (C: CPT present): => yes
+[PASS] C: CPT present
+public=1
+show_in_rest=1
+has_archive=1
+has_archive_value=products
+rest_base=ghahghah-products
+[PASS] CPT public/show_in_rest/has_archive verified
+Success: Rewrite rules flushed.
+[PASS] Rewrite rules flushed once
+Resolved product archive slug: products
+HTTP (C-homepage): url=http://localhost:8898/ status=200 redirects=0 final=http://localhost:8898/
+[PASS] HTTP 200 for C-homepage (http://localhost:8898/)
+Initial archive HTTP status: 200 (http://localhost:8898/products/)
+HTTP (C-archive): url=http://localhost:8898/products/ status=200 redirects=0 final=http://localhost:8898/products/
+[PASS] HTTP 200 for C-archive (http://localhost:8898/products/)
+[PASS] Product archive responded without fatal error
+REST types URL: http://localhost:8898/wp-json/wp/v2/types
+[PASS] REST exposes ghahghah_product
+REST collection http://localhost:8898/wp-json/wp/v2/ghahghah-products => 200
+[PASS] REST collection HTTP 200
+Debug log (C):
+EMPTY
+[PASS] Scenario C complete
+
+=== Scenario D: Core deactivation safety ===
+Warning: The 'قهقهه' theme is already active.
+Plugin 'ghahghah-core' deactivated.
+Success: Deactivated 1 of 1 plugins.
+[PASS] Theme active, Core deactivated
+HTTP (D-homepage): url=http://localhost:8898/ status=200 redirects=0 final=http://localhost:8898/
+[PASS] HTTP 200 for D-homepage (http://localhost:8898/)
+Assert PHP (D: CPT gone after Core deactivation): => yes
+[PASS] D: CPT gone after Core deactivation
+Debug log (D):
+EMPTY
+[PASS] Scenario D complete
+
+=== SMOKE SUMMARY ===
+WordPress: 7.1
+Home: http://localhost:8898
+CLI container: wp-env-ghahghah-fix-perf-images-c3316861-cli-1
+Passed assertions: 26
+ALL SMOKE SCENARIOS PASSED
+=== Restoring initial theme/plugin state ===
+Restored theme: ghahghah-theme
+Restored plugin: ghahghah-core active

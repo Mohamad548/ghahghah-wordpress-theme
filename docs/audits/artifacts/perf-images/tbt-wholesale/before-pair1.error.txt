@@ -1,0 +1,6 @@
+--output-path (docs\audits\artifacts\perf-images\tbt-wholesale\before-pair1.json) cannot be written to
+
+Specify --help for available options
+
+
+exit=1

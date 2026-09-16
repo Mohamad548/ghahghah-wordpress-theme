@@ -1,0 +1,92 @@
+{
+  "tag": "before-pair1",
+  "phase": "before",
+  "pair": 1,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:45:08.921Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 2158.5,
+  "hostUserAgent": null,
+  "performance": 71,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 12942.39170107082,
+    "fcp_ms": 1692.3917010708196,
+    "si_ms": 4619.209666434558,
+    "tti_ms": 12942.391701070821
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 2817,
+    "fcp_ms": 2767,
+    "load_ms": 2669,
+    "traceEnd_ms": 5157
+  },
+  "longTasksTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 813.1305670236065,
+      "duration": 147
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 960.1305670236065,
+      "duration": 99
+    },
+    {
+      "url": "Unattributable",
+      "startTime": 1059.1305670236065,
+      "duration": 99
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 472.592
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 309.3200000000006
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 60.943999999999974
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 55.496
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 25.243999999999996
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 7.6000000000000005
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 611.9319999999999,
+      "scripting": 23.404,
+      "scriptParseCompile": 2.884
+    },
+    {
+      "url": "Unattributable",
+      "total": 249.2720000000004,
+      "scripting": 3.5319999999999996,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}

@@ -1,0 +1,815 @@
+OUT_DIR for Lighthouse: E:\word pares\ghahghah-fix-perf-images\docs\audits\artifacts\perf-images\tbt-wholesale
+Wholesale URL: http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/
+Baseline: 7add574586a6b1c636881efd1b237a38cd81363d
+After ref: def0c87b467a5d7ed77432153684f57cc7999e8b
+HEAD now: def0c87b467a5d7ed77432153684f57cc7999e8b
+=== Warm-up (discard) ===
+warmup_http:200
+=== Switching theme image PHP to BASELINE 7add574586a6b1c636881efd1b237a38cd81363d ===
+
+######## RUN phase=before pair=1 saveTrace=0 ########
+HTML hero asset refs: wholesale/wholesale-hero-pizza-transparent.png
+[before-pair1] lighthouse start saveTrace=false tmp=C:\Users\Mohamad\AppData\Local\Temp\ghh-tbt-DFIrTN
+{
+  "tag": "before-pair1",
+  "phase": "before",
+  "pair": 1,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:45:08.921Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 2158.5,
+  "hostUserAgent": null,
+  "performance": 71,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 12942.39170107082,
+    "fcp_ms": 1692.3917010708196,
+    "si_ms": 4619.209666434558,
+    "tti_ms": 12942.391701070821
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 2817,
+    "fcp_ms": 2767,
+    "load_ms": 2669,
+    "traceEnd_ms": 5157
+  },
+  "longTasksTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 813.1305670236065,
+      "duration": 147
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 960.1305670236065,
+      "duration": 99
+    },
+    {
+      "url": "Unattributable",
+      "startTime": 1059.1305670236065,
+      "duration": 99
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 472.592
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 309.3200000000006
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 60.943999999999974
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 55.496
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 25.243999999999996
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 7.6000000000000005
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 611.9319999999999,
+      "scripting": 23.404,
+      "scriptParseCompile": 2.884
+    },
+    {
+      "url": "Unattributable",
+      "total": 249.2720000000004,
+      "scripting": 3.5319999999999996,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}
+=== Restoring AFTER image PHP from def0c87b467a5d7ed77432153684f57cc7999e8b ===
+
+######## RUN phase=after pair=1 saveTrace=0 ########
+HTML hero asset refs: wholesale/ghahghah_pizza_packshot_optimized.webp
+[after-pair1] lighthouse start saveTrace=false tmp=C:\Users\Mohamad\AppData\Local\Temp\ghh-tbt-ogwvzt
+{
+  "tag": "after-pair1",
+  "phase": "after",
+  "pair": 1,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:45:31.123Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 1348,
+  "hostUserAgent": null,
+  "performance": 81,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 4287.4655999999995,
+    "fcp_ms": 1737.4656000000002,
+    "si_ms": 4898.60143200146,
+    "tti_ms": 4287.4655999999995
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 2973,
+    "fcp_ms": 2923,
+    "load_ms": 2788,
+    "traceEnd_ms": 5291
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1303.1552000000001,
+      "duration": 365
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 874.1552,
+      "duration": 236.0000000000001
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1110.1552000000001,
+      "duration": 193
+    },
+    {
+      "url": "Unattributable",
+      "startTime": 779.1552,
+      "duration": 52
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 833.4079999999999
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 657.6719999999995
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 83.04800000000003
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 70.272
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 34.1
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 14.96
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 1005.228,
+      "scripting": 17.688000000000002,
+      "scriptParseCompile": 3.508
+    },
+    {
+      "url": "Unattributable",
+      "total": 574.4959999999996,
+      "scripting": 3.224,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}
+=== Switching theme image PHP to BASELINE 7add574586a6b1c636881efd1b237a38cd81363d ===
+
+######## RUN phase=before pair=2 saveTrace=0 ########
+HTML hero asset refs: wholesale/wholesale-hero-pizza-transparent.png
+[before-pair2] lighthouse start saveTrace=false tmp=C:\Users\Mohamad\AppData\Local\Temp\ghh-tbt-Mx2zYC
+{
+  "tag": "before-pair2",
+  "phase": "before",
+  "pair": 2,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:45:52.241Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 970,
+  "hostUserAgent": null,
+  "performance": 67,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 12982.476586373174,
+    "fcp_ms": 1732.4765863731734,
+    "si_ms": 7105.518490544417,
+    "tti_ms": 12982.476586373174
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 4551,
+    "fcp_ms": 4501,
+    "load_ms": 4364,
+    "traceEnd_ms": 6870
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1253.4921954577244,
+      "duration": 314.9999999999998
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 878.4921954577245,
+      "duration": 223.0000000000001
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1101.4921954577246,
+      "duration": 151.99999999999977
+    },
+    {
+      "url": "Unattributable",
+      "startTime": 777.4921954577245,
+      "duration": 57
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 724.412
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 588.1719999999997
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 80.01999999999991
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 59.66400000000001
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 38.852000000000004
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 11.048000000000002
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 885.8520000000001,
+      "scripting": 17.772000000000002,
+      "scriptParseCompile": 3.248
+    },
+    {
+      "url": "Unattributable",
+      "total": 522.2200000000003,
+      "scripting": 4.888,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}
+=== Restoring AFTER image PHP from def0c87b467a5d7ed77432153684f57cc7999e8b ===
+
+######## RUN phase=after pair=2 saveTrace=0 ########
+HTML hero asset refs: wholesale/ghahghah_pizza_packshot_optimized.webp
+[after-pair2] lighthouse start saveTrace=false tmp=C:\Users\Mohamad\AppData\Local\Temp\ghh-tbt-6I98VN
+{
+  "tag": "after-pair2",
+  "phase": "after",
+  "pair": 2,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:46:15.841Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 1352.5,
+  "hostUserAgent": null,
+  "performance": 79,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 4264.625286203727,
+    "fcp_ms": 1714.6252862037265,
+    "si_ms": 6634.217840483083,
+    "tti_ms": 4264.625286203727
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 4225,
+    "fcp_ms": 4176,
+    "load_ms": 4064,
+    "traceEnd_ms": 6536
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1174.541762067909,
+      "duration": 246
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 864.5417620679088,
+      "duration": 183
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1047.5417620679088,
+      "duration": 127.00000000000023
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 812.5417620679088,
+      "duration": 52
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 600.284
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 462.55200000000025
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 69.37200000000001
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 59.40000000000001
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 27.92799999999999
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 10.612
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 738.972,
+      "scripting": 16.571999999999996,
+      "scriptParseCompile": 3.5200000000000005
+    },
+    {
+      "url": "Unattributable",
+      "total": 401.60400000000004,
+      "scripting": 5.008,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}
+=== Switching theme image PHP to BASELINE 7add574586a6b1c636881efd1b237a38cd81363d ===
+
+######## RUN phase=before pair=3 saveTrace=0 ########
+HTML hero asset refs: wholesale/wholesale-hero-pizza-transparent.png
+[before-pair3] lighthouse start saveTrace=false tmp=C:\Users\Mohamad\AppData\Local\Temp\ghh-tbt-zmxGA9
+{
+  "tag": "before-pair3",
+  "phase": "before",
+  "pair": 3,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:46:37.129Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 1349.5,
+  "hostUserAgent": null,
+  "performance": 69,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 12961.58475,
+    "fcp_ms": 1711.58475,
+    "si_ms": 6037.132534007095,
+    "tti_ms": 12961.584750000002
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 3810,
+    "fcp_ms": 3760,
+    "load_ms": 3630,
+    "traceEnd_ms": 6132
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1148.5282499999998,
+      "duration": 267
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 815.52825,
+      "duration": 191.9999999999999
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1007.5282499999998,
+      "duration": 141
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 644.624
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 502.7360000000003
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 71.94000000000004
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 60.884000000000015
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 27.859999999999992
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 10.604000000000003
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 804.868,
+      "scripting": 19.511999999999997,
+      "scriptParseCompile": 3.2560000000000002
+    },
+    {
+      "url": "Unattributable",
+      "total": 417.29200000000014,
+      "scripting": 3.588,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}
+=== Restoring AFTER image PHP from def0c87b467a5d7ed77432153684f57cc7999e8b ===
+
+######## RUN phase=after pair=3 saveTrace=0 ########
+HTML hero asset refs: wholesale/ghahghah_pizza_packshot_optimized.webp
+[after-pair3] lighthouse start saveTrace=false tmp=C:\Users\Mohamad\AppData\Local\Temp\ghh-tbt-BMmKDJ
+{
+  "tag": "after-pair3",
+  "phase": "after",
+  "pair": 3,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:46:57.370Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 1505.5,
+  "hostUserAgent": null,
+  "performance": 79,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 4263.3267,
+    "fcp_ms": 1713.3266999999998,
+    "si_ms": 6670.939007994254,
+    "tti_ms": 4263.3267
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 4252,
+    "fcp_ms": 4202,
+    "load_ms": 4085,
+    "traceEnd_ms": 6564
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1126.1088999999997,
+      "duration": 267
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 820.1089,
+      "duration": 181
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1001.1089,
+      "duration": 124.99999999999977
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 595.824
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 484.7360000000006
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 79.17200000000004
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 55.12800000000001
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 28.02
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 13.292
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 745.26,
+      "scripting": 21.595999999999997,
+      "scriptParseCompile": 5.504
+    },
+    {
+      "url": "Unattributable",
+      "total": 419.492,
+      "scripting": 8.384,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}
+=== Restoring AFTER image PHP from def0c87b467a5d7ed77432153684f57cc7999e8b ===
+=== Selecting slowest AFTER simulated TBT for trace ===
+SLOWEST after-pair1 simTBT= 0 obsTBT= null
+Re-running AFTER pair 1 with -GA artifacts/trace
+=== Restoring AFTER image PHP from def0c87b467a5d7ed77432153684f57cc7999e8b ===
+
+######## RUN phase=after pair=1 saveTrace=1 ########
+HTML hero asset refs: wholesale/ghahghah_pizza_packshot_optimized.webp
+[after-pair1] lighthouse start saveTrace=true tmp=C:\Users\Mohamad\AppData\Local\Temp\ghh-tbt-1hEkDN
+{
+  "tag": "after-pair1",
+  "phase": "after",
+  "pair": 1,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:45:31.123Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 1348,
+  "hostUserAgent": null,
+  "performance": 81,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 4287.4655999999995,
+    "fcp_ms": 1737.4656000000002,
+    "si_ms": 4898.60143200146,
+    "tti_ms": 4287.4655999999995
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 2973,
+    "fcp_ms": 2923,
+    "load_ms": 2788,
+    "traceEnd_ms": 5291
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1303.1552000000001,
+      "duration": 365
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 874.1552,
+      "duration": 236.0000000000001
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1110.1552000000001,
+      "duration": 193
+    },
+    {
+      "url": "Unattributable",
+      "startTime": 779.1552,
+      "duration": 52
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 833.4079999999999
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 657.6719999999995
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 83.04800000000003
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 70.272
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 34.1
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 14.96
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 1005.228,
+      "scripting": 17.688000000000002,
+      "scriptParseCompile": 3.508
+    },
+    {
+      "url": "Unattributable",
+      "total": 574.4959999999996,
+      "scripting": 3.224,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": true
+}
+{
+  "rows": [
+    {
+      "phase": "before",
+      "pair": 1,
+      "benchmarkIndex": 2158.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 12942.39170107082,
+      "obs_lcp_ms": 2817,
+      "performance": 71,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "startTime": 813.1305670236065,
+        "duration": 147
+      }
+    },
+    {
+      "phase": "before",
+      "pair": 2,
+      "benchmarkIndex": 970,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 12982.476586373174,
+      "obs_lcp_ms": 4551,
+      "performance": 67,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1253.4921954577244,
+        "duration": 314.9999999999998
+      }
+    },
+    {
+      "phase": "before",
+      "pair": 3,
+      "benchmarkIndex": 1349.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 12961.58475,
+      "obs_lcp_ms": 3810,
+      "performance": 69,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1148.5282499999998,
+        "duration": 267
+      }
+    },
+    {
+      "phase": "after",
+      "pair": 1,
+      "benchmarkIndex": 1348,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 4287.4655999999995,
+      "obs_lcp_ms": 2973,
+      "performance": 81,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1303.1552000000001,
+        "duration": 365
+      }
+    },
+    {
+      "phase": "after",
+      "pair": 2,
+      "benchmarkIndex": 1352.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 4264.625286203727,
+      "obs_lcp_ms": 4225,
+      "performance": 79,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1174.541762067909,
+        "duration": 246
+      }
+    },
+    {
+      "phase": "after",
+      "pair": 3,
+      "benchmarkIndex": 1505.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 4263.3267,
+      "obs_lcp_ms": 4252,
+      "performance": 79,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1126.1088999999997,
+        "duration": 267
+      }
+    }
+  ],
+  "slowPair": 1,
+  "tracePath": null,
+  "topTrace": []
+}
+TBT interleaved complete. AFTER files restored.
+## fix/perf-images...origin/fix/perf-images

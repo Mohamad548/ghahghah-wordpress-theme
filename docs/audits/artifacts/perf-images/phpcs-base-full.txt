@@ -1,0 +1,442 @@
+
+FILE: ...ifacts\perf-images\phpcs\base\ghahghah-theme\inc\contact-page-settings.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AND 20 WARNINGS AFFECTING 21 LINES
+--------------------------------------------------------------------------------
+  21 | WARNING | [x] Array double arrow not aligned correctly; expected 10
+     |         |     space(s) between "'ghahghah_contact_page_id'" and double
+     |         |     arrow, but found 11.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  22 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_contact_page_title'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  23 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'ghahghah_contact_page_lead'" and double
+     |         |     arrow, but found 9.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  24 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_contact_form_title'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  25 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'ghahghah_contact_form_text'" and double
+     |         |     arrow, but found 9.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  26 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_contact_info_title'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  27 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'ghahghah_contact_info_text'" and double
+     |         |     arrow, but found 9.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  28 | WARNING | [x] Array double arrow not aligned correctly; expected 12
+     |         |     space(s) between "'ghahghah_contact_hours'" and double
+     |         |     arrow, but found 13.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  29 | WARNING | [x] Array double arrow not aligned correctly; expected 10
+     |         |     space(s) between "'ghahghah_contact_map_url'" and double
+     |         |     arrow, but found 11.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  30 | WARNING | [x] Array double arrow not aligned correctly; expected 9
+     |         |     space(s) between "'ghahghah_contact_map_text'" and double
+     |         |     arrow, but found 10.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  31 | WARNING | [x] Array double arrow not aligned correctly; expected 1
+     |         |     space(s) between "'ghahghah_contact_card_placeholder'" and
+     |         |     double arrow, but found 2.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  32 | WARNING | [x] Array double arrow not aligned correctly; expected 6
+     |         |     space(s) between "'ghahghah_contact_phone_label'" and
+     |         |     double arrow, but found 7.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  33 | WARNING | [x] Array double arrow not aligned correctly; expected 6
+     |         |     space(s) between "'ghahghah_contact_email_label'" and
+     |         |     double arrow, but found 7.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  34 | WARNING | [x] Array double arrow not aligned correctly; expected 4
+     |         |     space(s) between "'ghahghah_contact_address_label'" and
+     |         |     double arrow, but found 5.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  35 | WARNING | [x] Array double arrow not aligned correctly; expected 6
+     |         |     space(s) between "'ghahghah_contact_hours_label'" and
+     |         |     double arrow, but found 7.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+ 100 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 5 spaces but found 1 space
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+ 101 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 6 spaces but found 2 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+ 143 | ERROR   | [ ] Doc comment for parameter "$url" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 143 | ERROR   | [ ] Doc comment for parameter "$max" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 185 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 2 spaces but found 1 space
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+ 186 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 3 spaces but found 2 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+ 300 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 2 spaces but found 1 space
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 20 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...facts\perf-images\phpcs\base\ghahghah-theme\inc\media\sync-theme-media.php
+--------------------------------------------------------------------------------
+FOUND 3 ERRORS AND 13 WARNINGS AFFECTING 16 LINES
+--------------------------------------------------------------------------------
+  24 | ERROR   | [ ] Parameter comment must end with a full stop
+     |         |     (Squiz.Commenting.FunctionComment.ParamCommentFullStop)
+  34 | WARNING | [ ] Detected usage of meta_key, possible slow query.
+     |         |     (WordPress.DB.SlowDBQuery.slow_db_query_meta_key)
+  35 | WARNING | [ ] Detected usage of meta_value, possible slow query.
+     |         |     (WordPress.DB.SlowDBQuery.slow_db_query_meta_value)
+  41 | WARNING | [ ] Detected usage of meta_key, possible slow query.
+     |         |     (WordPress.DB.SlowDBQuery.slow_db_query_meta_key)
+  42 | WARNING | [ ] Detected usage of meta_value, possible slow query.
+     |         |     (WordPress.DB.SlowDBQuery.slow_db_query_meta_value)
+  54 | WARNING | [ ] Detected usage of meta_key, possible slow query.
+     |         |     (WordPress.DB.SlowDBQuery.slow_db_query_meta_key)
+  55 | WARNING | [ ] Detected usage of meta_value, possible slow query.
+     |         |     (WordPress.DB.SlowDBQuery.slow_db_query_meta_value)
+ 144 | WARNING | [x] Array double arrow not aligned correctly; expected 9
+     |         |     space(s) between "'article-hero-banner-real-snack.png'"
+     |         |     and double arrow, but found 6.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+ 145 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'article-inline-hands-snack-corn.png'"
+     |         |     and double arrow, but found 5.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+ 147 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'bowl-of-real-snacks-transparent.png'"
+     |         |     and double arrow, but found 5.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+ 148 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'corn-and-real-snacks-transparent.png'"
+     |         |     and double arrow, but found 4.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+ 149 | WARNING | [x] Array double arrow not aligned correctly; expected 3
+     |         |     space(s) between
+     |         |     "'decorative-snack-cluster-transparent.png'" and double
+     |         |     arrow, but found 1.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+ 161 | ERROR   | [ ] Using short ternaries is not allowed as they are rarely
+     |         |     used correctly
+     |         |     (Universal.Operators.DisallowShortTernary.Found)
+ 210 | WARNING | [ ] unlink() is discouraged. Use wp_delete_file() to delete a
+     |         |     file. (WordPress.WP.AlternativeFunctions.unlink_unlink)
+ 228 | WARNING | [ ] unlink() is discouraged. Use wp_delete_file() to delete a
+     |         |     file. (WordPress.WP.AlternativeFunctions.unlink_unlink)
+ 368 | ERROR   | [ ] Use Yoda Condition checks, you must.
+     |         |     (WordPress.PHP.YodaConditions.NotYoda)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...facts\perf-images\phpcs\base\ghahghah-theme\inc\request-pages-settings.php
+--------------------------------------------------------------------------------
+FOUND 4 ERRORS AND 27 WARNINGS AFFECTING 31 LINES
+--------------------------------------------------------------------------------
+  21 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'ghahghah_wholesale_page_id'" and double
+     |         |     arrow, but found 11.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  22 | WARNING | [x] Array double arrow not aligned correctly; expected 11
+     |         |     space(s) between "'ghahghah_agency_page_id'" and double
+     |         |     arrow, but found 14.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  23 | WARNING | [x] Array double arrow not aligned correctly; expected 2
+     |         |     space(s) between "'ghahghah_wholesale_intro_eyebrow'" and
+     |         |     double arrow, but found 5.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  24 | WARNING | [x] Array double arrow not aligned correctly; expected 4
+     |         |     space(s) between "'ghahghah_wholesale_intro_title'" and
+     |         |     double arrow, but found 7.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  25 | WARNING | [x] Array double arrow not aligned correctly; expected 5
+     |         |     space(s) between "'ghahghah_wholesale_intro_text'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  26 | WARNING | [x] Array double arrow not aligned correctly; expected 1
+     |         |     space(s) between "'ghahghah_wholesale_products_label'" and
+     |         |     double arrow, but found 4.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  27 | WARNING | [x] Array double arrow not aligned correctly; expected 5
+     |         |     space(s) between "'ghahghah_wholesale_hero_badge'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  28 | WARNING | [x] Array double arrow not aligned correctly; expected 3
+     |         |     space(s) between "'ghahghah_wholesale_footer_motto'" and
+     |         |     double arrow, but found 6.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  29 | WARNING | [x] Array double arrow not aligned correctly; expected 5
+     |         |     space(s) between "'ghahghah_wholesale_form_title'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  30 | WARNING | [x] Array double arrow not aligned correctly; expected 4
+     |         |     space(s) between "'ghahghah_wholesale_steps_title'" and
+     |         |     double arrow, but found 7.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  31 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_wholesale_sms_note'" and
+     |         |     double arrow, but found 10.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  32 | WARNING | [x] Array double arrow not aligned correctly; expected 5
+     |         |     space(s) between "'ghahghah_wholesale_price_note'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  33 | WARNING | [x] Array double arrow not aligned correctly; expected 4
+     |         |     space(s) between "'ghahghah_wholesale_cross_title'" and
+     |         |     double arrow, but found 7.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  34 | WARNING | [x] Array double arrow not aligned correctly; expected 5
+     |         |     space(s) between "'ghahghah_wholesale_cross_text'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  35 | WARNING | [x] Array double arrow not aligned correctly; expected 3
+     |         |     space(s) between "'ghahghah_wholesale_cross_button'" and
+     |         |     double arrow, but found 6.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  36 | WARNING | [x] Array double arrow not aligned correctly; expected 5
+     |         |     space(s) between "'ghahghah_agency_intro_eyebrow'" and
+     |         |     double arrow, but found 8.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  37 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_agency_intro_title'" and
+     |         |     double arrow, but found 10.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  38 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'ghahghah_agency_intro_text'" and double
+     |         |     arrow, but found 11.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  39 | WARNING | [x] Array double arrow not aligned correctly; expected 6
+     |         |     space(s) between "'ghahghah_agency_hero_tagline'" and
+     |         |     double arrow, but found 9.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  40 | WARNING | [x] Array double arrow not aligned correctly; expected 6
+     |         |     space(s) between "'ghahghah_agency_footer_motto'" and
+     |         |     double arrow, but found 9.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  41 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'ghahghah_agency_form_title'" and double
+     |         |     arrow, but found 11.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  42 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_agency_steps_title'" and
+     |         |     double arrow, but found 10.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  43 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_agency_cross_title'" and
+     |         |     double arrow, but found 10.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  44 | WARNING | [x] Array double arrow not aligned correctly; expected 8
+     |         |     space(s) between "'ghahghah_agency_cross_text'" and double
+     |         |     arrow, but found 11.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  45 | WARNING | [x] Array double arrow not aligned correctly; expected 6
+     |         |     space(s) between "'ghahghah_agency_cross_button'" and
+     |         |     double arrow, but found 9.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  46 | WARNING | [x] Array double arrow not aligned correctly; expected 7
+     |         |     space(s) between "'ghahghah_wholesale_image_id'" and
+     |         |     double arrow, but found 10.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+  62 | ERROR   | [ ] Doc comment for parameter "$which" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+  78 | ERROR   | [ ] Doc comment for parameter "$which" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 108 | ERROR   | [ ] Doc comment for parameter "$product_id" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 112 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 7 spaces but found 1 space
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+ 120 | ERROR   | [ ] Doc comment for parameter "$product_id" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 27 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...acts\perf-images\phpcs\base\ghahghah-theme\inc\single-article-settings.php
+--------------------------------------------------------------------------------
+FOUND 10 ERRORS AND 1 WARNING AFFECTING 9 LINES
+--------------------------------------------------------------------------------
+  41 | ERROR   | [ ] Doc comment for parameter "$file" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+  49 | ERROR   | [ ] Doc comment for parameter "$post_id" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+  76 | ERROR   | [ ] Doc comment for parameter "$post_id" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+  91 | ERROR   | [ ] Doc comment for parameter "$name" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 126 | ERROR   | [ ] Doc comment for parameter "$text" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 126 | ERROR   | [ ] Doc comment for parameter "$index" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 137 | ERROR   | [ ] Doc comment for parameter "$html" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 247 | ERROR   | [ ] Doc comment for parameter "$post_id" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 247 | ERROR   | [ ] Doc comment for parameter "$limit" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+ 272 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 2 spaces but found 1 space
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+ 289 | ERROR   | [ ] Doc comment for parameter "$limit" missing
+     |         |     (Squiz.Commenting.FunctionComment.MissingParamTag)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...ocs\audits\artifacts\perf-images\phpcs\base\ghahghah-theme\single-post.php
+--------------------------------------------------------------------------------
+FOUND 28 ERRORS AND 17 WARNINGS AFFECTING 29 LINES
+--------------------------------------------------------------------------------
+  14 | ERROR   | [ ] Overriding WordPress globals is prohibited. Found
+     |         |     assignment to $post
+     |         |     (WordPress.WP.GlobalVariablesOverride.Prohibited)
+  19 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$defaults".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  19 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 5 spaces but found 3 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  20 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$hero".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  20 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 9 spaces but found 7 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  21 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$minutes".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  21 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 6 spaces but found 4 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  22 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$content".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  22 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 6 spaces but found 4 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  22 | ERROR   | [ ] Hook names invoked by a theme/plugin should start with the
+     |         |     theme/plugin prefix. Found: "the_content".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound)
+  23 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$toc".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  23 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 10 spaces but found 8 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  24 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$cats".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  24 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 9 spaces but found 7 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  25 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$blog_url".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  25 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 5 spaces but found 3 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  26 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$excerpt".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  26 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 6 spaces but found 4 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  27 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$related".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  27 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 6 spaces but found 4 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  28 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$products".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  28 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 5 spaces but found 3 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  29 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$archive_p".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  29 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 4 spaces but found 2 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  30 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$wholesale".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  30 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 4 spaces but found 2 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  31 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$agency".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  31 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 7 spaces but found 5 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  32 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$deco_bowl".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  32 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 4 spaces but found 2 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  33 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$deco_corn".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  33 | WARNING | [x] Equals sign not aligned with surrounding assignments;
+     |         |     expected 4 spaces but found 2 spaces
+     |         |     (Generic.Formatting.MultipleStatementAlignment.NotSameWarning)
+  34 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$deco_cluster".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+  54 | ERROR   | [ ] Use Yoda Condition checks, you must.
+     |         |     (WordPress.PHP.YodaConditions.NotYoda)
+ 111 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$item".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 128 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$product".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 133 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$purl".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 134 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$label".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 137 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$thumb".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 201 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$item".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 206 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$url".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 207 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$mins".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 208 | ERROR   | [ ] Global variables defined by a theme/plugin should start
+     |         |     with the theme/plugin prefix. Found: "$thumb".
+     |         |     (WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound)
+ 219 | WARNING | [x] Expected 1 space between "'loading'" and double arrow; 2
+     |         |     found.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.LongIndexSpaceBeforeDoubleArrow)
+ 221 | WARNING | [x] Array double arrow not aligned correctly; expected 1
+     |         |     space(s) between "'alt'" and double arrow, but found 6.
+     |         |     (WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 17 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+Time: 1.24 secs; Memory: 24MB
+

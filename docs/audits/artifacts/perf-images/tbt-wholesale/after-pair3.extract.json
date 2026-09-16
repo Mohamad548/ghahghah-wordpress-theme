@@ -1,0 +1,92 @@
+{
+  "tag": "after-pair3",
+  "phase": "after",
+  "pair": 3,
+  "lighthouseVersion": "12.2.1",
+  "fetchTime": "2026-09-16T15:46:57.370Z",
+  "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+  "runtimeError": null,
+  "benchmarkIndex": 1505.5,
+  "hostUserAgent": null,
+  "performance": 79,
+  "simulated": {
+    "tbt_ms": 0,
+    "tbtError": null,
+    "lcp_ms": 4263.3267,
+    "fcp_ms": 1713.3266999999998,
+    "si_ms": 6670.939007994254,
+    "tti_ms": 4263.3267
+  },
+  "observed": {
+    "tbt_ms": null,
+    "lcp_ms": 4252,
+    "fcp_ms": 4202,
+    "load_ms": 4085,
+    "traceEnd_ms": 6564
+  },
+  "longTasksTop": [
+    {
+      "url": "Unattributable",
+      "startTime": 1126.1088999999997,
+      "duration": 267
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 820.1089,
+      "duration": 181
+    },
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "startTime": 1001.1089,
+      "duration": 124.99999999999977
+    }
+  ],
+  "mainThreadTop": [
+    {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 595.824
+    },
+    {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 484.7360000000006
+    },
+    {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 79.17200000000004
+    },
+    {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 55.12800000000001
+    },
+    {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 28.02
+    },
+    {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 13.292
+    }
+  ],
+  "bootupTop": [
+    {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "total": 745.26,
+      "scripting": 21.595999999999997,
+      "scriptParseCompile": 5.504
+    },
+    {
+      "url": "Unattributable",
+      "total": 419.492,
+      "scripting": 8.384,
+      "scriptParseCompile": 0
+    }
+  ],
+  "saveTrace": false
+}

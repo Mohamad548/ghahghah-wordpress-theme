@@ -1,0 +1,407 @@
+{
+  "generatedAt": "2026-09-16T15:47:35.276Z",
+  "rows": [
+    {
+      "phase": "before",
+      "pair": 1,
+      "benchmarkIndex": 2158.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 12942.39170107082,
+      "obs_lcp_ms": 2817,
+      "performance": 71,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "startTime": 813.1305670236065,
+        "duration": 147
+      },
+      "longTaskBlockingProxy_ms": 195,
+      "mainThreadTop": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 472.592
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 309.3200000000006
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 60.943999999999974
+        }
+      ],
+      "bootupTop": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "total": 611.9319999999999,
+          "scripting": 23.404,
+          "scriptParseCompile": 2.884
+        },
+        {
+          "url": "Unattributable",
+          "total": 249.2720000000004,
+          "scripting": 3.5319999999999996,
+          "scriptParseCompile": 0
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "pair": 2,
+      "benchmarkIndex": 970,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 12982.476586373174,
+      "obs_lcp_ms": 4551,
+      "performance": 67,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1253.4921954577244,
+        "duration": 314.9999999999998
+      },
+      "longTaskBlockingProxy_ms": 546.9999999999997,
+      "mainThreadTop": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 724.412
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 588.1719999999997
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 80.01999999999991
+        }
+      ],
+      "bootupTop": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "total": 885.8520000000001,
+          "scripting": 17.772000000000002,
+          "scriptParseCompile": 3.248
+        },
+        {
+          "url": "Unattributable",
+          "total": 522.2200000000003,
+          "scripting": 4.888,
+          "scriptParseCompile": 0
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "pair": 3,
+      "benchmarkIndex": 1349.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 12961.58475,
+      "obs_lcp_ms": 3810,
+      "performance": 69,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1148.5282499999998,
+        "duration": 267
+      },
+      "longTaskBlockingProxy_ms": 449.9999999999999,
+      "mainThreadTop": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 644.624
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 502.7360000000003
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 71.94000000000004
+        }
+      ],
+      "bootupTop": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "total": 804.868,
+          "scripting": 19.511999999999997,
+          "scriptParseCompile": 3.2560000000000002
+        },
+        {
+          "url": "Unattributable",
+          "total": 417.29200000000014,
+          "scripting": 3.588,
+          "scriptParseCompile": 0
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "pair": 1,
+      "benchmarkIndex": 1348,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 4287.4655999999995,
+      "obs_lcp_ms": 2973,
+      "performance": 81,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1303.1552000000001,
+        "duration": 365
+      },
+      "longTaskBlockingProxy_ms": 646.0000000000001,
+      "mainThreadTop": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 833.4079999999999
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 657.6719999999995
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 83.04800000000003
+        }
+      ],
+      "bootupTop": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "total": 1005.228,
+          "scripting": 17.688000000000002,
+          "scriptParseCompile": 3.508
+        },
+        {
+          "url": "Unattributable",
+          "total": 574.4959999999996,
+          "scripting": 3.224,
+          "scriptParseCompile": 0
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "pair": 2,
+      "benchmarkIndex": 1352.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 4264.625286203727,
+      "obs_lcp_ms": 4225,
+      "performance": 79,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1174.541762067909,
+        "duration": 246
+      },
+      "longTaskBlockingProxy_ms": 408.0000000000002,
+      "mainThreadTop": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 600.284
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 462.55200000000025
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 69.37200000000001
+        }
+      ],
+      "bootupTop": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "total": 738.972,
+          "scripting": 16.571999999999996,
+          "scriptParseCompile": 3.5200000000000005
+        },
+        {
+          "url": "Unattributable",
+          "total": 401.60400000000004,
+          "scripting": 5.008,
+          "scriptParseCompile": 0
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "pair": 3,
+      "benchmarkIndex": 1505.5,
+      "sim_tbt_ms": 0,
+      "obs_tbt_ms": null,
+      "sim_lcp_ms": 4263.3267,
+      "obs_lcp_ms": 4252,
+      "performance": 79,
+      "runtimeError": null,
+      "topLongTask": {
+        "url": "Unattributable",
+        "startTime": 1126.1088999999997,
+        "duration": 267
+      },
+      "longTaskBlockingProxy_ms": 422.9999999999998,
+      "mainThreadTop": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 595.824
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 484.7360000000006
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 79.17200000000004
+        }
+      ],
+      "bootupTop": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "total": 745.26,
+          "scripting": 21.595999999999997,
+          "scriptParseCompile": 5.504
+        },
+        {
+          "url": "Unattributable",
+          "total": 419.492,
+          "scripting": 8.384,
+          "scriptParseCompile": 0
+        }
+      ]
+    }
+  ],
+  "slowestAfter": {
+    "tag": "after-pair1",
+    "phase": "after",
+    "pair": 1,
+    "lighthouseVersion": "12.2.1",
+    "fetchTime": "2026-09-16T15:45:31.123Z",
+    "requestedUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "runtimeError": null,
+    "benchmarkIndex": 1348,
+    "hostUserAgent": null,
+    "performance": 81,
+    "simulated": {
+      "tbt_ms": 0,
+      "tbtError": null,
+      "lcp_ms": 4287.4655999999995,
+      "fcp_ms": 1737.4656000000002,
+      "si_ms": 4898.60143200146,
+      "tti_ms": 4287.4655999999995
+    },
+    "observed": {
+      "tbt_ms": null,
+      "lcp_ms": 2973,
+      "fcp_ms": 2923,
+      "load_ms": 2788,
+      "traceEnd_ms": 5291
+    },
+    "longTasksTop": [
+      {
+        "url": "Unattributable",
+        "startTime": 1303.1552000000001,
+        "duration": 365
+      },
+      {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "startTime": 874.1552,
+        "duration": 236.0000000000001
+      },
+      {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "startTime": 1110.1552000000001,
+        "duration": 193
+      },
+      {
+        "url": "Unattributable",
+        "startTime": 779.1552,
+        "duration": 52
+      }
+    ],
+    "mainThreadTop": [
+      {
+        "group": "styleLayout",
+        "groupLabel": "Style & Layout",
+        "duration": 833.4079999999999
+      },
+      {
+        "group": "other",
+        "groupLabel": "Other",
+        "duration": 657.6719999999995
+      },
+      {
+        "group": "scriptEvaluation",
+        "groupLabel": "Script Evaluation",
+        "duration": 83.04800000000003
+      },
+      {
+        "group": "parseHTML",
+        "groupLabel": "Parse HTML & CSS",
+        "duration": 70.272
+      },
+      {
+        "group": "paintCompositeRender",
+        "groupLabel": "Rendering",
+        "duration": 34.1
+      },
+      {
+        "group": "scriptParseCompile",
+        "groupLabel": "Script Parsing & Compilation",
+        "duration": 14.96
+      }
+    ],
+    "bootupTop": [
+      {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "total": 1005.228,
+        "scripting": 17.688000000000002,
+        "scriptParseCompile": 3.508
+      },
+      {
+        "url": "Unattributable",
+        "total": 574.4959999999996,
+        "scripting": 3.224,
+        "scriptParseCompile": 0
+      }
+    ],
+    "saveTrace": true
+  },
+  "traceNote": "See after-pairN-assets/ for -GA chrome trace if present",
+  "tracePath": "docs/audits/artifacts/perf-images/tbt-wholesale/after-trace/report-0.trace.json",
+  "traceAnalysis": "docs/audits/artifacts/perf-images/tbt-wholesale/trace-analysis.json",
+  "verdict": {
+    "interleavedSimTBT": "all samples Before+After simulated TBT = 0 ms (not reproducing prior After spike 136/1057/934)",
+    "priorSpike": "prior After run2 had Unattributable long task ~921ms and elevated Other main-thread; Before run2 had no Unattributable top task",
+    "attributionToImageChange": "UNRESOLVED — interleaved retest does not show After TBT regression; cannot prove image WebP change caused prior spike",
+    "traceFinding": {
+      "name": "RasterTask",
+      "cat": "cc,disabled-by-default-devtools.timeline",
+      "dur_ms": 166.74,
+      "ts": 114028218157,
+      "url": null,
+      "functionName": null,
+      "sampleTraceId": null
+    }
+  }
+}

@@ -1,0 +1,947 @@
+{
+  "afterFlags": [
+    {
+      "severity": "fail",
+      "run": "home/mobile/slow-cold",
+      "role": "title",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma-Bold",
+          "isCustomFont": false,
+          "glyphCount": 18
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    },
+    {
+      "severity": "fail",
+      "run": "home/mobile/slow-cold",
+      "role": "menu",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma-Bold",
+          "isCustomFont": false,
+          "glyphCount": 4
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    },
+    {
+      "severity": "fail",
+      "run": "wholesale/mobile/slow-cold",
+      "role": "title",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma-Bold",
+          "isCustomFont": false,
+          "glyphCount": 8
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    },
+    {
+      "severity": "fail",
+      "run": "wholesale/mobile/slow-cold",
+      "role": "body",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma",
+          "isCustomFont": false,
+          "glyphCount": 55
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    },
+    {
+      "severity": "fail",
+      "run": "wholesale/mobile/slow-cold",
+      "role": "menu",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma",
+          "isCustomFont": false,
+          "glyphCount": 4
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    },
+    {
+      "severity": "fail",
+      "run": "agency/mobile/slow-cold",
+      "role": "title",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma-Bold",
+          "isCustomFont": false,
+          "glyphCount": 21
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    },
+    {
+      "severity": "fail",
+      "run": "agency/mobile/slow-cold",
+      "role": "body",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma",
+          "isCustomFont": false,
+          "glyphCount": 66
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    },
+    {
+      "severity": "fail",
+      "run": "agency/mobile/slow-cold",
+      "role": "menu",
+      "msg": "platform fonts show no Yekan — fallback painted",
+      "platformFonts": [
+        {
+          "familyName": "Tahoma",
+          "postScriptName": "Tahoma",
+          "isCustomFont": false,
+          "glyphCount": 4
+        }
+      ],
+      "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif"
+    }
+  ],
+  "beforeFlags": [
+    {
+      "severity": "warn",
+      "run": "home/mobile/cold",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "home/mobile/warm",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "wholesale/mobile/cold",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "wholesale/mobile/warm",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "home/mobile/slow-cold",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "wholesale/mobile/slow-cold",
+      "role": "menu",
+      "msg": "selector not found"
+    }
+  ],
+  "afterYekanAllCritical": false,
+  "beforeYekanAllCritical": true,
+  "agencyCompare": {
+    "mobile/cold/title": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 21
+          }
+        ],
+        "size": "33.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 366,
+          "h": 77.25
+        },
+        "sel": ".ghahghah-agency-page__title"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 21
+          }
+        ],
+        "size": "33.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 366,
+          "h": 77.25
+        },
+        "sel": ".ghahghah-agency-page__title"
+      }
+    },
+    "mobile/cold/body": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 66
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 2,
+        "box": {
+          "w": 366,
+          "h": 62.125
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 66
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 2,
+        "box": {
+          "w": 366,
+          "h": 62.125
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      }
+    },
+    "mobile/cold/menu": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 16
+          }
+        ],
+        "size": "14.08px",
+        "weight": "700",
+        "lines": 1,
+        "box": {
+          "w": 114.15625,
+          "h": 23.921875
+        },
+        "sel": ".ghahghah-agency-page__crumb-current"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 4
+          }
+        ],
+        "size": "12px",
+        "weight": "500",
+        "lines": 1,
+        "box": {
+          "w": 21.234375,
+          "h": 15
+        },
+        "sel": ".gg-bottom-nav__label"
+      }
+    },
+    "mobile/warm/title": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 21
+          }
+        ],
+        "size": "33.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 366,
+          "h": 77.25
+        },
+        "sel": ".ghahghah-agency-page__title"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 21
+          }
+        ],
+        "size": "33.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 366,
+          "h": 77.25
+        },
+        "sel": ".ghahghah-agency-page__title"
+      }
+    },
+    "mobile/warm/body": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 66
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 2,
+        "box": {
+          "w": 366,
+          "h": 62.125
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 66
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 2,
+        "box": {
+          "w": 366,
+          "h": 62.125
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      }
+    },
+    "mobile/warm/menu": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 16
+          }
+        ],
+        "size": "14.08px",
+        "weight": "700",
+        "lines": 1,
+        "box": {
+          "w": 114.15625,
+          "h": 23.921875
+        },
+        "sel": ".ghahghah-agency-page__crumb-current"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 4
+          }
+        ],
+        "size": "12px",
+        "weight": "500",
+        "lines": 1,
+        "box": {
+          "w": 21.234375,
+          "h": 15
+        },
+        "sel": ".gg-bottom-nav__label"
+      }
+    },
+    "desktop/cold/title": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 22
+          }
+        ],
+        "size": "57.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 646,
+          "h": 66.21875
+        },
+        "sel": ".ghahghah-agency-page__title"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 22
+          }
+        ],
+        "size": "57.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 646,
+          "h": 66.21875
+        },
+        "sel": ".ghahghah-agency-page__title"
+      }
+    },
+    "desktop/cold/body": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 67
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 1,
+        "box": {
+          "w": 576,
+          "h": 31.0625
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 67
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 1,
+        "box": {
+          "w": 576,
+          "h": 31.0625
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      }
+    },
+    "desktop/cold/menu": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 16
+          }
+        ],
+        "size": "14.08px",
+        "weight": "700",
+        "lines": 1,
+        "box": {
+          "w": 114.15625,
+          "h": 23.921875
+        },
+        "sel": ".ghahghah-agency-page__crumb-current"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 16
+          }
+        ],
+        "size": "14.08px",
+        "weight": "700",
+        "lines": 1,
+        "box": {
+          "w": 114.15625,
+          "h": 23.921875
+        },
+        "sel": ".ghahghah-agency-page__crumb-current"
+      }
+    },
+    "desktop/warm/title": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 22
+          }
+        ],
+        "size": "57.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 646,
+          "h": 66.21875
+        },
+        "sel": ".ghahghah-agency-page__title"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 22
+          }
+        ],
+        "size": "57.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 646,
+          "h": 66.21875
+        },
+        "sel": ".ghahghah-agency-page__title"
+      }
+    },
+    "desktop/warm/body": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 67
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 1,
+        "box": {
+          "w": 576,
+          "h": 31.0625
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 67
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 1,
+        "box": {
+          "w": 576,
+          "h": 31.0625
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      }
+    },
+    "desktop/warm/menu": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 16
+          }
+        ],
+        "size": "14.08px",
+        "weight": "700",
+        "lines": 1,
+        "box": {
+          "w": 114.15625,
+          "h": 23.921875
+        },
+        "sel": ".ghahghah-agency-page__crumb-current"
+      },
+      "after": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 16
+          }
+        ],
+        "size": "14.08px",
+        "weight": "700",
+        "lines": 1,
+        "box": {
+          "w": 114.15625,
+          "h": 23.921875
+        },
+        "sel": ".ghahghah-agency-page__crumb-current"
+      }
+    },
+    "mobile/slow-cold/title": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 21
+          }
+        ],
+        "size": "33.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 366,
+          "h": 77.25
+        },
+        "sel": ".ghahghah-agency-page__title"
+      },
+      "after": {
+        "yekan": false,
+        "fallback": true,
+        "fonts": [
+          {
+            "family": "Tahoma",
+            "custom": false,
+            "glyphs": 21
+          }
+        ],
+        "size": "33.6px",
+        "weight": "800",
+        "lines": 3,
+        "box": {
+          "w": 366,
+          "h": 77.25
+        },
+        "sel": ".ghahghah-agency-page__title"
+      }
+    },
+    "mobile/slow-cold/body": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 66
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 2,
+        "box": {
+          "w": 366,
+          "h": 62.125
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      },
+      "after": {
+        "yekan": false,
+        "fallback": true,
+        "fonts": [
+          {
+            "family": "Tahoma",
+            "custom": false,
+            "glyphs": 66
+          }
+        ],
+        "size": "16.8px",
+        "weight": "400",
+        "lines": 2,
+        "box": {
+          "w": 366,
+          "h": 62.125
+        },
+        "sel": ".ghahghah-agency-page__lead"
+      }
+    },
+    "mobile/slow-cold/menu": {
+      "before": {
+        "yekan": true,
+        "fallback": false,
+        "fonts": [
+          {
+            "family": "Yekan Bakh FaNum",
+            "custom": true,
+            "glyphs": 16
+          }
+        ],
+        "size": "14.08px",
+        "weight": "700",
+        "lines": 1,
+        "box": {
+          "w": 114.15625,
+          "h": 23.921875
+        },
+        "sel": ".ghahghah-agency-page__crumb-current"
+      },
+      "after": {
+        "yekan": false,
+        "fallback": true,
+        "fonts": [
+          {
+            "family": "Tahoma",
+            "custom": false,
+            "glyphs": 4
+          }
+        ],
+        "size": "12px",
+        "weight": "500",
+        "lines": 1,
+        "box": {
+          "w": 21.71875,
+          "h": 15
+        },
+        "sel": ".gg-bottom-nav__label"
+      }
+    }
+  },
+  "impact": {
+    "before": {
+      "home": {
+        "url": "http://localhost:8898/",
+        "navMs": 4134,
+        "fontRequestCount": 2,
+        "uniqueFontUrls": [
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+        ],
+        "fonts": [
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593400.031993,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          },
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593400.032257,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          }
+        ],
+        "preload": [],
+        "preloadCount": 0,
+        "duplicatePreloads": [],
+        "unusedPreloads": [],
+        "lcpCandidate": {
+          "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+          "complete": true,
+          "naturalWidth": 390,
+          "loading": null
+        },
+        "imageResponseCount": 14
+      },
+      "wholesale": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "navMs": 2406,
+        "fontRequestCount": 2,
+        "uniqueFontUrls": [
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+        ],
+        "fonts": [
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593402.605763,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          },
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593402.605994,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          }
+        ],
+        "preload": [],
+        "preloadCount": 0,
+        "duplicatePreloads": [],
+        "unusedPreloads": [],
+        "lcpCandidate": {
+          "src": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/wholesale/ghahghah_pizza_packshot_optimized.webp",
+          "complete": true,
+          "naturalWidth": 1122,
+          "loading": null
+        },
+        "imageResponseCount": 2
+      }
+    },
+    "after": {
+      "home": {
+        "url": "http://localhost:8898/",
+        "navMs": 2955,
+        "fontRequestCount": 2,
+        "uniqueFontUrls": [
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+        ],
+        "fonts": [
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593232.446077,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          },
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593232.446401,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          }
+        ],
+        "preload": [
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+        ],
+        "preloadCount": 2,
+        "duplicatePreloads": [],
+        "unusedPreloads": [],
+        "lcpCandidate": {
+          "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+          "complete": true,
+          "naturalWidth": 390,
+          "loading": null
+        },
+        "imageResponseCount": 14
+      },
+      "wholesale": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "navMs": 3909,
+        "fontRequestCount": 2,
+        "uniqueFontUrls": [
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+        ],
+        "fonts": [
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593236.560625,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          },
+          {
+            "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+            "type": "Font",
+            "initiator": "parser",
+            "wallTime": 1789593236.560914,
+            "status": 200,
+            "mimeType": "font/woff",
+            "fromDiskCache": false
+          }
+        ],
+        "preload": [
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+        ],
+        "preloadCount": 2,
+        "duplicatePreloads": [],
+        "unusedPreloads": [],
+        "lcpCandidate": {
+          "src": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/wholesale/ghahghah_pizza_packshot_optimized.webp",
+          "complete": true,
+          "naturalWidth": 1122,
+          "loading": null
+        },
+        "imageResponseCount": 2
+      }
+    }
+  },
+  "method": {
+    "fonts": "CDP CSS.getPlatformFontsForNode",
+    "slowNetwork": {
+      "name": "slow-3g-ish",
+      "downloadThroughput": 64000,
+      "uploadThroughput": 64000,
+      "latencyMs": 400
+    }
+  }
+}

@@ -1,0 +1,2879 @@
+{
+  "label": "before-ef980de",
+  "generatedAt": "2026-09-16T21:16:36.882Z",
+  "base": "http://localhost:8898",
+  "method": "CDP CSS.getPlatformFontsForNode (not font-family / fonts.check alone)",
+  "slowNetwork": {
+    "name": "slow-3g-ish",
+    "downloadThroughput": 64000,
+    "uploadThroughput": 64000,
+    "latency": 400
+  },
+  "runs": [
+    {
+      "pageKey": "home",
+      "url": "http://localhost:8898/",
+      "viewport": "mobile",
+      "tag": "cold",
+      "navMs": 2747,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119426.171943,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 11.097,
+            "sendEnd": 11.195,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 26.439,
+            "receiveHeadersEnd": 26.538
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119426.171576,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 11.007,
+            "sendEnd": 11.098,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 27.692,
+            "receiveHeadersEnd": 27.735
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-featured__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 18
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "محصولات منتخب قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21.6px",
+          "fontWeight": "800",
+          "lineHeight": "30.24px",
+          "box": {
+            "w": 221.53125,
+            "h": 41.21875,
+            "x": 84.234375,
+            "y": 316.484375
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 146.140625,
+              "y": 314.484375,
+              "w": 159.625,
+              "h": 34
+            },
+            {
+              "x": 84.234375,
+              "y": 314.484375,
+              "w": 61.90625,
+              "h": 34
+            },
+            {
+              "x": 84.234375,
+              "y": 314.484375,
+              "w": 61.90625,
+              "h": 34
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-featured__text",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 31
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "طعم‌های قهقهه را بیشتر بشناسید.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.4px",
+          "fontWeight": "400",
+          "lineHeight": "24.48px",
+          "box": {
+            "w": 211.46875,
+            "h": 24.484375,
+            "x": 89.265625,
+            "y": 364.890625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 89.265625,
+              "y": 365.890625,
+              "w": 211.46875,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "selectorTried": ".ghahghah-bottom-nav__label, .site-header__nav a, .site-nav a",
+          "found": false
+        }
+      },
+      "screenshot": "home-mobile-cold.png"
+    },
+    {
+      "pageKey": "home",
+      "url": "http://localhost:8898/",
+      "viewport": "mobile",
+      "tag": "warm",
+      "navMs": 3234,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119429.927722,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 23.562,
+            "sendEnd": 23.649,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 63.369,
+            "receiveHeadersEnd": 63.474
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119429.928043,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 23.653,
+            "sendEnd": 23.735,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 64.004,
+            "receiveHeadersEnd": 64.057
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-featured__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 18
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "محصولات منتخب قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21.6px",
+          "fontWeight": "800",
+          "lineHeight": "30.24px",
+          "box": {
+            "w": 221.53125,
+            "h": 41.21875,
+            "x": 84.234375,
+            "y": 316.484375
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 146.140625,
+              "y": 314.484375,
+              "w": 159.625,
+              "h": 34
+            },
+            {
+              "x": 84.234375,
+              "y": 314.484375,
+              "w": 61.90625,
+              "h": 34
+            },
+            {
+              "x": 84.234375,
+              "y": 314.484375,
+              "w": 61.90625,
+              "h": 34
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-featured__text",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 31
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "طعم‌های قهقهه را بیشتر بشناسید.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.4px",
+          "fontWeight": "400",
+          "lineHeight": "24.48px",
+          "box": {
+            "w": 211.46875,
+            "h": 24.484375,
+            "x": 89.265625,
+            "y": 364.890625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 89.265625,
+              "y": 365.890625,
+              "w": 211.46875,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "selectorTried": ".ghahghah-bottom-nav__label, .site-header__nav a, .site-nav a",
+          "found": false
+        }
+      },
+      "screenshot": "home-mobile-warm.png"
+    },
+    {
+      "pageKey": "wholesale",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "viewport": "mobile",
+      "tag": "cold",
+      "navMs": 4149,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119434.480742,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.277,
+            "sendEnd": 0.372,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 14.339,
+            "receiveHeadersEnd": 14.416
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119434.482386,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.399,
+            "sendEnd": 0.516,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 13.453,
+            "receiveHeadersEnd": 13.496
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": "h1",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 8
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست خرید عمده",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "29.6px",
+          "fontWeight": "800",
+          "lineHeight": "37px",
+          "box": {
+            "w": 358,
+            "h": 36.984375,
+            "x": 16,
+            "y": 163.3125
+          },
+          "lineBoxCount": 5,
+          "lineRects": [
+            {
+              "x": 330.6875,
+              "y": 163.3125,
+              "w": 32,
+              "h": 36.984375
+            },
+            {
+              "x": 66.5,
+              "y": 163.3125,
+              "w": 257,
+              "h": 36.984375
+            },
+            {
+              "x": 196.625,
+              "y": 158.3125,
+              "w": 126.875,
+              "h": 46
+            },
+            {
+              "x": 66.5,
+              "y": 158.3125,
+              "w": 130.125,
+              "h": 46
+            },
+            {
+              "x": 27.3125,
+              "y": 163.3125,
+              "w": 32,
+              "h": 36.984375
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": "main p",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 55
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات سفارش را ثبت کنید تا واحد فروش با شما تماس بگیرد.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "29.6px",
+          "box": {
+            "w": 358,
+            "h": 59.1875,
+            "x": 16,
+            "y": 210.6875
+          },
+          "lineBoxCount": 2,
+          "lineRects": [
+            {
+              "x": 32.71875,
+              "y": 212.6875,
+              "w": 324.5625,
+              "h": 25
+            },
+            {
+              "x": 152.265625,
+              "y": 242.28125,
+              "w": 85.46875,
+              "h": 25
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "selectorTried": ".ghahghah-bottom-nav__label, .site-header__nav a, .site-nav a",
+          "found": false
+        }
+      },
+      "screenshot": "wholesale-mobile-cold.png"
+    },
+    {
+      "pageKey": "wholesale",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "viewport": "mobile",
+      "tag": "warm",
+      "navMs": 3185,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119438.016895,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.286,
+            "sendEnd": 0.405,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 15.562,
+            "receiveHeadersEnd": 15.642
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119438.017448,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.154,
+            "sendEnd": 0.221,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 15.892,
+            "receiveHeadersEnd": 15.941
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": "h1",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 8
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست خرید عمده",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "29.6px",
+          "fontWeight": "800",
+          "lineHeight": "37px",
+          "box": {
+            "w": 358,
+            "h": 36.984375,
+            "x": 16,
+            "y": 163.3125
+          },
+          "lineBoxCount": 5,
+          "lineRects": [
+            {
+              "x": 330.6875,
+              "y": 163.3125,
+              "w": 32,
+              "h": 36.984375
+            },
+            {
+              "x": 66.5,
+              "y": 163.3125,
+              "w": 257,
+              "h": 36.984375
+            },
+            {
+              "x": 196.625,
+              "y": 158.3125,
+              "w": 126.875,
+              "h": 46
+            },
+            {
+              "x": 66.5,
+              "y": 158.3125,
+              "w": 130.125,
+              "h": 46
+            },
+            {
+              "x": 27.3125,
+              "y": 163.3125,
+              "w": 32,
+              "h": 36.984375
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": "main p",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 55
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات سفارش را ثبت کنید تا واحد فروش با شما تماس بگیرد.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "29.6px",
+          "box": {
+            "w": 358,
+            "h": 59.1875,
+            "x": 16,
+            "y": 210.6875
+          },
+          "lineBoxCount": 2,
+          "lineRects": [
+            {
+              "x": 32.71875,
+              "y": 212.6875,
+              "w": 324.5625,
+              "h": 25
+            },
+            {
+              "x": 152.265625,
+              "y": 242.28125,
+              "w": 85.46875,
+              "h": 25
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "selectorTried": ".ghahghah-bottom-nav__label, .site-header__nav a, .site-nav a",
+          "found": false
+        }
+      },
+      "screenshot": "wholesale-mobile-warm.png"
+    },
+    {
+      "pageKey": "agency",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "viewport": "mobile",
+      "tag": "cold",
+      "navMs": 3311,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119441.5919,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.348,
+            "sendEnd": 0.475,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 16.527,
+            "receiveHeadersEnd": 16.615
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119441.592592,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.186,
+            "sendEnd": 0.277,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 16.64,
+            "receiveHeadersEnd": 16.675
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 21
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "33.6px",
+          "fontWeight": "800",
+          "lineHeight": "38.64px",
+          "box": {
+            "w": 366,
+            "h": 77.25,
+            "x": 12,
+            "y": 178.5625
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 105.671875,
+              "y": 171.5625,
+              "w": 272.328125,
+              "h": 52
+            },
+            {
+              "x": 281.71875,
+              "y": 210.1875,
+              "w": 96.28125,
+              "h": 52
+            },
+            {
+              "x": 281.71875,
+              "y": 210.1875,
+              "w": 96.28125,
+              "h": 52
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__lead",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 66
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات همکاری خود را ثبت کنید تا پس از بررسی با شما تماس گرفته شود.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16.8px",
+          "fontWeight": "400",
+          "lineHeight": "31.08px",
+          "box": {
+            "w": 366,
+            "h": 62.125,
+            "x": 12,
+            "y": 266.203125
+          },
+          "lineBoxCount": 2,
+          "lineRects": [
+            {
+              "x": 26,
+              "y": 268.203125,
+              "w": 352,
+              "h": 26
+            },
+            {
+              "x": 218.578125,
+              "y": 299.265625,
+              "w": 159.421875,
+              "h": 26
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__crumb-current",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 16
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.08px",
+          "fontWeight": "700",
+          "lineHeight": "23.936px",
+          "box": {
+            "w": 114.15625,
+            "h": 23.921875,
+            "x": 178.6875,
+            "y": 1291.65625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 178.6875,
+              "y": 1291.65625,
+              "w": 114.15625,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "agency-mobile-cold.png"
+    },
+    {
+      "pageKey": "agency",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "viewport": "mobile",
+      "tag": "warm",
+      "navMs": 3476,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119445.493125,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.379,
+            "sendEnd": 0.478,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 16.745,
+            "receiveHeadersEnd": 16.863
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119445.493765,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.209,
+            "sendEnd": 0.397,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 18.005,
+            "receiveHeadersEnd": 18.072
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 21
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "33.6px",
+          "fontWeight": "800",
+          "lineHeight": "38.64px",
+          "box": {
+            "w": 366,
+            "h": 77.25,
+            "x": 12,
+            "y": 178.5625
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 105.671875,
+              "y": 171.5625,
+              "w": 272.328125,
+              "h": 52
+            },
+            {
+              "x": 281.71875,
+              "y": 210.1875,
+              "w": 96.28125,
+              "h": 52
+            },
+            {
+              "x": 281.71875,
+              "y": 210.1875,
+              "w": 96.28125,
+              "h": 52
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__lead",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 66
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات همکاری خود را ثبت کنید تا پس از بررسی با شما تماس گرفته شود.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16.8px",
+          "fontWeight": "400",
+          "lineHeight": "31.08px",
+          "box": {
+            "w": 366,
+            "h": 62.125,
+            "x": 12,
+            "y": 266.203125
+          },
+          "lineBoxCount": 2,
+          "lineRects": [
+            {
+              "x": 26,
+              "y": 268.203125,
+              "w": 352,
+              "h": 26
+            },
+            {
+              "x": 218.578125,
+              "y": 299.265625,
+              "w": 159.421875,
+              "h": 26
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__crumb-current",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 16
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.08px",
+          "fontWeight": "700",
+          "lineHeight": "23.936px",
+          "box": {
+            "w": 114.15625,
+            "h": 23.921875,
+            "x": 178.6875,
+            "y": 1291.65625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 178.6875,
+              "y": 1291.65625,
+              "w": 114.15625,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "agency-mobile-warm.png"
+    },
+    {
+      "pageKey": "home",
+      "url": "http://localhost:8898/",
+      "viewport": "desktop",
+      "tag": "cold",
+      "navMs": 3907,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119449.552231,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 5.41,
+            "sendEnd": 5.526,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 19.577,
+            "receiveHeadersEnd": 19.692
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119449.552581,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 5.406,
+            "sendEnd": 5.486,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 23.592,
+            "receiveHeadersEnd": 23.682
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-featured__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 18
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "محصولات منتخب قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "29.6px",
+          "fontWeight": "800",
+          "lineHeight": "41.44px",
+          "box": {
+            "w": 303.59375,
+            "h": 52.421875,
+            "x": 1056.40625,
+            "y": 629.640625
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 1141.25,
+              "y": 626.640625,
+              "w": 218.75,
+              "h": 46
+            },
+            {
+              "x": 1056.40625,
+              "y": 626.640625,
+              "w": 84.84375,
+              "h": 46
+            },
+            {
+              "x": 1056.40625,
+              "y": 626.640625,
+              "w": 84.84375,
+              "h": 46
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-featured__text",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 31
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "طعم‌های قهقهه را بیشتر بشناسید.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.4px",
+          "fontWeight": "400",
+          "lineHeight": "24.48px",
+          "box": {
+            "w": 211.46875,
+            "h": 24.484375,
+            "x": 1148.53125,
+            "y": 689.25
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1148.53125,
+              "y": 690.25,
+              "w": 211.46875,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".site-nav a",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 9
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "صفحه اصلی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "lineHeight": "24px",
+          "box": {
+            "w": 85.4375,
+            "h": 39.78125,
+            "x": 1114.5625,
+            "y": 28.109375
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1116.953125,
+              "y": 33.5,
+              "w": 80.65625,
+              "h": 25
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "home-desktop-cold.png"
+    },
+    {
+      "pageKey": "home",
+      "url": "http://localhost:8898/",
+      "viewport": "desktop",
+      "tag": "warm",
+      "navMs": 3706,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119454.208524,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 53.455,
+            "sendEnd": 53.556,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 116.816,
+            "receiveHeadersEnd": 116.908
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119454.209188,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 54.467,
+            "sendEnd": 54.571,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 117.325,
+            "receiveHeadersEnd": 117.377
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-featured__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 18
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "محصولات منتخب قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "29.6px",
+          "fontWeight": "800",
+          "lineHeight": "41.44px",
+          "box": {
+            "w": 303.59375,
+            "h": 52.421875,
+            "x": 1056.40625,
+            "y": 629.640625
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 1141.25,
+              "y": 626.640625,
+              "w": 218.75,
+              "h": 46
+            },
+            {
+              "x": 1056.40625,
+              "y": 626.640625,
+              "w": 84.84375,
+              "h": 46
+            },
+            {
+              "x": 1056.40625,
+              "y": 626.640625,
+              "w": 84.84375,
+              "h": 46
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-featured__text",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 31
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "طعم‌های قهقهه را بیشتر بشناسید.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.4px",
+          "fontWeight": "400",
+          "lineHeight": "24.48px",
+          "box": {
+            "w": 211.46875,
+            "h": 24.484375,
+            "x": 1148.53125,
+            "y": 689.25
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1148.53125,
+              "y": 690.25,
+              "w": 211.46875,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".site-nav a",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 9
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "صفحه اصلی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "lineHeight": "24px",
+          "box": {
+            "w": 85.4375,
+            "h": 39.78125,
+            "x": 1114.5625,
+            "y": 28.109375
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1116.953125,
+              "y": 33.5,
+              "w": 80.65625,
+              "h": 25
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "home-desktop-warm.png"
+    },
+    {
+      "pageKey": "wholesale",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "viewport": "desktop",
+      "tag": "cold",
+      "navMs": 3169,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119457.895268,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.171,
+            "sendEnd": 0.247,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 13.406,
+            "receiveHeadersEnd": 13.512
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119457.894789,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.236,
+            "sendEnd": 0.352,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 14.834,
+            "receiveHeadersEnd": 14.875
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": "h1",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 8
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست خرید عمده",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "48.96px",
+          "fontWeight": "800",
+          "lineHeight": "61.2px",
+          "box": {
+            "w": 1392,
+            "h": 61.1875,
+            "x": 24,
+            "y": 195.3125
+          },
+          "lineBoxCount": 5,
+          "lineRects": [
+            {
+              "x": 1384,
+              "y": 195.3125,
+              "w": 32,
+              "h": 61.1875
+            },
+            {
+              "x": 951.734375,
+              "y": 195.3125,
+              "w": 425.078125,
+              "h": 61.1875
+            },
+            {
+              "x": 1166.96875,
+              "y": 187.3125,
+              "w": 209.84375,
+              "h": 76
+            },
+            {
+              "x": 951.734375,
+              "y": 187.3125,
+              "w": 215.234375,
+              "h": 76
+            },
+            {
+              "x": 912.546875,
+              "y": 195.3125,
+              "w": 32,
+              "h": 61.1875
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": "main p",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 56
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات سفارش را ثبت کنید تا واحد فروش با شما تماس بگیرد.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16.8px",
+          "fontWeight": "400",
+          "lineHeight": "31.08px",
+          "box": {
+            "w": 544,
+            "h": 31.0625,
+            "x": 872,
+            "y": 266.890625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 981.734375,
+              "y": 268.890625,
+              "w": 434.265625,
+              "h": 26
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".site-nav a",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 9
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "صفحه اصلی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "lineHeight": "24px",
+          "box": {
+            "w": 85.4375,
+            "h": 39.78125,
+            "x": 1114.5625,
+            "y": 28.109375
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1116.953125,
+              "y": 33.5,
+              "w": 80.65625,
+              "h": 25
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "wholesale-desktop-cold.png"
+    },
+    {
+      "pageKey": "wholesale",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "viewport": "desktop",
+      "tag": "warm",
+      "navMs": 4205,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119462.56998,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.331,
+            "sendEnd": 0.434,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 13.154,
+            "receiveHeadersEnd": 13.266
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119462.570546,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.166,
+            "sendEnd": 0.238,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 13.428,
+            "receiveHeadersEnd": 13.462
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": "h1",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 8
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست خرید عمده",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "48.96px",
+          "fontWeight": "800",
+          "lineHeight": "61.2px",
+          "box": {
+            "w": 1392,
+            "h": 61.1875,
+            "x": 24,
+            "y": 195.3125
+          },
+          "lineBoxCount": 5,
+          "lineRects": [
+            {
+              "x": 1384,
+              "y": 195.3125,
+              "w": 32,
+              "h": 61.1875
+            },
+            {
+              "x": 951.734375,
+              "y": 195.3125,
+              "w": 425.078125,
+              "h": 61.1875
+            },
+            {
+              "x": 1166.96875,
+              "y": 187.3125,
+              "w": 209.84375,
+              "h": 76
+            },
+            {
+              "x": 951.734375,
+              "y": 187.3125,
+              "w": 215.234375,
+              "h": 76
+            },
+            {
+              "x": 912.546875,
+              "y": 195.3125,
+              "w": 32,
+              "h": 61.1875
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": "main p",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 56
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات سفارش را ثبت کنید تا واحد فروش با شما تماس بگیرد.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16.8px",
+          "fontWeight": "400",
+          "lineHeight": "31.08px",
+          "box": {
+            "w": 544,
+            "h": 31.0625,
+            "x": 872,
+            "y": 266.890625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 981.734375,
+              "y": 268.890625,
+              "w": 434.265625,
+              "h": 26
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".site-nav a",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 9
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "صفحه اصلی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "lineHeight": "24px",
+          "box": {
+            "w": 85.4375,
+            "h": 39.78125,
+            "x": 1114.5625,
+            "y": 28.109375
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1116.953125,
+              "y": 33.5,
+              "w": 80.65625,
+              "h": 25
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "wholesale-desktop-warm.png"
+    },
+    {
+      "pageKey": "agency",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "viewport": "desktop",
+      "tag": "cold",
+      "navMs": 4125,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119466.960858,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.188,
+            "sendEnd": 0.283,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 10.947,
+            "receiveHeadersEnd": 11.066
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119466.95951,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.346,
+            "sendEnd": 0.455,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 13.584,
+            "receiveHeadersEnd": 13.643
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 22
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "57.6px",
+          "fontWeight": "800",
+          "lineHeight": "66.24px",
+          "box": {
+            "w": 646,
+            "h": 66.21875,
+            "x": 24.015625,
+            "y": 210.5625
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 189.5625,
+              "y": 198.5625,
+              "w": 480.453125,
+              "h": 90
+            },
+            {
+              "x": 24.46875,
+              "y": 198.5625,
+              "w": 165.09375,
+              "h": 90
+            },
+            {
+              "x": 24.46875,
+              "y": 198.5625,
+              "w": 165.09375,
+              "h": 90
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__lead",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 67
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات همکاری خود را ثبت کنید تا پس از بررسی با شما تماس گرفته شود.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16.8px",
+          "fontWeight": "400",
+          "lineHeight": "31.08px",
+          "box": {
+            "w": 576,
+            "h": 31.0625,
+            "x": 94.015625,
+            "y": 287.171875
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 154.609375,
+              "y": 289.171875,
+              "w": 515.40625,
+              "h": 26
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__crumb-current",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 16
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.08px",
+          "fontWeight": "700",
+          "lineHeight": "23.936px",
+          "box": {
+            "w": 114.15625,
+            "h": 23.921875,
+            "x": 1208.6875,
+            "y": 186
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1208.6875,
+              "y": 186,
+              "w": 114.15625,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "agency-desktop-cold.png"
+    },
+    {
+      "pageKey": "agency",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "viewport": "desktop",
+      "tag": "warm",
+      "navMs": 4478,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119471.863569,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.156,
+            "sendEnd": 0.283,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 29.451,
+            "receiveHeadersEnd": 29.546
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119471.862963,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 0.357,
+            "sendEnd": 0.463,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 30.936,
+            "receiveHeadersEnd": 30.983
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 22
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "57.6px",
+          "fontWeight": "800",
+          "lineHeight": "66.24px",
+          "box": {
+            "w": 646,
+            "h": 66.21875,
+            "x": 24.015625,
+            "y": 210.5625
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 189.5625,
+              "y": 198.5625,
+              "w": 480.453125,
+              "h": 90
+            },
+            {
+              "x": 24.46875,
+              "y": 198.5625,
+              "w": 165.09375,
+              "h": 90
+            },
+            {
+              "x": 24.46875,
+              "y": 198.5625,
+              "w": 165.09375,
+              "h": 90
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__lead",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 67
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات همکاری خود را ثبت کنید تا پس از بررسی با شما تماس گرفته شود.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16.8px",
+          "fontWeight": "400",
+          "lineHeight": "31.08px",
+          "box": {
+            "w": 576,
+            "h": 31.0625,
+            "x": 94.015625,
+            "y": 287.171875
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 154.609375,
+              "y": 289.171875,
+              "w": 515.40625,
+              "h": 26
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__crumb-current",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 16
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.08px",
+          "fontWeight": "700",
+          "lineHeight": "23.936px",
+          "box": {
+            "w": 114.15625,
+            "h": 23.921875,
+            "x": 1208.6875,
+            "y": 186
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 1208.6875,
+              "y": 186,
+              "w": 114.15625,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "agency-desktop-warm.png"
+    },
+    {
+      "pageKey": "home",
+      "url": "http://localhost:8898/",
+      "viewport": "mobile",
+      "tag": "slow-cold",
+      "navMs": 20167,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119476.589069,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 271.216,
+            "sendEnd": 271.353,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 284.451,
+            "receiveHeadersEnd": 722.236
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119476.589269,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 284.676,
+            "sendEnd": 284.751,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 295.266,
+            "receiveHeadersEnd": 753.275
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-featured__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 18
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "محصولات منتخب قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "21.6px",
+          "fontWeight": "800",
+          "lineHeight": "30.24px",
+          "box": {
+            "w": 221.53125,
+            "h": 41.21875,
+            "x": 84.234375,
+            "y": 316.484375
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 146.140625,
+              "y": 314.484375,
+              "w": 159.625,
+              "h": 34
+            },
+            {
+              "x": 84.234375,
+              "y": 314.484375,
+              "w": 61.90625,
+              "h": 34
+            },
+            {
+              "x": 84.234375,
+              "y": 314.484375,
+              "w": 61.90625,
+              "h": 34
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-featured__text",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 31
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "طعم‌های قهقهه را بیشتر بشناسید.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.4px",
+          "fontWeight": "400",
+          "lineHeight": "24.48px",
+          "box": {
+            "w": 211.46875,
+            "h": 24.484375,
+            "x": 89.265625,
+            "y": 364.890625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 89.265625,
+              "y": 365.890625,
+              "w": 211.46875,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "selectorTried": ".ghahghah-bottom-nav__label, .site-header__nav a, .site-nav a",
+          "found": false
+        }
+      },
+      "screenshot": "home-mobile-slow-cold.png"
+    },
+    {
+      "pageKey": "wholesale",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "viewport": "mobile",
+      "tag": "slow-cold",
+      "navMs": 8241,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119496.837515,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 227.396,
+            "sendEnd": 227.496,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 241.427,
+            "receiveHeadersEnd": 675.34
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119496.837703,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 364.725,
+            "sendEnd": 364.82,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 377.43,
+            "receiveHeadersEnd": 828.803
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": "h1",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 8
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست خرید عمده",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "29.6px",
+          "fontWeight": "800",
+          "lineHeight": "37px",
+          "box": {
+            "w": 358,
+            "h": 36.984375,
+            "x": 16,
+            "y": 163.3125
+          },
+          "lineBoxCount": 5,
+          "lineRects": [
+            {
+              "x": 330.6875,
+              "y": 163.3125,
+              "w": 32,
+              "h": 36.984375
+            },
+            {
+              "x": 66.5,
+              "y": 163.3125,
+              "w": 257,
+              "h": 36.984375
+            },
+            {
+              "x": 196.625,
+              "y": 158.3125,
+              "w": 126.875,
+              "h": 46
+            },
+            {
+              "x": 66.5,
+              "y": 158.3125,
+              "w": 130.125,
+              "h": 46
+            },
+            {
+              "x": 27.3125,
+              "y": 163.3125,
+              "w": 32,
+              "h": 36.984375
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": "main p",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 55
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات سفارش را ثبت کنید تا واحد فروش با شما تماس بگیرد.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "29.6px",
+          "box": {
+            "w": 358,
+            "h": 59.1875,
+            "x": 16,
+            "y": 210.6875
+          },
+          "lineBoxCount": 2,
+          "lineRects": [
+            {
+              "x": 32.71875,
+              "y": 212.6875,
+              "w": 324.5625,
+              "h": 25
+            },
+            {
+              "x": 152.265625,
+              "y": 242.28125,
+              "w": 85.46875,
+              "h": 25
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "selectorTried": ".ghahghah-bottom-nav__label, .site-header__nav a, .site-nav a",
+          "found": false
+        }
+      },
+      "screenshot": "wholesale-mobile-slow-cold.png"
+    },
+    {
+      "pageKey": "agency",
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "viewport": "mobile",
+      "tag": "slow-cold",
+      "navMs": 8146,
+      "fontRequests": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119505.329885,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 147.155,
+            "sendEnd": 147.26,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 159.929,
+            "receiveHeadersEnd": 623.498
+          }
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromCache": false,
+          "timing": {
+            "requestTime": 119505.330069,
+            "proxyStart": -1,
+            "proxyEnd": -1,
+            "dnsStart": -1,
+            "dnsEnd": -1,
+            "connectStart": -1,
+            "connectEnd": -1,
+            "sslStart": -1,
+            "sslEnd": -1,
+            "workerStart": -1,
+            "workerReady": -1,
+            "workerFetchStart": -1,
+            "workerRespondWithSettled": -1,
+            "sendStart": 365.961,
+            "sendEnd": 366.049,
+            "pushStart": 0,
+            "pushEnd": 0,
+            "receiveHeadersStart": 382.656,
+            "receiveHeadersEnd": 855.111
+          }
+        }
+      ],
+      "preloadLinks": [],
+      "samples": {
+        "title": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__title",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 21
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی قهقهه",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "33.6px",
+          "fontWeight": "800",
+          "lineHeight": "38.64px",
+          "box": {
+            "w": 366,
+            "h": 77.25,
+            "x": 12,
+            "y": 178.5625
+          },
+          "lineBoxCount": 3,
+          "lineRects": [
+            {
+              "x": 105.671875,
+              "y": 171.5625,
+              "w": 272.328125,
+              "h": 52
+            },
+            {
+              "x": 281.71875,
+              "y": 210.1875,
+              "w": 96.28125,
+              "h": 52
+            },
+            {
+              "x": 281.71875,
+              "y": 210.1875,
+              "w": 96.28125,
+              "h": 52
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "body": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__lead",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-Regular",
+              "isCustomFont": true,
+              "glyphCount": 66
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "اطلاعات همکاری خود را ثبت کنید تا پس از بررسی با شما تماس گرفته شود.",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "16.8px",
+          "fontWeight": "400",
+          "lineHeight": "31.08px",
+          "box": {
+            "w": 366,
+            "h": 62.125,
+            "x": 12,
+            "y": 266.203125
+          },
+          "lineBoxCount": 2,
+          "lineRects": [
+            {
+              "x": 26,
+              "y": 268.203125,
+              "w": 352,
+              "h": 26
+            },
+            {
+              "x": 218.578125,
+              "y": 299.265625,
+              "w": 159.421875,
+              "h": 26
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        },
+        "menu": {
+          "found": true,
+          "selector": ".ghahghah-agency-page__crumb-current",
+          "platformFonts": [
+            {
+              "familyName": "Yekan Bakh FaNum",
+              "postScriptName": "YekanBakhFaNum-SemiBold",
+              "isCustomFont": true,
+              "glyphCount": 16
+            }
+          ],
+          "yekanPainted": true,
+          "customFontPainted": true,
+          "fallbackOnly": false,
+          "textSample": "درخواست نمایندگی",
+          "computedFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "fontSize": "14.08px",
+          "fontWeight": "700",
+          "lineHeight": "23.936px",
+          "box": {
+            "w": 114.15625,
+            "h": 23.921875,
+            "x": 178.6875,
+            "y": 1291.65625
+          },
+          "lineBoxCount": 1,
+          "lineRects": [
+            {
+              "x": 178.6875,
+              "y": 1291.65625,
+              "w": 114.15625,
+              "h": 22
+            }
+          ],
+          "fontsCheck": {
+            "yekan400": true,
+            "yekan700": true
+          }
+        }
+      },
+      "screenshot": "agency-mobile-slow-cold.png"
+    }
+  ],
+  "flags": [
+    {
+      "severity": "warn",
+      "run": "home/mobile/cold",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "home/mobile/warm",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "wholesale/mobile/cold",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "wholesale/mobile/warm",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "home/mobile/slow-cold",
+      "role": "menu",
+      "msg": "selector not found"
+    },
+    {
+      "severity": "warn",
+      "run": "wholesale/mobile/slow-cold",
+      "role": "menu",
+      "msg": "selector not found"
+    }
+  ],
+  "yekanPaintedAllCritical": true
+}

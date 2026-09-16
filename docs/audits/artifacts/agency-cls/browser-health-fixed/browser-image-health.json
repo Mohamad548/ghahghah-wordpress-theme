@@ -1,0 +1,477 @@
+{
+  "generatedAt": "2026-09-16T21:14:24.267Z",
+  "base": "http://localhost:8898",
+  "loadTimeoutMs": 20000,
+  "homeExpectedSlides": 9,
+  "rules": {
+    "mutateLoadingSrcSrcset": false,
+    "fetchPromotesDomLoaded": false,
+    "homeRequiresExactSlides": 9
+  },
+  "results": {
+    "mobile": {
+      "home": {
+        "url": "http://localhost:8898/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/home-mobile.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 9,
+          "loaded": 16,
+          "failed": 0
+        },
+        "slideCount": 9,
+        "distinctSlideSrcCount": 9,
+        "sliderError": null,
+        "slideHealth": [
+          {
+            "index": 0,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 1,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 2,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 3,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 4,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 5,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/06-lemon-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 6,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/07-ketchup-flavour-banner-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 7,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 8,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+            "naturalWidth": 390,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 768,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          }
+        ],
+        "failed": [],
+        "httpFails": [],
+        "homeSliderFail": false,
+        "ok": true
+      },
+      "products": {
+        "url": "http://localhost:8898/products/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/products-mobile.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 12,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "articles": {
+        "url": "http://localhost:8898/?post_type=post",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/articles-mobile.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 7,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "guide": {
+        "url": "http://localhost:8898/wholesale-request-guide/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/guide-mobile.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 5,
+          "loaded": 10,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "wholesale": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/wholesale-mobile.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 3,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "agency": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/agency-mobile.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 3,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      }
+    },
+    "desktop": {
+      "home": {
+        "url": "http://localhost:8898/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/home-desktop.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 9,
+          "loaded": 16,
+          "failed": 0
+        },
+        "slideCount": 9,
+        "distinctSlideSrcCount": 9,
+        "sliderError": null,
+        "slideHealth": [
+          {
+            "index": 0,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_cheese_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 1,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 2,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 3,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 4,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 5,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 6,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 7,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          },
+          {
+            "index": 8,
+            "status": "loaded",
+            "src": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+            "naturalWidth": 1933,
+            "complete": true,
+            "decodeOk": true,
+            "fileHealth": {
+              "ok": true,
+              "width": 1933,
+              "status": 200,
+              "contentType": "image/webp"
+            }
+          }
+        ],
+        "failed": [],
+        "httpFails": [],
+        "homeSliderFail": false,
+        "ok": true
+      },
+      "products": {
+        "url": "http://localhost:8898/products/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/products-desktop.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 12,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "articles": {
+        "url": "http://localhost:8898/?post_type=post",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/articles-desktop.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 7,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "guide": {
+        "url": "http://localhost:8898/wholesale-request-guide/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/guide-desktop.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 14,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "wholesale": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/wholesale-desktop.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 3,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      },
+      "agency": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/agency-cls/browser-health-fixed/agency-desktop.png",
+        "counts": {
+          "pending": 0,
+          "hidden": 1,
+          "loaded": 3,
+          "failed": 0
+        },
+        "slideCount": 0,
+        "distinctSlideSrcCount": 0,
+        "sliderError": null,
+        "slideHealth": [],
+        "failed": [],
+        "httpFails": [],
+        "ok": true
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "label": "before-ef980de",
+  "generatedAt": "2026-09-16T21:16:36.873Z",
+  "base": "http://localhost:8898",
+  "pages": {
+    "home": {
+      "url": "http://localhost:8898/",
+      "navMs": 4134,
+      "fontRequestCount": 2,
+      "uniqueFontUrls": [
+        "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+      ],
+      "fonts": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "type": "Font",
+          "initiator": "parser",
+          "wallTime": 1789593400.031993,
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "type": "Font",
+          "initiator": "parser",
+          "wallTime": 1789593400.032257,
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false
+        }
+      ],
+      "preload": [],
+      "preloadCount": 0,
+      "duplicatePreloads": [],
+      "unusedPreloads": [],
+      "lcpCandidate": {
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+        "complete": true,
+        "naturalWidth": 390,
+        "loading": null
+      },
+      "imageResponseCount": 14
+    },
+    "wholesale": {
+      "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "navMs": 2406,
+      "fontRequestCount": 2,
+      "uniqueFontUrls": [
+        "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff"
+      ],
+      "fonts": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "type": "Font",
+          "initiator": "parser",
+          "wallTime": 1789593402.605763,
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "type": "Font",
+          "initiator": "parser",
+          "wallTime": 1789593402.605994,
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false
+        }
+      ],
+      "preload": [],
+      "preloadCount": 0,
+      "duplicatePreloads": [],
+      "unusedPreloads": [],
+      "lcpCandidate": {
+        "src": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/wholesale/ghahghah_pizza_packshot_optimized.webp",
+        "complete": true,
+        "naturalWidth": 1122,
+        "loading": null
+      },
+      "imageResponseCount": 2
+    }
+  }
+}

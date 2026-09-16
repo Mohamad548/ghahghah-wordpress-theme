@@ -48,6 +48,9 @@ Desktop.ini
 # WordPress runtime (if developed inside a WP install)
 wp-config.php
 wp-content/uploads/
+
+# Local media-recovery backups (DB dumps / option snapshots) — never commit.
+docs/audits/artifacts/media-recovery/backups/
 wp-content/cache/
 wp-content/debug.log
 

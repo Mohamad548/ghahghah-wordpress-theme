@@ -1,0 +1,410 @@
+{
+  "generatedAt": "2026-09-16T20:14:02.635Z",
+  "results": {
+    "mobile": {
+      "home": {
+        "url": "http://localhost:8898/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/home-mobile.png",
+        "slideCountDom": 9,
+        "hasNext": true,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 1,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 2,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 3,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 4,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 5,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/06-lemon-flavour-banner-v2-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 6,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/07-ketchup-flavour-banner-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 7,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+            "naturalWidth": 390
+          },
+          {
+            "index": 8,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+            "naturalWidth": 390
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/pizza-corn-pellet-full-738x1024.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/shallot-yogurt-733x1024.jpg",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/parsley-onion-726x1024.jpg",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ketchup-736x1024.jpg",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/cheese-750x1024.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/chicken-754x1024.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/pepper-746x1024.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          }
+        ],
+        "failedResponses": [],
+        "imageCount": 25,
+        "healthyVisible": 9
+      },
+      "products": {
+        "url": "http://localhost:8898/products/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/products-mobile.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [],
+        "failedResponses": [],
+        "imageCount": 13,
+        "healthyVisible": 12
+      },
+      "articles": {
+        "url": "http://localhost:8898/?post_type=post",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/articles-mobile.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [],
+        "failedResponses": [],
+        "imageCount": 8,
+        "healthyVisible": 7
+      },
+      "guide": {
+        "url": "http://localhost:8898/wholesale-request-guide/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/guide-mobile.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [
+          {
+            "currentSrc": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent-optimized.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": false
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": false
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": false
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent-optimized.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": false
+          }
+        ],
+        "failedResponses": [],
+        "imageCount": 15,
+        "healthyVisible": 10
+      },
+      "wholesale": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/wholesale-mobile.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [],
+        "failedResponses": [],
+        "imageCount": 4,
+        "healthyVisible": 3
+      }
+    },
+    "desktop": {
+      "home": {
+        "url": "http://localhost:8898/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/home-desktop.png",
+        "slideCountDom": 9,
+        "hasNext": true,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_cheese_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 1,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 2,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 3,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 4,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 5,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 6,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 7,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          },
+          {
+            "index": 8,
+            "ok": true,
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+            "naturalWidth": 1933
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/ketchup-736x1024.jpg",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/cheese-750x1024.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/chicken-754x1024.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          },
+          {
+            "currentSrc": "http://localhost:8898/wp-content/uploads/2026/09/pepper-746x1024.webp",
+            "naturalWidth": 0,
+            "naturalHeight": 0,
+            "complete": false,
+            "visible": true
+          }
+        ],
+        "failedResponses": [],
+        "imageCount": 25,
+        "healthyVisible": 13
+      },
+      "products": {
+        "url": "http://localhost:8898/products/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/products-desktop.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [],
+        "failedResponses": [],
+        "imageCount": 13,
+        "healthyVisible": 12
+      },
+      "articles": {
+        "url": "http://localhost:8898/?post_type=post",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/articles-desktop.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [],
+        "failedResponses": [],
+        "imageCount": 8,
+        "healthyVisible": 7
+      },
+      "guide": {
+        "url": "http://localhost:8898/wholesale-request-guide/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/guide-desktop.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [],
+        "failedResponses": [],
+        "imageCount": 15,
+        "healthyVisible": 14
+      },
+      "wholesale": {
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "screenshot": "E:/word pares/ghahghah-fix-perf-images/docs/audits/artifacts/media-recovery/screenshots/wholesale-desktop.png",
+        "slideCountDom": 0,
+        "hasNext": false,
+        "slideHealth": [
+          {
+            "index": 0,
+            "ok": false,
+            "currentSrc": null,
+            "naturalWidth": 0
+          }
+        ],
+        "allSlidesOk": true,
+        "failedImgs": [],
+        "failedResponses": [],
+        "imageCount": 4,
+        "healthyVisible": 3
+      }
+    }
+  }
+}

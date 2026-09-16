@@ -1,0 +1,11 @@
+[mobile/home] slides=9 allSlidesOk=true failedDecode=8 failedHttp=0
+[mobile/products] slides=0 allSlidesOk=true failedDecode=0 failedHttp=0
+[mobile/articles] slides=0 allSlidesOk=true failedDecode=0 failedHttp=0
+[mobile/guide] slides=0 allSlidesOk=true failedDecode=4 failedHttp=0
+[mobile/wholesale] slides=0 allSlidesOk=true failedDecode=0 failedHttp=0
+[desktop/home] slides=9 allSlidesOk=true failedDecode=4 failedHttp=0
+[desktop/products] slides=0 allSlidesOk=true failedDecode=0 failedHttp=0
+[desktop/articles] slides=0 allSlidesOk=true failedDecode=0 failedHttp=0
+[desktop/guide] slides=0 allSlidesOk=true failedDecode=0 failedHttp=0
+[desktop/wholesale] slides=0 allSlidesOk=true failedDecode=0 failedHttp=0
+Wrote browser-image-health.json

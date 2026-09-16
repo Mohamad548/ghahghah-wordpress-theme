@@ -1,0 +1,63 @@
+{
+  "home": {
+    "url": "http://localhost:8898/",
+    "unique": 106,
+    "brokenCount": 0,
+    "broken": []
+  },
+  "products": {
+    "url": "http://localhost:8898/products/",
+    "unique": 43,
+    "brokenCount": 6,
+    "broken": [
+      {
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/بنر_قهقهه_اسنک_واقعی_1920x430_optimized-scaled.webp",
+        "code": "403",
+        "ctype": "text/html; charset=iso-8859-1"
+      },
+      {
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/بنر_قهقهه_اسنک_واقعی_1920x430_optimized-300x67.webp",
+        "code": "403",
+        "ctype": "text/html; charset=iso-8859-1"
+      },
+      {
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/بنر_قهقهه_اسنک_واقعی_1920x430_optimized-1024x230.webp",
+        "code": "403",
+        "ctype": "text/html; charset=iso-8859-1"
+      },
+      {
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/بنر_قهقهه_اسنک_واقعی_1920x430_optimized-768x172.webp",
+        "code": "403",
+        "ctype": "text/html; charset=iso-8859-1"
+      },
+      {
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/بنر_قهقهه_اسنک_واقعی_1920x430_optimized-1536x344.webp",
+        "code": "403",
+        "ctype": "text/html; charset=iso-8859-1"
+      },
+      {
+        "url": "http://localhost:8898/wp-content/uploads/2026/09/بنر_قهقهه_اسنک_واقعی_1920x430_optimized-2048x459.webp",
+        "code": "403",
+        "ctype": "text/html; charset=iso-8859-1"
+      }
+    ]
+  },
+  "articles": {
+    "url": "http://localhost:8898/?post_type=post",
+    "unique": 6,
+    "brokenCount": 0,
+    "broken": []
+  },
+  "guide": {
+    "url": "http://localhost:8898/wholesale-request-guide/",
+    "unique": 21,
+    "brokenCount": 0,
+    "broken": []
+  },
+  "wholesale": {
+    "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "unique": 2,
+    "brokenCount": 0,
+    "broken": []
+  }
+}

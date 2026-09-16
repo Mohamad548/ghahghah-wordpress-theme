@@ -33,6 +33,10 @@ INITIAL_THEME=""
 INITIAL_PLUGIN_ACTIVE=""
 TEMP_POST_ID=""
 RESTORE_DONE=0
+# Theme-mod / hero option snapshots (theme switch must not leave slider/media opts wiped).
+INITIAL_THEME_MODS_FILE=""
+INITIAL_HERO_BANNER_PACK=""
+INITIAL_MEDIA_SYNC_VERSION=""
 
 require_cmd() {
 	command -v "$1" >/dev/null 2>&1 || fail "Required command not found: $1"
@@ -178,6 +182,23 @@ restore_initial_state() {
 	elif [[ "${INITIAL_PLUGIN_ACTIVE}" == "no" ]]; then
 		wpcli plugin deactivate ghahghah-core --quiet 2>/dev/null
 		log "Restored plugin: ghahghah-core inactive"
+	fi
+	# Restore ghahghah theme mods + hero pack/sync version if we captured them.
+	if [[ -n "${INITIAL_THEME_MODS_FILE}" && -f "${INITIAL_THEME_MODS_FILE}" ]]; then
+		local container
+		container="$(cli_container)" 2>/dev/null
+		if [[ -n "$container" ]]; then
+			docker exec -i "$container" wp --allow-root option update theme_mods_ghahghah-theme --format=json <"${INITIAL_THEME_MODS_FILE}" >/dev/null 2>&1
+			log "Restored theme_mods_ghahghah-theme from snapshot"
+		fi
+	fi
+	if [[ -n "${INITIAL_HERO_BANNER_PACK}" ]]; then
+		wpcli option update ghahghah_hero_banner_pack "${INITIAL_HERO_BANNER_PACK}" >/dev/null 2>&1
+		log "Restored ghahghah_hero_banner_pack=${INITIAL_HERO_BANNER_PACK}"
+	fi
+	if [[ -n "${INITIAL_MEDIA_SYNC_VERSION}" ]]; then
+		wpcli option update ghahghah_theme_media_sync_version "${INITIAL_MEDIA_SYNC_VERSION}" >/dev/null 2>&1
+		log "Restored ghahghah_theme_media_sync_version=${INITIAL_MEDIA_SYNC_VERSION}"
 	fi
 	set -e
 }
@@ -350,6 +371,20 @@ log "Initial ghahghah-core active: ${INITIAL_PLUGIN_ACTIVE}"
 printf '%s\n' "$INITIAL_THEME" >"${EVIDENCE_DIR}/initial-theme.txt"
 printf '%s\n' "$INITIAL_PLUGIN_ACTIVE" >"${EVIDENCE_DIR}/initial-plugin-active.txt"
 [[ -n "$INITIAL_THEME" ]] || fail "Could not read initial stylesheet"
+
+# Snapshot slider/media options WITHOUT relying on theme bootstrap side effects later.
+INITIAL_THEME_MODS_FILE="${EVIDENCE_DIR}/initial-theme_mods_ghahghah-theme.json"
+wpcli option get theme_mods_ghahghah-theme --format=json >"${INITIAL_THEME_MODS_FILE}" 2>/dev/null || true
+INITIAL_HERO_BANNER_PACK="$(wpcli option get ghahghah_hero_banner_pack 2>/dev/null | tr -d '\r' | tail -n 1 || true)"
+INITIAL_MEDIA_SYNC_VERSION="$(wpcli option get ghahghah_theme_media_sync_version 2>/dev/null | tr -d '\r' | tail -n 1 || true)"
+printf '%s\n' "$INITIAL_HERO_BANNER_PACK" >"${EVIDENCE_DIR}/initial-hero-banner-pack.txt"
+printf '%s\n' "$INITIAL_MEDIA_SYNC_VERSION" >"${EVIDENCE_DIR}/initial-media-sync-version.txt"
+log "Snapshot hero_banner_pack=${INITIAL_HERO_BANNER_PACK:-"(empty)"} media_sync_version=${INITIAL_MEDIA_SYNC_VERSION:-"(empty)"}"
+if [[ -s "${INITIAL_THEME_MODS_FILE}" ]]; then
+	pass "Captured theme_mods_ghahghah-theme snapshot for restore"
+else
+	log "[WARN] theme_mods_ghahghah-theme snapshot empty or missing"
+fi
 
 # Discover a bundled standard theme (not ghahghah-theme).
 BUNDLE_THEME="$(wpcli theme list --status=inactive --field=name 2>/dev/null | tr -d '\r' | grep -E '^(twentytwentyfive|twentytwentyfour|twentytwentythree|twentytwentytwo|twentytwentyone|twentytwenty)$' | head -n 1 || true)"

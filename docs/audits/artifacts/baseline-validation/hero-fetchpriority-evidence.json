@@ -1,0 +1,24 @@
+{
+  "measuredAt": "2026-09-16T13:23:20.718Z",
+  "page": "http://localhost:8888/",
+  "explicitFetchPriorityHighCount": 3,
+  "explicitFetchPriorityHighSnippets": [
+    "<img src=\"http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp\" class=\"custom-logo site-brand__image\" alt=\"قهقهه\" width=\"144\" height=\"64\" decoding=\"async\" fetchpriority=\"high\" />",
+    "<img src=\"http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp\" class=\"custom-logo site-brand__image\" alt=\"قهقهه\" width=\"144\" height=\"64\" decoding=\"async\" fetchpriority=\"high\" />",
+    "<img class=\"ghahghah-hero__image\" src=\"http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2.webp\" alt=\"بنر طعم پنیری قهقهه\" width=\"1672\" height=\"941\" srcset=\"http://localhost:8888/wp-content/uploads/2026/09/01-cheese"
+  ],
+  "heroImageTagCount": 9,
+  "firstHeroImageTag": "<img\r\n\t\t\t\t\t\t\t\t\t\t\tclass=\"ghahghah-hero__image\"\r\n\t\t\t\t\t\t\t\t\t\t\tsrc=\"http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2.webp\"\r\n\t\t\t\t\t\t\t\t\t\t\talt=\"بنر طعم پنیری قهقهه\"\r\n\t\t\t\t\t\t\t\t\t\t\twidth=\"1672\"\r\n\t\t\t\t\t\t\t\t\t\t\theight=\"941\"\r\n\t\t\t\t\t\t\t\t\t\t\tsrcset=\"http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2.webp 1672w, http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-300x169.webp 300w, http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-1024x576.webp 1024w, http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp 768w, http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-1536x864.webp 1536w, http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-1600x900.webp 1600w\"\t\t\t\t\t\t\t\t\t\t\tsizes=\"100vw\"\r\n\t\t\t\t\t\t\t\t\t\t\tdecoding=\"async\"\r\n\t\t\t\t\t\t\t\t\t\t\tfetchpriority=\"high\"\t\t\t\t\t\t\t\t\t\t/>",
+  "interpretation": {
+    "explicitHtmlAttr": "Only first hero slide + logo instances use fetchpriority=high in HTML.",
+    "networkHighPriority": "LHR network priority=High on many banners is browser/scheduler priority, NOT proof of multiple fetchpriority attributes.",
+    "sourceFiles": [
+      "ghahghah-theme/template-parts/hero/site-hero.php",
+      "ghahghah-theme/inc/template-tags.php"
+    ]
+  },
+  "fromHomeDesktopLhrRun2": {
+    "bannerDownloadsWithNetworkPriorityHigh": 9,
+    "note": "All flavour banner webps requested with Network priority High around LCP time; only index 0 has HTML fetchpriority=high; others use loading=lazy but still fetched (opacity stacking / preloader behavior)."
+  }
+}

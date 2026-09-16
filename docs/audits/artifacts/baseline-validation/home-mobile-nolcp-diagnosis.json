@@ -1,0 +1,30 @@
+{
+  "conclusion": "NO_LCP confirmed in original corpus (3/3 simulate) + diagnosis (3/3 simulate + 1/1 devtools). Page paints (final screenshots show hero). Trace contains LCP Invalidate UKM events but zero LargestContentfulPaint::Candidate events.",
+  "status": "PARTIALLY_RESOLVED",
+  "confirmedFacts": [
+    "HTTP 200, FCP valid, final screenshot shows cheese hero slide",
+    "observedLargestContentfulPaint is null/undefined in metrics",
+    "Console errors empty in baseline LHR",
+    "Trace: multiple NavStartToLargestContentfulPaint::Invalidate, zero Candidate",
+    "Hero CSS: inactive slides opacity:0 visibility:hidden; active is-active opacity:1",
+    "RootCauses/TraceElements gatherer also fails with frame_sequence on Chrome 152 + LH 12.2.1"
+  ],
+  "hypothesesNotProven": [
+    "Opacity/visibility crossfade prevents Chrome from committing an LCP candidate on mobile viewport",
+    "Tooling incompatibility HeadlessChrome/152 with LH 12.2.1 LCP pipeline",
+    "Slider JS activate() mutating aria-hidden/inert shortly after paint invalidates candidates"
+  ],
+  "rootCause": "UNRESOLVED — cannot pick a single proven cause without a controlled experiment that isolates CSS opacity vs tooling; diagnostic browser session without code/DB changes still reproduced NO_LCP.",
+  "relatedFiles": [
+    "ghahghah-theme/assets/css/hero.css",
+    "ghahghah-theme/assets/js/hero.js",
+    "ghahghah-theme/template-parts/hero/site-hero.php"
+  ],
+  "evidencePaths": [
+    "home-mobile-diagnosis/diag-run1.summary.json",
+    "home-mobile-diagnosis/diag-run1.final.jpg",
+    "home-mobile-diagnosis/diag-run1.json.gz",
+    "home-mobile-diagnosis/trace-lcp-layout-compact.json",
+    "home-mobile-run1-final.jpg (from baseline TEMP LHR)"
+  ]
+}

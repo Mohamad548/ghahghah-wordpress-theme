@@ -1,0 +1,295 @@
+{
+  "overlapSuspect": false,
+  "closePairsWithin2s": [],
+  "timeline": [
+    {
+      "key": "home:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:15:34.195Z",
+      "benchmarkIndex": 1732.5
+    },
+    {
+      "key": "home:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:15:55.547Z",
+      "benchmarkIndex": 1964
+    },
+    {
+      "key": "home:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:16:16.303Z",
+      "benchmarkIndex": 1641
+    },
+    {
+      "key": "home:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:16:38.163Z",
+      "benchmarkIndex": 1894
+    },
+    {
+      "key": "home:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:17:00.317Z",
+      "benchmarkIndex": 1762.5
+    },
+    {
+      "key": "home:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:17:20.342Z",
+      "benchmarkIndex": 2025.5
+    },
+    {
+      "key": "products_archive:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:18:01.119Z",
+      "benchmarkIndex": 1952
+    },
+    {
+      "key": "products_archive:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:18:21.559Z",
+      "benchmarkIndex": 2102
+    },
+    {
+      "key": "products_archive:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:18:41.109Z",
+      "benchmarkIndex": 2204.5
+    },
+    {
+      "key": "products_archive:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:19:00.636Z",
+      "benchmarkIndex": 1939.5
+    },
+    {
+      "key": "products_archive:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:19:20.347Z",
+      "benchmarkIndex": 2033.5
+    },
+    {
+      "key": "products_archive:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:19:41.020Z",
+      "benchmarkIndex": 1825.5
+    },
+    {
+      "key": "single_product:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:20:23.481Z",
+      "benchmarkIndex": 1815.5
+    },
+    {
+      "key": "single_product:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:20:43.355Z",
+      "benchmarkIndex": 1464.5
+    },
+    {
+      "key": "single_product:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:21:02.793Z",
+      "benchmarkIndex": 1505.5
+    },
+    {
+      "key": "single_product:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:21:22.196Z",
+      "benchmarkIndex": 2045
+    },
+    {
+      "key": "single_product:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:21:43.382Z",
+      "benchmarkIndex": 1752
+    },
+    {
+      "key": "single_product:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:22:04.260Z",
+      "benchmarkIndex": 2175
+    },
+    {
+      "key": "articles_archive:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:22:48.593Z",
+      "benchmarkIndex": 1774.5
+    },
+    {
+      "key": "articles_archive:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:23:10.612Z",
+      "benchmarkIndex": 1627
+    },
+    {
+      "key": "articles_archive:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:23:31.415Z",
+      "benchmarkIndex": 1916.5
+    },
+    {
+      "key": "articles_archive:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:23:52.362Z",
+      "benchmarkIndex": 1844.5
+    },
+    {
+      "key": "articles_archive:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:24:11.585Z",
+      "benchmarkIndex": 2532
+    },
+    {
+      "key": "articles_archive:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:24:31.335Z",
+      "benchmarkIndex": 2545
+    },
+    {
+      "key": "single_article:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:25:22.767Z",
+      "benchmarkIndex": 2787
+    },
+    {
+      "key": "single_article:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:25:41.007Z",
+      "benchmarkIndex": 2257
+    },
+    {
+      "key": "single_article:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:26:02.618Z",
+      "benchmarkIndex": 1895
+    },
+    {
+      "key": "single_article:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:26:25.542Z",
+      "benchmarkIndex": 1228
+    },
+    {
+      "key": "single_article:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:26:47.855Z",
+      "benchmarkIndex": 1629.5
+    },
+    {
+      "key": "single_article:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:27:10.352Z",
+      "benchmarkIndex": 1868
+    },
+    {
+      "key": "wholesale:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:27:55.607Z",
+      "benchmarkIndex": 1909.5
+    },
+    {
+      "key": "wholesale:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:28:15.386Z",
+      "benchmarkIndex": 1604
+    },
+    {
+      "key": "wholesale:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:28:35.738Z",
+      "benchmarkIndex": 2055.5
+    },
+    {
+      "key": "wholesale:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:28:56.394Z",
+      "benchmarkIndex": 1392.5
+    },
+    {
+      "key": "wholesale:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:29:14.446Z",
+      "benchmarkIndex": 2065.5
+    },
+    {
+      "key": "wholesale:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:29:34.958Z",
+      "benchmarkIndex": 2036
+    },
+    {
+      "key": "agency:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:30:13.307Z",
+      "benchmarkIndex": 1711.5
+    },
+    {
+      "key": "agency:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:30:34.012Z",
+      "benchmarkIndex": 1849
+    },
+    {
+      "key": "agency:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:30:55.142Z",
+      "benchmarkIndex": 2155
+    },
+    {
+      "key": "agency:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:31:14.845Z",
+      "benchmarkIndex": 1513.5
+    },
+    {
+      "key": "agency:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:31:35.640Z",
+      "benchmarkIndex": 2167.5
+    },
+    {
+      "key": "agency:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:31:54.991Z",
+      "benchmarkIndex": 2077.5
+    },
+    {
+      "key": "contact:mobile",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:32:35.904Z",
+      "benchmarkIndex": 1972
+    },
+    {
+      "key": "contact:mobile",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:32:59.353Z",
+      "benchmarkIndex": 1942
+    },
+    {
+      "key": "contact:mobile",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:33:22.473Z",
+      "benchmarkIndex": 2038.5
+    },
+    {
+      "key": "contact:desktop",
+      "run": 1,
+      "fetchTime": "2026-09-16T12:33:45.326Z",
+      "benchmarkIndex": 1855.5
+    },
+    {
+      "key": "contact:desktop",
+      "run": 2,
+      "fetchTime": "2026-09-16T12:34:11.096Z",
+      "benchmarkIndex": 2113
+    },
+    {
+      "key": "contact:desktop",
+      "run": 3,
+      "fetchTime": "2026-09-16T12:34:34.889Z",
+      "benchmarkIndex": 1852.5
+    }
+  ],
+  "interpretation": "Sequential batch expected. closePairsWithin2s>0 would suggest concurrent CPU contention."
+}

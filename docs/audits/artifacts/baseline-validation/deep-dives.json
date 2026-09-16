@@ -1,0 +1,2148 @@
+{
+  "wholesale_mobile": {
+    "file": "wholesale-mobile-run2.json",
+    "sha256": "9f3036977139fdbca5b7013b176107cd454d40c0462f50073a0476f9b9943d3f",
+    "lcpElement": {
+      "present": true,
+      "error": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+      "scoreDisplayMode": "error"
+    },
+    "layoutShifts": {
+      "error": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')"
+    },
+    "cls": 0.0346951414828494,
+    "lcp": 12823.942050000001,
+    "lcpError": null,
+    "networkHints": {
+      "highPriorityImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "resourceSize": 2177432,
+          "priority": "High"
+        }
+      ],
+      "largestImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+          "transferSize": 2177723,
+          "resourceSize": 2177432,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        }
+      ]
+    },
+    "top15ByTransfer": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 2177723,
+        "resourceSize": 2177432,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "resourceType": "Image",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "resourceType": "Document",
+        "transferSize": 20709,
+        "resourceSize": 109900,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/twemoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 9230,
+        "resourceSize": 37769,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "resourceType": "Other",
+        "transferSize": 6523,
+        "resourceSize": 6237,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/header.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 4309,
+        "resourceSize": 20950,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/js/header.js?ver=0.9.60",
+        "resourceType": "Script",
+        "transferSize": 3779,
+        "resourceSize": 12798,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/wp-emoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 3732,
+        "resourceSize": 9087,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/footer.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 3146,
+        "resourceSize": 13642,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/js/forms.js?ver=0.9.60",
+        "resourceType": "Script",
+        "transferSize": 2950,
+        "resourceSize": 8548,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/forms.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 2456,
+        "resourceSize": 8324,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/pages/wholesale-request.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 2416,
+        "resourceSize": 9161,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/mobile-bottom-nav.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 1466,
+        "resourceSize": 3100,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      }
+    ],
+    "top10WithLcpRelation": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 2177723,
+        "resourceSize": 2177432,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "resourceType": "Image",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+        "resourceType": "Document",
+        "transferSize": 20709,
+        "resourceSize": 109900,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/twemoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 9230,
+        "resourceSize": 37769,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "resourceType": "Other",
+        "transferSize": 6523,
+        "resourceSize": 6237,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/header.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 4309,
+        "resourceSize": 20950,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/js/header.js?ver=0.9.60",
+        "resourceType": "Script",
+        "transferSize": 3779,
+        "resourceSize": 12798,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/wp-emoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 3732,
+        "resourceSize": 9087,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      }
+    ],
+    "prioritizeError": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+    "transferTotalBytes": 2341135,
+    "resourceSizeTotalBytes": 2527674
+  },
+  "agency_mobile": {
+    "file": "agency-mobile-run2.json",
+    "sha256": "c9537f581e84af3328091a11d1c21c6b27aa9f864793e06a27b1f80d2d0918f0",
+    "lcpElement": {
+      "present": true,
+      "error": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+      "scoreDisplayMode": "error"
+    },
+    "layoutShifts": {
+      "error": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')"
+    },
+    "cls": 0.2972388199740078,
+    "lcp": 13115.10975,
+    "lcpError": null,
+    "networkHints": {
+      "highPriorityImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "resourceSize": 2223788,
+          "priority": "High"
+        }
+      ],
+      "largestImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+          "transferSize": 2224079,
+          "resourceSize": 2223788,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        }
+      ]
+    },
+    "top15ByTransfer": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 2224079,
+        "resourceSize": 2223788,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "resourceType": "Image",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "resourceType": "Document",
+        "transferSize": 21238,
+        "resourceSize": 110236,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/twemoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 9230,
+        "resourceSize": 37769,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "resourceType": "Other",
+        "transferSize": 6523,
+        "resourceSize": 6237,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/header.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 4309,
+        "resourceSize": 20950,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/js/header.js?ver=0.9.60",
+        "resourceType": "Script",
+        "transferSize": 3779,
+        "resourceSize": 12798,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/wp-emoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 3732,
+        "resourceSize": 9087,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/footer.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 3146,
+        "resourceSize": 13642,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/js/forms.js?ver=0.9.60",
+        "resourceType": "Script",
+        "transferSize": 2950,
+        "resourceSize": 8548,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/pages/agency-request.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 2651,
+        "resourceSize": 10497,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/forms.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 2456,
+        "resourceSize": 8324,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/mobile-bottom-nav.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 1466,
+        "resourceSize": 3100,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      }
+    ],
+    "top10WithLcpRelation": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 2224079,
+        "resourceSize": 2223788,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "resourceType": "Image",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "resourceType": "Document",
+        "transferSize": 21238,
+        "resourceSize": 110236,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/twemoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 9230,
+        "resourceSize": 37769,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "resourceType": "Other",
+        "transferSize": 6523,
+        "resourceSize": 6237,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/header.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 4309,
+        "resourceSize": 20950,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/js/header.js?ver=0.9.60",
+        "resourceType": "Script",
+        "transferSize": 3779,
+        "resourceSize": 12798,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/wp-emoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 3732,
+        "resourceSize": 9087,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      }
+    ],
+    "prioritizeError": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+    "transferTotalBytes": 2388255,
+    "resourceSizeTotalBytes": 2575702
+  },
+  "contact_mobile": {
+    "file": "contact-mobile-run2.json",
+    "sha256": "54a7a9625a43779eb5572502b9af5aa3ea05bdda4b2c89fc69303e297db008df",
+    "lcpElement": {
+      "present": true,
+      "error": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+      "scoreDisplayMode": "error"
+    },
+    "layoutShifts": {
+      "error": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')"
+    },
+    "cls": 0.010270753719650545,
+    "lcp": 9089.919600000001,
+    "lcpError": null,
+    "networkHints": {
+      "highPriorityImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "resourceSize": 1513908,
+          "priority": "High"
+        }
+      ],
+      "largestImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+          "transferSize": 1514199,
+          "resourceSize": 1513908,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        },
+        {
+          "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660767&2i414206&2e1&3u12&4m2&1u341&2u224&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=REDACTED&token=REDACTED",
+          "transferSize": 15610,
+          "resourceSize": 15211,
+          "priority": "Low"
+        },
+        {
+          "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBo…",
+          "transferSize": 0,
+          "resourceSize": 4752,
+          "priority": "Low"
+        }
+      ]
+    },
+    "top15ByTransfer": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1514199,
+        "resourceSize": 1513908,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/places.js",
+        "resourceType": "Script",
+        "transferSize": 94736,
+        "resourceSize": 508919,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/main.js",
+        "resourceType": "Script",
+        "transferSize": 85735,
+        "resourceSize": 302020,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.gstatic.com/maps-api-v3/embed/js/66/4d/intl/fa_ALL/init_embed.js",
+        "resourceType": "Script",
+        "transferSize": 76824,
+        "resourceSize": 256885,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/util.js",
+        "resourceType": "Script",
+        "transferSize": 72990,
+        "resourceSize": 321518,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/common.js",
+        "resourceType": "Script",
+        "transferSize": 38465,
+        "resourceSize": 129460,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/controls.js",
+        "resourceType": "Script",
+        "transferSize": 27313,
+        "resourceSize": 108699,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/map.js",
+        "resourceType": "Script",
+        "transferSize": 26345,
+        "resourceSize": 83957,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "resourceType": "Image",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "resourceType": "Document",
+        "transferSize": 18425,
+        "resourceSize": 92242,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i660767&2i414206&2e1&3u12&4m2&1u341&2u224&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=REDACTED&token=REDACTED",
+        "resourceType": "Image",
+        "transferSize": 15610,
+        "resourceSize": 15211,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/onion.js",
+        "resourceType": "Script",
+        "transferSize": 9602,
+        "resourceSize": 28593,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/twemoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 9230,
+        "resourceSize": 37769,
+        "priority": "Low",
+        "statusCode": 200
+      }
+    ],
+    "top10WithLcpRelation": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1514199,
+        "resourceSize": 1513908,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/places.js",
+        "resourceType": "Script",
+        "transferSize": 94736,
+        "resourceSize": 508919,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/main.js",
+        "resourceType": "Script",
+        "transferSize": 85735,
+        "resourceSize": 302020,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "https://maps.gstatic.com/maps-api-v3/embed/js/66/4d/intl/fa_ALL/init_embed.js",
+        "resourceType": "Script",
+        "transferSize": 76824,
+        "resourceSize": 256885,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/util.js",
+        "resourceType": "Script",
+        "transferSize": 72990,
+        "resourceSize": 321518,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/common.js",
+        "resourceType": "Script",
+        "transferSize": 38465,
+        "resourceSize": 129460,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/controls.js",
+        "resourceType": "Script",
+        "transferSize": 27313,
+        "resourceSize": 108699,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/4d/intl/fa_ALL/map.js",
+        "resourceType": "Script",
+        "transferSize": 26345,
+        "resourceSize": 83957,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      }
+    ],
+    "prioritizeError": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+    "transferTotalBytes": 2137809,
+    "resourceSizeTotalBytes": 3653063
+  },
+  "single_article_mobile": {
+    "file": "single_article-mobile-run2.json",
+    "sha256": "1f64cbef72b6166c3c99171849f396c4922a5276bae6f5f9c71b840d70298402",
+    "lcpElement": {
+      "present": true,
+      "error": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+      "scoreDisplayMode": "error"
+    },
+    "layoutShifts": {
+      "error": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')"
+    },
+    "cls": 0.0009074459933906293,
+    "lcp": 1860.5499,
+    "lcpError": null,
+    "networkHints": {
+      "highPriorityImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+          "transferSize": 29497,
+          "resourceSize": 29209,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+          "transferSize": 37184,
+          "resourceSize": 36896,
+          "priority": "High"
+        }
+      ],
+      "largestImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "resourceSize": 2208170,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "resourceSize": 2119166,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "resourceSize": 2059376,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "resourceSize": 1466345,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "resourceSize": 79862,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "resourceSize": 50926,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+          "transferSize": 37184,
+          "resourceSize": 36896,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+          "transferSize": 29497,
+          "resourceSize": 29209,
+          "priority": "High"
+        }
+      ]
+    },
+    "top15ByTransfer": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+        "resourceType": "Image",
+        "transferSize": 2208461,
+        "resourceSize": 2208170,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2119457,
+        "resourceSize": 2119166,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2059667,
+        "resourceSize": 2059376,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1466636,
+        "resourceSize": 1466345,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 80151,
+        "resourceSize": 79862,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 51214,
+        "resourceSize": 50926,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+        "resourceType": "Image",
+        "transferSize": 37184,
+        "resourceSize": 36896,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+        "resourceType": "Image",
+        "transferSize": 29497,
+        "resourceSize": 29209,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wholesale-request-guide/",
+        "resourceType": "Document",
+        "transferSize": 21498,
+        "resourceSize": 110418,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "resourceType": "Image",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-includes/js/twemoji.js?ver=7.1",
+        "resourceType": "Script",
+        "transferSize": 9230,
+        "resourceSize": 37769,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-site-icon-512-150x150.png",
+        "resourceType": "Other",
+        "transferSize": 6523,
+        "resourceSize": 6237,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/css/header.css?ver=0.9.60",
+        "resourceType": "Stylesheet",
+        "transferSize": 4309,
+        "resourceSize": 20950,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      }
+    ],
+    "top10WithLcpRelation": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+        "resourceType": "Image",
+        "transferSize": 2208461,
+        "resourceSize": 2208170,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2119457,
+        "resourceSize": 2119166,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2059667,
+        "resourceSize": 2059376,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1466636,
+        "resourceSize": 1466345,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 80151,
+        "resourceSize": 79862,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 51214,
+        "resourceSize": 50926,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+        "resourceType": "Image",
+        "transferSize": 37184,
+        "resourceSize": 36896,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+        "resourceType": "Image",
+        "transferSize": 29497,
+        "resourceSize": 29209,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      }
+    ],
+    "prioritizeError": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+    "transferTotalBytes": 8211896,
+    "resourceSizeTotalBytes": 8385380
+  },
+  "single_article_desktop": {
+    "file": "single_article-desktop-run2.json",
+    "sha256": "cfde9033ec0aef882e08733517d2d77eba546729defdf7c22ed77eca346ff434",
+    "lcpElement": {
+      "present": true,
+      "error": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+      "scoreDisplayMode": "error"
+    },
+    "layoutShifts": {
+      "error": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')"
+    },
+    "cls": 0.0039903474261046516,
+    "lcp": 544.51045,
+    "lcpError": null,
+    "networkHints": {
+      "highPriorityImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "resourceSize": 40986,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+          "transferSize": 29497,
+          "resourceSize": 29209,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+          "transferSize": 37184,
+          "resourceSize": 36896,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+          "transferSize": 1943745,
+          "resourceSize": 1943454,
+          "priority": "High"
+        }
+      ],
+      "largestImages": [
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+          "transferSize": 2208461,
+          "resourceSize": 2208170,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+          "transferSize": 2119457,
+          "resourceSize": 2119166,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+          "transferSize": 2059667,
+          "resourceSize": 2059376,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+          "transferSize": 1943745,
+          "resourceSize": 1943454,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent.png",
+          "transferSize": 1930418,
+          "resourceSize": 1930127,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+          "transferSize": 1466636,
+          "resourceSize": 1466345,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+          "transferSize": 80151,
+          "resourceSize": 79862,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+          "transferSize": 51214,
+          "resourceSize": 50926,
+          "priority": "Low"
+        }
+      ]
+    },
+    "top15ByTransfer": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+        "resourceType": "Image",
+        "transferSize": 2208461,
+        "resourceSize": 2208170,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2119457,
+        "resourceSize": 2119166,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2059667,
+        "resourceSize": 2059376,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1943745,
+        "resourceSize": 1943454,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1930418,
+        "resourceSize": 1930127,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1466636,
+        "resourceSize": 1466345,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 80151,
+        "resourceSize": 79862,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 51214,
+        "resourceSize": 50926,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "resourceType": "Image",
+        "transferSize": 41274,
+        "resourceSize": 40986,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+        "resourceType": "Image",
+        "transferSize": 37184,
+        "resourceSize": 36896,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+        "resourceType": "Image",
+        "transferSize": 29497,
+        "resourceSize": 29209,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wholesale-request-guide/",
+        "resourceType": "Document",
+        "transferSize": 21494,
+        "resourceSize": 110437,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ketchup-216x300.jpg",
+        "resourceType": "Image",
+        "transferSize": 13351,
+        "resourceSize": 13063,
+        "priority": "Low",
+        "statusCode": 200
+      }
+    ],
+    "top10WithLcpRelation": [
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+        "resourceType": "Image",
+        "transferSize": 2208461,
+        "resourceSize": 2208170,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2119457,
+        "resourceSize": 2119166,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+        "resourceType": "Image",
+        "transferSize": 2059667,
+        "resourceSize": 2059376,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1943745,
+        "resourceSize": 1943454,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1930418,
+        "resourceSize": 1930127,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+        "resourceType": "Image",
+        "transferSize": 1466636,
+        "resourceSize": 1466345,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 80151,
+        "resourceSize": 79862,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+        "resourceType": "Image",
+        "transferSize": 51214,
+        "resourceSize": 50926,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "resourceType": "Image",
+        "transferSize": 41274,
+        "resourceSize": 40986,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      }
+    ],
+    "prioritizeError": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+    "transferTotalBytes": 12132198,
+    "resourceSizeTotalBytes": 12304547
+  },
+  "home_desktop": {
+    "file": "home-desktop-run2.json",
+    "sha256": "30fc4bdb2a011e1de1155f73f8de285383e6c8ecee73af6c7a9fa9f1959cfd6d",
+    "lcpElement": {
+      "present": true,
+      "error": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+      "scoreDisplayMode": "error"
+    },
+    "layoutShifts": {
+      "error": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')"
+    },
+    "cls": 0.001243941614041497,
+    "lcp": 2610.4330000000004,
+    "lcpError": null,
+    "networkHints": {
+      "highPriorityImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+          "transferSize": 41274,
+          "resourceSize": 40986,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_cheese_flavour_banner_optimized.webp",
+          "transferSize": 182530,
+          "resourceSize": 182240,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+          "transferSize": 227484,
+          "resourceSize": 227194,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+          "transferSize": 216162,
+          "resourceSize": 215872,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+          "transferSize": 230540,
+          "resourceSize": 230250,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+          "transferSize": 214428,
+          "resourceSize": 214138,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+          "transferSize": 199548,
+          "resourceSize": 199258,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+          "transferSize": 216988,
+          "resourceSize": 216698,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+          "transferSize": 222556,
+          "resourceSize": 222266,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+          "transferSize": 232764,
+          "resourceSize": 232474,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-225x300.webp",
+          "transferSize": 10420,
+          "resourceSize": 10132,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-217x300.webp",
+          "transferSize": 11038,
+          "resourceSize": 10750,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/pizza-corn-pellet-full-216x300.webp",
+          "transferSize": 12912,
+          "resourceSize": 12624,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/shallot-yogurt-215x300.jpg",
+          "transferSize": 12954,
+          "resourceSize": 12666,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/parsley-onion-213x300.jpg",
+          "transferSize": 12663,
+          "resourceSize": 12375,
+          "priority": "High"
+        }
+      ],
+      "largestImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+          "transferSize": 232764,
+          "resourceSize": 232474,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+          "transferSize": 230540,
+          "resourceSize": 230250,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+          "transferSize": 227484,
+          "resourceSize": 227194,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+          "transferSize": 222556,
+          "resourceSize": 222266,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+          "transferSize": 216988,
+          "resourceSize": 216698,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+          "transferSize": 216162,
+          "resourceSize": 215872,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+          "transferSize": 214428,
+          "resourceSize": 214138,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+          "transferSize": 199548,
+          "resourceSize": 199258,
+          "priority": "High"
+        }
+      ]
+    },
+    "top15ByTransfer": [
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 232764,
+        "resourceSize": 232474,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 230540,
+        "resourceSize": 230250,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 227484,
+        "resourceSize": 227194,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 222556,
+        "resourceSize": 222266,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 216988,
+        "resourceSize": 216698,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 216162,
+        "resourceSize": 215872,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 214428,
+        "resourceSize": 214138,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 199548,
+        "resourceSize": 199258,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_cheese_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 182530,
+        "resourceSize": 182240,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "resourceType": "Image",
+        "transferSize": 82278,
+        "resourceSize": 81989,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+        "resourceType": "Image",
+        "transferSize": 76835,
+        "resourceSize": 76546,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board.jpg",
+        "resourceType": "Image",
+        "transferSize": 70922,
+        "resourceSize": 70633,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "resourceType": "Image",
+        "transferSize": 41274,
+        "resourceSize": 40986,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "resourceType": "Font",
+        "transferSize": 37923,
+        "resourceSize": 37636,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      }
+    ],
+    "top10WithLcpRelation": [
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 232764,
+        "resourceSize": 232474,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 230540,
+        "resourceSize": 230250,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 227484,
+        "resourceSize": 227194,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 222556,
+        "resourceSize": 222266,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 216988,
+        "resourceSize": 216698,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 216162,
+        "resourceSize": 215872,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 214428,
+        "resourceSize": 214138,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 199548,
+        "resourceSize": 199258,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah_cheese_flavour_banner_optimized.webp",
+        "resourceType": "Image",
+        "transferSize": 182530,
+        "resourceSize": 182240,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "resourceType": "Image",
+        "transferSize": 82278,
+        "resourceSize": 81989,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      }
+    ],
+    "prioritizeError": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+    "transferTotalBytes": 2464707,
+    "resourceSizeTotalBytes": 2699779
+  },
+  "home_mobile": {
+    "file": "home-mobile-run2.json",
+    "sha256": "0696d05031735bfcb8e119077585f83ee3350f9dda5bd9953f332af4d7513f2d",
+    "lcpElement": {
+      "present": true,
+      "error": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+      "scoreDisplayMode": "error"
+    },
+    "layoutShifts": {
+      "error": "Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')"
+    },
+    "cls": 0.006177588584516018,
+    "lcp": null,
+    "lcpError": "NO_LCP",
+    "networkHints": {
+      "highPriorityImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+          "transferSize": 21394,
+          "resourceSize": 21106,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+          "transferSize": 68253,
+          "resourceSize": 67964,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "resourceSize": 84578,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "resourceSize": 74514,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "resourceSize": 85210,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "resourceSize": 86198,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/06-lemon-flavour-banner-v2-768x432.webp",
+          "transferSize": 67991,
+          "resourceSize": 67702,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-ketchup-flavour-banner-768x432.webp",
+          "transferSize": 74453,
+          "resourceSize": 74164,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "resourceSize": 82070,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "resourceSize": 79294,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-767x1024.webp",
+          "transferSize": 52034,
+          "resourceSize": 51746,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-740x1024.webp",
+          "transferSize": 54946,
+          "resourceSize": 54658,
+          "priority": "High"
+        }
+      ],
+      "largestImages": [
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+          "transferSize": 86487,
+          "resourceSize": 86198,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+          "transferSize": 85499,
+          "resourceSize": 85210,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+          "transferSize": 84867,
+          "resourceSize": 84578,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+          "transferSize": 82359,
+          "resourceSize": 82070,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+          "transferSize": 82278,
+          "resourceSize": 81989,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+          "transferSize": 79583,
+          "resourceSize": 79294,
+          "priority": "High"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+          "transferSize": 76835,
+          "resourceSize": 76546,
+          "priority": "Low"
+        },
+        {
+          "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+          "transferSize": 74803,
+          "resourceSize": 74514,
+          "priority": "High"
+        }
+      ]
+    },
+    "top15ByTransfer": [
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 86487,
+        "resourceSize": 86198,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 85499,
+        "resourceSize": 85210,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 84867,
+        "resourceSize": 84578,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 82359,
+        "resourceSize": 82070,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "resourceType": "Image",
+        "transferSize": 82278,
+        "resourceSize": 81989,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 79583,
+        "resourceSize": 79294,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+        "resourceType": "Image",
+        "transferSize": 76835,
+        "resourceSize": 76546,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 74803,
+        "resourceSize": 74514,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/07-ketchup-flavour-banner-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 74453,
+        "resourceSize": 74164,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board.jpg",
+        "resourceType": "Image",
+        "transferSize": 70922,
+        "resourceSize": 70633,
+        "priority": "Low",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 68253,
+        "resourceSize": 67964,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/06-lemon-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 67991,
+        "resourceSize": 67702,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/vinegar-corn-pellet-full-740x1024.webp",
+        "resourceType": "Image",
+        "transferSize": 54946,
+        "resourceSize": 54658,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/limoo-corn-pellet-full-767x1024.webp",
+        "resourceType": "Image",
+        "transferSize": 52034,
+        "resourceSize": 51746,
+        "priority": "High",
+        "statusCode": 200
+      },
+      {
+        "url": "http://localhost:8888/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "resourceType": "Font",
+        "transferSize": 38059,
+        "resourceSize": 37772,
+        "priority": "VeryHigh",
+        "statusCode": 200
+      }
+    ],
+    "top10WithLcpRelation": [
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 86487,
+        "resourceSize": 86198,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 85499,
+        "resourceSize": 85210,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 84867,
+        "resourceSize": 84578,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 82359,
+        "resourceSize": 82070,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "resourceType": "Image",
+        "transferSize": 82278,
+        "resourceSize": 81989,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 79583,
+        "resourceSize": 79294,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+        "resourceType": "Image",
+        "transferSize": 76835,
+        "resourceSize": 76546,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 74803,
+        "resourceSize": 74514,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/07-ketchup-flavour-banner-768x432.webp",
+        "resourceType": "Image",
+        "transferSize": 74453,
+        "resourceSize": 74164,
+        "priority": "High",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      },
+      {
+        "url": "http://localhost:8888/wp-content/uploads/2026/09/snack-serving-board.jpg",
+        "resourceType": "Image",
+        "transferSize": 70922,
+        "resourceSize": 70633,
+        "priority": "Low",
+        "statusCode": 200,
+        "relativeToLcp": "unknown"
+      }
+    ],
+    "prioritizeError": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+    "transferTotalBytes": 1223618,
+    "resourceSizeTotalBytes": 1459851
+  }
+}

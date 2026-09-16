@@ -1,0 +1,150 @@
+{
+  "generatedAt": "2026-09-16T13:25:05.109Z",
+  "files": [
+    {
+      "path": "docs/audits/artifacts/baseline-validation/agency-mobile-run2-final.jpg",
+      "bytes": 23912,
+      "sha256": "b7ee35f92e2da918c5499755140db2fe1605206ce5635b82f51e33dc9041ae72"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/ARTIFACT_CHECKSUMS.json",
+      "bytes": 6386,
+      "sha256": "18ee6e6b82cbe42570948df66465bf3e5df07a794195b8fa5fb73a05ebfefdfd"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/checksums-raw-lhr.json",
+      "bytes": 8029,
+      "sha256": "2e9d2945d1702f32f694a6f4e6b600ed1ffee58e203001f99d4168c22ba89bbe"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/compressed-lhr/agency-mobile-run2.json.gz",
+      "bytes": 124658,
+      "sha256": "993ab715dcc1996aea71c92b8bbdb36a777631618f69a30ecab132be0dc07955"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/compressed-lhr/contact-mobile-run2.json.gz",
+      "bytes": 102095,
+      "sha256": "ab9b771a80913882ab4c011956da4b17df5bdf9298139660a8899925aba68895"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/compressed-lhr/home-mobile-run1.json.gz",
+      "bytes": 236850,
+      "sha256": "153108c883b0bb7ed91fd7a8bf1224fd798ed37f069d6fc20d7a77588a6d1486"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/compressed-lhr/single_article-mobile-run2.json.gz",
+      "bytes": 166248,
+      "sha256": "d8a18b5762ca702379737a06569b3b8de282546938cdb46927b625766e44fb42"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/compressed-lhr/wholesale-mobile-run2.json.gz",
+      "bytes": 149266,
+      "sha256": "f34f4ad99154a47ad523f1fc476797d0ca5ef5acacdb0e29b82f7a3bf6cd0d14"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/contact-mobile-run2-final.jpg",
+      "bytes": 18095,
+      "sha256": "be336774a07f155d2199f2f602405141652993b7bb01b937e5c3a67faecd37ed"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/deep-dives.json",
+      "bytes": 77372,
+      "sha256": "23a96779b2cecee6f6604431e11de9b2d7bef5555de7fad41438fa314fe05e11"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/extract-validity.cjs",
+      "bytes": 15620,
+      "sha256": "6149071bfee65150e38a62a2c38f30edd5c7d5d7bbc5bdddbfd8945945e55ec5"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/extract-validity.mjs",
+      "bytes": 15712,
+      "sha256": "42f4133cf4c54611acb6a96d41ca32791c542ddcd0dd36d891b828fb51539385"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/fetch-timeline.json",
+      "bytes": 6971,
+      "sha256": "6ad01d2e470d607b21cc0ce682c1c32ce6341de653bae02a29b27e21855de0a6"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/finalize-artifacts.cjs",
+      "bytes": 1368,
+      "sha256": "54e10ea067db8dbb2282648dd82e216c9b0ec1d9da1e2056354a9ae680eba95a"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/hero-fetchpriority-evidence.json",
+      "bytes": 2743,
+      "sha256": "365284f7aa4ed85f11df03a706488e2be5c968bea9eeeae57ddb70152c494a29"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-run1.final.jpg",
+      "bytes": 24703,
+      "sha256": "de505a8036c1389a32214648da788f66e83e2ffd60044178396e671e3e8fc0e8"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-run1.json.gz",
+      "bytes": 193594,
+      "sha256": "1f436310a3d1ee30ee17de89e85ad81be4f5aac1fbe85c882ebd580af57dd97a"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-run1.summary.json",
+      "bytes": 449,
+      "sha256": "6ef59c9127998f7daec44f9207e51e40cea3d3a23d4e5b0202abb08746d40a74"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-run2.final.jpg",
+      "bytes": 24705,
+      "sha256": "4af965bb60c0ec22ae13723ed5adf3fd1df3ef0cf9d0ec56593718f13f8e7cab"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-run2.summary.json",
+      "bytes": 458,
+      "sha256": "a42aece48e461b8f41be2a58f4db7618a7cc79aa0eae112f0037aae0f82b4472"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-run3.final.jpg",
+      "bytes": 24694,
+      "sha256": "0919eb85ed11a8e89f84b43c25a1404d7d10db708ad9cdd1273288a741c65eb5"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-run3.summary.json",
+      "bytes": 458,
+      "sha256": "96a9d736967b17b15506bc3898b68a603d4e702342dba420f6a89831f7fab5f3"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/diag-save-assets.json.gz",
+      "bytes": 270747,
+      "sha256": "2d9d321c543c16127d73878c825daa4e227190f9f3357855aa74e1e63f30e717"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-diagnosis/trace-lcp-layout-compact.json",
+      "bytes": 220912,
+      "sha256": "1e7cea992ee98a567ab7a5538be652ff1742309ad20add2e78fdbf97b0a5da1c"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-nolcp-diagnosis.json",
+      "bytes": 1738,
+      "sha256": "cc20d514692cf735a954727dbc9feb05c528c0930590a1bb31de39598cfd811e"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/home-mobile-run1-final.jpg",
+      "bytes": 24706,
+      "sha256": "5162c92f2fda4961d882d2cb35f24d9bc96de7664ce8e0dd57ec2db42ecd6a37"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/lcp-network-enriched.json",
+      "bytes": 24870,
+      "sha256": "40b950e3e8dd70423935289ea803415e95ed0d9368799930456e6c7deb3d4644"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/validity-matrix.json",
+      "bytes": 323107,
+      "sha256": "382cfeff6a7f6a94d895163a38ebfebb593eb23543207cf7f2506f877bc6a3d3"
+    },
+    {
+      "path": "docs/audits/artifacts/baseline-validation/wholesale-mobile-run2-final.jpg",
+      "bytes": 24834,
+      "sha256": "a553bdf9a5bc6256d6831d69ec60a64784839171b272f2d7a03629ac79483f91"
+    }
+  ]
+}

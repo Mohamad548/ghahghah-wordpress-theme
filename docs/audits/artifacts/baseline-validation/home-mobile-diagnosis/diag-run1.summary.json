@@ -1,0 +1,15 @@
+{
+  "run": "1",
+  "lighthouseVersion": "12.2.1",
+  "perf": null,
+  "lcpMode": "error",
+  "lcpErr": "NO_LCP",
+  "lcp": null,
+  "fcp": 1474.1184,
+  "observedFCP": 4846,
+  "observedLCP": null,
+  "observedLCPAllFrames": null,
+  "runtimeError": null,
+  "warnings": [],
+  "prioritizeErr": "Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequenc"
+}

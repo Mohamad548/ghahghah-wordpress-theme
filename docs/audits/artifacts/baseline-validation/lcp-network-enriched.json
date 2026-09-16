@@ -1,0 +1,617 @@
+{
+  "wholesale_mobile": {
+    "file": "wholesale-mobile-run2.json",
+    "simLcp_ms": 12823.942050000001,
+    "observedLcp_ms": 4431,
+    "lcpLoadStart": 11997,
+    "lcpLoadEnd": 12428,
+    "ttfb_ms": 4125,
+    "transferTotalBytes": 2341135,
+    "resourceSizeTotalBytes": 2527674,
+    "note_transfer_vs_resource": "transferSize is network bytes transferred; resourceSize is decoded/body size. Near-equality implies little/no HTTP compression on images.",
+    "top10Images": [
+      {
+        "url": "wholesale-hero-pizza-transparent.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/wholesale/wholesale-hero-pizza-transparent.png",
+        "transferSize": 2177723,
+        "resourceSize": 2177432,
+        "priority": "High",
+        "networkRequestTime": 4144.115999996662,
+        "networkEndTime": 4293.268999993801,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "ghahghah-logo-mobile.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "networkRequestTime": 4143.951000005007,
+        "networkEndTime": 4199.372999995947,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      }
+    ],
+    "highPriorityImageCount": 2
+  },
+  "agency_mobile": {
+    "file": "agency-mobile-run2.json",
+    "simLcp_ms": 13115.10975,
+    "observedLcp_ms": 4165,
+    "lcpLoadStart": 12120,
+    "lcpLoadEnd": 12632,
+    "ttfb_ms": 3830,
+    "transferTotalBytes": 2388255,
+    "resourceSizeTotalBytes": 2575702,
+    "note_transfer_vs_resource": "transferSize is network bytes transferred; resourceSize is decoded/body size. Near-equality implies little/no HTTP compression on images.",
+    "top10Images": [
+      {
+        "url": "parsley-onion-pack-composition-transparent.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/agency/parsley-onion-pack-composition-transparent.png",
+        "transferSize": 2224079,
+        "resourceSize": 2223788,
+        "priority": "High",
+        "networkRequestTime": 3848.1449999958277,
+        "networkEndTime": 4010.4769999980927,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "ghahghah-logo-mobile.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "networkRequestTime": 3847.9899999946356,
+        "networkEndTime": 3909.6650000065565,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      }
+    ],
+    "highPriorityImageCount": 2
+  },
+  "contact_mobile": {
+    "file": "contact-mobile-run2.json",
+    "simLcp_ms": 9089.919600000001,
+    "observedLcp_ms": 3900,
+    "lcpLoadStart": null,
+    "lcpLoadEnd": null,
+    "ttfb_ms": 3671,
+    "transferTotalBytes": 2137809,
+    "resourceSizeTotalBytes": 3653063,
+    "note_transfer_vs_resource": "transferSize is network bytes transferred; resourceSize is decoded/body size. Near-equality implies little/no HTTP compression on images.",
+    "top10Images": [
+      {
+        "url": "corn-isolated-transparent.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/contact/corn-isolated-transparent.png",
+        "transferSize": 1514199,
+        "resourceSize": 1513908,
+        "priority": "High",
+        "networkRequestTime": 3696.225999996066,
+        "networkEndTime": 3792.5069999843836,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "ghahghah-logo-mobile.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "networkRequestTime": 3695.8669999837875,
+        "networkEndTime": 3772.4059999883175,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "StaticMapService.GetMapImage",
+        "pathHint": "/maps/api/js/StaticMapService.GetMapImage?1m2&1i660767&2i414206&2e1&3u12&4m2&1u341&2u224&5m6&1e0&5sfa&6sus&10b1&12b1&14i47083502&8e1&key=REDACTED&token=REDACTED",
+        "transferSize": 15610,
+        "resourceSize": 15211,
+        "priority": "Low",
+        "networkRequestTime": 6091.472999989986,
+        "networkEndTime": 6387.298999994993,
+        "vsObservedLcp": "started_after_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "svg\" fill=\"none\" viewBo…",
+        "pathHint": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBo…",
+        "transferSize": 0,
+        "resourceSize": 4752,
+        "priority": "Low",
+        "networkRequestTime": 6087.75799998641,
+        "networkEndTime": 6087.836999997497,
+        "vsObservedLcp": "started_after_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      }
+    ],
+    "highPriorityImageCount": 2
+  },
+  "single_article_mobile": {
+    "file": "single_article-mobile-run2.json",
+    "simLcp_ms": 1860.5499,
+    "observedLcp_ms": 2961,
+    "lcpLoadStart": 2681,
+    "lcpLoadEnd": 2681,
+    "ttfb_ms": 2681,
+    "transferTotalBytes": 8211896,
+    "resourceSizeTotalBytes": 8385380,
+    "note_transfer_vs_resource": "transferSize is network bytes transferred; resourceSize is decoded/body size. Near-equality implies little/no HTTP compression on images.",
+    "top10Images": [
+      {
+        "url": "article-inline-hands-snack-corn.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+        "transferSize": 2208461,
+        "resourceSize": 2208170,
+        "priority": "Low",
+        "networkRequestTime": 2936.150999993086,
+        "networkEndTime": 3033.5980000048876,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "article-inline-factory-line-real-snack.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+        "transferSize": 2119457,
+        "resourceSize": 2119166,
+        "priority": "Low",
+        "networkRequestTime": 2936.7319999933243,
+        "networkEndTime": 3022.946000009775,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "article-hero-banner-real-snack.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+        "transferSize": 2059667,
+        "resourceSize": 2059376,
+        "priority": "Low",
+        "networkRequestTime": 2938.6330000013113,
+        "networkEndTime": 3025.4860000014305,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "corn-and-real-snacks-transparent.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+        "transferSize": 1466636,
+        "resourceSize": 1466345,
+        "priority": "Low",
+        "networkRequestTime": 2937.3110000044107,
+        "networkEndTime": 3006.929000005126,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "snack-serving-board-600x480.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+        "transferSize": 80151,
+        "resourceSize": 79862,
+        "priority": "Low",
+        "networkRequestTime": 2938.106000006199,
+        "networkEndTime": 2969.733000010252,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "snack-sticks-closeup-640x480.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+        "transferSize": 51214,
+        "resourceSize": 50926,
+        "priority": "Low",
+        "networkRequestTime": 2937.7970000058413,
+        "networkEndTime": 2968.9560000151396,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "light-triangle-pieces.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+        "transferSize": 37184,
+        "resourceSize": 36896,
+        "priority": "High",
+        "networkRequestTime": 2709.0230000019073,
+        "networkEndTime": 2740.205000013113,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "cone-snacks-closeup.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/cone-snacks-closeup.jpg",
+        "transferSize": 29497,
+        "resourceSize": 29209,
+        "priority": "High",
+        "networkRequestTime": 2707.21099999547,
+        "networkEndTime": 2735.9280000030994,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah-logo-mobile.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah-logo-mobile.webp",
+        "transferSize": 21394,
+        "resourceSize": 21106,
+        "priority": "High",
+        "networkRequestTime": 2706.5980000048876,
+        "networkEndTime": 2735.689999997616,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      }
+    ],
+    "highPriorityImageCount": 3
+  },
+  "single_article_desktop": {
+    "file": "single_article-desktop-run2.json",
+    "simLcp_ms": 544.51045,
+    "observedLcp_ms": 2711,
+    "lcpLoadStart": 2474,
+    "lcpLoadEnd": 2474,
+    "ttfb_ms": 2474,
+    "transferTotalBytes": 12132198,
+    "resourceSizeTotalBytes": 12304547,
+    "note_transfer_vs_resource": "transferSize is network bytes transferred; resourceSize is decoded/body size. Near-equality implies little/no HTTP compression on images.",
+    "top10Images": [
+      {
+        "url": "article-inline-hands-snack-corn.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-hands-snack-corn.png",
+        "transferSize": 2208461,
+        "resourceSize": 2208170,
+        "priority": "Low",
+        "networkRequestTime": 2665.761000007391,
+        "networkEndTime": 2800.545000001788,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "article-inline-factory-line-real-snack.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/article-inline-factory-line-real-snack.png",
+        "transferSize": 2119457,
+        "resourceSize": 2119166,
+        "priority": "Low",
+        "networkRequestTime": 2666.095000013709,
+        "networkEndTime": 2812.4360000044107,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "article-hero-banner-real-snack.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/article-hero-banner-real-snack.png",
+        "transferSize": 2059667,
+        "resourceSize": 2059376,
+        "priority": "Low",
+        "networkRequestTime": 2801.2770000100136,
+        "networkEndTime": 2851.9090000092983,
+        "vsObservedLcp": "started_after_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "decorative-snack-cluster-transparent.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/decorative-snack-cluster-transparent.png",
+        "transferSize": 1943745,
+        "resourceSize": 1943454,
+        "priority": "High",
+        "networkRequestTime": 2664.5190000087023,
+        "networkEndTime": 2786.1580000072718,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "bowl-of-real-snacks-transparent.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/bowl-of-real-snacks-transparent.png",
+        "transferSize": 1930418,
+        "resourceSize": 1930127,
+        "priority": "Low",
+        "networkRequestTime": 2665.5010000020266,
+        "networkEndTime": 2808.179000005126,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "corn-and-real-snacks-transparent.png",
+        "pathHint": "/wp-content/themes/ghahghah-theme/assets/images/single-article/corn-and-real-snacks-transparent.png",
+        "transferSize": 1466636,
+        "resourceSize": 1466345,
+        "priority": "Low",
+        "networkRequestTime": 2767.252000004053,
+        "networkEndTime": 2834.91400000453,
+        "vsObservedLcp": "started_after_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "snack-serving-board-600x480.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/snack-serving-board-600x480.jpg",
+        "transferSize": 80151,
+        "resourceSize": 79862,
+        "priority": "Low",
+        "networkRequestTime": 2786.7020000070333,
+        "networkEndTime": 2819.5550000071526,
+        "vsObservedLcp": "started_after_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "snack-sticks-closeup-640x480.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/snack-sticks-closeup-640x480.jpg",
+        "transferSize": 51214,
+        "resourceSize": 50926,
+        "priority": "Low",
+        "networkRequestTime": 2779.208999991417,
+        "networkEndTime": 2815.7029999941587,
+        "vsObservedLcp": "started_after_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah-logo-desktop.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+        "transferSize": 41274,
+        "resourceSize": 40986,
+        "priority": "High",
+        "networkRequestTime": 2485.877000004053,
+        "networkEndTime": 2542.1590000092983,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "light-triangle-pieces.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/light-triangle-pieces.jpg",
+        "transferSize": 37184,
+        "resourceSize": 36896,
+        "priority": "High",
+        "networkRequestTime": 2490.3980000019073,
+        "networkEndTime": 2546.2580000013113,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      }
+    ],
+    "highPriorityImageCount": 4
+  },
+  "home_desktop": {
+    "file": "home-desktop-run2.json",
+    "simLcp_ms": 2610.4330000000004,
+    "observedLcp_ms": 2790,
+    "lcpLoadStart": 2366,
+    "lcpLoadEnd": 2366,
+    "ttfb_ms": 2366,
+    "transferTotalBytes": 2464707,
+    "resourceSizeTotalBytes": 2699779,
+    "note_transfer_vs_resource": "transferSize is network bytes transferred; resourceSize is decoded/body size. Near-equality implies little/no HTTP compression on images.",
+    "top10Images": [
+      {
+        "url": "ghahghah_pepper_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_pepper_flavour_banner_optimized.webp",
+        "transferSize": 232764,
+        "resourceSize": 232474,
+        "priority": "High",
+        "networkRequestTime": 2631.119000002742,
+        "networkEndTime": 2717.304000005126,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah_pizza_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_pizza_flavour_banner_optimized.webp",
+        "transferSize": 230540,
+        "resourceSize": 230250,
+        "priority": "High",
+        "networkRequestTime": 2610.466000005603,
+        "networkEndTime": 2682.3250000029802,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah_parsley_onion_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_parsley_onion_flavour_banner_optimized.webp",
+        "transferSize": 227484,
+        "resourceSize": 227194,
+        "priority": "High",
+        "networkRequestTime": 2609.3080000132322,
+        "networkEndTime": 2675.752000004053,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "ghahghah_chicken_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_chicken_flavour_banner_optimized.webp",
+        "transferSize": 222556,
+        "resourceSize": 222266,
+        "priority": "High",
+        "networkRequestTime": 2631.3259999901056,
+        "networkEndTime": 2716.783999994397,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah_ketchup_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_ketchup_flavour_banner_optimized.webp",
+        "transferSize": 216988,
+        "resourceSize": 216698,
+        "priority": "High",
+        "networkRequestTime": 2614.298999994993,
+        "networkEndTime": 2680.4560000002384,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_shallot_yogurt_flavour_banner_optimized.webp",
+        "transferSize": 216162,
+        "resourceSize": 215872,
+        "priority": "High",
+        "networkRequestTime": 2610.003999993205,
+        "networkEndTime": 2680.86400000751,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "ghahghah_vinegar_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_vinegar_flavour_banner_optimized.webp",
+        "transferSize": 214428,
+        "resourceSize": 214138,
+        "priority": "High",
+        "networkRequestTime": 2613.6729999929667,
+        "networkEndTime": 2681.127000004053,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah_lemon_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_lemon_flavour_banner_optimized.webp",
+        "transferSize": 199548,
+        "resourceSize": 199258,
+        "priority": "High",
+        "networkRequestTime": 2613.997999995947,
+        "networkEndTime": 2679.584000006318,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      },
+      {
+        "url": "ghahghah_cheese_flavour_banner_optimized.webp",
+        "pathHint": "/wp-content/uploads/2026/09/ghahghah_cheese_flavour_banner_optimized.webp",
+        "transferSize": 182530,
+        "resourceSize": 182240,
+        "priority": "High",
+        "networkRequestTime": 2388.5570000112057,
+        "networkEndTime": 2471.2970000058413,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_before_sim_lcp"
+      },
+      {
+        "url": "MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "transferSize": 82278,
+        "resourceSize": 81989,
+        "priority": "Low",
+        "networkRequestTime": 2709.359999999404,
+        "networkEndTime": 2815.723999992013,
+        "vsObservedLcp": "started_before_observed_lcp",
+        "vsSimLcp": "started_after_sim_lcp"
+      }
+    ],
+    "highPriorityImageCount": 15
+  },
+  "home_mobile": {
+    "file": "home-mobile-run1.json",
+    "simLcp_ms": null,
+    "observedLcp_ms": null,
+    "lcpLoadStart": null,
+    "lcpLoadEnd": null,
+    "ttfb_ms": 3668,
+    "transferTotalBytes": 1223618,
+    "resourceSizeTotalBytes": 1459851,
+    "note_transfer_vs_resource": "transferSize is network bytes transferred; resourceSize is decoded/body size. Near-equality implies little/no HTTP compression on images.",
+    "top10Images": [
+      {
+        "url": "05-vinegar-flavour-banner-v2-768x432.webp",
+        "pathHint": "/wp-content/uploads/2026/09/05-vinegar-flavour-banner-v2-768x432.webp",
+        "transferSize": 86487,
+        "resourceSize": 86198,
+        "priority": "High",
+        "networkRequestTime": 3879.1349999904633,
+        "networkEndTime": 3931.535999983549,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "04-pizza-flavour-banner-v2-768x432.webp",
+        "pathHint": "/wp-content/uploads/2026/09/04-pizza-flavour-banner-v2-768x432.webp",
+        "transferSize": 85499,
+        "resourceSize": 85210,
+        "priority": "High",
+        "networkRequestTime": 3878.91400000453,
+        "networkEndTime": 3932.1039999872446,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "02-parsley-onion-flavour-banner-v2-768x432.webp",
+        "pathHint": "/wp-content/uploads/2026/09/02-parsley-onion-flavour-banner-v2-768x432.webp",
+        "transferSize": 84867,
+        "resourceSize": 84578,
+        "priority": "High",
+        "networkRequestTime": 3878.3980000019073,
+        "networkEndTime": 3923.369999989867,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "07-chicken-flavour-banner-768x432.webp",
+        "pathHint": "/wp-content/uploads/2026/09/07-chicken-flavour-banner-768x432.webp",
+        "transferSize": 82359,
+        "resourceSize": 82070,
+        "priority": "High",
+        "networkRequestTime": 3896.889999985695,
+        "networkEndTime": 3962.751999989152,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/MOHAMMAD-MAMODITABA1-768x543.jpg",
+        "transferSize": 82278,
+        "resourceSize": 81989,
+        "priority": "Low",
+        "networkRequestTime": 3955.324999988079,
+        "networkEndTime": 3978.5139999836683,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "08-pepper-flavour-banner-768x432.webp",
+        "pathHint": "/wp-content/uploads/2026/09/08-pepper-flavour-banner-768x432.webp",
+        "transferSize": 79583,
+        "resourceSize": 79294,
+        "priority": "High",
+        "networkRequestTime": 3896.2430000007153,
+        "networkEndTime": 3969.8910000026226,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "snack-sticks-closeup-768x762.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/snack-sticks-closeup-768x762.jpg",
+        "transferSize": 76835,
+        "resourceSize": 76546,
+        "priority": "Low",
+        "networkRequestTime": 3955.527999982238,
+        "networkEndTime": 3979.729999989271,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+        "pathHint": "/wp-content/uploads/2026/09/03-shallot-yogurt-flavour-banner-v2-768x432.webp",
+        "transferSize": 74803,
+        "resourceSize": 74514,
+        "priority": "High",
+        "networkRequestTime": 3878.772999987006,
+        "networkEndTime": 3920.518999993801,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "07-ketchup-flavour-banner-768x432.webp",
+        "pathHint": "/wp-content/uploads/2026/09/07-ketchup-flavour-banner-768x432.webp",
+        "transferSize": 74453,
+        "resourceSize": 74164,
+        "priority": "High",
+        "networkRequestTime": 3882.6279999911785,
+        "networkEndTime": 3922.650999993086,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      },
+      {
+        "url": "snack-serving-board.jpg",
+        "pathHint": "/wp-content/uploads/2026/09/snack-serving-board.jpg",
+        "transferSize": 70922,
+        "resourceSize": 70633,
+        "priority": "Low",
+        "networkRequestTime": 3955.592999994755,
+        "networkEndTime": 3978.2679999917746,
+        "vsObservedLcp": "no_observed_lcp",
+        "vsSimLcp": "no_sim_lcp"
+      }
+    ],
+    "highPriorityImageCount": 12
+  }
+}

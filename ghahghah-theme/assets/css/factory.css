@@ -1,0 +1,313 @@
+/**
+ * Factory intro section.
+ */
+
+.ghahghah-factory {
+	--gfx-bg: var(--ghahghah-neutral-bg, #f7f7f5);
+	--gfx-card: #ffffff;
+	--gfx-text: var(--ghahghah-dark-text, #222222);
+	--gfx-muted: #5c5660;
+	--gfx-red: var(--ghahghah-brand-red, #d71920);
+	--gfx-yellow: var(--ghahghah-corn-yellow, #f5b400);
+	--gfx-cream: var(--ghahghah-cream, #fff8e5);
+	--gfx-max: 80rem;
+	--gfx-pad-m: 1.25rem;
+	--gfx-pad-d: 4rem;
+	--gfx-radius: 20px;
+	--gfx-topic-circle: 56px;
+	--gfx-topic-icon: 24px;
+	background: var(--gfx-bg);
+	color: var(--gfx-text);
+	font-family: var(--ghahghah-font-primary, inherit);
+}
+
+.ghahghah-factory__shell {
+	width: min(100% - (var(--gfx-pad-m) * 2), var(--gfx-max));
+	margin-inline: auto;
+	padding-block: 2.5rem;
+}
+
+.ghahghah-factory__card {
+	display: grid;
+	gap: 1.25rem;
+	padding: 1.25rem;
+	border-radius: var(--gfx-radius);
+	background: var(--gfx-card);
+	box-shadow: 0 10px 30px color-mix(in srgb, #000 5%, transparent);
+}
+
+.ghahghah-factory__intro {
+	display: grid;
+	gap: 0.65rem;
+	min-width: 0;
+}
+
+.ghahghah-factory__eyebrow {
+	margin: 0;
+	color: var(--gfx-red);
+	font-size: 0.95rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.ghahghah-factory__eyebrow::after {
+	content: "";
+	display: block;
+	width: 2.4rem;
+	height: 3px;
+	margin-block-start: 0.45rem;
+	border-radius: 999px;
+	background: var(--gfx-yellow);
+}
+
+.ghahghah-factory__title {
+	margin: 0;
+	font-size: 1.35rem;
+	font-weight: 800;
+	line-height: 1.45;
+	color: var(--gfx-text);
+}
+
+.ghahghah-factory__accent {
+	color: var(--gfx-red);
+}
+
+.ghahghah-factory__text {
+	margin: 0;
+	font-size: 0.92rem;
+	line-height: 1.8;
+	color: var(--gfx-muted);
+}
+
+.ghahghah-factory__media {
+	position: relative;
+	margin: 0;
+	border-radius: 16px;
+	overflow: hidden;
+	isolation: isolate;
+	aspect-ratio: 4 / 3;
+	background: color-mix(in srgb, var(--gfx-cream) 70%, #fff);
+}
+
+.ghahghah-factory__glow {
+	display: none;
+}
+
+.ghahghah-factory__img,
+.ghahghah-factory__placeholder {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.ghahghah-factory__placeholder {
+	background:
+		linear-gradient(135deg, color-mix(in srgb, var(--gfx-cream) 80%, #fff), color-mix(in srgb, var(--gfx-yellow) 18%, #eee));
+}
+
+.ghahghah-factory__topics-block {
+	display: grid;
+	gap: 0.85rem;
+	min-width: 0;
+}
+
+.ghahghah-factory__topics-heading {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 800;
+	line-height: 1.45;
+	color: var(--gfx-text);
+}
+
+.ghahghah-factory__topics-heading::after {
+	content: "";
+	display: block;
+	width: 2.4rem;
+	height: 3px;
+	margin-block-start: 0.45rem;
+	border-radius: 999px;
+	background: var(--gfx-yellow);
+}
+
+.ghahghah-factory__topics {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 0.55rem;
+	align-items: start;
+}
+
+.ghahghah-factory__topic {
+	display: grid;
+	justify-items: center;
+	gap: 10px;
+	min-width: 0;
+	text-align: center;
+}
+
+.ghahghah-factory__topic-icon {
+	display: grid;
+	place-items: center;
+	width: var(--gfx-topic-circle);
+	height: var(--gfx-topic-circle);
+	border-radius: 50%;
+	background: var(--gfx-cream);
+	color: var(--gfx-red);
+	flex: 0 0 auto;
+}
+
+.ghahghah-factory__topic-svg {
+	display: block;
+	width: var(--gfx-topic-icon);
+	height: var(--gfx-topic-icon);
+	color: inherit;
+	overflow: visible;
+}
+
+.ghahghah-factory__topic-label {
+	font-size: 0.78rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: var(--gfx-muted);
+	overflow-wrap: anywhere;
+	hyphens: auto;
+}
+
+.ghahghah-factory__cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.45rem;
+	width: 100%;
+	min-height: 48px;
+	padding: 0.7rem 1.1rem;
+	border-radius: 12px;
+	background: var(--gfx-red);
+	color: #fff;
+	font-weight: 800;
+	font-size: 0.95rem;
+	line-height: 1.3;
+	text-decoration: none;
+	transition: filter 140ms ease, background-color 140ms ease;
+}
+
+.ghahghah-factory__cta:hover,
+.ghahghah-factory__cta:focus-visible {
+	background: color-mix(in srgb, var(--gfx-red) 88%, #000);
+	color: #fff;
+}
+
+.ghahghah-factory__cta:focus-visible {
+	outline: 2px solid var(--gfx-yellow);
+	outline-offset: 3px;
+}
+
+.ghahghah-factory__cta-arrow {
+	flex: 0 0 auto;
+}
+
+@media (min-width: 48rem) {
+	.ghahghah-factory {
+		--gfx-topic-circle: 64px;
+		--gfx-topic-icon: 28px;
+	}
+
+	.ghahghah-factory__shell {
+		padding-block: 3rem;
+	}
+
+	.ghahghah-factory__card {
+		grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+		grid-template-areas:
+			"intro media"
+			"topics media"
+			"cta media";
+		align-items: start;
+		gap: 1.25rem 1.75rem;
+		padding: 1.75rem;
+	}
+
+	.ghahghah-factory__intro {
+		grid-area: intro;
+	}
+
+	.ghahghah-factory__media {
+		grid-area: media;
+		align-self: stretch;
+		min-height: 100%;
+		aspect-ratio: auto;
+		overflow: visible;
+		background: transparent;
+		isolation: auto;
+	}
+
+	.ghahghah-factory__glow {
+		display: block;
+		position: absolute;
+		inset-block-start: -0.85rem;
+		inset-inline-end: -0.85rem;
+		width: 42%;
+		height: 38%;
+		z-index: 0;
+		border-radius: 14px;
+		background: color-mix(in srgb, var(--gfx-yellow) 55%, #fff);
+	}
+
+	.ghahghah-factory__img,
+	.ghahghah-factory__placeholder {
+		position: relative;
+		z-index: 1;
+		border-radius: 16px;
+		min-height: 18rem;
+		overflow: hidden;
+	}
+
+	.ghahghah-factory__topics-block {
+		grid-area: topics;
+	}
+
+	.ghahghah-factory__cta {
+		grid-area: cta;
+		width: auto;
+		justify-self: stretch;
+	}
+
+	.ghahghah-factory__title {
+		font-size: 1.7rem;
+	}
+
+	.ghahghah-factory__topic-label {
+		font-size: 0.85rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	.ghahghah-factory__shell {
+		width: min(100% - (var(--gfx-pad-d) * 2), var(--gfx-max));
+		padding-block: var(--gfx-pad-d);
+	}
+
+	.ghahghah-factory__card {
+		gap: 1.35rem 2rem;
+		padding: 2rem;
+	}
+
+	.ghahghah-factory__title {
+		font-size: 1.95rem;
+	}
+
+	.ghahghah-factory__img,
+	.ghahghah-factory__placeholder {
+		min-height: 22rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ghahghah-factory__cta {
+		transition: none;
+	}
+}

@@ -18,7 +18,7 @@
 	--ghahghah-space-md: 1.5rem;
 	--ghahghah-space-lg: 2.5rem;
 	--ghahghah-space-xl: 4rem;
-	--ghahghah-font-primary: Tahoma, "Segoe UI", Arial, sans-serif;
+	--ghahghah-font-primary: "Yekan Bakh FaNum", Tahoma, "Segoe UI", Arial, sans-serif;
 	--ghahghah-radius: 4px;
 	--ghahghah-border: 1px solid color-mix(in srgb, var(--ghahghah-dark-text) 12%, transparent);
 }
@@ -35,11 +35,40 @@ html {
 
 body {
 	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	font-family: var(--ghahghah-font-primary);
 	font-size: 1rem;
 	line-height: 1.7;
 	color: var(--ghahghah-dark-text);
 	background: var(--ghahghah-neutral-bg);
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-nav,
+.site-header,
+.ghahghah-hero,
+.ghahghah-featured,
+.ghahghah-factory,
+.ghahghah-steps,
+.ghahghah-collab,
+.ghahghah-articles,
+.ghahghah-footer,
+.gg-bottom-nav {
+	font-family: var(--ghahghah-font-primary);
+}
+
+body > .site-main,
+body > main {
+	flex: 1 0 auto;
 }
 
 img,

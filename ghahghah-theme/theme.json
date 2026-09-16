@@ -48,8 +48,8 @@
       "fluid": true,
       "fontFamilies": [
         {
-          "fontFamily": "Tahoma, \"Segoe UI\", Arial, sans-serif",
-          "name": "Primary",
+          "fontFamily": "\"Yekan Bakh FaNum\", Tahoma, \"Segoe UI\", Arial, sans-serif",
+          "name": "Yekan Bakh",
           "slug": "primary"
         }
       ],

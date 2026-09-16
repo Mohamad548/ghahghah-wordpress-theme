@@ -41,9 +41,28 @@ $theme_required = array(
 	'inc/setup.php',
 	'inc/assets.php',
 	'inc/template-tags.php',
+	'inc/header-settings.php',
+	'inc/class-primary-nav-walker.php',
+	'inc/admin/config.php',
+	'inc/admin/panels/header.php',
+	'inc/admin/panels/footer.php',
+	'inc/admin/panels/agency-requests.php',
+	'inc/admin/panels/sms-settings.php',
+	'template-parts/header/site-header.php',
+	'template-parts/footer/site-footer.php',
 	'assets/css/base.css',
 	'assets/css/layout.css',
+	'assets/css/header.css',
+	'assets/css/fonts.css',
+	'assets/css/admin-config.css',
 	'assets/js/theme.js',
+	'assets/js/header.js',
+	'assets/js/admin-config.js',
+	'assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff',
+	'assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff',
+	'assets/images/brand/ghahghah-logo-desktop.webp',
+	'assets/images/brand/ghahghah-logo-mobile.webp',
+	'assets/images/brand/ghahghah-site-icon-512.png',
 );
 
 foreach ( $theme_required as $rel ) {
@@ -91,6 +110,12 @@ foreach ( $iterator as $file ) {
 }
 ghahghah_check( ! str_contains( $theme_php, 'register_post_type' ), 'Theme does not register post types' );
 ghahghah_check( str_contains( $theme_php, 'ghahghah_is_core_active' ), 'Theme has Core inactive fallback helper' );
+ghahghah_check( str_contains( $theme_php, 'ghahghah_register_config_menu' ), 'Theme registers configuration admin menu' );
+ghahghah_check( str_contains( $theme_php, 'GHAHGHAH_CONFIG_TAB_PARAM' ), 'Theme config uses tab URL param' );
+ghahghah_check( str_contains( $theme_php, 'ghahghah_header' ), 'Theme registers ghahghah_header Customizer section' );
+ghahghah_check( str_contains( $theme_php, 'Ghahghah_Primary_Nav_Walker' ), 'Theme defines primary nav walker' );
+ghahghah_check( str_contains( $theme_php, 'ghahghah_get_header_logo_url' ), 'Theme resolves header logo URLs' );
+ghahghah_check( str_contains( file_get_contents( $theme . '/assets/css/fonts.css' ), 'Yekan Bakh FaNum' ), 'Theme bundles Yekan Bakh font face' );
 
 $setup = file_get_contents( $theme . '/inc/setup.php' );
 ghahghah_check( str_contains( $setup, "'primary'" ) && str_contains( $setup, "'footer'" ) && str_contains( $setup, "'legal'" ), 'Menu locations registered' );
@@ -130,9 +155,9 @@ foreach ( array( '#D71920', '#F5B400', '#3A8F45', '#222222', '#FFFFFF', '#F7F7F5
 	ghahghah_check( str_contains( strtolower( $base_css ), strtolower( $hex ) ), "base.css contains $hex" );
 }
 
-// Fabricated business data heuristics.
+// Fabricated business data heuristics (avoid bare "certificate": factory page has a real certificates UI section).
 $all_text = $theme_php . $core_main;
-foreach ( array( 'kcal', 'nutrition', 'certificate', 'ISO ', 'factory capacity', '021-', '+98' ) as $bad ) {
+foreach ( array( 'kcal', 'nutrition', 'ISO ', 'factory capacity', '021-', '+98' ) as $bad ) {
 	ghahghah_check( ! str_contains( strtolower( $all_text ), strtolower( $bad ) ), "No fabricated marker: $bad" );
 }
 

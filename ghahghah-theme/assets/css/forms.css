@@ -1,0 +1,374 @@
+/* Inquiry forms — wholesale & agency (single responsive structure). */
+
+.ghahghah-form {
+	--gf-red: var(--ghahghah-brand-red, #d71920);
+	--gf-yellow: var(--ghahghah-corn-yellow, #f5b400);
+	--gf-text: var(--ghahghah-dark-text, #222222);
+	--gf-muted: #5c5660;
+	--gf-border: #d7dbe3;
+	--gf-bg: #fffdf6;
+	--gf-white: #ffffff;
+	--gf-radius: 12px;
+	--gg-form-icon-muted: #7c8594;
+	--gg-form-icon-error: var(--gf-red);
+	--gg-form-icon-success: #278c3a;
+	--gg-form-icon-warning: #d89100;
+	--gg-form-icon-action: var(--gf-red);
+	--gg-form-icon-accent: var(--gf-yellow);
+	--gg-form-icon-loading: #586173;
+	direction: rtl;
+	color: var(--gf-text);
+	font-family: var(--ghahghah-font-primary, inherit);
+	background: var(--gf-bg);
+	border-radius: 16px;
+	padding: 1.25rem 1rem 1.5rem;
+	border: 1px solid color-mix(in srgb, var(--gf-text) 8%, transparent);
+}
+
+.gg-form-icon {
+	display: inline-block;
+	inline-size: 1.25rem;
+	block-size: 1.25rem;
+	flex: 0 0 auto;
+	vertical-align: -0.125em;
+	color: inherit;
+}
+
+.gg-form-icon--muted { color: var(--gg-form-icon-muted); }
+.gg-form-icon--error { color: var(--gg-form-icon-error); }
+.gg-form-icon--success { color: var(--gg-form-icon-success); }
+.gg-form-icon--warning { color: var(--gg-form-icon-warning); }
+.gg-form-icon--action { color: var(--gg-form-icon-action); }
+.gg-form-icon--status { inline-size: 3rem; block-size: 3rem; }
+.gg-form-icon--accent {
+	inline-size: 2rem;
+	block-size: 1.5rem;
+	color: var(--gg-form-icon-accent);
+}
+.gg-form-icon--mirrored { transform: scaleX(-1); }
+.gg-form-icon--spinner {
+	color: var(--gg-form-icon-loading);
+	transform-origin: center;
+	animation: ghahghah-form-spin 0.9s linear infinite;
+}
+
+@keyframes ghahghah-form-spin {
+	to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.gg-form-icon--spinner { animation: none; }
+}
+
+.ghahghah-form__head {
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.ghahghah-form__title-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.ghahghah-form__title {
+	margin: 0;
+	font-size: 1.35rem;
+	font-weight: 800;
+	color: var(--gf-red);
+	line-height: 1.4;
+}
+
+.ghahghah-form__title-accent-text {
+	color: var(--gf-red);
+}
+
+.ghahghah-form__subtitle {
+	margin: 0.4rem 0 0;
+	color: var(--gf-muted);
+	font-size: 0.95rem;
+}
+
+.ghahghah-form__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.95rem 1rem;
+}
+
+.ghahghah-form__field--full {
+	grid-column: 1 / -1;
+}
+
+.ghahghah-form__label {
+	display: block;
+	margin-bottom: 0.35rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+	color: var(--gf-text);
+}
+
+.ghahghah-form__req {
+	color: var(--gf-red);
+	margin-inline-start: 0.15rem;
+}
+
+.ghahghah-form__control {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.ghahghah-form__icon {
+	position: absolute;
+	inset-inline-start: 0.75rem;
+	z-index: 1;
+	display: inline-flex;
+	pointer-events: none;
+}
+
+.ghahghah-form__input {
+	width: 100%;
+	min-height: 48px;
+	padding: 0.65rem 0.85rem;
+	padding-inline-start: 2.5rem;
+	border: 1px solid var(--gf-border);
+	border-radius: var(--gf-radius);
+	background: var(--gf-white);
+	color: var(--gf-text);
+	font: inherit;
+	font-size: 0.95rem;
+	appearance: none;
+}
+
+.ghahghah-form__control--select .ghahghah-form__input {
+	padding-inline-end: 2.4rem;
+}
+
+.ghahghah-form__control--select:not(:has(.ghahghah-form__icon)) .ghahghah-form__input {
+	padding-inline-start: 0.85rem;
+}
+
+.ghahghah-form__textarea {
+	min-height: 6.5rem;
+	padding-block: 0.75rem;
+	resize: vertical;
+}
+
+.ghahghah-form__chevron {
+	position: absolute;
+	inset-inline-end: 0.75rem;
+	display: inline-flex;
+	pointer-events: none;
+	color: var(--gg-form-icon-muted);
+}
+
+.ghahghah-form__field.is-invalid .ghahghah-form__input {
+	border-color: var(--gf-red);
+}
+
+.ghahghah-form__input:focus {
+	outline: 2px solid var(--gf-yellow);
+	outline-offset: 1px;
+	border-color: color-mix(in srgb, var(--gf-red) 40%, var(--gf-border));
+}
+
+.ghahghah-form__error {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.35rem;
+	margin: 0.4rem 0 0;
+	color: var(--gf-red);
+	font-size: 0.82rem;
+	line-height: 1.45;
+}
+
+.ghahghah-form__error[hidden] {
+	display: none !important;
+}
+
+.ghahghah-form__error-icon {
+	display: inline-flex;
+	margin-block-start: 0.1rem;
+}
+
+.ghahghah-form__error-icon .gg-form-icon {
+	inline-size: 1rem;
+	block-size: 1rem;
+}
+
+.ghahghah-form__consent {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.55rem;
+	margin: 1.1rem 0 0.35rem;
+	font-size: 0.9rem;
+	line-height: 1.55;
+	cursor: pointer;
+}
+
+.ghahghah-form__consent input {
+	margin-block-start: 0.2rem;
+	inline-size: 1.05rem;
+	block-size: 1.05rem;
+	accent-color: var(--gf-red);
+}
+
+.ghahghah-form__submit {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 52px;
+	margin-top: 1rem;
+	padding: 0.75rem 1.25rem;
+	border: none;
+	border-radius: var(--gf-radius);
+	background: var(--gf-red);
+	color: #fff;
+	font: inherit;
+	font-weight: 800;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 140ms ease, opacity 140ms ease;
+}
+
+.ghahghah-form__submit:hover:not(:disabled),
+.ghahghah-form__submit:focus-visible {
+	background: color-mix(in srgb, var(--gf-red) 88%, #000);
+}
+
+.ghahghah-form__submit:disabled,
+.ghahghah-form__submit--disabled {
+	background: #c5c9d2;
+	color: #fff;
+	cursor: not-allowed;
+}
+
+.ghahghah-form__hint {
+	margin: 0.65rem 0 0;
+	text-align: center;
+	color: var(--gf-muted);
+	font-size: 0.82rem;
+}
+
+.ghahghah-form__status {
+	display: grid;
+	justify-items: center;
+	gap: 0.45rem;
+	text-align: center;
+	padding: 1.5rem 0.5rem 1rem;
+}
+
+.ghahghah-form__status-title {
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: 800;
+}
+
+.ghahghah-form__status-text {
+	margin: 0;
+	color: var(--gf-muted);
+	font-size: 0.92rem;
+}
+
+.ghahghah-form__ghost-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	width: 100%;
+	min-height: 52px;
+	margin-top: 0.5rem;
+	padding: 0.75rem 1.25rem;
+	border: 2px solid var(--gf-red);
+	border-radius: var(--gf-radius);
+	background: #fff;
+	color: var(--gf-red);
+	font: inherit;
+	font-weight: 800;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.ghahghah-form__ghost-btn:hover,
+.ghahghah-form__ghost-btn:focus-visible {
+	background: color-mix(in srgb, var(--gf-red) 6%, #fff);
+}
+
+.ghahghah-form[data-ghahghah-form-state="sending"] .ghahghah-form__view--idle,
+.ghahghah-form[data-ghahghah-form-state="success"] .ghahghah-form__view--idle,
+.ghahghah-form[data-ghahghah-form-state="connection"] .ghahghah-form__view--idle {
+	display: none;
+}
+
+/* Desktop: two columns + status row with button on the left (RTL end). */
+@media (min-width: 48rem) {
+	.ghahghah-form {
+		padding: 1.75rem 1.75rem 2rem;
+	}
+
+	.ghahghah-form__title {
+		font-size: 1.6rem;
+	}
+
+	.ghahghah-form__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.ghahghah-form__view--sending,
+	.ghahghah-form__view--success,
+	.ghahghah-form__view--connection {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		padding: 1rem 0;
+	}
+
+	.ghahghah-form__view--sending[hidden],
+	.ghahghah-form__view--success[hidden],
+	.ghahghah-form__view--connection[hidden] {
+		display: none !important;
+	}
+
+	.ghahghah-form__status {
+		justify-items: start;
+		text-align: start;
+		padding: 0;
+		flex: 1;
+	}
+
+	.ghahghah-form__view--sending .ghahghah-form__submit,
+	.ghahghah-form__view--success .ghahghah-form__ghost-btn,
+	.ghahghah-form__view--connection .ghahghah-form__ghost-btn {
+		width: auto;
+		min-width: 12rem;
+		flex: 0 0 auto;
+		margin-top: 0;
+	}
+}
+
+/* Collab panel: form owns the title; keep a slim close bar. */
+.ghahghah-collab__form-panel .ghahghah-collab__form-head {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 0.25rem;
+}
+
+.ghahghah-collab__form-panel .ghahghah-collab__form-title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.ghahghah-collab__form-body {
+	padding: 0;
+}

@@ -21,4 +21,12 @@ declare(strict_types=1);
 	<div class="entry__content">
 		<?php the_content(); ?>
 	</div>
+
+	<?php if ( 'ghahghah_product' === get_post_type() && function_exists( 'ghahghah_get_wholesale_form_url_for_product' ) ) : ?>
+		<p class="entry__wholesale">
+			<a class="entry__wholesale-link" href="<?php echo esc_url( ghahghah_get_wholesale_form_url_for_product( (int) get_the_ID() ) ); ?>">
+				<?php esc_html_e( 'درخواست خرید عمده این محصول', 'ghahghah' ); ?>
+			</a>
+		</p>
+	<?php endif; ?>
 </article>

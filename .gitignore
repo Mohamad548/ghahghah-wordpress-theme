@@ -39,6 +39,12 @@ Desktop.ini
 /design-sources/temporary/
 /design-sources/ui-reference/
 
+# Local UI reference captures and design mockups (not runtime; remain on disk)
+/docx/
+
+# Duplicate starter-article export pack (canonical copy lives under theme catalog import tooling)
+/content/
+
 # WordPress runtime (if developed inside a WP install)
 wp-config.php
 wp-content/uploads/

@@ -67,7 +67,7 @@ function ghahghah_single_article_hero_image( int $post_id = 0 ): array {
 	}
 
 	return array(
-		'url' => ghahghah_single_article_image_url( 'article-hero-banner-real-snack.png' ),
+		'url' => ghahghah_single_article_image_url( 'article-hero-banner-real-snack-optimized.webp' ),
 		'id'  => 0,
 		'alt' => '',
 	);
@@ -218,8 +218,8 @@ function ghahghah_single_article_filter_content( string $content ): string {
 		return $content;
 	}
 
-	$hands   = ghahghah_single_article_image_url( 'article-inline-hands-snack-corn.png' );
-	$factory = ghahghah_single_article_image_url( 'article-inline-factory-line-real-snack.png' );
+	$hands   = ghahghah_single_article_image_url( 'article-inline-hands-snack-corn-optimized.webp' );
+	$factory = ghahghah_single_article_image_url( 'article-inline-factory-line-real-snack-optimized.webp' );
 	$count   = 0;
 
 	return (string) preg_replace_callback(
@@ -229,11 +229,11 @@ function ghahghah_single_article_filter_content( string $content ): string {
 			$figure = '';
 			if ( 1 === $count ) {
 				$figure = '<figure class="ghahghah-single-article__inline-figure">'
-					. '<img src="' . esc_url( $hands ) . '" alt="" width="960" height="640" loading="lazy" decoding="async" />'
+					. '<img src="' . esc_url( $hands ) . '" alt="" width="1448" height="1086" loading="lazy" decoding="async" />'
 					. '</figure>';
 			} elseif ( 2 === $count ) {
 				$figure = '<figure class="ghahghah-single-article__inline-figure">'
-					. '<img src="' . esc_url( $factory ) . '" alt="" width="960" height="640" loading="lazy" decoding="async" />'
+					. '<img src="' . esc_url( $factory ) . '" alt="" width="1448" height="1086" loading="lazy" decoding="async" />'
 					. '</figure>';
 			}
 			return $m[1] . $figure;

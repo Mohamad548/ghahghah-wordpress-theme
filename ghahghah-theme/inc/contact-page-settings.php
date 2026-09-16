@@ -80,9 +80,9 @@ function ghahghah_is_contact_page(): bool {
  */
 function ghahghah_get_contact_corn_image(): array {
 	return array(
-		'src'    => GHAHGHAH_THEME_URI . '/assets/images/contact/corn-isolated-transparent.png',
-		'width'  => 720,
-		'height' => 720,
+		'src'    => GHAHGHAH_THEME_URI . '/assets/images/contact/corn-isolated-transparent-optimized.webp',
+		'width'  => 1448,
+		'height' => 1086,
 	);
 }
 

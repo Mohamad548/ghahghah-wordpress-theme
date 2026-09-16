@@ -1,0 +1,327 @@
+{
+  "phase": "after",
+  "pages": {
+    "wholesale": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 80,
+          "lcp": 4254.4466999999995,
+          "lcpError": null,
+          "cls": 0.00388994809183164,
+          "tbt": 135.70219999999995,
+          "requestCount": 21,
+          "transferSize": 559008,
+          "images": [
+            {
+              "url": "ghahghah_pizza_packshot_optimized.webp",
+              "status": 200,
+              "transferSize": 382630,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 2,
+          "performance": 60,
+          "lcp": 4108.726350000001,
+          "lcpError": null,
+          "cls": 0.00388994809183164,
+          "tbt": 1057.000000000001,
+          "requestCount": 21,
+          "transferSize": 559008,
+          "images": [
+            {
+              "url": "ghahghah_pizza_packshot_optimized.webp",
+              "status": 200,
+              "transferSize": 382630,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 3,
+          "performance": 60,
+          "lcp": 4098.35715,
+          "lcpError": null,
+          "cls": 0.0027108794043126587,
+          "tbt": 933.9999999999998,
+          "requestCount": 21,
+          "transferSize": 559008,
+          "images": [
+            {
+              "url": "ghahghah_pizza_packshot_optimized.webp",
+              "status": 200,
+              "transferSize": 382630,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 4108.726350000001,
+        "lcpValidN": 3,
+        "cls": 0.00388994809183164,
+        "tbt_ms": 933.9999999999998,
+        "transferSize": 559008,
+        "requestCount": 21,
+        "performance": 60
+      }
+    },
+    "agency": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 66,
+          "lcp": 4093.0785,
+          "lcpError": null,
+          "cls": 0.2762561254488952,
+          "tbt": 152,
+          "requestCount": 21,
+          "transferSize": 535943,
+          "images": [
+            {
+              "url": "ghahghah_parsley_onion_pack_optimized.webp",
+              "status": 200,
+              "transferSize": 358804,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 2,
+          "performance": 67,
+          "lcp": 3955.22955,
+          "lcpError": null,
+          "cls": 0.2762561254488952,
+          "tbt": 232,
+          "requestCount": 21,
+          "transferSize": 535943,
+          "images": [
+            {
+              "url": "ghahghah_parsley_onion_pack_optimized.webp",
+              "status": 200,
+              "transferSize": 358804,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 3,
+          "performance": 67,
+          "lcp": 3948.6306,
+          "lcpError": null,
+          "cls": 0.2765070396372892,
+          "tbt": 179.57960000000003,
+          "requestCount": 21,
+          "transferSize": 535943,
+          "images": [
+            {
+              "url": "ghahghah_parsley_onion_pack_optimized.webp",
+              "status": 200,
+              "transferSize": 358804,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 3955.22955,
+        "lcpValidN": 3,
+        "cls": 0.2762561254488952,
+        "tbt_ms": 179.57960000000003,
+        "transferSize": 535943,
+        "requestCount": 21,
+        "performance": 67
+      }
+    },
+    "contact": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 90,
+          "lcp": 2623.73535,
+          "lcpError": null,
+          "cls": 0.007033346069205272,
+          "tbt": 97,
+          "requestCount": 39,
+          "transferSize": 819077,
+          "images": [
+            {
+              "url": "corn-isolated-transparent-optimized.webp",
+              "status": 200,
+              "transferSize": 182510,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 2,
+          "performance": 93,
+          "lcp": 2595.8331,
+          "lcpError": null,
+          "cls": 0.007033346069205272,
+          "tbt": 103.44460000000049,
+          "requestCount": 39,
+          "transferSize": 819087,
+          "images": [
+            {
+              "url": "corn-isolated-transparent-optimized.webp",
+              "status": 200,
+              "transferSize": 182510,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 3,
+          "performance": 92,
+          "lcp": 2603.82945,
+          "lcpError": null,
+          "cls": 0.00932852981077716,
+          "tbt": 31.113700000000108,
+          "requestCount": 39,
+          "transferSize": 819081,
+          "images": [
+            {
+              "url": "corn-isolated-transparent-optimized.webp",
+              "status": 200,
+              "transferSize": 182510,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 2603.82945,
+        "lcpValidN": 3,
+        "cls": 0.007033346069205272,
+        "tbt_ms": 97,
+        "transferSize": 819081,
+        "requestCount": 39,
+        "performance": 92
+      }
+    },
+    "article": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 90,
+          "lcp": 1555.1607,
+          "lcpError": null,
+          "cls": 0.00089811140416525,
+          "tbt": 226.38689999999997,
+          "requestCount": 26,
+          "transferSize": 1062873,
+          "images": [
+            {
+              "url": "article-inline-hands-snack-corn-optimized.webp",
+              "status": 200,
+              "transferSize": 152334,
+              "mime": "image/webp"
+            },
+            {
+              "url": "article-inline-factory-line-real-snack-optimized.webp",
+              "status": 200,
+              "transferSize": 150696,
+              "mime": "image/webp"
+            },
+            {
+              "url": "corn-and-real-snacks-transparent-optimized.webp",
+              "status": 200,
+              "transferSize": 281168,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 2,
+          "performance": 95,
+          "lcp": 1564.42695,
+          "lcpError": null,
+          "cls": 0.0007418695498281248,
+          "tbt": 194.00000000000023,
+          "requestCount": 27,
+          "transferSize": 1206121,
+          "images": [
+            {
+              "url": "article-inline-hands-snack-corn-optimized.webp",
+              "status": 200,
+              "transferSize": 152334,
+              "mime": "image/webp"
+            },
+            {
+              "url": "article-inline-factory-line-real-snack-optimized.webp",
+              "status": 200,
+              "transferSize": 150696,
+              "mime": "image/webp"
+            },
+            {
+              "url": "corn-and-real-snacks-transparent-optimized.webp",
+              "status": 200,
+              "transferSize": 281168,
+              "mime": "image/webp"
+            },
+            {
+              "url": "article-hero-banner-real-snack-optimized.webp",
+              "status": 200,
+              "transferSize": 143238,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        },
+        {
+          "run": 3,
+          "performance": 96,
+          "lcp": 1558.8805499999999,
+          "lcpError": null,
+          "cls": 0.0007418695498281248,
+          "tbt": 172,
+          "requestCount": 26,
+          "transferSize": 1062899,
+          "images": [
+            {
+              "url": "article-inline-hands-snack-corn-optimized.webp",
+              "status": 200,
+              "transferSize": 152334,
+              "mime": "image/webp"
+            },
+            {
+              "url": "article-inline-factory-line-real-snack-optimized.webp",
+              "status": 200,
+              "transferSize": 150696,
+              "mime": "image/webp"
+            },
+            {
+              "url": "corn-and-real-snacks-transparent-optimized.webp",
+              "status": 200,
+              "transferSize": 281168,
+              "mime": "image/webp"
+            }
+          ],
+          "legacyPngRequests": []
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 1558.8805499999999,
+        "lcpValidN": 3,
+        "cls": 0.0007418695498281248,
+        "tbt_ms": 194.00000000000023,
+        "transferSize": 1062899,
+        "requestCount": 26,
+        "performance": 95
+      }
+    }
+  }
+}

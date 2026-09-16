@@ -1,0 +1,7 @@
+Working directory: /e/word pares/ghahghah-fix-perf-images
+wp-env Node cwd: e:\word pares\ghahghah-fix-perf-images
+=== Starting wp-env (if needed) ===
+npm error npx canceled due to missing packages and no YES option: ["wp-env@1.0.1"]
+npm error A complete log of this run can be found in: C:\Users\Mohamad\AppData\Local\npm-cache\_logs\2026-09-16T14_49_44_003Z-debug-0.log
+npm error npx canceled due to missing packages and no YES option: ["wp-env@1.0.1"]
+npm error A complete log of this run can be found in: C:\Users\Mohamad\AppData\Local\npm-cache\_logs\2026-09-16T14_49_46_511Z-debug-0.log

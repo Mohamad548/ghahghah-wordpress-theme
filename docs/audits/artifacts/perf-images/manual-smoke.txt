@@ -1,0 +1,13 @@
+=== MANUAL SMOKE 8898 ===
+home:200
+wholesale:200
+agency:200
+contact:200
+article:200
+name	status	update	version	update_version	auto_update
+ghahghah-theme	active	none	0.9.10		off
+name	status	update	version	update_version	auto_update
+ghahghah-core	active	none	0.2.2		off
+live-search:200
+1
+6

@@ -29,9 +29,9 @@ while ( have_posts() ) :
 	$archive_p  = function_exists( 'ghahghah_get_products_archive_url' ) ? ghahghah_get_products_archive_url() : '';
 	$wholesale  = function_exists( 'ghahghah_get_wholesale_form_url' ) ? ghahghah_get_wholesale_form_url() : '';
 	$agency     = function_exists( 'ghahghah_get_agency_form_url' ) ? ghahghah_get_agency_form_url() : '';
-	$deco_bowl  = ghahghah_single_article_image_url( 'bowl-of-real-snacks-transparent.png' );
-	$deco_corn  = ghahghah_single_article_image_url( 'corn-and-real-snacks-transparent.png' );
-	$deco_cluster = ghahghah_single_article_image_url( 'decorative-snack-cluster-transparent.png' );
+	$deco_bowl  = ghahghah_single_article_image_url( 'bowl-of-real-snacks-transparent-optimized.webp' );
+	$deco_corn  = ghahghah_single_article_image_url( 'corn-and-real-snacks-transparent-optimized.webp' );
+	$deco_cluster = ghahghah_single_article_image_url( 'decorative-snack-cluster-transparent-optimized.webp' );
 	?>
 	<main id="main-content" class="site-main ghahghah-single-article" tabindex="-1">
 		<article <?php post_class( 'ghahghah-single-article__article' ); ?>>
@@ -223,7 +223,7 @@ while ( have_posts() ) :
 											);
 											?>
 										<?php else : ?>
-											<img src="<?php echo esc_url( ghahghah_single_article_image_url( 'article-hero-banner-real-snack.png' ) ); ?>" alt="" loading="lazy" decoding="async" />
+											<img src="<?php echo esc_url( ghahghah_single_article_image_url( 'article-hero-banner-real-snack-optimized.webp' ) ); ?>" alt="" loading="lazy" decoding="async" />
 										<?php endif; ?>
 									</span>
 									<span class="ghahghah-single-article__related-card-title"><?php echo esc_html( get_the_title( $item ) ); ?></span>

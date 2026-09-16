@@ -1,0 +1,327 @@
+{
+  "phase": "before",
+  "pages": {
+    "wholesale": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 67,
+          "lcp": 12807.633271253602,
+          "lcpError": null,
+          "cls": 0.03469678494928259,
+          "tbt": 261,
+          "requestCount": 21,
+          "transferSize": 2354094,
+          "images": [
+            {
+              "url": "wholesale-hero-pizza-transparent.png",
+              "status": 200,
+              "transferSize": 2177723,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "performance": 64,
+          "lcp": 12863.5512,
+          "lcpError": null,
+          "cls": 0.0346951414828494,
+          "tbt": 237.00000000000023,
+          "requestCount": 21,
+          "transferSize": 2354094,
+          "images": [
+            {
+              "url": "wholesale-hero-pizza-transparent.png",
+              "status": 200,
+              "transferSize": 2177723,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "performance": 65,
+          "lcp": 12821.2275,
+          "lcpError": null,
+          "cls": 0.03469678494928259,
+          "tbt": 161,
+          "requestCount": 21,
+          "transferSize": 2354094,
+          "images": [
+            {
+              "url": "wholesale-hero-pizza-transparent.png",
+              "status": 200,
+              "transferSize": 2177723,
+              "mime": "image/png"
+            }
+          ]
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 12821.2275,
+        "lcpValidN": 3,
+        "cls": 0.03469678494928259,
+        "tbt_ms": 237.00000000000023,
+        "transferSize": 2354094,
+        "requestCount": 21,
+        "performance": 65
+      }
+    },
+    "agency": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 49,
+          "lcp": 13118.2506,
+          "lcpError": null,
+          "cls": 0.2972388199740078,
+          "tbt": 344.9999999999998,
+          "requestCount": 21,
+          "transferSize": 2401222,
+          "images": [
+            {
+              "url": "parsley-onion-pack-composition-transparent.png",
+              "status": 200,
+              "transferSize": 2224079,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "performance": 55,
+          "lcp": 13117.511849999999,
+          "lcpError": null,
+          "cls": 0.29748973416240176,
+          "tbt": 167,
+          "requestCount": 21,
+          "transferSize": 2401222,
+          "images": [
+            {
+              "url": "parsley-onion-pack-composition-transparent.png",
+              "status": 200,
+              "transferSize": 2224079,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "performance": 48,
+          "lcp": 13105.1031,
+          "lcpError": null,
+          "cls": 0.29748973416240176,
+          "tbt": 236.26459999999997,
+          "requestCount": 21,
+          "transferSize": 2401222,
+          "images": [
+            {
+              "url": "parsley-onion-pack-composition-transparent.png",
+              "status": 200,
+              "transferSize": 2224079,
+              "mime": "image/png"
+            }
+          ]
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 13117.511849999999,
+        "lcpValidN": 3,
+        "cls": 0.29748973416240176,
+        "tbt_ms": 236.26459999999997,
+        "transferSize": 2401222,
+        "requestCount": 21,
+        "performance": 49
+      }
+    },
+    "contact": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 68,
+          "lcp": 9064.60155,
+          "lcpError": null,
+          "cls": 0.010270753719650545,
+          "tbt": 125,
+          "requestCount": 39,
+          "transferSize": 2150711,
+          "images": [
+            {
+              "url": "corn-isolated-transparent.png",
+              "status": 200,
+              "transferSize": 1514199,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "performance": 64,
+          "lcp": 9130.6278,
+          "lcpError": null,
+          "cls": 0.010270753719650545,
+          "tbt": 308,
+          "requestCount": 39,
+          "transferSize": 2150770,
+          "images": [
+            {
+              "url": "corn-isolated-transparent.png",
+              "status": 200,
+              "transferSize": 1514199,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "performance": 65,
+          "lcp": 9110.3487,
+          "lcpError": null,
+          "cls": 0.010270753719650545,
+          "tbt": 223.43420000000015,
+          "requestCount": 39,
+          "transferSize": 2150725,
+          "images": [
+            {
+              "url": "corn-isolated-transparent.png",
+              "status": 200,
+              "transferSize": 1514199,
+              "mime": "image/png"
+            }
+          ]
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 9110.3487,
+        "lcpValidN": 3,
+        "cls": 0.010270753719650545,
+        "tbt_ms": 223.43420000000015,
+        "transferSize": 2150725,
+        "requestCount": 39,
+        "performance": 65
+      }
+    },
+    "article": {
+      "runs": [
+        {
+          "run": 1,
+          "performance": 90,
+          "lcp": 1572.97035,
+          "lcpError": null,
+          "cls": 0.0007418695498281248,
+          "tbt": 203.5,
+          "requestCount": 27,
+          "transferSize": 8332908,
+          "images": [
+            {
+              "url": "article-inline-hands-snack-corn.png",
+              "status": 200,
+              "transferSize": 2208461,
+              "mime": "image/png"
+            },
+            {
+              "url": "article-inline-factory-line-real-snack.png",
+              "status": 200,
+              "transferSize": 2119457,
+              "mime": "image/png"
+            },
+            {
+              "url": "corn-and-real-snacks-transparent.png",
+              "status": 200,
+              "transferSize": 1466636,
+              "mime": "image/png"
+            },
+            {
+              "url": "article-hero-banner-real-snack.png",
+              "status": 200,
+              "transferSize": 2059667,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 2,
+          "performance": 91,
+          "lcp": 1583.6661,
+          "lcpError": null,
+          "cls": 0.0007418695498281248,
+          "tbt": 224,
+          "requestCount": 27,
+          "transferSize": 8332903,
+          "images": [
+            {
+              "url": "article-inline-hands-snack-corn.png",
+              "status": 200,
+              "transferSize": 2208461,
+              "mime": "image/png"
+            },
+            {
+              "url": "article-inline-factory-line-real-snack.png",
+              "status": 200,
+              "transferSize": 2119457,
+              "mime": "image/png"
+            },
+            {
+              "url": "corn-and-real-snacks-transparent.png",
+              "status": 200,
+              "transferSize": 1466636,
+              "mime": "image/png"
+            },
+            {
+              "url": "article-hero-banner-real-snack.png",
+              "status": 200,
+              "transferSize": 2059667,
+              "mime": "image/png"
+            }
+          ]
+        },
+        {
+          "run": 3,
+          "performance": 89,
+          "lcp": 1608.5379,
+          "lcpError": null,
+          "cls": 0.0007418695498281248,
+          "tbt": 227,
+          "requestCount": 27,
+          "transferSize": 8332898,
+          "images": [
+            {
+              "url": "article-inline-hands-snack-corn.png",
+              "status": 200,
+              "transferSize": 2208461,
+              "mime": "image/png"
+            },
+            {
+              "url": "article-inline-factory-line-real-snack.png",
+              "status": 200,
+              "transferSize": 2119457,
+              "mime": "image/png"
+            },
+            {
+              "url": "corn-and-real-snacks-transparent.png",
+              "status": 200,
+              "transferSize": 1466636,
+              "mime": "image/png"
+            },
+            {
+              "url": "article-hero-banner-real-snack.png",
+              "status": 200,
+              "transferSize": 2059667,
+              "mime": "image/png"
+            }
+          ]
+        }
+      ],
+      "mediansValidOnly": {
+        "lcp_ms": 1583.6661,
+        "lcpValidN": 3,
+        "cls": 0.0007418695498281248,
+        "tbt_ms": 224,
+        "transferSize": 8332903,
+        "requestCount": 27,
+        "performance": 90
+      }
+    }
+  }
+}

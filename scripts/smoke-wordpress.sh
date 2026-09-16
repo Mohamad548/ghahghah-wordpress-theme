@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Live WordPress smoke tests for ghahghah-theme + ghahghah-core via @wordpress/env.
 # Does not destroy the database. Does not modify WordPress core.
+# Targets the wp-env Docker project for THIS repository cwd only (safe with multiple envs).
 set -euo pipefail
 
 PASS_COUNT=0
@@ -27,9 +28,38 @@ log "wp-env Node cwd: ${WP_ENV_CWD}"
 EVIDENCE_DIR="${ROOT}/.smoke-evidence"
 mkdir -p "$EVIDENCE_DIR"
 
+# Saved at start; restored on EXIT (success or failure).
+INITIAL_THEME=""
+INITIAL_PLUGIN_ACTIVE=""
+TEMP_POST_ID=""
+RESTORE_DONE=0
+
 require_cmd() {
 	command -v "$1" >/dev/null 2>&1 || fail "Required command not found: $1"
 }
+
+# Prefer local @wordpress/env binary from npm ci (never bare "wp-env" / wrong npx package).
+resolve_wp_env_bin() {
+	local local_bin="${ROOT}/node_modules/@wordpress/env/bin/wp-env"
+	local local_shim="${ROOT}/node_modules/.bin/wp-env"
+	if [[ -f "$local_bin" ]]; then
+		printf '%s\n' "$local_bin"
+		return 0
+	fi
+	if [[ -f "$local_shim" ]]; then
+		printf '%s\n' "$local_shim"
+		return 0
+	fi
+	fail "Local @wordpress/env not found. Run: npm ci --include=dev (expects @wordpress/env@11.x in node_modules)"
+}
+
+WP_ENV_BIN="$(resolve_wp_env_bin)"
+WP_ENV_VERSION="$(
+	node -e 'const p=require("path"); const j=require(p.join(process.argv[1],"node_modules","@wordpress","env","package.json")); process.stdout.write(String(j.version||""));' "$ROOT" 2>/dev/null || echo unknown
+)"
+log "Using wp-env binary: ${WP_ENV_BIN}"
+log "Resolved @wordpress/env version: ${WP_ENV_VERSION}"
+printf '%s\n' "$WP_ENV_VERSION" | grep -Eq '^11\.' || fail "Expected @wordpress/env 11.x, got ${WP_ENV_VERSION}"
 
 # Run wp-env with a stable lowercase Windows cwd so it targets the same env hash.
 wp_env() {
@@ -37,36 +67,136 @@ wp_env() {
 	node -e '
 const { spawnSync } = require("child_process");
 const cwd = process.argv[1];
-const args = process.argv.slice(2);
-const result = spawnSync("npx", ["--no-install", "wp-env", ...args], {
+const bin = process.argv[2];
+const args = process.argv.slice(3);
+const result = spawnSync(process.execPath, [bin, ...args], {
   cwd,
   stdio: "inherit",
-  shell: true,
+  shell: false,
   env: process.env,
 });
 process.exit(result.status === null ? 1 : result.status);
-' "$WP_ENV_CWD" $@
+' "$WP_ENV_CWD" "$WP_ENV_BIN" "$@"
 }
 
-# Resolve the running development CLI container (not tests).
+# Basename hint unique to this worktree (e.g. ghahghah-fix-perf-images).
+WORKTREE_HINT="$(basename "$ROOT" | tr '[:upper:]' '[:lower:]' | tr -cd 'a-z0-9-')"
+# Main clone folder often ends with "theme"; avoid matching both.
+log "Worktree docker name hint: ${WORKTREE_HINT}"
+
+# Resolve THIS worktree's development CLI container (not tests, not sibling envs).
 cli_container() {
-	docker ps --format '{{.Names}}' | grep -E 'ghahghah.*-cli-1$' | grep -v tests | head -n 1
+	local names matches=()
+	names="$(docker ps --format '{{.Names}}' 2>/dev/null || true)"
+	# Prefer containers whose name includes this worktree directory token.
+	while IFS= read -r n; do
+		[[ -z "$n" ]] && continue
+		printf '%s' "$n" | grep -Eqi 'tests' && continue
+		printf '%s' "$n" | grep -Eqi -- '-cli-1$' || continue
+		printf '%s' "$n" | grep -Eqi -- 'wp-env-' || continue
+		# Match worktree hint inside compose project name.
+		if printf '%s' "$n" | grep -Eqi -- "$WORKTREE_HINT"; then
+			matches+=("$n")
+		fi
+	done <<< "$names"
+
+	if [[ ${#matches[@]} -eq 1 ]]; then
+		printf '%s\n' "${matches[0]}"
+		return 0
+	fi
+	if [[ ${#matches[@]} -gt 1 ]]; then
+		log "Ambiguous CLI containers for hint '${WORKTREE_HINT}':"
+		printf '%s\n' "${matches[@]}" | sed 's/^/  /' >&2
+		return 1
+	fi
+
+	# Fallback: inspect mounts for this ROOT path (Windows/Git Bash tolerant).
+	local root_norm root_alt
+	root_norm="$(printf '%s' "$ROOT" | tr '\\' '/' | tr '[:upper:]' '[:lower:]')"
+	root_alt="$(printf '%s' "$WP_ENV_CWD" | tr '\\' '/' | tr '[:upper:]' '[:lower:]')"
+	while IFS= read -r n; do
+		[[ -z "$n" ]] && continue
+		printf '%s' "$n" | grep -Eqi 'tests' && continue
+		printf '%s' "$n" | grep -Eqi -- '-cli-1$' || continue
+		printf '%s' "$n" | grep -Eqi -- 'wp-env-' || continue
+		local mounts
+		mounts="$(docker inspect -f '{{range .Mounts}}{{.Source}}|{{end}}' "$n" 2>/dev/null | tr '\\' '/' | tr '[:upper:]' '[:lower:]' || true)"
+		if printf '%s' "$mounts" | grep -Fq -- "$root_norm" || printf '%s' "$mounts" | grep -Fq -- "$root_alt"; then
+			matches+=("$n")
+		fi
+	done <<< "$names"
+
+	if [[ ${#matches[@]} -eq 1 ]]; then
+		printf '%s\n' "${matches[0]}"
+		return 0
+	fi
+	if [[ ${#matches[@]} -gt 1 ]]; then
+		log "Ambiguous CLI containers by mount for ROOT:"
+		printf '%s\n' "${matches[@]}" | sed 's/^/  /' >&2
+		return 1
+	fi
+	return 1
+}
+
+wordpress_container_for_cli() {
+	local cli="$1"
+	# wp-env-...-cli-1 -> wp-env-...-wordpress-1
+	printf '%s\n' "${cli%-cli-1}-wordpress-1"
 }
 
 # Fast, capturable WP-CLI via docker exec (avoids wp-env stdout chrome + quoting issues).
 wpcli() {
 	local container
-	container="$(cli_container)"
-	[[ -n "$container" ]] || fail "No running wp-env CLI container found"
+	container="$(cli_container)" || fail "No unique wp-env CLI container for this worktree (hint=${WORKTREE_HINT})"
 	docker exec "$container" wp --allow-root "$@"
 }
 
 docker_sh() {
 	local container
-	container="$(cli_container)"
-	[[ -n "$container" ]] || fail "No running wp-env CLI container found"
+	container="$(cli_container)" || fail "No unique wp-env CLI container for this worktree (hint=${WORKTREE_HINT})"
 	docker exec "$container" sh -c "$1"
 }
+
+restore_initial_state() {
+	[[ "$RESTORE_DONE" -eq 1 ]] && return 0
+	RESTORE_DONE=1
+	log "=== Restoring initial theme/plugin state ==="
+	# Best-effort; do not fail the trap with set -e.
+	set +e
+	if [[ -n "${TEMP_POST_ID}" ]]; then
+		wpcli post delete "$TEMP_POST_ID" --force --quiet 2>/dev/null
+		log "Deleted temporary test product ID ${TEMP_POST_ID}"
+		TEMP_POST_ID=""
+	fi
+	if [[ -n "${INITIAL_THEME}" ]]; then
+		wpcli theme activate "$INITIAL_THEME" --quiet 2>/dev/null
+		log "Restored theme: ${INITIAL_THEME}"
+	fi
+	if [[ "${INITIAL_PLUGIN_ACTIVE}" == "yes" ]]; then
+		wpcli plugin activate ghahghah-core --quiet 2>/dev/null
+		log "Restored plugin: ghahghah-core active"
+	elif [[ "${INITIAL_PLUGIN_ACTIVE}" == "no" ]]; then
+		wpcli plugin deactivate ghahghah-core --quiet 2>/dev/null
+		log "Restored plugin: ghahghah-core inactive"
+	fi
+	set -e
+}
+
+cleanup_temp_post() {
+	if [[ -n "${TEMP_POST_ID}" ]]; then
+		wpcli post delete "$TEMP_POST_ID" --force --quiet 2>/dev/null || true
+		log "Deleted temporary test product ID ${TEMP_POST_ID}"
+		TEMP_POST_ID=""
+	fi
+}
+
+on_exit() {
+	local ec=$?
+	cleanup_temp_post
+	restore_initial_state
+	exit "$ec"
+}
+trap on_exit EXIT
 
 # Truncate debug.log inside the container so scenario fatals are attributable.
 reset_debug_log() {
@@ -131,7 +261,8 @@ assert_php_yes() {
 	local php_code="$1"
 	local label="$2"
 	local result=""
-	result="$(wpcli eval "$php_code" 2>/dev/null | tr -d '\r' | grep -E '^(yes|no)$' | tail -n 1 || true)"
+	# Force a trailing newline so grep line anchors are reliable across shells.
+	result="$(wpcli eval "${php_code}; echo PHP_EOL;" 2>/dev/null | tr -d '\r' | grep -E '^(yes|no)$' | tail -n 1 || true)"
 	log "Assert PHP (${label}): => ${result}"
 	if [[ "$result" != "yes" ]]; then
 		fail "Assertion failed (${label}); expected yes, got '${result}'"
@@ -141,7 +272,6 @@ assert_php_yes() {
 
 require_cmd docker
 require_cmd curl
-require_cmd npx
 require_cmd node
 
 if ! docker info >/dev/null 2>&1; then
@@ -149,15 +279,47 @@ if ! docker info >/dev/null 2>&1; then
 fi
 
 log "=== Starting wp-env (if needed) ==="
-STATUS_OUT="$(wp_env status 2>&1 || true)"
-log "$STATUS_OUT"
-if printf '%s' "$STATUS_OUT" | grep -Eqi 'status:[[:space:]]*running'; then
-	log "wp-env already running; skipping start"
-	pass "wp-env already running"
+# If this worktree already has a running Docker project (by name hint), reuse it.
+# Do not call `wp-env start` when status points at a different hash than the live containers.
+EXISTING_CLI="$(cli_container 2>/dev/null || true)"
+if [[ -n "$EXISTING_CLI" ]]; then
+	log "Found running worktree CLI container: ${EXISTING_CLI}"
+	log "Skipping wp-env start to avoid creating a second project hash"
+	pass "wp-env containers already running for this worktree"
 else
-	wp_env start
-	pass "wp-env start completed"
+	STATUS_OUT="$(wp_env status 2>&1 || true)"
+	log "$STATUS_OUT"
+	if printf '%s' "$STATUS_OUT" | grep -Eqi 'status:[[:space:]]*running'; then
+		log "wp-env already running; skipping start"
+		pass "wp-env already running"
+	else
+		wp_env start
+		pass "wp-env start completed"
+	fi
 fi
+
+CLI_NAME="$(cli_container)" || fail "Could not resolve unique CLI container for this worktree"
+WP_NAME="$(wordpress_container_for_cli "$CLI_NAME")"
+log "Selected CLI container: ${CLI_NAME}"
+log "Expected WordPress container: ${WP_NAME}"
+printf '%s\n' "$CLI_NAME" >"${EVIDENCE_DIR}/selected-cli-container.txt"
+printf '%s\n' "$WP_NAME" >"${EVIDENCE_DIR}/selected-wordpress-container.txt"
+
+# Host port binding evidence (must not silently target :8888 when this env is :8898).
+HOST_PORTS="$(docker port "$WP_NAME" 2>/dev/null || true)"
+log "WordPress container ports: ${HOST_PORTS}"
+printf '%s\n' "$HOST_PORTS" >"${EVIDENCE_DIR}/wordpress-ports.txt"
+echo "$HOST_PORTS" | grep -Eq '8898|8888|->[0-9]+' || fail "Could not read host port mapping for ${WP_NAME}"
+
+# Theme mount must point at this worktree theme directory.
+THEME_MOUNT="$(docker inspect -f '{{range .Mounts}}{{println .Source "->" .Destination}}{{end}}' "$WP_NAME" 2>/dev/null | grep -i 'ghahghah-theme' || true)"
+log "Theme-related mounts:"
+log "${THEME_MOUNT:-"(none matched)"}"
+printf '%s\n' "$THEME_MOUNT" >"${EVIDENCE_DIR}/theme-mounts.txt"
+MOUNT_OK=0
+printf '%s' "$THEME_MOUNT" | tr '\\' '/' | tr '[:upper:]' '[:lower:]' | grep -Fq "$(printf '%s' "$ROOT" | tr '\\' '/' | tr '[:upper:]' '[:lower:]')" && MOUNT_OK=1
+printf '%s' "$THEME_MOUNT" | tr '\\' '/' | tr '[:upper:]' '[:lower:]' | grep -Fq "$(printf '%s' "$WP_ENV_CWD" | tr '\\' '/' | tr '[:upper:]' '[:lower:]')" && MOUNT_OK=1
+[[ "$MOUNT_OK" -eq 1 ]] || fail "WordPress container theme mount does not include this worktree ROOT; refusing to mutate plugins/themes"
 
 SITE_URL="$(wpcli option get siteurl 2>/dev/null | tr -d '\r' | tail -n 1)"
 HOME_URL="$(wpcli option get home 2>/dev/null | tr -d '\r' | tail -n 1)"
@@ -167,6 +329,27 @@ log "siteurl=${SITE_URL}"
 log "home=${HOME_URL}"
 [[ -n "$SITE_URL" ]] || fail "Could not determine siteurl from wp-env"
 [[ -n "$HOME_URL" ]] || HOME_URL="$SITE_URL"
+printf '%s\n' "$SITE_URL" >"${EVIDENCE_DIR}/siteurl.txt"
+printf '%s\n' "$HOME_URL" >"${EVIDENCE_DIR}/home.txt"
+
+# If host maps 8898, URLs must reference 8898 (prevents driving the sibling :8888 site).
+if printf '%s' "$HOST_PORTS" | grep -Eq ':8898'; then
+	printf '%s' "$SITE_URL" | grep -Eq ':8898' || fail "Container is on host :8898 but siteurl is '${SITE_URL}'"
+	printf '%s' "$HOME_URL" | grep -Eq ':8898' || fail "Container is on host :8898 but home is '${HOME_URL}'"
+	pass "siteurl/home match isolated port 8898"
+elif printf '%s' "$HOST_PORTS" | grep -Eq ':8888'; then
+	printf '%s' "$SITE_URL" | grep -Eq ':8888' || fail "Container is on host :8888 but siteurl is '${SITE_URL}'"
+	pass "siteurl/home match port 8888"
+fi
+
+# Capture initial state before any mutate.
+INITIAL_THEME="$(wpcli option get stylesheet 2>/dev/null | tr -d '\r' | tail -n 1)"
+INITIAL_PLUGIN_ACTIVE="$(wpcli plugin is-active ghahghah-core >/dev/null 2>&1 && echo yes || echo no)"
+log "Initial stylesheet: ${INITIAL_THEME}"
+log "Initial ghahghah-core active: ${INITIAL_PLUGIN_ACTIVE}"
+printf '%s\n' "$INITIAL_THEME" >"${EVIDENCE_DIR}/initial-theme.txt"
+printf '%s\n' "$INITIAL_PLUGIN_ACTIVE" >"${EVIDENCE_DIR}/initial-plugin-active.txt"
+[[ -n "$INITIAL_THEME" ]] || fail "Could not read initial stylesheet"
 
 # Discover a bundled standard theme (not ghahghah-theme).
 BUNDLE_THEME="$(wpcli theme list --status=inactive --field=name 2>/dev/null | tr -d '\r' | grep -E '^(twentytwentyfive|twentytwentyfour|twentytwentythree|twentytwentytwo|twentytwentyone|twentytwenty)$' | head -n 1 || true)"
@@ -182,7 +365,7 @@ log "Bundled theme for Scenario B: ${BUNDLE_THEME}"
 log ""
 log "=== Scenario A: Theme without Core ==="
 reset_debug_log
-wpcli plugin deactivate ghahghah-core --quiet 2>/dev/null || true
+wpcli plugin deactivate ghahghah-core
 wpcli theme activate ghahghah-theme
 ACTIVE_THEME="$(wpcli option get stylesheet 2>/dev/null | tr -d '\r' | tail -n 1)"
 log "Active stylesheet: ${ACTIVE_THEME}"
@@ -193,8 +376,18 @@ PLUGIN_ACTIVE="$(wpcli plugin is-active ghahghah-core >/dev/null 2>&1 && echo ye
 [[ "$PLUGIN_ACTIVE" == "no" ]] || fail "ghahghah-core should be inactive in Scenario A"
 pass "ghahghah-core is inactive"
 
+# Confirm CPT unregistered after deactivate (retry once for slow bootstrap).
+CPT_GONE="$(wpcli eval 'echo ( post_type_exists( "ghahghah_product" ) === false ) ? "yes" : "no"; echo PHP_EOL;' 2>/dev/null | tr -d '\r' | grep -E '^(yes|no)$' | tail -n 1 || true)"
+if [[ "$CPT_GONE" != "yes" ]]; then
+	log "CPT still present after deactivate; re-checking once"
+	sleep 1
+	wpcli plugin deactivate ghahghah-core --quiet 2>/dev/null || true
+	CPT_GONE="$(wpcli eval 'echo ( post_type_exists( "ghahghah_product" ) === false ) ? "yes" : "no"; echo PHP_EOL;' 2>/dev/null | tr -d '\r' | grep -E '^(yes|no)$' | tail -n 1 || true)"
+fi
+[[ "$CPT_GONE" == "yes" ]] || fail "CPT still registered after Core deactivation (got '${CPT_GONE}')"
+
 http_check "${HOME_URL}/" "A-homepage"
-assert_php_yes 'echo ( post_type_exists( "ghahghah_product" ) === false ) ? "yes" : "no";' "A: CPT absent without Core"
+assert_php_yes 'echo ( post_type_exists( "ghahghah_product" ) === false ) ? "yes" : "no"' "A: CPT absent without Core"
 inspect_debug_log "A"
 pass "Scenario A complete"
 
@@ -277,17 +470,6 @@ printf '%s\n' "$ARCHIVE_SLUG" >"${EVIDENCE_DIR}/C-archive-slug.txt"
 
 http_check "${HOME_URL}/" "C-homepage"
 
-# Archive check — create temporary product if empty archive is non-200.
-TEMP_POST_ID=""
-cleanup_temp_post() {
-	if [[ -n "${TEMP_POST_ID}" ]]; then
-		wpcli post delete "$TEMP_POST_ID" --force --quiet 2>/dev/null || true
-		log "Deleted temporary test product ID ${TEMP_POST_ID}"
-		TEMP_POST_ID=""
-	fi
-}
-trap cleanup_temp_post EXIT
-
 ARCHIVE_CODE="$(curl -sS -o /dev/null -w '%{http_code}' -L --max-redirs 5 "$ARCHIVE_URL" || true)"
 log "Initial archive HTTP status: ${ARCHIVE_CODE} (${ARCHIVE_URL})"
 if [[ "$ARCHIVE_CODE" != "200" ]]; then
@@ -298,7 +480,6 @@ if [[ "$ARCHIVE_CODE" != "200" ]]; then
 	wpcli rewrite flush --hard >/dev/null
 	http_check "$ARCHIVE_URL" "C-archive"
 	cleanup_temp_post
-	trap - EXIT
 else
 	http_check "$ARCHIVE_URL" "C-archive"
 fi
@@ -342,20 +523,14 @@ pass "Theme active, Core deactivated"
 http_check "${HOME_URL}/" "D-homepage"
 assert_php_yes 'echo ( post_type_exists( "ghahghah_product" ) === false ) ? "yes" : "no";' "D: CPT gone after Core deactivation"
 inspect_debug_log "D"
-
-# Restore final development state: both active.
-wpcli plugin activate ghahghah-core
-FINAL_THEME="$(wpcli option get stylesheet 2>/dev/null | tr -d '\r' | tail -n 1)"
-FINAL_PLUGIN="$(wpcli plugin is-active ghahghah-core >/dev/null 2>&1 && echo yes || echo no)"
-[[ "$FINAL_THEME" == "ghahghah-theme" ]] || fail "Final theme should be ghahghah-theme"
-[[ "$FINAL_PLUGIN" == "yes" ]] || fail "Final plugin should be active"
-pass "Final state restored: theme + core active"
 pass "Scenario D complete"
 
 log ""
 log "=== SMOKE SUMMARY ==="
 log "WordPress: ${WP_VERSION}"
 log "Home: ${HOME_URL}"
+log "CLI container: ${CLI_NAME}"
 log "Passed assertions: ${PASS_COUNT}"
 log "ALL SMOKE SCENARIOS PASSED"
+# EXIT trap restores initial theme/plugin state.
 exit 0

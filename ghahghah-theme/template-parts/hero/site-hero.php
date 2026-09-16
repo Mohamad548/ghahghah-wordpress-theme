@@ -60,22 +60,40 @@ $bp          = GHAHGHAH_HERO_BREAKPOINT;
 								<span class="ghahghah-hero__link">
 							<?php endif; ?>
 									<picture class="ghahghah-hero__picture">
-										<source
-											media="(min-width: <?php echo esc_attr( $bp ); ?>)"
-											srcset="<?php echo esc_url( (string) $desktop['url'] ); ?>"
-											<?php echo ! empty( $desktop['srcset'] ) ? 'width="' . esc_attr( (string) $desktop['width'] ) . '" height="' . esc_attr( (string) $desktop['height'] ) . '"' : ''; ?>
-										/>
-										<img
-											class="ghahghah-hero__image"
-											src="<?php echo esc_url( (string) $mobile['url'] ); ?>"
-											alt="<?php echo esc_attr( $alt ); ?>"
-											width="<?php echo esc_attr( (string) $mobile['width'] ); ?>"
-											height="<?php echo esc_attr( (string) $mobile['height'] ); ?>"
-											<?php echo ! empty( $mobile['srcset'] ) ? 'srcset="' . esc_attr( (string) $mobile['srcset'] ) . '"' : ''; ?>
-											sizes="100vw"
-											decoding="async"
-											<?php echo 0 === $index ? 'fetchpriority="high"' : 'loading="lazy"'; ?>
-										/>
+										<?php if ( 0 === $index ) : ?>
+											<source
+												media="(min-width: <?php echo esc_attr( $bp ); ?>)"
+												srcset="<?php echo esc_url( (string) $desktop['url'] ); ?>"
+												<?php echo ! empty( $desktop['srcset'] ) ? 'width="' . esc_attr( (string) $desktop['width'] ) . '" height="' . esc_attr( (string) $desktop['height'] ) . '"' : ''; ?>
+											/>
+											<img
+												class="ghahghah-hero__image"
+												src="<?php echo esc_url( (string) $mobile['url'] ); ?>"
+												alt="<?php echo esc_attr( $alt ); ?>"
+												width="<?php echo esc_attr( (string) $mobile['width'] ); ?>"
+												height="<?php echo esc_attr( (string) $mobile['height'] ); ?>"
+												<?php echo ! empty( $mobile['srcset'] ) ? 'srcset="' . esc_attr( (string) $mobile['srcset'] ) . '"' : ''; ?>
+												sizes="100vw"
+												decoding="async"
+												fetchpriority="high"
+											/>
+										<?php else : ?>
+											<source
+												media="(min-width: <?php echo esc_attr( $bp ); ?>)"
+												data-ghahghah-hero-srcset="<?php echo esc_url( (string) $desktop['url'] ); ?>"
+												<?php echo ! empty( $desktop['srcset'] ) ? 'width="' . esc_attr( (string) $desktop['width'] ) . '" height="' . esc_attr( (string) $desktop['height'] ) . '"' : ''; ?>
+											/>
+											<img
+												class="ghahghah-hero__image"
+												alt="<?php echo esc_attr( $alt ); ?>"
+												width="<?php echo esc_attr( (string) $mobile['width'] ); ?>"
+												height="<?php echo esc_attr( (string) $mobile['height'] ); ?>"
+												data-ghahghah-hero-src="<?php echo esc_url( (string) $mobile['url'] ); ?>"
+												<?php echo ! empty( $mobile['srcset'] ) ? 'data-ghahghah-hero-srcset="' . esc_attr( (string) $mobile['srcset'] ) . '"' : ''; ?>
+												sizes="100vw"
+												decoding="async"
+											/>
+										<?php endif; ?>
 									</picture>
 							<?php if ( '' !== $link ) : ?>
 								</a>

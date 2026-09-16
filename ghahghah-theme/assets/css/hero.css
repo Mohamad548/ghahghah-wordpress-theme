@@ -79,12 +79,16 @@
 	visibility: hidden;
 	pointer-events: none;
 	transform: scale(1.035) translateY(8px);
+	/* No transition/will-change until .is-ready — first paint must be LCP-eligible. */
+	z-index: 0;
+}
+
+.ghahghah-hero.is-ready .ghahghah-hero__slide {
+	will-change: opacity, transform;
 	transition:
 		opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
 		visibility 0.75s cubic-bezier(0.22, 1, 0.36, 1),
 		transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
-	will-change: opacity, transform;
-	z-index: 0;
 }
 
 .ghahghah-hero__slide.is-active {

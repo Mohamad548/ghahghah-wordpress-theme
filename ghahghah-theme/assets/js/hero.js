@@ -37,6 +37,7 @@
 	let dragging = false;
 	let lockAxis = '';
 	let suppressClick = false;
+	let activating = false;
 
 	const announce = (i) => {
 		if (!live) {
@@ -67,10 +68,59 @@
 		}
 	};
 
-	const activate = (nextIndex, { restart = true } = {}) => {
-		const total = slides.length;
-		index = ((nextIndex % total) + total) % total;
+	/**
+	 * Apply deferred picture sources for a slide (no-op if already hydrated).
+	 */
+	const hydrateSlide = (slide) => {
+		if (!slide || slide.dataset.ghahghahHeroHydrated === '1') {
+			return;
+		}
+		const source = slide.querySelector('source');
+		const img = slide.querySelector('img');
+		if (source && source.dataset.ghahghahHeroSrcset) {
+			source.setAttribute('srcset', source.dataset.ghahghahHeroSrcset);
+			delete source.dataset.ghahghahHeroSrcset;
+		}
+		if (img) {
+			if (img.dataset.ghahghahHeroSrcset) {
+				img.setAttribute('srcset', img.dataset.ghahghahHeroSrcset);
+				delete img.dataset.ghahghahHeroSrcset;
+			}
+			if (img.dataset.ghahghahHeroSrc) {
+				img.setAttribute('src', img.dataset.ghahghahHeroSrc);
+				delete img.dataset.ghahghahHeroSrc;
+			}
+		}
+		slide.dataset.ghahghahHeroHydrated = '1';
+	};
 
+	const waitDecoded = (slide) => {
+		const img = slide?.querySelector('img');
+		if (!img) {
+			return Promise.resolve();
+		}
+		if (img.complete && img.naturalWidth > 0) {
+			return Promise.resolve();
+		}
+		return new Promise((resolve) => {
+			let settled = false;
+			const done = () => {
+				if (settled) {
+					return;
+				}
+				settled = true;
+				resolve();
+			};
+			img.addEventListener('load', done, { once: true });
+			img.addEventListener('error', done, { once: true });
+			if (img.decode) {
+				img.decode().then(done).catch(done);
+			}
+			window.setTimeout(done, 4000);
+		});
+	};
+
+	const applyActiveClasses = () => {
 		slides.forEach((slide, i) => {
 			const active = i === index;
 			slide.classList.toggle('is-active', active);
@@ -81,17 +131,39 @@
 				slide.inert = !active;
 			}
 		});
-
 		syncDots();
 		announce(index);
+	};
 
-		if (restart && multi && !reduceMotion) {
-			remaining = intervalMs;
-			setProgress(0);
-			startTimer();
-		} else if (!multi || reduceMotion) {
-			setProgress(0);
+	const activate = (nextIndex, { restart = true } = {}) => {
+		const total = slides.length;
+		const target = ((nextIndex % total) + total) % total;
+		if (activating && target === index) {
+			return;
 		}
+
+		const run = async () => {
+			activating = true;
+			index = target;
+			hydrateSlide(slides[index]);
+			// Prefetch the following slide so the next advance is not blank.
+			if (multi) {
+				hydrateSlide(slides[(index + 1) % total]);
+			}
+			await waitDecoded(slides[index]);
+			applyActiveClasses();
+
+			if (restart && multi && !reduceMotion) {
+				remaining = intervalMs;
+				setProgress(0);
+				startTimer();
+			} else if (!multi || reduceMotion) {
+				setProgress(0);
+			}
+			activating = false;
+		};
+
+		run();
 	};
 
 	const tick = () => {
@@ -309,5 +381,47 @@
 		img.setAttribute('draggable', 'false');
 	});
 
-	activate(0, { restart: true });
+	// Slide 0 is already fully sourced in HTML — mark hydrated.
+	if (slides[0]) {
+		slides[0].dataset.ghahghahHeroHydrated = '1';
+	}
+
+	applyActiveClasses();
+	if (multi) {
+		hydrateSlide(slides[1 % slides.length]);
+	}
+
+	// Enable crossfade only after first slide can paint for LCP (no opacity transition yet).
+	const enableMotion = () => {
+		root.classList.add('is-ready');
+		if (multi && !reduceMotion) {
+			remaining = intervalMs;
+			setProgress(0);
+			startTimer();
+		}
+	};
+
+	const boot = async () => {
+		const img = slides[0]?.querySelector('img');
+		if (img) {
+			try {
+				if (img.decode) {
+					await img.decode();
+				}
+			} catch (err) {
+				/* ignore decode errors */
+			}
+		}
+		// Two frames + short settle so LCP can commit while transitions are still off.
+		await new Promise((resolve) => {
+			window.requestAnimationFrame(() => {
+				window.requestAnimationFrame(() => {
+					window.setTimeout(resolve, 120);
+				});
+			});
+		});
+		enableMotion();
+	};
+
+	boot();
 })();

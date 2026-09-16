@@ -33,10 +33,10 @@ INITIAL_THEME=""
 INITIAL_PLUGIN_ACTIVE=""
 TEMP_POST_ID=""
 RESTORE_DONE=0
-# Theme-mod / hero option snapshots (theme switch must not leave slider/media opts wiped).
+# Theme-mod / hero option snapshots (taken with --skip-themes --skip-plugins).
 INITIAL_THEME_MODS_FILE=""
-INITIAL_HERO_BANNER_PACK=""
-INITIAL_MEDIA_SYNC_VERSION=""
+INITIAL_HERO_BANNER_PACK_FILE=""
+INITIAL_MEDIA_SYNC_VERSION_FILE=""
 
 require_cmd() {
 	command -v "$1" >/dev/null 2>&1 || fail "Required command not found: $1"
@@ -155,17 +155,173 @@ wpcli() {
 	docker exec "$container" wp --allow-root "$@"
 }
 
+# Option reads/writes that must not bootstrap themes/plugins (no hero/media side effects).
+wpcli_opts() {
+	local container
+	container="$(cli_container)" || fail "No unique wp-env CLI container for this worktree (hint=${WORKTREE_HINT})"
+	docker exec "$container" wp --allow-root --skip-themes --skip-plugins "$@"
+}
+
 docker_sh() {
 	local container
 	container="$(cli_container)" || fail "No unique wp-env CLI container for this worktree (hint=${WORKTREE_HINT})"
 	docker exec "$container" sh -c "$1"
 }
 
+# Snapshot one option: writes value file + state file (present|empty|missing|error).
+# Args: option_name value_outfile state_outfile [--json]
+snapshot_option() {
+	local opt="$1"
+	local value_file="$2"
+	local state_file="$3"
+	local json_flag="${4:-}"
+	local ec=0
+	local raw=""
+	local errf
+	errf="$(mktemp)"
+
+	set +e
+	if [[ "$json_flag" == "--json" ]]; then
+		raw="$(wpcli_opts option get "$opt" --format=json 2>"$errf")"
+	else
+		raw="$(wpcli_opts option get "$opt" 2>"$errf")"
+	fi
+	ec=$?
+	set -e
+
+	raw="$(printf '%s' "$raw" | tr -d '\r')"
+	local errtxt
+	errtxt="$(tr -d '\r' <"$errf" 2>/dev/null || true)"
+	if [[ "$ec" -ne 0 ]] || printf '%s' "$errtxt" | grep -Eqi "Could not get .${opt}. option|Does it exist"; then
+		if printf '%s' "$errtxt" | grep -Eqi "Could not get .${opt}. option|Does it exist|Could not get"; then
+			printf '' >"$value_file"
+			printf 'missing\n' >"$state_file"
+			rm -f "$errf"
+			log "Snapshot ${opt}: MISSING"
+			return 0
+		fi
+		if [[ "$ec" -ne 0 ]]; then
+			printf '' >"$value_file"
+			printf 'error\n' >"$state_file"
+			log "Snapshot ${opt}: ERROR (wp-cli exit ${ec})"
+			log "$errtxt"
+			rm -f "$errf"
+			fail "Failed to snapshot option ${opt}"
+		fi
+	fi
+	rm -f "$errf"
+
+	if [[ -z "$raw" ]]; then
+		printf '' >"$value_file"
+		printf 'empty\n' >"$state_file"
+		log "Snapshot ${opt}: EMPTY"
+		return 0
+	fi
+
+	if [[ "$json_flag" == "--json" ]]; then
+		if ! node -e 'JSON.parse(require("fs").readFileSync(0,"utf8"));' <<<"$raw" 2>/dev/null; then
+			printf '%s' "$raw" >"$value_file"
+			printf 'error\n' >"$state_file"
+			fail "Snapshot ${opt}: invalid JSON"
+		fi
+	fi
+
+	printf '%s' "$raw" >"$value_file"
+	printf 'present\n' >"$state_file"
+	log "Snapshot ${opt}: PRESENT ($(wc -c <"$value_file" | tr -d ' ') bytes)"
+}
+
+# Restore one option from snapshot state; verify by re-read. Fails the smoke on mismatch.
+restore_option_verified() {
+	local opt="$1"
+	local value_file="$2"
+	local state_file="$3"
+	local json_flag="${4:-}"
+	local state=""
+	local container
+	local after=""
+	local ec=0
+
+	[[ -f "$state_file" ]] || fail "Missing snapshot state for ${opt}: ${state_file}"
+	state="$(tr -d '\r\n' <"$state_file")"
+
+	container="$(cli_container)" || fail "No CLI container during restore of ${opt}"
+
+	case "$state" in
+		missing)
+			set +e
+			wpcli_opts option delete "$opt" >/dev/null 2>&1
+			# Verify absent
+			wpcli_opts option get "$opt" >/dev/null 2>&1
+			ec=$?
+			set -e
+			if [[ "$ec" -eq 0 ]]; then
+				fail "Restore ${opt}: expected MISSING after delete, but option still readable"
+			fi
+			log "Restored ${opt}: confirmed MISSING"
+			;;
+		empty)
+			set +e
+			if [[ "$json_flag" == "--json" ]]; then
+				printf '""\n' | docker exec -i "$container" wp --allow-root --skip-themes --skip-plugins option update "$opt" --format=json >/dev/null 2>&1
+				ec=$?
+			else
+				wpcli_opts option update "$opt" "" >/dev/null 2>&1
+				ec=$?
+			fi
+			set -e
+			[[ "$ec" -eq 0 ]] || fail "Restore ${opt}: failed to write EMPTY value (exit ${ec})"
+			after="$(wpcli_opts option get "$opt" ${json_flag:+--format=json} 2>/dev/null | tr -d '\r' || true)"
+			if [[ -n "$after" && "$after" != '""' && "$after" != '[]' && "$after" != '{}' ]]; then
+				fail "Restore ${opt}: expected EMPTY, got non-empty after write"
+			fi
+			log "Restored ${opt}: confirmed EMPTY"
+			;;
+		present)
+			[[ -f "$value_file" ]] || fail "Restore ${opt}: value file missing for PRESENT state"
+			[[ -s "$value_file" ]] || fail "Restore ${opt}: value file empty for PRESENT state"
+			if [[ "$json_flag" == "--json" ]]; then
+				node -e 'JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));' "$value_file" \
+					|| fail "Restore ${opt}: snapshot JSON invalid"
+				set +e
+				docker exec -i "$container" wp --allow-root --skip-themes --skip-plugins option update "$opt" --format=json <"$value_file" >/dev/null 2>&1
+				ec=$?
+				set -e
+			else
+				set +e
+				wpcli_opts option update "$opt" "$(cat "$value_file")" >/dev/null 2>&1
+				ec=$?
+				set -e
+			fi
+			[[ "$ec" -eq 0 ]] || fail "Restore ${opt}: option update failed (exit ${ec})"
+			if [[ "$json_flag" == "--json" ]]; then
+				after="$(wpcli_opts option get "$opt" --format=json 2>/dev/null | tr -d '\r' || true)"
+				node -e '
+const fs=require("fs");
+const a=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));
+const b=JSON.parse(process.argv[2]);
+if (JSON.stringify(a)!==JSON.stringify(b)) process.exit(2);
+' "$value_file" "$after" || fail "Restore ${opt}: re-read JSON does not match snapshot"
+			else
+				after="$(wpcli_opts option get "$opt" 2>/dev/null | tr -d '\r' || true)"
+				[[ "$after" == "$(tr -d '\r' <"$value_file")" ]] || fail "Restore ${opt}: re-read value does not match snapshot"
+			fi
+			log "Restored ${opt}: verified PRESENT match"
+			;;
+		error)
+			fail "Restore ${opt}: snapshot state was ERROR; cannot restore safely"
+			;;
+		*)
+			fail "Restore ${opt}: unknown snapshot state '${state}'"
+			;;
+	esac
+}
+
 restore_initial_state() {
 	[[ "$RESTORE_DONE" -eq 1 ]] && return 0
 	RESTORE_DONE=1
-	log "=== Restoring initial theme/plugin state ==="
-	# Best-effort; do not fail the trap with set -e.
+	log "=== Restoring initial theme/plugin/options state ==="
+	# Theme/plugin activation may need full bootstrap; option restore uses skip-*.
 	set +e
 	if [[ -n "${TEMP_POST_ID}" ]]; then
 		wpcli post delete "$TEMP_POST_ID" --force --quiet 2>/dev/null
@@ -174,33 +330,34 @@ restore_initial_state() {
 	fi
 	if [[ -n "${INITIAL_THEME}" ]]; then
 		wpcli theme activate "$INITIAL_THEME" --quiet 2>/dev/null
-		log "Restored theme: ${INITIAL_THEME}"
+		log "Restored theme activation attempt: ${INITIAL_THEME}"
 	fi
 	if [[ "${INITIAL_PLUGIN_ACTIVE}" == "yes" ]]; then
 		wpcli plugin activate ghahghah-core --quiet 2>/dev/null
-		log "Restored plugin: ghahghah-core active"
+		log "Restored plugin activation attempt: ghahghah-core"
 	elif [[ "${INITIAL_PLUGIN_ACTIVE}" == "no" ]]; then
 		wpcli plugin deactivate ghahghah-core --quiet 2>/dev/null
-		log "Restored plugin: ghahghah-core inactive"
-	fi
-	# Restore ghahghah theme mods + hero pack/sync version if we captured them.
-	if [[ -n "${INITIAL_THEME_MODS_FILE}" && -f "${INITIAL_THEME_MODS_FILE}" ]]; then
-		local container
-		container="$(cli_container)" 2>/dev/null
-		if [[ -n "$container" ]]; then
-			docker exec -i "$container" wp --allow-root option update theme_mods_ghahghah-theme --format=json <"${INITIAL_THEME_MODS_FILE}" >/dev/null 2>&1
-			log "Restored theme_mods_ghahghah-theme from snapshot"
-		fi
-	fi
-	if [[ -n "${INITIAL_HERO_BANNER_PACK}" ]]; then
-		wpcli option update ghahghah_hero_banner_pack "${INITIAL_HERO_BANNER_PACK}" >/dev/null 2>&1
-		log "Restored ghahghah_hero_banner_pack=${INITIAL_HERO_BANNER_PACK}"
-	fi
-	if [[ -n "${INITIAL_MEDIA_SYNC_VERSION}" ]]; then
-		wpcli option update ghahghah_theme_media_sync_version "${INITIAL_MEDIA_SYNC_VERSION}" >/dev/null 2>&1
-		log "Restored ghahghah_theme_media_sync_version=${INITIAL_MEDIA_SYNC_VERSION}"
+		log "Restored plugin deactivation attempt: ghahghah-core"
 	fi
 	set -e
+
+	# Verified option restores (fail smoke if mismatch).
+	if [[ -n "${INITIAL_THEME_MODS_FILE}" ]]; then
+		restore_option_verified "theme_mods_ghahghah-theme" \
+			"${INITIAL_THEME_MODS_FILE}" \
+			"${EVIDENCE_DIR}/initial-theme_mods_ghahghah-theme.state" \
+			--json
+	fi
+	if [[ -n "${INITIAL_HERO_BANNER_PACK_FILE}" ]]; then
+		restore_option_verified "ghahghah_hero_banner_pack" \
+			"${INITIAL_HERO_BANNER_PACK_FILE}" \
+			"${EVIDENCE_DIR}/initial-hero-banner-pack.state"
+	fi
+	if [[ -n "${INITIAL_MEDIA_SYNC_VERSION_FILE}" ]]; then
+		restore_option_verified "ghahghah_theme_media_sync_version" \
+			"${INITIAL_MEDIA_SYNC_VERSION_FILE}" \
+			"${EVIDENCE_DIR}/initial-media-sync-version.state"
+	fi
 }
 
 cleanup_temp_post() {
@@ -342,9 +499,9 @@ printf '%s' "$THEME_MOUNT" | tr '\\' '/' | tr '[:upper:]' '[:lower:]' | grep -Fq
 printf '%s' "$THEME_MOUNT" | tr '\\' '/' | tr '[:upper:]' '[:lower:]' | grep -Fq "$(printf '%s' "$WP_ENV_CWD" | tr '\\' '/' | tr '[:upper:]' '[:lower:]')" && MOUNT_OK=1
 [[ "$MOUNT_OK" -eq 1 ]] || fail "WordPress container theme mount does not include this worktree ROOT; refusing to mutate plugins/themes"
 
-SITE_URL="$(wpcli option get siteurl 2>/dev/null | tr -d '\r' | tail -n 1)"
-HOME_URL="$(wpcli option get home 2>/dev/null | tr -d '\r' | tail -n 1)"
-WP_VERSION="$(wpcli core version 2>/dev/null | tr -d '\r' | tail -n 1)"
+SITE_URL="$(wpcli_opts option get siteurl 2>/dev/null | tr -d '\r' | tail -n 1)"
+HOME_URL="$(wpcli_opts option get home 2>/dev/null | tr -d '\r' | tail -n 1)"
+WP_VERSION="$(wpcli_opts core version 2>/dev/null | tr -d '\r' | tail -n 1)"
 log "WordPress version: ${WP_VERSION}"
 log "siteurl=${SITE_URL}"
 log "home=${HOME_URL}"
@@ -363,28 +520,26 @@ elif printf '%s' "$HOST_PORTS" | grep -Eq ':8888'; then
 	pass "siteurl/home match port 8888"
 fi
 
-# Capture initial state before any mutate.
-INITIAL_THEME="$(wpcli option get stylesheet 2>/dev/null | tr -d '\r' | tail -n 1)"
-INITIAL_PLUGIN_ACTIVE="$(wpcli plugin is-active ghahghah-core >/dev/null 2>&1 && echo yes || echo no)"
+# Capture initial state BEFORE any theme/plugin mutation (options via skip-themes/plugins).
+INITIAL_THEME="$(wpcli_opts option get stylesheet 2>/dev/null | tr -d '\r' | tail -n 1)"
+# is-active needs plugin API; use option active_plugins without loading theme.
+INITIAL_PLUGIN_ACTIVE="$(
+	wpcli_opts eval 'echo in_array( "ghahghah-core/ghahghah-core.php", (array) get_option( "active_plugins", array() ), true ) ? "yes" : "no"; echo PHP_EOL;' 2>/dev/null | tr -d '\r' | grep -E '^(yes|no)$' | tail -n 1 || echo unknown
+)"
 log "Initial stylesheet: ${INITIAL_THEME}"
 log "Initial ghahghah-core active: ${INITIAL_PLUGIN_ACTIVE}"
 printf '%s\n' "$INITIAL_THEME" >"${EVIDENCE_DIR}/initial-theme.txt"
 printf '%s\n' "$INITIAL_PLUGIN_ACTIVE" >"${EVIDENCE_DIR}/initial-plugin-active.txt"
 [[ -n "$INITIAL_THEME" ]] || fail "Could not read initial stylesheet"
+[[ "$INITIAL_PLUGIN_ACTIVE" == "yes" || "$INITIAL_PLUGIN_ACTIVE" == "no" ]] || fail "Could not determine initial plugin active state"
 
-# Snapshot slider/media options WITHOUT relying on theme bootstrap side effects later.
 INITIAL_THEME_MODS_FILE="${EVIDENCE_DIR}/initial-theme_mods_ghahghah-theme.json"
-wpcli option get theme_mods_ghahghah-theme --format=json >"${INITIAL_THEME_MODS_FILE}" 2>/dev/null || true
-INITIAL_HERO_BANNER_PACK="$(wpcli option get ghahghah_hero_banner_pack 2>/dev/null | tr -d '\r' | tail -n 1 || true)"
-INITIAL_MEDIA_SYNC_VERSION="$(wpcli option get ghahghah_theme_media_sync_version 2>/dev/null | tr -d '\r' | tail -n 1 || true)"
-printf '%s\n' "$INITIAL_HERO_BANNER_PACK" >"${EVIDENCE_DIR}/initial-hero-banner-pack.txt"
-printf '%s\n' "$INITIAL_MEDIA_SYNC_VERSION" >"${EVIDENCE_DIR}/initial-media-sync-version.txt"
-log "Snapshot hero_banner_pack=${INITIAL_HERO_BANNER_PACK:-"(empty)"} media_sync_version=${INITIAL_MEDIA_SYNC_VERSION:-"(empty)"}"
-if [[ -s "${INITIAL_THEME_MODS_FILE}" ]]; then
-	pass "Captured theme_mods_ghahghah-theme snapshot for restore"
-else
-	log "[WARN] theme_mods_ghahghah-theme snapshot empty or missing"
-fi
+INITIAL_HERO_BANNER_PACK_FILE="${EVIDENCE_DIR}/initial-hero-banner-pack.txt"
+INITIAL_MEDIA_SYNC_VERSION_FILE="${EVIDENCE_DIR}/initial-media-sync-version.txt"
+snapshot_option "theme_mods_ghahghah-theme" "${INITIAL_THEME_MODS_FILE}" "${EVIDENCE_DIR}/initial-theme_mods_ghahghah-theme.state" --json
+snapshot_option "ghahghah_hero_banner_pack" "${INITIAL_HERO_BANNER_PACK_FILE}" "${EVIDENCE_DIR}/initial-hero-banner-pack.state"
+snapshot_option "ghahghah_theme_media_sync_version" "${INITIAL_MEDIA_SYNC_VERSION_FILE}" "${EVIDENCE_DIR}/initial-media-sync-version.state"
+pass "Captured option snapshots (skip-themes/skip-plugins) before mutations"
 
 # Discover a bundled standard theme (not ghahghah-theme).
 BUNDLE_THEME="$(wpcli theme list --status=inactive --field=name 2>/dev/null | tr -d '\r' | grep -E '^(twentytwentyfive|twentytwentyfour|twentytwentythree|twentytwentytwo|twentytwentyone|twentytwenty)$' | head -n 1 || true)"

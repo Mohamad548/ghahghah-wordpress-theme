@@ -131,8 +131,8 @@ function ghahghah_get_theme_media_manifest(): array {
 	$add( 'factory/factory-hero.webp', __( 'تصویر صفحه کارخانه قهقهه', 'ghahghah' ), '', 'ghahghah_factory_page_hero_image_id' );
 	$add( 'factory/product-pack-fallback.webp', __( 'بسته محصول پیش‌فرض کارخانه', 'ghahghah' ) );
 
-	$add( 'wholesale/wholesale-hero-pizza-transparent.png', __( 'تصویر صفحه خرید عمده', 'ghahghah' ), '', 'ghahghah_wholesale_image_id' );
-	$add( 'agency/parsley-onion-pack-composition-transparent.png', __( 'تصویر صفحه نمایندگی', 'ghahghah' ) );
+	$add( 'wholesale/ghahghah_pizza_packshot_optimized.webp', __( 'تصویر صفحه خرید عمده', 'ghahghah' ), '', 'ghahghah_wholesale_image_id' );
+	$add( 'agency/ghahghah_parsley_onion_pack_optimized.webp', __( 'تصویر صفحه نمایندگی', 'ghahghah' ) );
 	$add( 'contact/corn-isolated-transparent.png', __( 'تصویر تزئینی صفحه تماس', 'ghahghah' ) );
 
 	$add( 'blog-archive/corn-snack-hero-transparent.png', __( 'تزئین بنر مقالات', 'ghahghah' ) );
@@ -141,9 +141,9 @@ function ghahghah_get_theme_media_manifest(): array {
 	$add( 'products-archive/corn-hero-transparent.png', __( 'تزئین بنر محصولات', 'ghahghah' ) );
 
 	$single_article_files = array(
-		'article-hero-banner-real-snack.png'      => __( 'بنر مقاله تکی', 'ghahghah' ),
-		'article-inline-hands-snack-corn.png'     => __( 'تصویر درون متن مقاله', 'ghahghah' ),
-		'article-inline-factory-line-real-snack.png' => __( 'تصویر خط تولید در مقاله', 'ghahghah' ),
+		'article-hero-banner-real-snack-optimized.webp'      => __( 'بنر مقاله تکی', 'ghahghah' ),
+		'article-inline-hands-snack-corn-optimized.webp'     => __( 'تصویر درون متن مقاله', 'ghahghah' ),
+		'article-inline-factory-line-real-snack-optimized.webp' => __( 'تصویر خط تولید در مقاله', 'ghahghah' ),
 		'bowl-of-real-snacks-transparent.png'     => __( 'تزئین کاسه اسنک مقاله', 'ghahghah' ),
 		'corn-and-real-snacks-transparent.png'    => __( 'تزئین ذرت و اسنک مقاله', 'ghahghah' ),
 		'decorative-snack-cluster-transparent.png' => __( 'تزئین خوشه اسنک مقاله', 'ghahghah' ),

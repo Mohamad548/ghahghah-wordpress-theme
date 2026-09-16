@@ -181,7 +181,7 @@ function ghahghah_get_request_steps( string $which ): array {
 
 /**
  * Bundled wholesale intro image URLs (responsive).
- * Prefer admin media, else pizza hero transparent pack.
+ * Prefer admin media, else optimized pizza packshot.
  *
  * @return array{src: string, srcset: string, width: int, height: int}
  */
@@ -204,32 +204,32 @@ function ghahghah_get_wholesale_intro_image(): array {
 }
 
 /**
- * Wholesale page hero product image (transparent pizza pack).
+ * Wholesale page hero product image (optimized pizza packshot).
  *
  * @return array{src: string, srcset: string, width: int, height: int}
  */
 function ghahghah_get_wholesale_hero_image(): array {
 	$base = GHAHGHAH_THEME_URI . '/assets/images/wholesale/';
 	return array(
-		'src'    => $base . 'wholesale-hero-pizza-transparent.png',
+		'src'    => $base . 'ghahghah_pizza_packshot_optimized.webp',
 		'srcset' => '',
-		'width'  => 960,
-		'height' => 960,
+		'width'  => 1122,
+		'height' => 1402,
 	);
 }
 
 /**
- * Agency page hero product image.
+ * Agency page hero product image (optimized parsley-onion packshot).
  *
  * @return array{src: string, srcset: string, width: int, height: int}
  */
 function ghahghah_get_agency_hero_image(): array {
 	$base = GHAHGHAH_THEME_URI . '/assets/images/agency/';
 	return array(
-		'src'    => $base . 'parsley-onion-pack-composition-transparent.png',
+		'src'    => $base . 'ghahghah_parsley_onion_pack_optimized.webp',
 		'srcset' => '',
-		'width'  => 960,
-		'height' => 960,
+		'width'  => 1122,
+		'height' => 1402,
 	);
 }
 

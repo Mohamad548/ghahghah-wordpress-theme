@@ -223,7 +223,7 @@ while ( have_posts() ) :
 											);
 											?>
 										<?php else : ?>
-											<img src="<?php echo esc_url( ghahghah_single_article_image_url( 'article-hero-banner-real-snack.png' ) ); ?>" alt="" loading="lazy" decoding="async" />
+											<img src="<?php echo esc_url( ghahghah_single_article_image_url( 'article-hero-banner-real-snack-optimized.webp' ) ); ?>" alt="" loading="lazy" decoding="async" />
 										<?php endif; ?>
 									</span>
 									<span class="ghahghah-single-article__related-card-title"><?php echo esc_html( get_the_title( $item ) ); ?></span>

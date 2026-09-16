@@ -287,10 +287,11 @@ async function probePage(browser, pageKey, url, vpName, vp, opts) {
             slow: false,
           }),
         );
-        // Warm revisit (cache allowed)
+        // NOTE: separate context with cacheAllowed is NOT a verified warm hit.
+        // Use scripts/agency-font-warm-pair.cjs for shared-context warm evidence.
         report.runs.push(
           await probePage(browser, pageKey, url, vpName, vp, {
-            tag: 'warm',
+            tag: 'cache-allowed-fresh-context',
             disableCache: false,
             slow: false,
           }),

@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-09-16T21:30:34.140Z",
+  "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+  "method": {
+    "cold": "fresh BrowserContext, Network.setCacheDisabled(true), one navigation",
+    "warm": "fresh BrowserContext, cacheEnabled for nav1+nav2 on same Page/context; record cache flags"
+  },
+  "cold": {
+    "cacheDisabled": true,
+    "fonts": [
+      {
+        "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+        "status": 200,
+        "mimeType": "font/woff",
+        "fromDiskCache": false,
+        "fromPrefetchCache": false,
+        "fromServiceWorker": false
+      },
+      {
+        "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+        "status": 200,
+        "mimeType": "font/woff",
+        "fromDiskCache": false,
+        "fromPrefetchCache": false,
+        "fromServiceWorker": false
+      }
+    ]
+  },
+  "warm": {
+    "cacheDisabled": false,
+    "sharedContext": true,
+    "nav1": {
+      "fonts": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    "nav2": {
+      "fonts": [
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-Regular.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false
+        },
+        {
+          "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/assets/fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff",
+          "status": 200,
+          "mimeType": "font/woff",
+          "fromDiskCache": false,
+          "fromPrefetchCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    "nav2FromDiskOrPrefetch": 0
+  }
+}

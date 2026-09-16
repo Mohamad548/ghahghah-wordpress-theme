@@ -11,7 +11,9 @@ Method notes:
 - Painted font proof = Chrome CDP **`CSS.getPlatformFontsForNode`** (`familyName`, `isCustomFont`).  
 - `computed font-family` and `document.fonts.check` recorded but **not** treated as paint proof.  
 - Slow network (recorded): download/upload **64000 B/s**, latency **400 ms** (`slow-3g-ish`).  
-- Cold = cache disabled; warm = second navigation with cache allowed.
+- Cold = dedicated context with `Network.setCacheDisabled(true)`.
+- Prior “warm” runs that used a **new** context with cache merely *allowed* were **not** a verified warm cache hit. Corrected method: see `scripts/agency-font-warm-pair.cjs` (shared context, cache enabled for nav1+nav2, record `fromDiskCache` / `fromPrefetchCache` / 304).
+- Preload claim limited to **two unique preload tags and two font URL requests**. A font request alone does **not** prove the preload hint was consumed.
 
 ---
 
@@ -44,11 +46,11 @@ Artifacts:
 |--|--------|-------|
 | Home font requests (cold) | **2** | **2** |
 | Wholesale font requests | **2** | **2** |
-| `rel=preload as=font` | **0** | **2** (Regular + SemiBold once each) |
+| `rel=preload as=font` | **0** | **2** unique (Regular + SemiBold) |
 | Duplicate preloads | 0 | **0** |
-| Unused preloads (preloaded URL never requested) | n/a | **0** |
+| Font URL requests | **2** | **2** |
 
-No repeatable regression found (no duplicate/unused preload; request count unchanged). **No production follow-up.** Agency CLS ×3 not re-run (font production files unchanged in this validation pass).
+**Claim scope:** “two unique preloads and two font requests” only. Prior wording that treated “preload URL also requested” as “unused preload = 0 / preload consumed” is **withdrawn** — request ≠ proven preload consumption.
 
 Artifacts: `docs/audits/artifacts/agency-cls/font-impact/{before-ef980de,after}/impact.json`
 

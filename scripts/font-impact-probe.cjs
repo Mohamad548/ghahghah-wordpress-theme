@@ -112,7 +112,7 @@ function ensurePuppeteer() {
         return { preload, lcpCandidate, preloadCount: preload.length };
       });
 
-      // Duplicate preload detection
+      // Duplicate preload detection only — request≠proof of preload consumption.
       const preloadCounts = {};
       for (const href of dom.preload) {
         preloadCounts[href] = (preloadCounts[href] || 0) + 1;
@@ -121,26 +121,32 @@ function ensurePuppeteer() {
         .filter(([, n]) => n > 1)
         .map(([href, n]) => ({ href, n }));
 
-      // Unused preload: preloaded but never requested as font (rare if same URL)
-      const fontUrls = new Set(fonts.map((f) => f.url.split('?')[0]));
-      const unusedPreloads = dom.preload.filter((href) => !fontUrls.has(href.split('?')[0]));
+      const uniqueFontUrls = [...new Set(fonts.map((f) => f.url.split('?')[0]))];
+      const uniquePreloadUrls = [...new Set(dom.preload.map((h) => h.split('?')[0]))];
 
       report.pages[key] = {
         url,
         navMs,
         fontRequestCount: fonts.length,
-        uniqueFontUrls: [...new Set(fonts.map((f) => f.url))],
+        uniqueFontUrlCount: uniqueFontUrls.length,
+        uniqueFontUrls,
         fonts,
         preload: dom.preload,
         preloadCount: dom.preloadCount,
+        uniquePreloadCount: uniquePreloadUrls.length,
         duplicatePreloads,
-        unusedPreloads,
+        // Limited claim: unique preload tags vs unique font URL requests (not "preload used").
+        claim:
+          uniquePreloadUrls.length === 2 && uniqueFontUrls.length === 2
+            ? 'two_unique_preloads_and_two_font_requests'
+            : 'see_counts',
+        note: 'Font file requested does not prove the preload hint was consumed by the browser.',
         lcpCandidate: dom.lcpCandidate,
         imageResponseCount: images.length,
       };
 
       console.log(
-        `[${key}] fonts=${fonts.length} preload=${dom.preloadCount} dup=${duplicatePreloads.length} unused=${unusedPreloads.length} navMs=${navMs}`,
+        `[${key}] fonts=${fonts.length} uniqueFonts=${uniqueFontUrls.length} preload=${dom.preloadCount} uniquePreload=${uniquePreloadUrls.length} dup=${duplicatePreloads.length} navMs=${navMs}`,
       );
       await page.close();
     }

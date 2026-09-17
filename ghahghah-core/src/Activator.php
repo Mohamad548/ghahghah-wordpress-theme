@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Ghahghah\Core;
 
+use Ghahghah\Core\PostTypes\Inquiry;
 use Ghahghah\Core\PostTypes\Product;
 
 /**
@@ -24,6 +25,9 @@ final class Activator {
 
 		$product = new Product();
 		$product->register_post_type();
+
+		$inquiry = new Inquiry();
+		$inquiry->register_post_type();
 
 		flush_rewrite_rules();
 

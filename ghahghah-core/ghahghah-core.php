@@ -3,7 +3,7 @@
  * Plugin Name:       Ghahghah Core
  * Plugin URI:        https://github.com/Mohamad548/ghahghah-wordpress-theme
  * Description:       قابلیت‌های کسب‌وکاری برند قهقهه که باید مستقل از قالب باقی بمانند — کاتالوگ محصولات و زیرساخت فرم‌ها.
- * Version:           0.1.0
+ * Version:           0.2.2
  * Requires at least: 6.4
  * Requires PHP:      8.2
  * Author:            قهقهه
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GHAHGHAH_CORE_VERSION', '0.1.0' );
+define( 'GHAHGHAH_CORE_VERSION', '0.2.2' );
 define( 'GHAHGHAH_CORE_FILE', __FILE__ );
 define( 'GHAHGHAH_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'GHAHGHAH_CORE_URL', plugin_dir_url( __FILE__ ) );

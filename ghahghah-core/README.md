@@ -8,22 +8,14 @@ Lightweight companion plugin for business features that must survive theme chang
 
 ## This phase
 
-Architecture + `ghahghah_product` custom post type:
-
-- Persian admin labels
-- Public archive (default slug `products`, filterable)
-- REST API (`ghahghah-products`)
-- Supports: title, editor, thumbnail, excerpt, revisions
-- Custom capabilities mapped for Administrator & Editor
-- Rewrite flush only on activate/deactivate
+- `ghahghah_product` CPT + REST
+- Inquiry forms: wholesale + agency (`ghahghah_inquiry` CPT)
+- REST `ghahghah/v1/inquiries` submit + Melipayamak pattern SMS (theme settings / mobile-auth fallback)
 
 ## Planned (later)
 
 - Product catalogue metadata
-- Wholesale inquiry form
-- Representation request form
-- Admin request management
-- SMS integration
+- Richer admin request workflows
 
 ## Structure
 

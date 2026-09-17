@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>کاروسل محصولات منتخب</title>
+<style>
+:root{--ghahghah-font-primary:Tahoma,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--ghahghah-font-primary);background:#fff}
+/**
+ * Featured products — compact manual carousel.
+ */
+
+.ghahghah-featured {
+	--gfx-bg: #f7f7f5;
+	--gfx-card: #ffffff;
+	--gfx-text: #222222;
+	--gfx-muted: #5c5660;
+	--gfx-red: #d71920;
+	--gfx-yellow: #f5b400;
+	--gfx-max: 80rem; /* 1280px */
+	--gfx-gap: 0.75rem; /* 12px mobile */
+	--gfx-radius: 16px;
+	--gfx-pad-card: 0.75rem; /* 12px */
+	--gfx-pad-m: 1.25rem; /* 20px */
+	--gfx-pad-d: 4rem;
+	--gfx-visible: 1.15; /* peek below 360 */
+	--gfx-media-h: 11.25rem; /* 180px */
+	background: var(--gfx-bg);
+	color: var(--gfx-text);
+	font-family: var(--ghahghah-font-primary, inherit);
+	overflow-x: clip;
+}
+
+.ghahghah-featured__shell {
+	width: min(100% - (var(--gfx-pad-m) * 2), var(--gfx-max));
+	margin-inline: auto;
+	padding-block: 2.5rem;
+	min-width: 0;
+}
+
+.ghahghah-featured__head {
+	display: grid;
+	gap: 1rem;
+	justify-items: center;
+	text-align: center;
+	margin-block-end: 1.25rem;
+}
+
+.ghahghah-featured__intro {
+	display: grid;
+	gap: 0.45rem;
+	justify-items: center;
+	min-width: 0;
+}
+
+.ghahghah-featured__title {
+	margin: 0;
+	font-size: 1.35rem;
+	font-weight: 800;
+	line-height: 1.4;
+	color: var(--gfx-text);
+}
+
+.ghahghah-featured__title::after {
+	content: "";
+	display: block;
+	width: 2.5rem;
+	height: 3px;
+	margin-block-start: 0.5rem;
+	margin-inline: auto;
+	border-radius: 999px;
+	background: var(--gfx-yellow);
+}
+
+.ghahghah-featured__accent {
+	color: var(--gfx-red);
+}
+
+.ghahghah-featured__text {
+	margin: 0;
+	max-width: 28rem;
+	font-size: 0.9rem;
+	line-height: 1.7;
+	color: var(--gfx-muted);
+}
+
+.ghahghah-featured__toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.65rem;
+}
+
+.ghahghah-featured__controls {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.ghahghah-featured__controls[hidden] {
+	display: none !important;
+}
+
+.ghahghah-featured__nav {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 2px solid var(--gfx-red);
+	border-radius: 12px;
+	background: #fff;
+	color: var(--gfx-red);
+	cursor: pointer;
+	transition: background-color 140ms ease, opacity 140ms ease, border-color 140ms ease;
+}
+
+.ghahghah-featured__nav:hover:not(:disabled),
+.ghahghah-featured__nav:focus-visible {
+	background: color-mix(in srgb, var(--gfx-red) 7%, #fff);
+}
+
+.ghahghah-featured__nav:focus-visible,
+.ghahghah-featured__all:focus-visible,
+.ghahghah-featured__cta:focus-visible,
+.ghahghah-featured__track:focus-visible {
+	outline: 2px solid var(--gfx-yellow);
+	outline-offset: 3px;
+}
+
+.ghahghah-featured__nav:disabled {
+	opacity: 0.35;
+	cursor: not-allowed;
+	border-color: color-mix(in srgb, var(--gfx-red) 45%, #bbb);
+	color: color-mix(in srgb, var(--gfx-red) 45%, #888);
+}
+
+.ghahghah-featured__all {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	min-height: 44px;
+	padding: 0.55rem 1rem;
+	border: 2px solid var(--gfx-red);
+	border-radius: 12px;
+	background: #fff;
+	color: var(--gfx-red);
+	font-weight: 700;
+	font-size: 0.9rem;
+	line-height: 1.3;
+	text-decoration: none;
+	transition: background-color 140ms ease;
+}
+
+.ghahghah-featured__all:hover,
+.ghahghah-featured__all:focus-visible,
+.ghahghah-featured__cta:hover,
+.ghahghah-featured__cta:focus-visible {
+	background: color-mix(in srgb, var(--gfx-red) 7%, #fff);
+	color: var(--gfx-red);
+}
+
+.ghahghah-featured__all--top {
+	display: none;
+}
+
+.ghahghah-featured__footer {
+	margin-block-start: 1.25rem;
+}
+
+.ghahghah-featured__all--bottom {
+	width: 100%;
+}
+
+.ghahghah-featured__arrow {
+	display: block;
+	flex: 0 0 auto;
+}
+
+.ghahghah-featured__viewport {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.ghahghah-featured__track {
+	margin: 0;
+	padding: 0.15rem 0.1rem 0.35rem;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: var(--gfx-gap);
+	direction: rtl;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scroll-snap-type: x mandatory;
+	scroll-padding-inline: 0;
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior-x: contain;
+	touch-action: pan-x pan-y;
+	scrollbar-width: none;
+}
+
+.ghahghah-featured__track::-webkit-scrollbar {
+	display: none;
+}
+
+.ghahghah-featured__item {
+	flex: 0 0 calc((100% - (var(--gfx-gap) * (var(--gfx-visible) - 1))) / var(--gfx-visible));
+	min-width: 0;
+	scroll-snap-align: start;
+	scroll-snap-stop: normal;
+}
+
+.ghahghah-featured__card {
+	display: grid;
+	gap: 0.65rem;
+	height: 100%;
+	padding: var(--gfx-pad-card);
+	border: 1px solid color-mix(in srgb, #222 8%, transparent);
+	border-radius: var(--gfx-radius);
+	background: var(--gfx-card);
+}
+
+.ghahghah-featured__media {
+	display: grid;
+	place-items: center;
+	height: var(--gfx-media-h);
+	padding: 0.25rem;
+	border-radius: 12px;
+	background: color-mix(in srgb, var(--gfx-bg) 85%, #fff);
+	overflow: hidden;
+}
+
+.ghahghah-featured__img,
+.ghahghah-featured__media img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.ghahghah-featured__name {
+	margin: 0;
+	font-size: 0.875rem; /* 14px mobile */
+	font-weight: 700;
+	line-height: 1.45;
+	text-align: center;
+	overflow-wrap: anywhere;
+	hyphens: auto;
+}
+
+.ghahghah-featured__cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.35rem;
+	width: 100%;
+	min-height: 40px;
+	padding: 0.4rem 0.7rem;
+	border: 2px solid var(--gfx-red);
+	border-radius: 10px;
+	background: #fff;
+	color: var(--gfx-red);
+	font-weight: 700;
+	font-size: 0.8rem;
+	line-height: 1.25;
+	text-decoration: none;
+}
+
+@media (min-width: 22.5rem) {
+	/* ≥360: two cards */
+	.ghahghah-featured {
+		--gfx-visible: 2;
+	}
+}
+
+@media (min-width: 48rem) {
+	/* ≥768: three cards */
+	.ghahghah-featured {
+		--gfx-gap: 1.25rem; /* 20px */
+		--gfx-visible: 3;
+		--gfx-media-h: 15rem; /* 240px */
+	}
+
+	.ghahghah-featured__shell {
+		padding-block: 3rem;
+	}
+
+	.ghahghah-featured__head {
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: end;
+		justify-items: stretch;
+		text-align: start;
+	}
+
+	.ghahghah-featured__intro {
+		justify-items: start;
+		text-align: start;
+	}
+
+	.ghahghah-featured__title {
+		font-size: 1.6rem;
+	}
+
+	.ghahghah-featured__title::after {
+		margin-inline: 0;
+	}
+
+	.ghahghah-featured__toolbar {
+		justify-content: flex-end;
+	}
+
+	.ghahghah-featured__all--top {
+		display: inline-flex;
+	}
+
+	.ghahghah-featured__footer {
+		display: none;
+	}
+
+	.ghahghah-featured__name {
+		font-size: 1rem; /* 16px */
+	}
+
+	.ghahghah-featured__cta {
+		min-height: 44px;
+		font-size: 0.875rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	/* ≥1024: four cards */
+	.ghahghah-featured {
+		--gfx-visible: 4;
+	}
+
+	.ghahghah-featured__shell {
+		width: min(100% - (var(--gfx-pad-d) * 2), var(--gfx-max));
+		padding-block: var(--gfx-pad-d);
+	}
+
+	.ghahghah-featured__title {
+		font-size: 1.85rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ghahghah-featured__all,
+	.ghahghah-featured__cta,
+	.ghahghah-featured__nav {
+		transition: none;
+	}
+
+	.ghahghah-featured__track {
+		scroll-behavior: auto;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.ghahghah-featured__track {
+		scroll-behavior: smooth;
+	}
+}
+
+</style>
+</head>
+<body>
+<section class="ghahghah-featured" aria-labelledby="ghahghah-featured-title" data-ghahghah-featured>
+  <div class="ghahghah-featured__shell">
+    <header class="ghahghah-featured__head">
+      <div class="ghahghah-featured__intro">
+        <h2 id="ghahghah-featured-title" class="ghahghah-featured__title">محصولات منتخب <span class="ghahghah-featured__accent">قهقهه</span></h2>
+        <p class="ghahghah-featured__text">طعم‌های قهقهه را بیشتر بشناسید.</p>
+      </div>
+      <div class="ghahghah-featured__toolbar">
+        <div class="ghahghah-featured__controls" data-ghahghah-featured-controls hidden>
+          <button type="button" class="ghahghah-featured__nav ghahghah-featured__nav--prev" data-ghahghah-featured-prev aria-controls="ghahghah-featured-track" aria-label="محصولات قبلی"><svg class="ghahghah-featured__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+          <button type="button" class="ghahghah-featured__nav ghahghah-featured__nav--next" data-ghahghah-featured-next aria-controls="ghahghah-featured-track" aria-label="محصولات بعدی"><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></button>
+        </div>
+        <a class="ghahghah-featured__all ghahghah-featured__all--top" href="#"><span>مشاهده همه محصولات</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+      </div>
+    </header>
+    <div class="ghahghah-featured__viewport" data-ghahghah-featured-viewport>
+      <ul id="ghahghah-featured-track" class="ghahghah-featured__track" data-ghahghah-featured-track tabindex="0" aria-label="فهرست محصولات منتخب">
+<li class="ghahghah-featured__item" data-ghahghah-featured-item data-index="0">
+  <article class="ghahghah-featured__card">
+    <div class="ghahghah-featured__media"><img class="ghahghah-featured__img" src="../../ghahghah-theme/assets/images/products/catalog/limoo-corn-pellet-full.webp" alt="" width="400" height="520" loading="lazy" decoding="async" /></div>
+    <h3 class="ghahghah-featured__name">چیپس ذرت قهقهه طعم لیمویی</h3>
+    <a class="ghahghah-featured__cta" href="#p0"><span>مشاهده محصول</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+  </article>
+</li>
+<li class="ghahghah-featured__item" data-ghahghah-featured-item data-index="1">
+  <article class="ghahghah-featured__card">
+    <div class="ghahghah-featured__media"><img class="ghahghah-featured__img" src="../../ghahghah-theme/assets/images/products/catalog/vinegar-corn-pellet-full.webp" alt="" width="400" height="520" loading="lazy" decoding="async" /></div>
+    <h3 class="ghahghah-featured__name">چیپس ذرت قهقهه طعم سرکه‌ای</h3>
+    <a class="ghahghah-featured__cta" href="#p1"><span>مشاهده محصول</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+  </article>
+</li>
+<li class="ghahghah-featured__item" data-ghahghah-featured-item data-index="2">
+  <article class="ghahghah-featured__card">
+    <div class="ghahghah-featured__media"><img class="ghahghah-featured__img" src="../../ghahghah-theme/assets/images/products/catalog/pizza-corn-pellet-full.webp" alt="" width="400" height="520" loading="lazy" decoding="async" /></div>
+    <h3 class="ghahghah-featured__name">چیپس ذرت قهقهه طعم پیتزا</h3>
+    <a class="ghahghah-featured__cta" href="#p2"><span>مشاهده محصول</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+  </article>
+</li>
+<li class="ghahghah-featured__item" data-ghahghah-featured-item data-index="3">
+  <article class="ghahghah-featured__card">
+    <div class="ghahghah-featured__media"><img class="ghahghah-featured__img" src="../../ghahghah-theme/assets/images/products/catalog/shallot-yogurt.jpg" alt="" width="400" height="520" loading="lazy" decoding="async" /></div>
+    <h3 class="ghahghah-featured__name">چیپس ذرت قهقهه طعم ماست موسیر</h3>
+    <a class="ghahghah-featured__cta" href="#p3"><span>مشاهده محصول</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+  </article>
+</li>
+<li class="ghahghah-featured__item" data-ghahghah-featured-item data-index="4">
+  <article class="ghahghah-featured__card">
+    <div class="ghahghah-featured__media"><img class="ghahghah-featured__img" src="../../ghahghah-theme/assets/images/products/catalog/parsley-onion.jpg" alt="" width="400" height="520" loading="lazy" decoding="async" /></div>
+    <h3 class="ghahghah-featured__name">چیپس ذرت قهقهه طعم پیاز جعفری</h3>
+    <a class="ghahghah-featured__cta" href="#p4"><span>مشاهده محصول</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+  </article>
+</li>
+<li class="ghahghah-featured__item" data-ghahghah-featured-item data-index="5">
+  <article class="ghahghah-featured__card">
+    <div class="ghahghah-featured__media"><img class="ghahghah-featured__img" src="../../ghahghah-theme/assets/images/products/catalog/ketchup.jpg" alt="" width="400" height="520" loading="lazy" decoding="async" /></div>
+    <h3 class="ghahghah-featured__name">چیپس ذرت قهقهه طعم کچاپ</h3>
+    <a class="ghahghah-featured__cta" href="#p5"><span>مشاهده محصول</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+  </article>
+</li></ul>
+    </div>
+    <p class="screen-reader-text" data-ghahghah-featured-live aria-live="polite" aria-atomic="true"></p>
+    <div class="ghahghah-featured__footer">
+      <a class="ghahghah-featured__all ghahghah-featured__all--bottom" href="#"><span>مشاهده همه محصولات</span><svg class="ghahghah-featured__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a>
+    </div>
+  </div>
+</section>
+<script>/**
+ * Manual featured-products carousel (scroll-snap + controls).
+ */
+(() => {
+	'use strict';
+
+	const root = document.querySelector('[data-ghahghah-featured]');
+	if (!root) {
+		return;
+	}
+
+	const track = root.querySelector('[data-ghahghah-featured-track]');
+	const controls = root.querySelector('[data-ghahghah-featured-controls]');
+	const prevBtn = root.querySelector('[data-ghahghah-featured-prev]');
+	const nextBtn = root.querySelector('[data-ghahghah-featured-next]');
+	const live = root.querySelector('[data-ghahghah-featured-live]');
+	if (!track) {
+		return;
+	}
+
+	const items = () => Array.from(track.querySelectorAll('[data-ghahghah-featured-item]'));
+	const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	const behavior = () => (reduceMotion() ? 'auto' : 'smooth');
+
+	const canScroll = () => track.scrollWidth > track.clientWidth + 2;
+
+	const closestIndex = () => {
+		const list = items();
+		if (!list.length) {
+			return 0;
+		}
+		const trackRect = track.getBoundingClientRect();
+		// RTL: start edge is the right side of the viewport.
+		const startX = trackRect.right;
+		let best = 0;
+		let bestDist = Infinity;
+		list.forEach((item, index) => {
+			const rect = item.getBoundingClientRect();
+			const dist = Math.abs(rect.right - startX);
+			if (dist < bestDist) {
+				bestDist = dist;
+				best = index;
+			}
+		});
+		return best;
+	};
+
+	const atStart = () => {
+		const list = items();
+		if (!list.length) {
+			return true;
+		}
+		const first = list[0].getBoundingClientRect();
+		const trackRect = track.getBoundingClientRect();
+		return first.right <= trackRect.right + 3 && first.right >= trackRect.right - 3
+			? closestIndex() === 0
+			: closestIndex() === 0;
+	};
+
+	const atEnd = () => {
+		const list = items();
+		if (!list.length) {
+			return true;
+		}
+		const last = list[list.length - 1].getBoundingClientRect();
+		const trackRect = track.getBoundingClientRect();
+		// Last item fully visible when its left edge is inside/near viewport left.
+		return last.left >= trackRect.left - 3;
+	};
+
+	const updateControls = () => {
+		if (!controls || !prevBtn || !nextBtn) {
+			return;
+		}
+		const scrollable = canScroll();
+		controls.hidden = !scrollable;
+		if (!scrollable) {
+			prevBtn.disabled = true;
+			nextBtn.disabled = true;
+			return;
+		}
+		prevBtn.disabled = closestIndex() <= 0 && atStart();
+		nextBtn.disabled = atEnd();
+		// Refine: if first index and first aligned, disable prev
+		prevBtn.disabled = closestIndex() <= 0;
+		nextBtn.disabled = closestIndex() >= items().length - 1 || atEnd();
+	};
+
+	const announce = () => {
+		if (!live) {
+			return;
+		}
+		const total = items().length;
+		if (!total) {
+			return;
+		}
+		const index = Math.min(total, Math.max(1, closestIndex() + 1));
+		live.textContent = `محصول ${index} از ${total}`;
+	};
+
+	const goTo = (index) => {
+		const list = items();
+		if (!list.length) {
+			return;
+		}
+		const clamped = Math.max(0, Math.min(list.length - 1, index));
+		list[clamped].scrollIntoView({
+			inline: 'start',
+			block: 'nearest',
+			behavior: behavior(),
+		});
+		window.setTimeout(() => {
+			updateControls();
+			announce();
+		}, reduceMotion() ? 0 : 320);
+	};
+
+	const move = (delta) => {
+		goTo(closestIndex() + delta);
+	};
+
+	if (prevBtn) {
+		prevBtn.addEventListener('click', () => move(-1));
+	}
+	if (nextBtn) {
+		nextBtn.addEventListener('click', () => move(1));
+	}
+
+	let scrollTimer = 0;
+	track.addEventListener(
+		'scroll',
+		() => {
+			window.requestAnimationFrame(updateControls);
+			window.clearTimeout(scrollTimer);
+			scrollTimer = window.setTimeout(announce, 120);
+		},
+		{ passive: true }
+	);
+
+	track.addEventListener('keydown', (event) => {
+		if (event.key === 'ArrowLeft') {
+			event.preventDefault();
+			move(1);
+		} else if (event.key === 'ArrowRight') {
+			event.preventDefault();
+			move(-1);
+		} else if (event.key === 'Home') {
+			event.preventDefault();
+			goTo(0);
+		} else if (event.key === 'End') {
+			event.preventDefault();
+			goTo(items().length - 1);
+		}
+	});
+
+	track.addEventListener('focusin', (event) => {
+		const item = event.target.closest('[data-ghahghah-featured-item]');
+		if (!item || !canScroll()) {
+			return;
+		}
+		item.scrollIntoView({
+			inline: 'nearest',
+			block: 'nearest',
+			behavior: behavior(),
+		});
+	});
+
+	window.addEventListener('resize', () => {
+		updateControls();
+	});
+
+	updateControls();
+})();
+</script>
+</body>
+</html>

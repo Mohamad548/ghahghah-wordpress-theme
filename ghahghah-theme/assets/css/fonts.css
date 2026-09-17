@@ -1,0 +1,37 @@
+/**
+ * Local Persian UI font — Yekan Bakh FaNum
+ * Sourced from the developer's licensed local install to match the design sheet.
+ */
+
+/* optional avoids late font-swap CLS; preload in assets.php for timely apply */
+@font-face {
+	font-family: "Yekan Bakh FaNum";
+	src: url("../fonts/yekan-bakh/YekanBakhFaNum-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: optional;
+}
+
+@font-face {
+	font-family: "Yekan Bakh FaNum";
+	src: url("../fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: optional;
+}
+
+@font-face {
+	font-family: "Yekan Bakh FaNum";
+	src: url("../fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: optional;
+}
+
+@font-face {
+	font-family: "Yekan Bakh FaNum";
+	src: url("../fonts/yekan-bakh/YekanBakhFaNum-SemiBold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: optional;
+}

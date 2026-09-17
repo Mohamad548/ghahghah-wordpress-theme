@@ -1,0 +1,218 @@
+/**
+ * Site search results page.
+ */
+
+.ghahghah-search {
+	--search-red: var(--ghahghah-brand-red, #d71920);
+	--search-navy: #0b2d59;
+	--search-muted: #5c6678;
+	--search-cream: #fffdf9;
+	background: var(--search-cream);
+	color: var(--search-navy);
+	font-family: var(--ghahghah-font-primary, inherit);
+}
+
+.ghahghah-search__shell {
+	width: min(calc(100% - 2rem), 70rem);
+	margin-inline: auto;
+	padding-block: 1.25rem 3.5rem;
+	display: grid;
+	gap: 1.25rem;
+}
+
+.ghahghah-search__eyebrow {
+	margin: 0 0 0.35rem;
+	color: var(--search-red);
+	font-size: 0.82rem;
+	font-weight: 700;
+}
+
+.ghahghah-search__title {
+	margin: 0;
+	font-size: clamp(1.45rem, 4vw, 2rem);
+	font-weight: 800;
+	line-height: 1.3;
+}
+
+.ghahghah-search__form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55rem;
+	margin-top: 1rem;
+}
+
+.ghahghah-search__field {
+	flex: 1 1 14rem;
+	min-width: 0;
+}
+
+.ghahghah-search__field input {
+	width: 100%;
+	min-height: 2.85rem;
+	margin: 0;
+	padding: 0.65rem 1rem;
+	border: 1px solid rgba(11, 45, 89, 0.12);
+	border-radius: 999px;
+	background: #fff;
+	font: inherit;
+	font-size: 0.95rem;
+}
+
+.ghahghah-search__submit {
+	min-height: 2.85rem;
+	padding: 0.65rem 1.25rem;
+	border: 0;
+	border-radius: 999px;
+	background: var(--search-red);
+	color: #fff;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.ghahghah-search__count {
+	margin: 0;
+	color: var(--search-muted);
+	font-size: 0.92rem;
+}
+
+.ghahghah-search__grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.ghahghah-search__card {
+	display: grid;
+	grid-template-columns: 7rem minmax(0, 1fr);
+	gap: 0.9rem;
+	padding: 0.85rem;
+	border: 1px solid rgba(11, 45, 89, 0.08);
+	border-radius: 1rem;
+	background: #fff;
+	box-shadow: 0 8px 24px rgba(27, 39, 51, 0.05);
+}
+
+.ghahghah-search__card-media {
+	display: block;
+	overflow: hidden;
+	border-radius: 0.75rem;
+	aspect-ratio: 1;
+	background: #f3f4f6;
+}
+
+.ghahghah-search__card-img,
+.ghahghah-search__card-placeholder {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.ghahghah-search__card-placeholder {
+	background: linear-gradient(135deg, #fff3d6, #ffe7a8);
+}
+
+.ghahghah-search__card-body {
+	display: grid;
+	align-content: start;
+	gap: 0.35rem;
+	min-width: 0;
+}
+
+.ghahghah-search__card-type {
+	margin: 0;
+	color: var(--search-red);
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.ghahghah-search__card-title {
+	margin: 0;
+	font-size: 1.05rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.ghahghah-search__card-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ghahghah-search__card-title a:hover,
+.ghahghah-search__card-title a:focus-visible {
+	color: var(--search-red);
+}
+
+.ghahghah-search__card-excerpt {
+	margin: 0;
+	color: var(--search-muted);
+	font-size: 0.88rem;
+	line-height: 1.65;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.ghahghah-search__empty {
+	padding: 2rem 1rem;
+	border-radius: 1rem;
+	background: #fff;
+	border: 1px dashed rgba(11, 45, 89, 0.14);
+	text-align: center;
+}
+
+.ghahghah-search__empty-title {
+	margin: 0 0 0.4rem;
+	font-size: 1.15rem;
+	font-weight: 800;
+}
+
+.ghahghah-search__empty-text {
+	margin: 0;
+	color: var(--search-muted);
+}
+
+.ghahghah-search .navigation.pagination {
+	margin-top: 0.5rem;
+}
+
+.ghahghah-search .nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	justify-content: center;
+}
+
+.ghahghah-search .page-numbers {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 2.4rem;
+	min-height: 2.4rem;
+	padding: 0.35rem 0.65rem;
+	border: 1px solid rgba(11, 45, 89, 0.12);
+	border-radius: 0.65rem;
+	background: #fff;
+	color: var(--search-navy);
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+.ghahghah-search .page-numbers.current,
+.ghahghah-search .page-numbers:hover,
+.ghahghah-search .page-numbers:focus-visible {
+	background: var(--search-red);
+	border-color: var(--search-red);
+	color: #fff;
+}
+
+@media (min-width: 48rem) {
+	.ghahghah-search__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ghahghah-search__card {
+		grid-template-columns: 8.5rem minmax(0, 1fr);
+	}
+}

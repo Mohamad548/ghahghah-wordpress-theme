@@ -1,0 +1,489 @@
+/**
+ * Dedicated «درخواست نمایندگی» page — scoped under .ghahghah-agency-page
+ */
+
+.ghahghah-agency-page {
+	--ga-red: var(--ghahghah-brand-red, #d71920);
+	--ga-navy: #0b2d59;
+	--ga-green: var(--ghahghah-natural-green, #3a8f45);
+	--ga-yellow: var(--ghahghah-corn-yellow, #f5b400);
+	--ga-cream: #fffdf8;
+	--ga-card: #fffcf8;
+	--ga-muted: #5c6678;
+	--ga-border: rgba(11, 45, 89, 0.08);
+	--ga-shadow: 0 10px 30px rgba(24, 36, 56, 0.06);
+	--ga-radius: 1.5rem;
+	--ga-max: 95rem;
+	background: var(--ga-cream);
+	color: var(--ga-navy);
+	font-family: var(--ghahghah-font-primary, inherit);
+	overflow-x: clip;
+}
+
+.ghahghah-agency-page::before,
+.ghahghah-agency-page::after {
+	content: "";
+	position: absolute;
+	inset-inline: auto;
+	pointer-events: none;
+	z-index: 0;
+	border-radius: 50%;
+	filter: blur(2px);
+}
+
+.ghahghah-agency-page::before {
+	width: min(42vw, 28rem);
+	height: min(42vw, 28rem);
+	top: 4rem;
+	inset-inline-start: -8rem;
+	background: color-mix(in srgb, var(--ga-yellow) 28%, transparent);
+	opacity: 0.55;
+}
+
+.ghahghah-agency-page::after {
+	width: min(36vw, 22rem);
+	height: min(36vw, 22rem);
+	bottom: 8rem;
+	inset-inline-end: -6rem;
+	background: color-mix(in srgb, var(--ga-green) 18%, transparent);
+	opacity: 0.45;
+}
+
+.ghahghah-agency-page {
+	position: relative;
+}
+
+.ghahghah-agency-page__shell {
+	position: relative;
+	z-index: 1;
+	width: min(calc(100% - 3rem), var(--ga-max));
+	margin-inline: auto;
+	padding-block: 1.25rem 3.5rem;
+}
+
+.ghahghah-agency-page__grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.ghahghah-agency-page__form-col {
+	order: 2;
+}
+
+.ghahghah-agency-page__hero {
+	order: 1;
+	display: grid;
+	gap: 1.25rem;
+	align-content: start;
+}
+
+.ghahghah-agency-page__head {
+	display: grid;
+	gap: 0.65rem;
+}
+
+.ghahghah-agency-page__superhead {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.35rem;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 800;
+	color: var(--ga-green);
+	line-height: 1.4;
+}
+
+.ghahghah-agency-page__superhead-stroke {
+	display: block;
+	inline-size: 4.5rem;
+	block-size: 0.45rem;
+	border-radius: 999px;
+	background: linear-gradient(90deg, var(--ga-yellow), color-mix(in srgb, var(--ga-yellow) 40%, transparent));
+}
+
+.ghahghah-agency-page__title {
+	margin: 0;
+	font-size: clamp(2.1rem, 4vw, 4.5rem);
+	font-weight: 800;
+	line-height: 1.15;
+	color: var(--ga-navy);
+}
+
+.ghahghah-agency-page__title-brand {
+	color: var(--ga-red);
+}
+
+.ghahghah-agency-page__lead {
+	margin: 0;
+	max-width: 36rem;
+	font-size: 1.05rem;
+	line-height: 1.85;
+	color: var(--ga-muted);
+}
+
+.ghahghah-agency-page__visual {
+	position: relative;
+	display: grid;
+	gap: 1rem;
+}
+
+.ghahghah-agency-page__visual-media {
+	position: relative;
+	margin: 0;
+	min-height: 12rem;
+}
+
+.ghahghah-agency-page__product {
+	display: block;
+	width: min(100%, 28rem);
+	max-width: 100%;
+	height: auto;
+	margin-inline: auto;
+	filter: drop-shadow(0 18px 36px rgba(24, 36, 56, 0.12));
+}
+
+.ghahghah-agency-page__tagline {
+	position: absolute;
+	inset-inline-start: 0;
+	bottom: 12%;
+	max-width: 8rem;
+	margin: 0;
+	padding: 0.65rem 0.75rem;
+	border-radius: 0.85rem;
+	background: color-mix(in srgb, var(--ga-green) 12%, #fff);
+	color: var(--ga-green);
+	font-size: 0.82rem;
+	font-weight: 800;
+	line-height: 1.55;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	box-shadow: var(--ga-shadow);
+}
+
+.ghahghah-agency-page__deco {
+	position: absolute;
+	border-radius: 50%;
+	pointer-events: none;
+	opacity: 0.75;
+}
+
+.ghahghah-agency-page__deco--leaf-1 {
+	width: 2.4rem;
+	height: 2.4rem;
+	top: 8%;
+	inset-inline-end: 12%;
+	background: radial-gradient(circle at 30% 30%, #7bc47f, #3a8f45);
+	transform: rotate(24deg);
+}
+
+.ghahghah-agency-page__deco--leaf-2 {
+	width: 1.6rem;
+	height: 1.6rem;
+	bottom: 18%;
+	inset-inline-start: 6%;
+	background: radial-gradient(circle at 30% 30%, #8fd493, #3a8f45);
+	transform: rotate(-18deg);
+}
+
+.ghahghah-agency-page__deco--snack {
+	width: 1.1rem;
+	height: 2rem;
+	border-radius: 999px 999px 0.35rem 0.35rem;
+	background: linear-gradient(180deg, #f5b400, #e07a2f);
+}
+
+.ghahghah-agency-page__deco--snack-1 {
+	top: 22%;
+	inset-inline-start: 18%;
+	transform: rotate(32deg);
+}
+
+.ghahghah-agency-page__deco--snack-2 {
+	bottom: 28%;
+	inset-inline-end: 20%;
+	transform: rotate(-24deg);
+}
+
+.ghahghah-agency-page__steps {
+	display: grid;
+	gap: 0.85rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ghahghah-agency-page__step {
+	display: flex;
+	gap: 0.75rem;
+	align-items: flex-start;
+	padding: 1rem 1.05rem;
+	border-radius: var(--ga-radius);
+	background: #fff;
+	box-shadow: var(--ga-shadow);
+	border: 1px solid var(--ga-border);
+}
+
+.ghahghah-agency-page__step-badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 999px;
+	background: var(--ga-yellow);
+	color: #fff;
+	font-weight: 800;
+	font-size: 0.95rem;
+	flex: 0 0 auto;
+}
+
+.ghahghah-agency-page__step-main {
+	display: flex;
+	gap: 0.65rem;
+	align-items: flex-start;
+	flex: 1;
+	min-width: 0;
+}
+
+.ghahghah-agency-page__step-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.35rem;
+	height: 2.35rem;
+	border-radius: 0.85rem;
+	background: color-mix(in srgb, var(--ga-green) 10%, #fff);
+	color: var(--ga-green);
+	flex: 0 0 auto;
+}
+
+.ghahghah-agency-page__step:nth-child(2) .ghahghah-agency-page__step-icon {
+	background: color-mix(in srgb, var(--ga-red) 10%, #fff);
+	color: var(--ga-red);
+}
+
+.ghahghah-agency-page__step:nth-child(3) .ghahghah-agency-page__step-icon {
+	background: color-mix(in srgb, var(--ga-navy) 8%, #fff);
+	color: var(--ga-navy);
+}
+
+.ghahghah-agency-page__step-icon .gg-form-icon {
+	inline-size: 1.35rem;
+	block-size: 1.35rem;
+}
+
+.ghahghah-agency-page__step-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.ghahghah-agency-page__step-title {
+	display: block;
+	font-weight: 800;
+	line-height: 1.45;
+	color: var(--ga-navy);
+}
+
+.ghahghah-agency-page__step-text {
+	display: block;
+	margin-top: 0.25rem;
+	color: var(--ga-muted);
+	font-size: 0.92rem;
+	line-height: 1.6;
+}
+
+.ghahghah-agency-page__motto {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.35rem;
+	margin-top: 0.25rem;
+	font-size: 1.05rem;
+	font-weight: 800;
+	color: var(--ga-green);
+}
+
+.ghahghah-agency-page__motto-stroke {
+	display: block;
+	inline-size: 5rem;
+	block-size: 0.4rem;
+	border-radius: 999px;
+	background: linear-gradient(90deg, var(--ga-yellow), color-mix(in srgb, var(--ga-yellow) 35%, transparent));
+}
+
+.ghahghah-agency-page__form-card {
+	border-radius: 2rem;
+	background: var(--ga-card);
+	box-shadow: var(--ga-shadow);
+	border: 1px solid var(--ga-border);
+	overflow: hidden;
+}
+
+.ghahghah-agency-page__crumbs {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 1rem 1.25rem 0;
+	font-size: 0.88rem;
+	color: var(--ga-muted);
+}
+
+.ghahghah-agency-page__crumbs a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
+	color: inherit;
+	text-decoration: none;
+}
+
+.ghahghah-agency-page__crumbs a:hover,
+.ghahghah-agency-page__crumbs a:focus-visible {
+	color: var(--ga-red);
+}
+
+.ghahghah-agency-page__crumb-home .gg-form-icon {
+	inline-size: 1rem;
+	block-size: 1rem;
+}
+
+.ghahghah-agency-page__crumb-sep {
+	opacity: 0.55;
+}
+
+.ghahghah-agency-page__crumb-current {
+	color: var(--ga-navy);
+	font-weight: 700;
+}
+
+.ghahghah-agency-page__unavailable {
+	margin: 1.25rem;
+	padding: 1.25rem;
+	border-radius: var(--ga-radius);
+	background: #fff;
+	color: var(--ga-muted);
+}
+
+/* Form overrides inside agency card */
+.ghahghah-agency-page .ghahghah-form--agency-page {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	padding: 0.75rem 1.25rem 1.5rem;
+	box-shadow: none;
+}
+
+.ghahghah-agency-page .ghahghah-form--agency-page .ghahghah-form__head {
+	display: none;
+}
+
+.ghahghah-agency-page .ghahghah-form--agency-page .ghahghah-form__input {
+	min-height: 52px;
+	border-radius: 1rem;
+	border-color: color-mix(in srgb, var(--ga-navy) 12%, #d7dbe3);
+}
+
+.ghahghah-agency-page .ghahghah-form--agency-page .ghahghah-form__submit {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 56px;
+	border-radius: 1rem;
+	gap: 0.45rem;
+	font-size: 1.05rem;
+}
+
+.ghahghah-agency-page .ghahghah-form--agency-page .ghahghah-form__submit .gg-form-icon {
+	inline-size: 1.15rem;
+	block-size: 1.15rem;
+	color: #fff;
+}
+
+.ghahghah-agency-page .ghahghah-form--agency-page .ghahghah-form__legal {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+	margin: 0.85rem 0 0;
+	padding: 0.75rem 0.9rem;
+	border-radius: 0.85rem;
+	background: color-mix(in srgb, var(--ga-red) 8%, #fff);
+	color: var(--ga-navy);
+	font-size: 0.88rem;
+	line-height: 1.55;
+}
+
+.ghahghah-agency-page .ghahghah-form--agency-page .ghahghah-form__legal .gg-form-icon {
+	color: var(--ga-red);
+}
+
+@media (min-width: 62rem) {
+	.ghahghah-agency-page__grid {
+		grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+		gap: clamp(1.5rem, 2.5vw, 2rem);
+		align-items: start;
+	}
+
+	.ghahghah-agency-page__form-col,
+	.ghahghah-agency-page__hero {
+		order: 0;
+	}
+
+	.ghahghah-agency-page__visual {
+		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+		align-items: center;
+		gap: 1.25rem;
+	}
+
+	.ghahghah-agency-page__product {
+		width: 100%;
+		margin-inline: 0;
+	}
+
+	.ghahghah-agency-page__tagline {
+		inset-inline-start: -0.5rem;
+	}
+}
+
+@media (min-width: 48rem) {
+	.ghahghah-agency-page__shell {
+		padding-block: 1.75rem 4rem;
+	}
+
+	.ghahghah-agency-page .ghahghah-form--agency-page {
+		padding: 0.75rem 1.75rem 2rem;
+	}
+
+	.ghahghah-agency-page__crumbs {
+		padding: 1.25rem 1.75rem 0;
+	}
+}
+
+@media (max-width: 61.98rem) {
+	.ghahghah-agency-page__tagline {
+		position: static;
+		writing-mode: horizontal-tb;
+		transform: none;
+		max-width: none;
+		margin-top: 0.75rem;
+		text-align: center;
+	}
+
+	.ghahghah-agency-page__deco {
+		display: none;
+	}
+
+	.ghahghah-agency-page__product {
+		width: min(100%, 20rem);
+	}
+}
+
+@media (max-width: 47.98rem) {
+	.ghahghah-agency-page__shell {
+		width: min(calc(100% - 1.5rem), var(--ga-max));
+	}
+
+	.ghahghah-agency-page__title {
+		font-size: clamp(2.1rem, 8vw, 2.6rem);
+	}
+}

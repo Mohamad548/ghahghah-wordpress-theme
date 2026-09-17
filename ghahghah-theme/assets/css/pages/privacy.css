@@ -1,0 +1,315 @@
+/**
+ * Privacy policy page — scoped under .ghahghah-privacy-page
+ */
+
+.ghahghah-privacy-page {
+	--gp-bg: #f7f4ea;
+	--gp-card: #ffffff;
+	--gp-cream: #fff8e8;
+	--gp-red: var(--ghahghah-brand-red, #d71920);
+	--gp-yellow: var(--ghahghah-corn-yellow, #f5b400);
+	--gp-navy: #0b2d59;
+	--gp-text: var(--ghahghah-dark-text, #222222);
+	--gp-muted: #5c5660;
+	--gp-border: #e8e2d6;
+	--gp-radius: 18px;
+	--gp-max: 52rem;
+	--gp-shell: 77.5rem;
+	background: linear-gradient(180deg, #fbf8f0 0%, #f3efe4 100%);
+	color: var(--gp-text);
+	font-family: var(--ghahghah-font-primary, inherit);
+}
+
+.ghahghah-privacy-page .gg-form-icon {
+	display: block;
+	inline-size: 1.15em;
+	block-size: 1.15em;
+	flex-shrink: 0;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.ghahghah-privacy__shell {
+	width: min(calc(100% - 2.5rem), var(--gp-shell));
+	margin-inline: auto;
+	padding-block: 1.25rem 3rem;
+	display: grid;
+	gap: 1.25rem;
+}
+
+.ghahghah-privacy__crumbs {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35rem;
+	font-size: 0.88rem;
+	color: var(--gp-muted);
+}
+
+.ghahghah-privacy__crumbs a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ghahghah-privacy__crumbs a:hover,
+.ghahghah-privacy__crumbs a:focus-visible,
+.ghahghah-privacy__crumbs [aria-current='page'] {
+	color: var(--gp-red);
+}
+
+.ghahghah-privacy__crumb-sep {
+	display: inline-flex;
+}
+
+.ghahghah-privacy__crumb-sep .gg-form-icon {
+	inline-size: 0.95rem;
+	block-size: 0.95rem;
+}
+
+.ghahghah-privacy__intro {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.35rem 1.5rem;
+	border-radius: var(--gp-radius);
+	background: color-mix(in srgb, var(--gp-cream) 90%, #f0e6c8);
+}
+
+.ghahghah-privacy__eyebrow {
+	margin: 0 0 0.35rem;
+	color: var(--gp-red);
+	font-size: 0.82rem;
+	font-weight: 700;
+}
+
+.ghahghah-privacy__title {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.45rem;
+	margin: 0;
+	font-size: clamp(1.45rem, 2.8vw, 2.05rem);
+	font-weight: 800;
+	line-height: 1.35;
+	color: var(--gp-navy);
+}
+
+.ghahghah-privacy__title-accent {
+	color: var(--gp-red);
+}
+
+.ghahghah-privacy__title-accents .gg-form-icon {
+	inline-size: 1.1rem;
+	block-size: 1.1rem;
+	color: var(--gp-yellow);
+}
+
+.ghahghah-privacy__lead {
+	margin: 0.65rem 0 0;
+	max-width: 40rem;
+	color: var(--gp-muted);
+	font-size: 0.98rem;
+	line-height: 1.85;
+}
+
+.ghahghah-privacy__meta {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0.85rem 0 0;
+	color: var(--gp-muted);
+	font-size: 0.84rem;
+}
+
+.ghahghah-privacy__meta-icon .gg-form-icon {
+	inline-size: 1rem;
+	block-size: 1rem;
+}
+
+.ghahghah-privacy__intro-art-disc {
+	display: grid;
+	place-items: center;
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 50%;
+	background: color-mix(in srgb, var(--gp-yellow) 28%, #fff);
+	color: var(--gp-red);
+	box-shadow: 0 8px 20px rgba(215, 25, 32, 0.08);
+}
+
+.ghahghah-privacy__intro-art-disc .gg-form-icon {
+	inline-size: 2rem;
+	block-size: 2rem;
+}
+
+.ghahghah-privacy__article {
+	width: min(100%, var(--gp-max));
+	margin-inline: auto;
+	padding: 1.5rem 1.35rem 1.75rem;
+	border: 1px solid var(--gp-border);
+	border-radius: var(--gp-radius);
+	background: var(--gp-card);
+	box-shadow: 0 10px 28px rgba(27, 39, 51, 0.05);
+}
+
+.ghahghah-privacy__content {
+	font-size: 0.98rem;
+	line-height: 1.9;
+	color: #2a3344;
+}
+
+.ghahghah-privacy__content > *:first-child {
+	margin-top: 0;
+}
+
+.ghahghah-privacy__content h2,
+.ghahghah-privacy__content h3 {
+	margin: 1.65rem 0 0.7rem;
+	color: var(--gp-navy);
+	line-height: 1.4;
+	scroll-margin-top: 5.5rem;
+}
+
+.ghahghah-privacy__content h2 {
+	font-size: 1.2rem;
+	font-weight: 800;
+}
+
+.ghahghah-privacy__content h3 {
+	font-size: 1.05rem;
+	font-weight: 700;
+}
+
+.ghahghah-privacy__content p {
+	margin: 0 0 1rem;
+}
+
+.ghahghah-privacy__content ul,
+.ghahghah-privacy__content ol {
+	margin: 0 0 1.1rem;
+	padding-inline-start: 1.25rem;
+}
+
+.ghahghah-privacy__content li {
+	margin-block: 0.35rem;
+}
+
+.ghahghah-privacy__content a {
+	color: var(--gp-red);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+}
+
+.ghahghah-privacy__content a:hover,
+.ghahghah-privacy__content a:focus-visible {
+	color: var(--gp-navy);
+}
+
+.ghahghah-privacy__content .privacy-policy-tutorial {
+	display: none;
+}
+
+.ghahghah-privacy__aside {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	width: min(100%, var(--gp-max));
+	margin-inline: auto;
+	padding: 1.15rem 1.35rem;
+	border-radius: var(--gp-radius);
+	background: color-mix(in srgb, var(--gp-cream) 85%, #ffe9b8);
+	border: 1px solid color-mix(in srgb, var(--gp-yellow) 35%, var(--gp-border));
+}
+
+.ghahghah-privacy__aside-title {
+	margin: 0 0 0.3rem;
+	font-size: 1.05rem;
+	font-weight: 800;
+	color: var(--gp-navy);
+}
+
+.ghahghah-privacy__aside-text {
+	margin: 0;
+	color: var(--gp-muted);
+	font-size: 0.92rem;
+	line-height: 1.7;
+	max-width: 34rem;
+}
+
+.ghahghah-privacy__aside-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	padding: 0.7rem 1.15rem;
+	border-radius: 999px;
+	background: var(--gp-red);
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.ghahghah-privacy__aside-btn:hover,
+.ghahghah-privacy__aside-btn:focus-visible {
+	background: color-mix(in srgb, var(--gp-red) 88%, #000);
+	color: #fff;
+}
+
+.ghahghah-privacy__aside-btn .gg-form-icon {
+	inline-size: 1rem;
+	block-size: 1rem;
+}
+
+@media (max-width: 47.99rem) {
+	.ghahghah-privacy__intro {
+		grid-template-columns: 1fr;
+		padding: 1.15rem 1.1rem;
+	}
+
+	.ghahghah-privacy__intro-art {
+		justify-self: start;
+	}
+
+	.ghahghah-privacy__article {
+		padding: 1.2rem 1rem 1.4rem;
+	}
+
+	.ghahghah-privacy__aside {
+		align-items: stretch;
+	}
+
+	.ghahghah-privacy__aside-btn {
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.ghahghah-privacy__intro-art-disc {
+		animation: ghahghah-privacy-float 4.5s ease-in-out infinite;
+	}
+
+	.ghahghah-privacy__aside-btn {
+		transition: background 0.2s ease, transform 0.2s ease;
+	}
+
+	.ghahghah-privacy__aside-btn:hover {
+		transform: translateY(-1px);
+	}
+}
+
+@keyframes ghahghah-privacy-float {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-0.35rem);
+	}
+}

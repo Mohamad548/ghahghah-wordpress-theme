@@ -296,17 +296,51 @@ if ( $legacy_products > 0 ) {
 	$row = $rename( $legacy_products, 'products-legacy', 'page' );
 	if ( $row ) {
 		$report['changes'][] = array_merge( array( 'kind' => 'legacy-products-page' ), $row );
+		// Intermediate English slug must also 301 to archive (no duplicate public page).
+		$redirects['/products-legacy/'] = $archive_path;
 		if ( ! empty( $row['changed'] ) && $row['old'] !== $row['new'] ) {
-			$redirects[ $row['old'] ] = $archive_path; // still send humans to archive
+			$redirects[ $row['old'] ] = $archive_path;
+		}
+		if ( ! $dry_run ) {
+			$post = get_post( $legacy_products );
+			if ( $post instanceof WP_Post && 'publish' === $post->post_status ) {
+				wp_update_post(
+					array(
+						'ID'          => $legacy_products,
+						'post_status' => 'private',
+					)
+				);
+				$report['changes'][] = array(
+					'kind'   => 'legacy-products-private',
+					'id'     => $legacy_products,
+					'status' => 'private',
+				);
+			}
 		}
 	}
 }
 
-// Stale flavor pages → product archive filters / singles.
+// Stale flavor / listing pages → product archive filters. Explicit English slugs only
+// (never sanitize_title('legacy-' . Persian title)).
 $flavor_pages = array(
-	array( 'title' => 'همه محصولات', 'slugs' => array( 'همه-محصولات' ), 'target' => $archive_path ),
-	array( 'title' => 'طعم پیتزا', 'slugs' => array( 'طعم-پیتزا' ), 'target' => $archive_path . '?gh_flavor=pizza' ),
-	array( 'title' => 'طعم لیمویی', 'slugs' => array( 'طعم-لیمویی' ), 'target' => $archive_path . '?gh_flavor=lemon' ),
+	array(
+		'title'       => 'همه محصولات',
+		'slugs'       => array( 'همه-محصولات', 'legacy-all-products', 'legacy-%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa' ),
+		'target_slug' => 'legacy-all-products',
+		'target'      => $archive_path,
+	),
+	array(
+		'title'       => 'طعم پیتزا',
+		'slugs'       => array( 'طعم-پیتزا', 'legacy-flavor-pizza', 'legacy-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7' ),
+		'target_slug' => 'legacy-flavor-pizza',
+		'target'      => $archive_path . '?gh_flavor=pizza',
+	),
+	array(
+		'title'       => 'طعم لیمویی',
+		'slugs'       => array( 'طعم-لیمویی', 'legacy-flavor-lemon', 'legacy-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c' ),
+		'target_slug' => 'legacy-flavor-lemon',
+		'target'      => $archive_path . '?gh_flavor=lemon',
+	),
 );
 foreach ( $flavor_pages as $fp ) {
 	$id = $find_page( $fp['slugs'], $fp['title'] );
@@ -315,11 +349,140 @@ foreach ( $flavor_pages as $fp ) {
 	}
 	$old = $path_of( (string) get_permalink( $id ) );
 	$redirects[ $old ] = $fp['target'];
-	$row = $rename( $id, sanitize_title( 'legacy-' . $fp['title'] ), 'page' );
+	$row = $rename( $id, $fp['target_slug'], 'page' );
 	if ( $row ) {
-		$report['changes'][] = array_merge( array( 'kind' => 'legacy-flavor-page', 'redirect_to' => $fp['target'] ), $row );
+		$report['changes'][] = array_merge(
+			array(
+				'kind'        => 'legacy-flavor-page',
+				'redirect_to' => $fp['target'],
+			),
+			$row
+		);
+		// Old Persian + prior bad intermediate + final English intermediate → destination.
+		$redirects[ $row['old'] ] = $fp['target'];
+		$redirects[ '/' . $fp['target_slug'] . '/' ] = $fp['target'];
+		foreach ( $fp['slugs'] as $hist ) {
+			if ( $hist === $fp['target_slug'] ) {
+				continue;
+			}
+			$hist_path = user_trailingslashit( '/' . $hist );
+			if ( $hist_path !== $fp['target'] && '/' !== $hist_path ) {
+				$redirects[ $hist_path ] = $fp['target'];
+				$parts = array_map( 'rawurlencode', explode( '/', trim( rawurldecode( $hist ), '/' ) ) );
+				$enc   = '/' . implode( '/', $parts ) . '/';
+				$redirects[ $enc ] = $fp['target'];
+			}
+		}
+		if ( ! $dry_run ) {
+			$post = get_post( $id );
+			if ( $post instanceof WP_Post && 'publish' === $post->post_status ) {
+				wp_update_post(
+					array(
+						'ID'          => $id,
+						'post_status' => 'private',
+					)
+				);
+				$report['changes'][] = array(
+					'kind'   => 'legacy-flavor-private',
+					'id'     => $id,
+					'slug'   => $fp['target_slug'],
+					'status' => 'private',
+				);
+			}
+		}
 	}
 }
+
+/**
+ * Point nav menu custom/page links that still target legacy paths at final destinations.
+ */
+$retarget_menus = static function ( array $path_to_final ) use ( $dry_run, &$report ): void {
+	$menus = wp_get_nav_menus();
+	if ( ! is_array( $menus ) ) {
+		return;
+	}
+	foreach ( $menus as $menu ) {
+		if ( ! $menu instanceof WP_Term ) {
+			continue;
+		}
+		$items = wp_get_nav_menu_items( $menu->term_id );
+		if ( ! is_array( $items ) ) {
+			continue;
+		}
+		foreach ( $items as $item ) {
+			if ( ! $item instanceof WP_Post ) {
+				continue;
+			}
+			$type = (string) $item->type;
+			$url  = (string) $item->url;
+			if ( 'custom' !== $type && 'post_type' !== $type ) {
+				continue;
+			}
+			$path = (string) wp_parse_url( $url, PHP_URL_PATH );
+			if ( '' === $path ) {
+				continue;
+			}
+			$path = trailingslashit( rawurldecode( $path ) );
+			$enc_parts = array_map( 'rawurlencode', explode( '/', trim( rawurldecode( $path ), '/' ) ) );
+			$enc_path  = '/' . implode( '/', $enc_parts ) . '/';
+			$final     = $path_to_final[ $path ] ?? $path_to_final[ $enc_path ] ?? null;
+			if ( ! is_string( $final ) || '' === $final ) {
+				// Also match object pages that are now private legacy.
+				if ( 'post_type' === $type && 'page' === (string) $item->object ) {
+					$obj_id = (int) $item->object_id;
+					$obj    = get_post( $obj_id );
+					if ( $obj instanceof WP_Post ) {
+						$obj_name = (string) $obj->post_name;
+						if ( 'products-legacy' === $obj_name || 0 === strpos( $obj_name, 'legacy-' ) ) {
+							$obj_path = '/' . ( 0 === strpos( $obj_name, 'legacy-' ) || 'products-legacy' === $obj_name ? $obj_name : $obj_name ) . '/';
+							// Prefer explicit English intermediate key.
+							if ( isset( $path_to_final[ '/' . $obj_name . '/' ] ) ) {
+								$final = $path_to_final[ '/' . $obj_name . '/' ];
+							} else {
+								$obj_path = trailingslashit( (string) wp_parse_url( (string) get_permalink( $obj ), PHP_URL_PATH ) );
+								$final    = $path_to_final[ $obj_path ] ?? null;
+							}
+						} else {
+							$obj_path = trailingslashit( (string) wp_parse_url( (string) get_permalink( $obj ), PHP_URL_PATH ) );
+							$final    = $path_to_final[ $obj_path ] ?? null;
+						}
+					}
+				}
+			}
+			if ( ! is_string( $final ) || '' === $final ) {
+				continue;
+			}
+			$final_url = ( 0 === strpos( $final, 'http' ) ) ? $final : home_url( $final );
+			$cur_path  = trailingslashit( (string) wp_parse_url( $url, PHP_URL_PATH ) );
+			$fin_path  = trailingslashit( (string) wp_parse_url( $final_url, PHP_URL_PATH ) );
+			$cur_q     = (string) wp_parse_url( $url, PHP_URL_QUERY );
+			$fin_q     = (string) wp_parse_url( $final_url, PHP_URL_QUERY );
+			if ( $cur_path === $fin_path && $cur_q === $fin_q && 'custom' === $type ) {
+				continue;
+			}
+			$report['changes'][] = array(
+				'kind'    => 'menu-retarget',
+				'menu'    => (int) $menu->term_id,
+				'item'    => (int) $item->ID,
+				'from'    => $url,
+				'to'      => $final_url,
+				'changed' => ! $dry_run,
+			);
+			if ( ! $dry_run ) {
+				wp_update_nav_menu_item(
+					(int) $menu->term_id,
+					(int) $item->ID,
+					array(
+						'menu-item-title'  => $item->title,
+						'menu-item-url'    => $final_url,
+						'menu-item-status' => 'publish',
+						'menu-item-type'   => 'custom',
+					)
+				);
+			}
+		}
+	}
+};
 
 // --- Products via catalog key meta ---
 $products = get_posts(
@@ -394,23 +557,41 @@ foreach ( $redirects as $from => $to ) {
 	$clean[ $from ] = $to;
 }
 
-// Detect trivial chains in map (a→b, b→c).
-foreach ( $clean as $from => $to ) {
-	$to_path = wp_parse_url( $to, PHP_URL_PATH );
-	$to_path = $to_path ? trailingslashit( $to_path ) : $to;
-	if ( isset( $clean[ $to_path ] ) ) {
-		$report['skips'][] = array(
-			'kind' => 'redirect-chain-risk',
-			'from' => $from,
-			'via'  => $to_path,
-			'to'   => $clean[ $to_path ],
-		);
-		// Flatten.
-		$clean[ $from ] = $clean[ $to_path ];
+// Detect trivial chains in map (a→b, b→c) and flatten to final.
+$changed = true;
+$guard   = 0;
+while ( $changed && $guard < 10 ) {
+	$changed = false;
+	++$guard;
+	foreach ( $clean as $from => $to ) {
+		$to_path  = (string) wp_parse_url( $to, PHP_URL_PATH );
+		$to_path  = $to_path ? trailingslashit( $to_path ) : trailingslashit( (string) $to );
+		$to_query = (string) wp_parse_url( $to, PHP_URL_QUERY );
+		if ( isset( $clean[ $to_path ] ) ) {
+			$next = $clean[ $to_path ];
+			// Preserve query from original target if next has none.
+			$next_q = (string) wp_parse_url( $next, PHP_URL_QUERY );
+			if ( '' !== $to_query && '' === $next_q ) {
+				$next = $next . ( false === strpos( $next, '?' ) ? '?' : '&' ) . $to_query;
+			}
+			if ( $clean[ $from ] !== $next ) {
+				$report['skips'][] = array(
+					'kind' => 'redirect-chain-flattened',
+					'from' => $from,
+					'via'  => $to_path,
+					'to'   => $next,
+				);
+				$clean[ $from ] = $next;
+				$changed        = true;
+			}
+		}
 	}
 }
 
 $report['redirects'] = $clean;
+
+// Retarget menus to final destinations (after map known).
+$retarget_menus( $clean );
 
 if ( ! $dry_run ) {
 	$existing = get_option( 'ghahghah_url_redirects', array() );
@@ -418,12 +599,39 @@ if ( ! $dry_run ) {
 		$existing = array();
 	}
 	$merged = array_merge( $existing, $clean );
+	// Drop identity mappings.
+	foreach ( $merged as $from => $to ) {
+		$to_path = (string) wp_parse_url( (string) $to, PHP_URL_PATH );
+		$to_path = $to_path ? trailingslashit( $to_path ) : '';
+		if ( trailingslashit( (string) $from ) === $to_path && '' === (string) wp_parse_url( (string) $to, PHP_URL_QUERY ) ) {
+			unset( $merged[ $from ] );
+		}
+	}
 	update_option( 'ghahghah_url_redirects', $merged, false );
 	$report['option_count'] = count( $merged );
+	$report['option_delta'] = count( array_diff_assoc( $merged, $existing ) );
 	if ( $flush ) {
 		flush_rewrite_rules( false );
 		$report['flushed'] = true;
 	}
 }
+
+// Idempotency summary for second runs.
+$report['slug_changes'] = count(
+	array_filter(
+		$report['changes'],
+		static function ( $row ) {
+			return ! empty( $row['changed'] ) && isset( $row['from'], $row['to'] ) && $row['from'] !== $row['to'];
+		}
+	)
+);
+$report['menu_retargets'] = count(
+	array_filter(
+		$report['changes'],
+		static function ( $row ) {
+			return isset( $row['kind'] ) && 'menu-retarget' === $row['kind'] && ! empty( $row['changed'] );
+		}
+	)
+);
 
 WP_CLI::log( (string) wp_json_encode( $report, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES ) );

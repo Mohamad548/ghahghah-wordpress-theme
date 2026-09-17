@@ -599,7 +599,8 @@ function ghahghah_sync_primary_products_archive_link(): bool {
 /**
  * If footer and mobile_bottom share one menu, reattach footer to «دسترسی سریع».
  *
- * Prevents bottom-nav items from rendering in the footer quick column.
+ * One-shot / explicit repair only — never call from front-end request `init`.
+ * Admin menu edits after repair are not auto-reverted.
  *
  * @return bool True when locations changed.
  */
@@ -637,18 +638,28 @@ function ghahghah_ensure_footer_menu_location_distinct(): bool {
 }
 
 /**
- * Wire «محصولات» menu items (header, bottom nav, footer) to the CPT archive.
+ * Wire «محصولات» menu items to the CPT archive (cheap when already synced).
+ *
+ * Runs on menu save / theme switch — not on every front-end `init`.
+ *
+ * @return array{primary:bool,mobile_bottom:bool,footer:bool}
  */
-function ghahghah_products_archive_after_nav_sync(): void {
+function ghahghah_products_archive_after_nav_sync(): array {
+	$result = array(
+		'primary'       => false,
+		'mobile_bottom' => false,
+		'footer'        => false,
+	);
 	if ( wp_installing() ) {
-		return;
+		return $result;
 	}
-	ghahghah_ensure_footer_menu_location_distinct();
-	ghahghah_sync_products_archive_menu_link( 'primary' );
-	ghahghah_sync_products_archive_menu_link( 'mobile_bottom' );
-	ghahghah_sync_products_archive_menu_link( 'footer' );
+	$result['primary']       = ghahghah_sync_products_archive_menu_link( 'primary' );
+	$result['mobile_bottom'] = ghahghah_sync_products_archive_menu_link( 'mobile_bottom' );
+	$result['footer']        = ghahghah_sync_products_archive_menu_link( 'footer' );
+	return $result;
 }
-add_action( 'init', 'ghahghah_products_archive_after_nav_sync', 35 );
+add_action( 'wp_update_nav_menu', 'ghahghah_products_archive_after_nav_sync', 20 );
+add_action( 'after_switch_theme', 'ghahghah_products_archive_after_nav_sync', 20 );
 
 /**
  * Bundled default archive banner filenames (theme assets).

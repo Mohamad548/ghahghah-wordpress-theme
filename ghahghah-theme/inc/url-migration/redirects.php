@@ -99,13 +99,15 @@ function ghahghah_url_migration_template_redirect(): void {
 		return; // already there
 	}
 
-	// Preserve pagination / flavor filters when destination has no query.
+	// Preserve functional catalog / list params; merge when dest already has query.
 	$req_query = (string) wp_parse_url( $uri, PHP_URL_QUERY );
-	$dst_query = (string) wp_parse_url( $target, PHP_URL_QUERY );
-	if ( '' !== $req_query && '' === $dst_query ) {
-		parse_str( $req_query, $q);
+	if ( '' !== $req_query ) {
+		parse_str( $req_query, $q );
+		if ( ! is_array( $q ) ) {
+			$q = array();
+		}
 		$keep = array();
-		foreach ( array( 'gh_flavor', 'paged', 'page' ) as $key ) {
+		foreach ( array( 'gh_flavor', 'gh_sort', 'gh_q', 'paged', 'page' ) as $key ) {
 			if ( isset( $q[ $key ] ) && '' !== (string) $q[ $key ] ) {
 				$keep[ $key ] = $q[ $key ];
 			}
@@ -119,3 +121,26 @@ function ghahghah_url_migration_template_redirect(): void {
 	exit;
 }
 add_action( 'template_redirect', 'ghahghah_url_migration_template_redirect', 1 );
+
+/**
+ * Keep legacy intermediate pages out of Yoast sitemap entries.
+ *
+ * @param array|false $url    Sitemap entry.
+ * @param string      $type   Object type.
+ * @param object      $object Post-like object.
+ * @return array|false
+ */
+function ghahghah_url_migration_filter_sitemap_entry( $url, $type, $object ) {
+	if ( ! is_object( $object ) || empty( $object->post_name ) ) {
+		return $url;
+	}
+	$name = (string) $object->post_name;
+	if ( 0 === strpos( $name, 'legacy-' ) || 'products-legacy' === $name ) {
+		return false;
+	}
+	if ( isset( $object->post_status ) && 'private' === $object->post_status ) {
+		return false;
+	}
+	return $url;
+}
+add_filter( 'wpseo_sitemap_entry', 'ghahghah_url_migration_filter_sitemap_entry', 10, 3 );

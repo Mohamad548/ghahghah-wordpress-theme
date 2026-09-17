@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $defaults = ghahghah_blog_archive_defaults();
 $banner   = ghahghah_get_blog_archive_custom_banner();
-$hero_url = GHAHGHAH_THEME_URI . '/assets/images/blog-archive/corn-snack-hero-transparent.png';
+$hero_url = GHAHGHAH_THEME_URI . '/assets/images/blog-archive/corn-snack-hero-transparent.webp';
 $bowl_url = GHAHGHAH_THEME_URI . '/assets/images/blog-archive/real-snack-bowl-photo.jpg';
 $chip_url = GHAHGHAH_THEME_URI . '/assets/images/blog-archive/real-snack-shape-photo.jpg';
 

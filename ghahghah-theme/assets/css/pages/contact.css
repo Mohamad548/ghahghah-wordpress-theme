@@ -375,11 +375,65 @@ a.ghahghah-contact-page__card-value:focus-visible {
 	background: #e8edf5;
 }
 
+.ghahghah-contact-page__map--facade {
+	padding: 0;
+	display: grid;
+	place-items: center;
+	min-height: 14rem;
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(240, 243, 248, 0.92)),
+		repeating-linear-gradient(90deg, #e7ebf2 0, #e7ebf2 1px, transparent 1px, transparent 28px),
+		repeating-linear-gradient(0deg, #e7ebf2 0, #e7ebf2 1px, transparent 1px, transparent 28px),
+		#e8edf5;
+}
+
+.ghahghah-contact-page__map--facade.is-loaded {
+	display: block;
+	background: #e8edf5;
+}
+
+.ghahghah-contact-page__map-load {
+	appearance: none;
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.45rem;
+	max-width: calc(100% - 2rem);
+	margin: 0;
+	padding: 0.7rem 1.1rem;
+	border: 0;
+	border-radius: 999px;
+	background: #fff;
+	box-shadow: var(--gc-shadow);
+	color: var(--gc-navy);
+	font: inherit;
+	font-size: 0.92rem;
+	font-weight: 700;
+	line-height: 1.4;
+	cursor: pointer;
+}
+
+.ghahghah-contact-page__map-load:hover,
+.ghahghah-contact-page__map-load:focus-visible {
+	color: var(--gc-red);
+}
+
+.ghahghah-contact-page__map-load .ghahghah-contact-page__map-pin {
+	display: inline-flex;
+	color: var(--gc-red);
+}
+
 .ghahghah-contact-page__map-frame {
 	display: block;
 	width: 100%;
 	height: 14rem;
 	border: 0;
+}
+
+.ghahghah-contact-page__map-frame[hidden] {
+	display: none;
 }
 
 .ghahghah-contact-page__map-link {

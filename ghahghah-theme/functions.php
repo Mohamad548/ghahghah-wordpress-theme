@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GHAHGHAH_THEME_VERSION', '0.9.60' );
+define( 'GHAHGHAH_THEME_VERSION', '0.9.71' );
 define( 'GHAHGHAH_THEME_DIR', get_template_directory() );
 define( 'GHAHGHAH_THEME_URI', get_template_directory_uri() );
 
@@ -46,6 +46,8 @@ $ghahghah_includes = array(
 	'/inc/nav-sync.php',
 	'/inc/bottom-nav.php',
 	'/inc/class-primary-nav-walker.php',
+	'/inc/seo.php',
+	'/inc/performance.php',
 	'/inc/url-migration/redirects.php',
 );
 

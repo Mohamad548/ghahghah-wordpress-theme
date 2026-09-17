@@ -37,16 +37,20 @@ $shared = ghahghah_product_shared_defaults();
 							<?php echo 0 === $index ? '' : ' hidden'; ?>
 						>
 							<?php
+							$img_attrs = array(
+								'class'    => 'ghahghah-single-product__gallery-img',
+								'loading'  => 0 === $index ? 'eager' : 'lazy',
+								'decoding' => 'async',
+								'alt'      => esc_attr( (string) $data['display_title'] ),
+							);
+							if ( 0 === $index ) {
+								$img_attrs['fetchpriority'] = 'high';
+							}
 							echo wp_get_attachment_image(
 								(int) $attachment_id,
 								'large',
 								false,
-								array(
-									'class'    => 'ghahghah-single-product__gallery-img',
-									'loading'  => 0 === $index ? 'eager' : 'lazy',
-									'decoding' => 'async',
-									'alt'      => esc_attr( (string) $data['display_title'] ),
-								)
+								$img_attrs
 							);
 							?>
 						</figure>

@@ -63,8 +63,7 @@ $bp          = GHAHGHAH_HERO_BREAKPOINT;
 										<?php if ( 0 === $index ) : ?>
 											<source
 												media="(min-width: <?php echo esc_attr( $bp ); ?>)"
-												srcset="<?php echo esc_url( (string) $desktop['url'] ); ?>"
-												<?php echo ! empty( $desktop['srcset'] ) ? 'width="' . esc_attr( (string) $desktop['width'] ) . '" height="' . esc_attr( (string) $desktop['height'] ) . '"' : ''; ?>
+												srcset="<?php echo esc_attr( ! empty( $desktop['srcset'] ) ? (string) $desktop['srcset'] : (string) $desktop['url'] ); ?>"
 											/>
 											<img
 												class="ghahghah-hero__image"
@@ -75,13 +74,13 @@ $bp          = GHAHGHAH_HERO_BREAKPOINT;
 												<?php echo ! empty( $mobile['srcset'] ) ? 'srcset="' . esc_attr( (string) $mobile['srcset'] ) . '"' : ''; ?>
 												sizes="100vw"
 												decoding="async"
+												loading="eager"
 												fetchpriority="high"
 											/>
 										<?php else : ?>
 											<source
 												media="(min-width: <?php echo esc_attr( $bp ); ?>)"
-												data-ghahghah-hero-srcset="<?php echo esc_url( (string) $desktop['url'] ); ?>"
-												<?php echo ! empty( $desktop['srcset'] ) ? 'width="' . esc_attr( (string) $desktop['width'] ) . '" height="' . esc_attr( (string) $desktop['height'] ) . '"' : ''; ?>
+												data-ghahghah-hero-srcset="<?php echo esc_attr( ! empty( $desktop['srcset'] ) ? (string) $desktop['srcset'] : (string) $desktop['url'] ); ?>"
 											/>
 											<img
 												class="ghahghah-hero__image"
@@ -92,6 +91,7 @@ $bp          = GHAHGHAH_HERO_BREAKPOINT;
 												<?php echo ! empty( $mobile['srcset'] ) ? 'data-ghahghah-hero-srcset="' . esc_attr( (string) $mobile['srcset'] ) . '"' : ''; ?>
 												sizes="100vw"
 												decoding="async"
+												loading="lazy"
 											/>
 										<?php endif; ?>
 									</picture>

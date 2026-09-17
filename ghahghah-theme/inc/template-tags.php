@@ -34,7 +34,7 @@ function ghahghah_the_site_brand( string $context = '' ): void {
 	echo '<div class="site-brand' . esc_attr( $extra_class ) . '">';
 
 	printf(
-		'<a class="custom-logo-link site-brand__link" href="%1$s" rel="home"><picture><source media="(max-width: 63.99rem)" srcset="%2$s" /><img src="%3$s" class="custom-logo site-brand__image" alt="%4$s" width="%5$d" height="%6$d" decoding="async" fetchpriority="high" /></picture></a>',
+		'<a class="custom-logo-link site-brand__link" href="%1$s" rel="home"><picture><source media="(max-width: 63.99rem)" srcset="%2$s" /><img src="%3$s" class="custom-logo site-brand__image" alt="%4$s" width="%5$d" height="%6$d" decoding="async" fetchpriority="low" /></picture></a>',
 		esc_url( home_url( '/' ) ),
 		esc_url( $mobile_url ),
 		esc_url( $desktop_url ),

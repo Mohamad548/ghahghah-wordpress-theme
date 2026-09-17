@@ -135,10 +135,10 @@ function ghahghah_get_theme_media_manifest(): array {
 	$add( 'agency/ghahghah_parsley_onion_pack_optimized.webp', __( 'تصویر صفحه نمایندگی', 'ghahghah' ) );
 	$add( 'contact/corn-isolated-transparent-optimized.webp', __( 'تصویر تزئینی صفحه تماس', 'ghahghah' ) );
 
-	$add( 'blog-archive/corn-snack-hero-transparent.png', __( 'تزئین بنر مقالات', 'ghahghah' ) );
+	$add( 'blog-archive/corn-snack-hero-transparent.webp', __( 'تزئین بنر مقالات', 'ghahghah' ) );
 	$add( 'blog-archive/real-snack-bowl-photo.jpg', __( 'عکس کاسه اسنک مقالات', 'ghahghah' ) );
 	$add( 'blog-archive/real-snack-shape-photo.jpg', __( 'عکس اسنک مقالات', 'ghahghah' ) );
-	$add( 'products-archive/corn-hero-transparent.png', __( 'تزئین بنر محصولات', 'ghahghah' ) );
+	$add( 'products-archive/corn-hero-transparent.webp', __( 'تزئین بنر محصولات', 'ghahghah' ) );
 
 	$single_article_files = array(
 		'article-hero-banner-real-snack-optimized.webp'   => __( 'بنر مقاله تکی', 'ghahghah' ),

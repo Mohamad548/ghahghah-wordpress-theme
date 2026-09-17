@@ -61,7 +61,21 @@
 		if (!progress) {
 			return;
 		}
+		progress.classList.remove('is-running');
+		progress.style.animationDuration = '';
 		progress.style.transform = `scaleX(${Math.max(0, Math.min(1, ratio))})`;
+	};
+
+	const startProgressAnimation = (durationMs) => {
+		if (!progress || reduceMotion) {
+			return;
+		}
+		progress.classList.remove('is-running');
+		// Force restart CSS animation.
+		void progress.offsetWidth;
+		progress.style.animationDuration = `${Math.max(1, durationMs)}ms`;
+		progress.style.transform = '';
+		progress.classList.add('is-running');
 	};
 
 	const syncDots = () => {
@@ -76,6 +90,10 @@
 		if (timerId) {
 			window.clearTimeout(timerId);
 			timerId = 0;
+		}
+		if (progress) {
+			progress.classList.remove('is-running');
+			progress.style.animationDuration = '';
 		}
 	};
 
@@ -246,16 +264,7 @@
 		if (paused || reduceMotion || !multi) {
 			return;
 		}
-		const elapsed = Date.now() - startedAt;
-		const left = Math.max(0, remaining - elapsed);
-		setProgress(1 - left / intervalMs);
-
-		if (left <= 16) {
-			activate(requestedIndex + 1);
-			return;
-		}
-
-		timerId = window.setTimeout(tick, 32);
+		activate(requestedIndex + 1);
 	};
 
 	const startTimer = () => {
@@ -264,7 +273,9 @@
 		}
 		clearTimer();
 		startedAt = Date.now();
-		timerId = window.setTimeout(tick, 32);
+		const duration = Math.max(16, remaining);
+		startProgressAnimation(duration);
+		timerId = window.setTimeout(tick, duration);
 	};
 
 	const pause = () => {
@@ -274,6 +285,14 @@
 		paused = true;
 		remaining = Math.max(0, remaining - (Date.now() - startedAt));
 		clearTimer();
+		if (progress) {
+			const computed = window.getComputedStyle(progress).transform;
+			progress.classList.remove('is-running');
+			progress.style.animationDuration = '';
+			if (computed && computed !== 'none') {
+				progress.style.transform = computed;
+			}
+		}
 		root.classList.add('is-paused');
 	};
 

@@ -266,8 +266,24 @@
 	will-change: transform;
 }
 
+.ghahghah-hero__progress-bar.is-running {
+	animation-name: ghahghah-hero-progress;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
 .ghahghah-hero.is-paused .ghahghah-hero__progress-bar {
+	animation-play-state: paused;
 	opacity: 0.65;
+}
+
+@keyframes ghahghah-hero-progress {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
 }
 
 .ghahghah-hero__live {

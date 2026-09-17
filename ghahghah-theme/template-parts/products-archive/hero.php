@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $defaults = ghahghah_products_archive_defaults();
 $banner   = ghahghah_get_products_archive_custom_banner();
-$corn_url = GHAHGHAH_THEME_URI . '/assets/images/products-archive/corn-hero-transparent.png';
+$corn_url = GHAHGHAH_THEME_URI . '/assets/images/products-archive/corn-hero-transparent.webp';
 
 $title_html = esc_html( $defaults['hero_title'] );
 $title_html = preg_replace(

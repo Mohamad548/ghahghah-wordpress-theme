@@ -462,6 +462,6 @@ function ghahghah_header_dynamic_css(): void {
 		$mobile
 	);
 
-	wp_add_inline_style( 'ghahghah-header', $css );
+	wp_add_inline_style( 'ghahghah-core', $css );
 }
 add_action( 'wp_enqueue_scripts', 'ghahghah_header_dynamic_css', 20 );

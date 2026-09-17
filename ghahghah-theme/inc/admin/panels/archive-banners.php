@@ -21,10 +21,10 @@ $prod_mobile  = absint( get_theme_mod( $prod_keys['mobile'], 0 ) );
 
 $blog_default = function_exists( 'ghahghah_archive_bundled_banner_url' )
 	? ghahghah_archive_bundled_banner_url( 'blog', 'desktop' )
-	: GHAHGHAH_THEME_URI . '/assets/images/blog-archive/corn-snack-hero-transparent.png';
+	: GHAHGHAH_THEME_URI . '/assets/images/blog-archive/corn-snack-hero-transparent.webp';
 $prod_default = function_exists( 'ghahghah_archive_bundled_banner_url' )
 	? ghahghah_archive_bundled_banner_url( 'products', 'desktop' )
-	: GHAHGHAH_THEME_URI . '/assets/images/products-archive/corn-hero-transparent.png';
+	: GHAHGHAH_THEME_URI . '/assets/images/products-archive/corn-hero-transparent.webp';
 $blog_mobile_default = function_exists( 'ghahghah_archive_bundled_banner_url' )
 	? ghahghah_archive_bundled_banner_url( 'blog', 'mobile' )
 	: '';

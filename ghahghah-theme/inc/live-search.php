@@ -65,7 +65,7 @@ function ghahghah_rest_live_search( WP_REST_Request $request ): WP_REST_Response
 			'post_type'      => $types,
 			'post_status'    => 'publish',
 			'posts_per_page' => 8,
-			'no_found_rows'  => false,
+			'no_found_rows'  => true,
 		)
 	);
 
@@ -94,11 +94,15 @@ function ghahghah_rest_live_search( WP_REST_Request $request ): WP_REST_Response
 		);
 	}
 
+	$item_count = count( $items );
+	// With no_found_rows, approximate "has more" when the page is full.
+	$total = 8 === $item_count ? 9 : $item_count;
+
 	return new WP_REST_Response(
 		array(
 			'query'   => $q,
 			'items'   => $items,
-			'total'   => (int) $query->found_posts,
+			'total'   => $total,
 			'moreUrl' => add_query_arg( 's', $q, home_url( '/' ) ),
 		),
 		200

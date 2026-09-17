@@ -17,31 +17,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 function ghahghah_enqueue_assets(): void {
 	$theme_version = GHAHGHAH_THEME_VERSION;
 
+	// One global stylesheet (fonts + base + layout + header + footer + bottom-nav).
 	wp_enqueue_style(
-		'ghahghah-fonts',
-		GHAHGHAH_THEME_URI . '/assets/css/fonts.css',
+		'ghahghah-core',
+		GHAHGHAH_THEME_URI . '/assets/css/core.css',
 		array(),
-		$theme_version
-	);
-
-	wp_enqueue_style(
-		'ghahghah-base',
-		GHAHGHAH_THEME_URI . '/assets/css/base.css',
-		array( 'ghahghah-fonts' ),
-		$theme_version
-	);
-
-	wp_enqueue_style(
-		'ghahghah-layout',
-		GHAHGHAH_THEME_URI . '/assets/css/layout.css',
-		array( 'ghahghah-base' ),
-		$theme_version
-	);
-
-	wp_enqueue_style(
-		'ghahghah-header',
-		GHAHGHAH_THEME_URI . '/assets/css/header.css',
-		array( 'ghahghah-layout' ),
 		$theme_version
 	);
 
@@ -49,7 +29,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-hero',
 			GHAHGHAH_THEME_URI . '/assets/css/hero.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 
@@ -72,28 +52,28 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-featured',
 			GHAHGHAH_THEME_URI . '/assets/css/featured.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 
 		wp_enqueue_style(
 			'ghahghah-factory',
 			GHAHGHAH_THEME_URI . '/assets/css/factory.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 
 		wp_enqueue_style(
 			'ghahghah-steps',
 			GHAHGHAH_THEME_URI . '/assets/css/production-steps.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 
 		wp_enqueue_style(
 			'ghahghah-collab',
 			GHAHGHAH_THEME_URI . '/assets/css/collab.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 
@@ -107,7 +87,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-articles',
 			GHAHGHAH_THEME_URI . '/assets/css/articles.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 
@@ -186,7 +166,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-search',
 			GHAHGHAH_THEME_URI . '/assets/css/search.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 	}
@@ -195,7 +175,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-faq',
 			GHAHGHAH_THEME_URI . '/assets/css/faq.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 	}
@@ -204,7 +184,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-products-archive',
 			GHAHGHAH_THEME_URI . '/assets/css/products-archive.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 		$pa_script = GHAHGHAH_THEME_DIR . '/assets/js/products-archive.js';
@@ -226,7 +206,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-blog-archive',
 			GHAHGHAH_THEME_URI . '/assets/css/blog-archive.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 		$ba_script = GHAHGHAH_THEME_DIR . '/assets/js/blog-archive.js';
@@ -248,7 +228,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-single-product',
 			GHAHGHAH_THEME_URI . '/assets/css/single-product.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 		$sp_script = GHAHGHAH_THEME_DIR . '/assets/js/single-product.js';
@@ -270,7 +250,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-single-article',
 			GHAHGHAH_THEME_URI . '/assets/css/single-article.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 		$sa_script = GHAHGHAH_THEME_DIR . '/assets/js/single-article.js';
@@ -292,7 +272,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-factory-page',
 			GHAHGHAH_THEME_URI . '/assets/css/pages/factory.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 	}
@@ -301,7 +281,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-privacy-page',
 			GHAHGHAH_THEME_URI . '/assets/css/pages/privacy.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 	}
@@ -310,7 +290,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-404',
 			GHAHGHAH_THEME_URI . '/assets/css/pages/404.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 	}
@@ -319,7 +299,7 @@ function ghahghah_enqueue_assets(): void {
 		wp_enqueue_style(
 			'ghahghah-forms',
 			GHAHGHAH_THEME_URI . '/assets/css/forms.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 		wp_enqueue_style(
@@ -341,13 +321,26 @@ function ghahghah_enqueue_assets(): void {
 				)
 			);
 		}
+		$map_script = GHAHGHAH_THEME_DIR . '/assets/js/contact-map.js';
+		if ( is_readable( $map_script ) ) {
+			wp_enqueue_script(
+				'ghahghah-contact-map',
+				GHAHGHAH_THEME_URI . '/assets/js/contact-map.js',
+				array(),
+				$theme_version,
+				array(
+					'strategy'  => 'defer',
+					'in_footer' => true,
+				)
+			);
+		}
 	}
 
 	if ( ghahghah_is_request_page() ) {
 		wp_enqueue_style(
 			'ghahghah-forms',
 			GHAHGHAH_THEME_URI . '/assets/css/forms.css',
-			array( 'ghahghah-layout' ),
+			array( 'ghahghah-core' ),
 			$theme_version
 		);
 		if ( function_exists( 'ghahghah_is_agency_request_page' ) && ghahghah_is_agency_request_page() ) {
@@ -386,20 +379,6 @@ function ghahghah_enqueue_assets(): void {
 			);
 		}
 	}
-
-	wp_enqueue_style(
-		'ghahghah-footer',
-		GHAHGHAH_THEME_URI . '/assets/css/footer.css',
-		array( 'ghahghah-layout' ),
-		$theme_version
-	);
-
-	wp_enqueue_style(
-		'ghahghah-mobile-bottom-nav',
-		GHAHGHAH_THEME_URI . '/assets/css/mobile-bottom-nav.css',
-		array( 'ghahghah-footer' ),
-		$theme_version
-	);
 
 	$header_script = GHAHGHAH_THEME_DIR . '/assets/js/header.js';
 

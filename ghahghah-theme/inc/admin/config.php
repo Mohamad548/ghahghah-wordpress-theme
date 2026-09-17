@@ -30,6 +30,7 @@ require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-factory-page.php';
 require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-contact-page.php';
 require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-archive-banners.php';
 require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-theme-media.php';
+require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-seo.php';
 
 /**
  * Register the top-level theme configuration menu.
@@ -118,6 +119,11 @@ function ghahghah_get_config_tabs(): array {
 			'label'       => __( 'کتابخانه رسانه', 'ghahghah' ),
 			'description' => __( 'همگام‌سازی تصاویر فعال قالب با رسانه وردپرس', 'ghahghah' ),
 			'icon'        => 'featured',
+		),
+		'seo'            => array(
+			'label'       => __( 'سئو و متا', 'ghahghah' ),
+			'description' => __( 'عنوان، توضیح متا و تصویر اشتراک‌گذاری صفحه اصلی', 'ghahghah' ),
+			'icon'        => 'seo',
 		),
 		'mobile-header'  => array(
 			'label'       => __( 'هدر موبایل', 'ghahghah' ),
@@ -254,6 +260,13 @@ function ghahghah_get_config_nav_tree(): array {
 			'icon'        => 'featured',
 		),
 		array(
+			'type'        => 'item',
+			'id'          => 'seo',
+			'label'       => __( 'سئو و متا', 'ghahghah' ),
+			'description' => __( 'عنوان و توضیح صفحه اصلی', 'ghahghah' ),
+			'icon'        => 'seo',
+		),
+		array(
 			'type'        => 'group',
 			'id'          => 'mobile',
 			'label'       => __( 'موبایل', 'ghahghah' ),
@@ -306,6 +319,7 @@ function ghahghah_config_tab_icon( string $icon ): void {
 		'footer'         => '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M3 6h18M3 10h12"/></svg>',
 		'agency'         => '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c1.5-3 4-4.5 6-4.5S13.5 16 15 19"/></svg>',
 		'sms'            => '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 18h4"/><path d="M9 7h6M9 10.5h6"/></svg>',
+		'seo'            => '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/><path d="M8.5 11h5M11 8.5v5"/></svg>',
 	);
 
 	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Hard-coded SVG markup.
@@ -425,6 +439,7 @@ function ghahghah_get_config_saved_message( string $tab ): string {
 		'footer'         => __( 'تغییرات فوتر دسکتاپ ذخیره شد.', 'ghahghah' ),
 		'archive-banners'=> __( 'بنرهای آرشیو مقالات و محصولات ذخیره شد.', 'ghahghah' ),
 		'theme-media'    => __( 'تصاویر قالب با کتابخانه رسانه همگام‌سازی شد.', 'ghahghah' ),
+		'seo'            => __( 'تنظیمات سئو ذخیره شد.', 'ghahghah' ),
 	);
 
 	return $messages[ $tab ] ?? __( 'تغییرات ذخیره شد.', 'ghahghah' );

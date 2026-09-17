@@ -7,7 +7,8 @@
     "wp-env:stop": "wp-env stop",
     "wp-env:destroy": "wp-env destroy",
     "wp-env:cli": "wp-env run cli",
-    "test:smoke": "bash scripts/smoke-wordpress.sh"
+    "test:smoke": "bash scripts/smoke-wordpress.sh",
+    "build:css": "bash scripts/build-core-css.sh"
   },
   "devDependencies": {
     "@wordpress/env": "^11.15.0"

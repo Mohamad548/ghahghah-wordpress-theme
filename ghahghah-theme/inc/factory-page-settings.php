@@ -271,16 +271,8 @@ function ghahghah_get_factory_page_hero_image(): array {
 		);
 	}
 
-	$webp = GHAHGHAH_THEME_DIR . '/assets/images/factory/factory-hero.webp';
-	$png  = GHAHGHAH_THEME_DIR . '/assets/images/factory/factory-hero.png';
-	if ( is_readable( $webp ) ) {
-		$src = GHAHGHAH_THEME_URI . '/assets/images/factory/factory-hero.webp';
-	} else {
-		$src = GHAHGHAH_THEME_URI . '/assets/images/factory/factory-hero.png';
-	}
-
 	return array(
-		'src'     => $src,
+		'src'     => GHAHGHAH_THEME_URI . '/assets/images/factory/factory-hero.webp',
 		'srcset'  => '',
 		'width'   => 1600,
 		'height'  => 900,
@@ -305,18 +297,8 @@ function ghahghah_get_factory_page_product_pack(): array {
 		);
 	}
 
-	$webp = GHAHGHAH_THEME_DIR . '/assets/images/factory/product-pack-fallback.webp';
-	if ( is_readable( $webp ) ) {
-		return array(
-			'src'    => GHAHGHAH_THEME_URI . '/assets/images/factory/product-pack-fallback.webp',
-			'width'  => 400,
-			'height' => 520,
-			'alt'    => '',
-		);
-	}
-
 	return array(
-		'src'    => GHAHGHAH_THEME_URI . '/assets/images/factory/product-pack-fallback.png',
+		'src'    => GHAHGHAH_THEME_URI . '/assets/images/factory/product-pack-fallback.webp',
 		'width'  => 400,
 		'height' => 520,
 		'alt'    => '',

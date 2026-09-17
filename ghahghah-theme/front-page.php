@@ -26,7 +26,7 @@ $ghahghah_front_has_sections = ghahghah_should_render_hero()
 		 * same pattern as image-led archive heroes. Not tied to slide, catalog, or core.
 		 */
 		?>
-		<h1 class="screen-reader-text"><?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?></h1>
+		<h1 class="screen-reader-text"><?php echo esc_html( function_exists( 'ghahghah_seo_home_h1' ) ? ghahghah_seo_home_h1() : get_bloginfo( 'name', 'display' ) ); ?></h1>
 	<?php endif; ?>
 
 	<?php get_template_part( 'template-parts/hero/site', 'hero' ); ?>

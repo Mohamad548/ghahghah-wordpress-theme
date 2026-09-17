@@ -63,7 +63,8 @@ $has_core   = function_exists( 'ghahghah_core_render_contact_form' );
 				height="<?php echo esc_attr( (string) $corn['height'] ); ?>"
 				alt=""
 				decoding="async"
-				fetchpriority="high"
+				loading="lazy"
+				fetchpriority="low"
 			/>
 		</figure>
 		<span class="ghahghah-contact-page__kernel ghahghah-contact-page__kernel--1" aria-hidden="true">
@@ -129,15 +130,29 @@ $has_core   = function_exists( 'ghahghah_core_render_contact_form' );
 				</ul>
 
 				<?php if ( '' !== $map_embed ) : ?>
-					<div class="ghahghah-contact-page__map ghahghah-contact-page__map--live">
+					<div
+						class="ghahghah-contact-page__map ghahghah-contact-page__map--facade"
+						data-ghahghah-map-facade
+					>
 						<iframe
 							class="ghahghah-contact-page__map-frame"
-							src="<?php echo esc_url( $map_embed ); ?>"
+							data-ghahghah-map-frame
+							data-src="<?php echo esc_url( $map_embed ); ?>"
 							title="<?php echo esc_attr( '' !== $map_text ? $map_text : __( 'نقشه موقعیت', 'ghahghah' ) ); ?>"
-							loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"
 							allowfullscreen
+							hidden
 						></iframe>
+						<button
+							type="button"
+							class="ghahghah-contact-page__map-load"
+							data-ghahghah-map-load
+						>
+							<span class="ghahghah-contact-page__map-pin" aria-hidden="true">
+								<?php ghahghah_the_contact_icon( 'map-pin', array( 'modifiers' => array( 'map' ) ) ); ?>
+							</span>
+							<span><?php echo esc_html( '' !== $map_text ? $map_text : __( 'نمایش نقشه گوگل', 'ghahghah' ) ); ?></span>
+						</button>
 						<?php if ( '' !== $map_share ) : ?>
 							<a
 								class="ghahghah-contact-page__map-link"
@@ -148,7 +163,7 @@ $has_core   = function_exists( 'ghahghah_core_render_contact_form' );
 								<span class="ghahghah-contact-page__map-pin" aria-hidden="true">
 									<?php ghahghah_the_contact_icon( 'map-pin', array( 'modifiers' => array( 'map' ) ) ); ?>
 								</span>
-								<span><?php echo esc_html( '' !== $map_text ? $map_text : __( 'مشاهده در گوگل مپ', 'ghahghah' ) ); ?></span>
+								<span><?php esc_html_e( 'باز کردن در گوگل مپ', 'ghahghah' ); ?></span>
 							</a>
 						<?php endif; ?>
 					</div>

@@ -1,0 +1,8 @@
+i Starting 'bash -lc wp option get stylesheet; wp plugin list --status=active --field=name; wp option get ghahghah_hero_banner_pack; wp eval "echo count((array)get_theme_mod(\"ghahghah_hero_slides\", array()));"' on the cli container. 
+
+ghahghah-theme
+Warning: wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/html/wp-includes/functions.php on line 6260
+ghahghah-core
+wordpress-seo
+flavour-optimized-1933x813-v1
+9√ Ran `bash -lc wp option get stylesheet; wp plugin list --status=active --field=name; wp option get ghahghah_hero_banner_pack; wp eval "echo count((array)get_theme_mod(\"ghahghah_hero_slides\", array()));"` in 'cli'. (in 39s 616ms)

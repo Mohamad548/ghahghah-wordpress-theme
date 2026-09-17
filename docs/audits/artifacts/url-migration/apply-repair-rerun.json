@@ -1,0 +1,223 @@
+{
+  "mode": "apply",
+  "at": "2026-09-17T09:43:00+00:00",
+  "home": "http://localhost:8898/",
+  "changes": [
+    {
+      "kind": "page",
+      "id": 5,
+      "old": "/wholesale/",
+      "new": "/wholesale/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "page",
+      "id": 32,
+      "old": "/agency/",
+      "new": "/agency/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "page",
+      "id": 10,
+      "old": "/contact/",
+      "new": "/contact/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "page",
+      "id": 8,
+      "old": "/factory/",
+      "new": "/factory/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "page",
+      "id": 9,
+      "old": "/articles/",
+      "new": "/articles/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "page",
+      "id": 76,
+      "old": "/faq/",
+      "new": "/faq/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "page",
+      "id": 3,
+      "old": "/privacy-policy/",
+      "new": "/privacy-policy/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "legacy-products-page",
+      "id": 7,
+      "old": "/",
+      "new": "/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "legacy-flavor-page",
+      "redirect_to": "/products/",
+      "id": 11,
+      "old": "/",
+      "new": "/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "legacy-flavor-page",
+      "redirect_to": "/products/?gh_flavor=pizza",
+      "id": 12,
+      "old": "/",
+      "new": "/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "legacy-flavor-page",
+      "redirect_to": "/products/?gh_flavor=lemon",
+      "id": 13,
+      "old": "/",
+      "new": "/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-pepper",
+      "id": 99,
+      "old": "/products/corn-pellet-pepper/",
+      "new": "/products/corn-pellet-pepper/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-chicken",
+      "id": 97,
+      "old": "/products/corn-pellet-chicken/",
+      "new": "/products/corn-pellet-chicken/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-lemon",
+      "id": 38,
+      "old": "/products/corn-pellet-lemon/",
+      "new": "/products/corn-pellet-lemon/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-vinegar",
+      "id": 40,
+      "old": "/products/corn-pellet-vinegar/",
+      "new": "/products/corn-pellet-vinegar/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-pizza",
+      "id": 42,
+      "old": "/products/corn-pellet-pizza/",
+      "new": "/products/corn-pellet-pizza/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-shallot-yogurt",
+      "id": 44,
+      "old": "/products/corn-pellet-shallot-yogurt/",
+      "new": "/products/corn-pellet-shallot-yogurt/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-parsley-onion",
+      "id": 46,
+      "old": "/products/corn-pellet-parsley-onion/",
+      "new": "/products/corn-pellet-parsley-onion/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-cheese",
+      "id": 50,
+      "old": "/products/corn-pellet-cheese/",
+      "new": "/products/corn-pellet-cheese/",
+      "changed": false,
+      "skipped": "already"
+    },
+    {
+      "kind": "product",
+      "key": "corn-pellet-ketchup",
+      "id": 48,
+      "old": "/products/corn-pellet-ketchup/",
+      "new": "/products/corn-pellet-ketchup/",
+      "changed": false,
+      "skipped": "already"
+    }
+  ],
+  "skips": [],
+  "redirects": {
+    "/درخواست-خرید-عمده/": "/wholesale/",
+    "/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/": "/wholesale/",
+    "/درخواست-نمایندگی/": "/agency/",
+    "/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/": "/agency/",
+    "/تماس-با-ما/": "/contact/",
+    "/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/": "/contact/",
+    "/کارخانه/": "/factory/",
+    "/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/": "/factory/",
+    "/معرفی-کارخانه/": "/factory/",
+    "/%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/": "/factory/",
+    "/مقالات/": "/articles/",
+    "/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/": "/articles/",
+    "/پرسش-های-متداول/": "/faq/",
+    "/%D9%BE%D8%B1%D8%B3%D8%B4-%D9%87%D8%A7%DB%8C-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84/": "/faq/",
+    "/پرسشهای-متداول/": "/faq/",
+    "/%D9%BE%D8%B1%D8%B3%D8%B4%D9%87%D8%A7%DB%8C-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84/": "/faq/",
+    "/حریم-خصوصی/": "/privacy-policy/",
+    "/%D8%AD%D8%B1%DB%8C%D9%85-%D8%AE%D8%B5%D9%88%D8%B5%DB%8C/": "/privacy-policy/",
+    "/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": "/products/",
+    "/محصولات/": "/products/",
+    "/products-legacy/": "/products/",
+    "/legacy-all-products/": "/products/",
+    "/همه-محصولات/": "/products/",
+    "/%D9%87%D9%85%D9%87-%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/": "/products/",
+    "/legacy-%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": "/products/",
+    "/legacy-%D9%87%D9%85%D9%87-%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/": "/products/",
+    "/legacy-flavor-pizza/": "/products/?gh_flavor=pizza",
+    "/طعم-پیتزا/": "/products/?gh_flavor=pizza",
+    "/%D8%B7%D8%B9%D9%85-%D9%BE%DB%8C%D8%AA%D8%B2%D8%A7/": "/products/?gh_flavor=pizza",
+    "/legacy-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/": "/products/?gh_flavor=pizza",
+    "/legacy-%D8%B7%D8%B9%D9%85-%D9%BE%DB%8C%D8%AA%D8%B2%D8%A7/": "/products/?gh_flavor=pizza",
+    "/legacy-flavor-lemon/": "/products/?gh_flavor=lemon",
+    "/طعم-لیمویی/": "/products/?gh_flavor=lemon",
+    "/%D8%B7%D8%B9%D9%85-%D9%84%DB%8C%D9%85%D9%88%DB%8C%DB%8C/": "/products/?gh_flavor=lemon",
+    "/legacy-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/": "/products/?gh_flavor=lemon",
+    "/legacy-%D8%B7%D8%B9%D9%85-%D9%84%DB%8C%D9%85%D9%88%DB%8C%DB%8C/": "/products/?gh_flavor=lemon"
+  },
+  "option_count": 53,
+  "option_delta": 0,
+  "flushed": true,
+  "slug_changes": 0,
+  "menu_retargets": 0
+}

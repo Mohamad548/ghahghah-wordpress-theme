@@ -1,0 +1,706 @@
+{
+  "at": "2026-09-17T09:52:43.329Z",
+  "base": "http://localhost:8898",
+  "repeats": 5,
+  "scout": [
+    {
+      "url": "http://localhost:8898/factory/",
+      "medianTtfbMs": 4171.9342,
+      "samples": [
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 4171.9342,
+          "totalMs": 4172.614,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 5148.1185,
+          "totalMs": 5148.834,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 2800.0668,
+          "totalMs": 2813.8831,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:8898/",
+      "medianTtfbMs": 3052.3959,
+      "samples": [
+        {
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 3016.9018,
+          "totalMs": 3023.9532,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 3052.3959,
+          "totalMs": 3053.9774,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 3864.5797,
+          "totalMs": 3867.5561,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:8898/wholesale/",
+      "medianTtfbMs": 3001.9384,
+      "samples": [
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 3772.8308,
+          "totalMs": 3774.0953,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 1964.5847,
+          "totalMs": 1978.1041,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 3001.9384,
+          "totalMs": 3003.1808,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "medianTtfbMs": 2368.7908,
+      "samples": [
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "ttfbMs": 4356.0499,
+          "totalMs": 4356.8765,
+          "bytes": 107784,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "ttfbMs": 1946.2949,
+          "totalMs": 1947.9995,
+          "bytes": 107784,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "ttfbMs": 2368.7908,
+          "totalMs": 2369.6331,
+          "bytes": 107784,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:8898/articles/",
+      "medianTtfbMs": 2339.0026,
+      "samples": [
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "ttfbMs": 1702.3742,
+          "totalMs": 1704.7575,
+          "bytes": 91246,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "ttfbMs": 2339.0026,
+          "totalMs": 2348.817,
+          "bytes": 91246,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "ttfbMs": 3609.4213,
+          "totalMs": 3610.3919,
+          "bytes": 91246,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:8898/agency/",
+      "medianTtfbMs": 2157.9734,
+      "samples": [
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "ttfbMs": 2157.9734,
+          "totalMs": 2159.3105,
+          "bytes": 113903,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "ttfbMs": 1787.7503,
+          "totalMs": 1788.6175,
+          "bytes": 113903,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "ttfbMs": 4312.5694,
+          "totalMs": 4313.6788,
+          "bytes": 113903,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:8898/contact/",
+      "medianTtfbMs": 1948.4287,
+      "samples": [
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "ttfbMs": 1948.4287,
+          "totalMs": 1949.1538,
+          "bytes": 96098,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "ttfbMs": 1912.4871,
+          "totalMs": 1913.2633,
+          "bytes": 96098,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "ttfbMs": 2782.9978,
+          "totalMs": 2796.669,
+          "bytes": 96098,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "home": "http://localhost:8898/",
+    "slow": [
+      "http://localhost:8898/factory/",
+      "http://localhost:8898/wholesale/"
+    ]
+  },
+  "static": {
+    "label": "static",
+    "n": 5,
+    "ok": 5,
+    "medianTtfbMs": 12.9125,
+    "medianTotalMs": 13.321,
+    "rows": [
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/style.css",
+        "status": 200,
+        "ttfbMs": 13.5337,
+        "totalMs": 13.8969,
+        "bytes": 754,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": null
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/style.css",
+        "status": 200,
+        "ttfbMs": 14.2072,
+        "totalMs": 14.4369,
+        "bytes": 754,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": null
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/style.css",
+        "status": 200,
+        "ttfbMs": 12.9125,
+        "totalMs": 13.0796,
+        "bytes": 754,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": null
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/style.css",
+        "status": 200,
+        "ttfbMs": 12.7552,
+        "totalMs": 13.2333,
+        "bytes": 754,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": null
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/themes/ghahghah-theme/style.css",
+        "status": 200,
+        "ttfbMs": 12.6589,
+        "totalMs": 13.321,
+        "bytes": 754,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": null
+      }
+    ]
+  },
+  "minimalPhp": {
+    "label": "minimal-php",
+    "n": 5,
+    "ok": 5,
+    "medianTtfbMs": 1425.1036,
+    "medianTotalMs": 1426.3901,
+    "rows": [
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/uploads/ttfb-probe/mini.php",
+        "status": 404,
+        "ttfbMs": 1625.1294,
+        "totalMs": 1626.1851,
+        "bytes": 78172,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": "PHP/8.3.33"
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/uploads/ttfb-probe/mini.php",
+        "status": 404,
+        "ttfbMs": 1249.3398,
+        "totalMs": 1250.3565,
+        "bytes": 78172,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": "PHP/8.3.33"
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/uploads/ttfb-probe/mini.php",
+        "status": 404,
+        "ttfbMs": 1425.1036,
+        "totalMs": 1426.3901,
+        "bytes": 78172,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": "PHP/8.3.33"
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/uploads/ttfb-probe/mini.php",
+        "status": 404,
+        "ttfbMs": 1100.7954,
+        "totalMs": 1101.4162,
+        "bytes": 78172,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": "PHP/8.3.33"
+      },
+      {
+        "ok": true,
+        "url": "http://localhost:8898/wp-content/uploads/ttfb-probe/mini.php",
+        "status": 404,
+        "ttfbMs": 4756.685,
+        "totalMs": 4757.5267,
+        "bytes": 78172,
+        "server": "Apache/2.4.68 (Debian)",
+        "xPoweredBy": "PHP/8.3.33"
+      }
+    ]
+  },
+  "fullWp": {
+    "http://localhost:8898/": {
+      "label": "full-wp:/",
+      "n": 5,
+      "ok": 5,
+      "medianTtfbMs": 4468.1998,
+      "medianTotalMs": 4468.8333,
+      "rows": [
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 2818.3283,
+          "totalMs": 2820.3985,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 4468.1998,
+          "totalMs": 4468.8333,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 4731.97,
+          "totalMs": 4732.8779,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 4298.7575,
+          "totalMs": 4299.9107,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 6936.773,
+          "totalMs": 6937.5239,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    "http://localhost:8898/factory/": {
+      "label": "full-wp:/factory/",
+      "n": 5,
+      "ok": 5,
+      "medianTtfbMs": 4359.6445,
+      "medianTotalMs": 4361.0267,
+      "rows": [
+        {
+          "ok": true,
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 6175.7189,
+          "totalMs": 6176.6716,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 2168.4627,
+          "totalMs": 2169.2815,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 4449.6432,
+          "totalMs": 4451.7243,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 4359.6445,
+          "totalMs": 4361.0267,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "ttfbMs": 4327.0695,
+          "totalMs": 4327.6229,
+          "bytes": 93582,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    "http://localhost:8898/wholesale/": {
+      "label": "full-wp:/wholesale/",
+      "n": 5,
+      "ok": 5,
+      "medianTtfbMs": 4059.8772,
+      "medianTotalMs": 4061.1395,
+      "rows": [
+        {
+          "ok": true,
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 1805.0456,
+          "totalMs": 1805.8317,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 4059.8772,
+          "totalMs": 4061.1395,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 4603.9407,
+          "totalMs": 4604.8963,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 4245.3554,
+          "totalMs": 4246.3447,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "ttfbMs": 1612.2614,
+          "totalMs": 1613.4418,
+          "bytes": 113552,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    }
+  },
+  "profiling": {
+    "wpEvalStatus": 1,
+    "wpEvalStderrTail": "<< was unexpected at this time.\r\n",
+    "inProcess": null,
+    "httpBaseline": {
+      "label": "http-home-baseline",
+      "n": 5,
+      "ok": 5,
+      "medianTtfbMs": 3434.5241,
+      "medianTotalMs": 3436.3481,
+      "rows": [
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 4282.1917,
+          "totalMs": 4284.0098,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 1263.3734,
+          "totalMs": 1264.6576,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 3434.5241,
+          "totalMs": 3436.3481,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 4425.0995,
+          "totalMs": 4425.8515,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        },
+        {
+          "ok": true,
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "ttfbMs": 2101.0906,
+          "totalMs": 2102.456,
+          "bytes": 131793,
+          "server": "Apache/2.4.68 (Debian)",
+          "xPoweredBy": "PHP/8.3.33"
+        }
+      ]
+    },
+    "note": "inProcess measures option/menu reads inside already-booted WP-CLI, not full Apache front controller cost. Compare static vs minimalPhp vs fullWp HTTP TTFB for env attribution."
+  },
+  "attribution": {
+    "status": "UNRESOLVED",
+    "layers": {
+      "staticMedianMs": 12.9125,
+      "minimalPhpMedianMs": 1425.1036,
+      "fullHomeMedianMs": 4468.1998,
+      "frontProfileElapsedS": "3.5494",
+      "frontProfileQueryCount": 69,
+      "frontProfileQueryTimeS": 0.033065080642700195,
+      "initHasProductsNavSync": false
+    },
+    "evidence": [
+      "Static asset TTFB ~13ms → Apache/Docker FS OK for static files.",
+      "Minimal PHP ~1.4s → PHP-FPM/container tax is material before WP.",
+      "Full WP home ~4.5s with only ~33ms SQL across ~69 queries → not a DB-bound page.",
+      "No single hot query; products archive nav sync no longer on init.",
+      "Profiling MU-plugin adds header/file write; treated as probe overhead, not root cause."
+    ],
+    "reason": "TTFB dominated by WordPress/PHP execution in this Docker env, not SQL. No single theme statement proven as the majority cost; leave code fix UNRESOLVED (menu init write already removed separately)."
+  },
+  "miniPhpSetup": {
+    "status": 1,
+    "stderr": "'.' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+  },
+  "frontProfile": {
+    "uri": "/wholesale/?gh_ttfb_probe=1",
+    "elapsed_s": "3.5494",
+    "query_count": 69,
+    "query_time_s": 0.033065080642700195,
+    "peak_memory_mb": 8,
+    "theme": "ghahghah-theme",
+    "active_plugins": [
+      "ghahghah-core/ghahghah-core.php",
+      "wordpress-seo/wp-seo.php"
+    ],
+    "init_has_products_nav_sync": false,
+    "top_queries": [
+      {
+        "sql": "SELECT   wp_posts.*\r\n\t\t\t\t\t FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\r\n\t\t\t\t\t WHERE 1=1  AND ( \n  wp_term_relationships.term_t",
+        "time": 0.0014600753784179688,
+        "caller": "require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_actio"
+      },
+      {
+        "sql": "SELECT option_value FROM wp_options WHERE option_name = 'ghahghah_url_redirects' LIMIT 1",
+        "time": 0.0011470317840576172,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, ghah"
+      },
+      {
+        "sql": "SELECT option_value FROM wp_options WHERE option_name = 'ghahghah_hero_banner_pack' LIMIT 1",
+        "time": 0.0011439323425292969,
+        "caller": "require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_actio"
+      },
+      {
+        "sql": "SELECT * FROM wp_posts WHERE ID = 160 LIMIT 1",
+        "time": 0.0010139942169189453,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_head"
+      },
+      {
+        "sql": "SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (14,81,15,82,83,84,85,86,105,106,16,107,17,18) ORDER BY meta_id ASC",
+        "time": 0.0009679794311523438,
+        "caller": "require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_actio"
+      },
+      {
+        "sql": "SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (50,46,42,40,99,48,38,44,97) ORDER BY meta_id ASC",
+        "time": 0.0009288787841796875,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_temp"
+      },
+      {
+        "sql": "SELECT   wp_posts.*\r\n\t\t\t\t\t FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\r\n\t\t\t\t\t WHERE 1=1  AND ( \n  wp_term_relationships.term_t",
+        "time": 0.0008919239044189453,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_foot"
+      },
+      {
+        "sql": "SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (160) ORDER BY meta_id ASC",
+        "time": 0.0008661746978759766,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_head"
+      },
+      {
+        "sql": "SELECT   wp_posts.ID\r\n\t\t\t\t\t FROM wp_posts \r\n\t\t\t\t\t WHERE 1=1  AND wp_posts.post_type = 'ghahghah_product' AND ((wp_posts.post_status = 'publish'))\r\n\t\t\t\t\t \r\n\t\t\t\t\t ORDER BY wp_posts.p",
+        "time": 0.0007529258728027344,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_temp"
+      },
+      {
+        "sql": "SELECT DISTINCT t.term_id, tr.object_id\r\n\t\t\t FROM wp_terms AS t  INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN wp_term_relationships AS tr ON tr.term_taxon",
+        "time": 0.0007460117340087891,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_foot"
+      },
+      {
+        "sql": "SELECT * FROM wp_posts WHERE ID = 32 LIMIT 1",
+        "time": 0.0007131099700927734,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_foot"
+      },
+      {
+        "sql": "SELECT   wp_posts.*\r\n\t\t\t\t\t FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\r\n\t\t\t\t\t WHERE 1=1  AND ( \n  wp_term_relationships.term_t",
+        "time": 0.0006799697875976562,
+        "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_head"
+      }
+    ]
+  }
+}

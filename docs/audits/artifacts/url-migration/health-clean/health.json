@@ -1,0 +1,1350 @@
+{
+  "at": "2026-09-17T10:36:51.535Z",
+  "base": "http://localhost:8898",
+  "counts": {
+    "coverage": 22,
+    "coveragePass": 22,
+    "coverageFail": 0,
+    "redirects": 40,
+    "redirectsPass": 40,
+    "redirectsFail": 0,
+    "queries": 2,
+    "queriesPass": 2,
+    "queriesFail": 0
+  },
+  "coverage": [
+    {
+      "url": "http://localhost:8898/faq/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/faq/",
+      "finalUrl": "http://localhost:8898/faq/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/faq/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/agency/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/agency/",
+      "finalUrl": "http://localhost:8898/agency/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/contact/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/contact/",
+      "finalUrl": "http://localhost:8898/contact/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/articles/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/articles/",
+      "finalUrl": "http://localhost:8898/articles/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/factory/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/factory/",
+      "finalUrl": "http://localhost:8898/factory/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/",
+      "finalUrl": "http://localhost:8898/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/wholesale/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/wholesale/",
+      "finalUrl": "http://localhost:8898/wholesale/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/privacy-policy/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/privacy-policy/",
+      "finalUrl": "http://localhost:8898/privacy-policy/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/privacy-policy/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/wholesale-request-guide/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/wholesale-request-guide/",
+      "finalUrl": "http://localhost:8898/wholesale-request-guide/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/wholesale-request-guide/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/snack-serving-ideas/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/snack-serving-ideas/",
+      "finalUrl": "http://localhost:8898/snack-serving-ideas/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/snack-serving-ideas/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/snack-shapes-guide/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/snack-shapes-guide/",
+      "finalUrl": "http://localhost:8898/snack-shapes-guide/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/snack-shapes-guide/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-pepper/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-pepper/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-pepper/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-pepper/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-chicken/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-chicken/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-chicken/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-chicken/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-lemon/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-lemon/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-lemon/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-lemon/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-vinegar/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-vinegar/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-vinegar/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-vinegar/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-pizza/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-pizza/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-pizza/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-pizza/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-parsley-onion/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-parsley-onion/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-cheese/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-cheese/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-cheese/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-cheese/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/corn-pellet-ketchup/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/corn-pellet-ketchup/",
+      "finalUrl": "http://localhost:8898/products/corn-pellet-ketchup/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/corn-pellet-ketchup/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 0
+    },
+    {
+      "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "finalUrl": "http://localhost:8898/contact/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+          "status": 301,
+          "location": "http://localhost:8898/contact/"
+        },
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    }
+  ],
+  "redirects": [
+    {
+      "case": "/مقالات/",
+      "variant": "/مقالات/",
+      "full": "http://localhost:8898/مقالات/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/مقالات/",
+      "finalUrl": "http://localhost:8898/articles/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/مقالات/",
+          "status": 301,
+          "location": "http://localhost:8898/articles/"
+        },
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/مقالات/",
+      "variant": "/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+      "full": "http://localhost:8898/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+      "finalUrl": "http://localhost:8898/articles/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+          "status": 301,
+          "location": "http://localhost:8898/articles/"
+        },
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/مقالات/",
+      "variant": "/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+      "full": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+      "finalUrl": "http://localhost:8898/articles/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+          "status": 301,
+          "location": "http://localhost:8898/articles/"
+        },
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/مقالات/",
+      "variant": "/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+      "full": "http://localhost:8898/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+      "finalUrl": "http://localhost:8898/articles/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+          "status": 301,
+          "location": "http://localhost:8898/articles/"
+        },
+        {
+          "url": "http://localhost:8898/articles/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-خرید-عمده/",
+      "variant": "/درخواست-خرید-عمده/",
+      "full": "http://localhost:8898/درخواست-خرید-عمده/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/درخواست-خرید-عمده/",
+      "finalUrl": "http://localhost:8898/wholesale/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/درخواست-خرید-عمده/",
+          "status": 301,
+          "location": "http://localhost:8898/wholesale/"
+        },
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-خرید-عمده/",
+      "variant": "/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+      "full": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+      "finalUrl": "http://localhost:8898/wholesale/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+          "status": 301,
+          "location": "http://localhost:8898/wholesale/"
+        },
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-خرید-عمده/",
+      "variant": "/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "full": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "finalUrl": "http://localhost:8898/wholesale/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "status": 301,
+          "location": "http://localhost:8898/wholesale/"
+        },
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-خرید-عمده/",
+      "variant": "/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+      "full": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+      "finalUrl": "http://localhost:8898/wholesale/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+          "status": 301,
+          "location": "http://localhost:8898/wholesale/"
+        },
+        {
+          "url": "http://localhost:8898/wholesale/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-نمایندگی/",
+      "variant": "/درخواست-نمایندگی/",
+      "full": "http://localhost:8898/درخواست-نمایندگی/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/درخواست-نمایندگی/",
+      "finalUrl": "http://localhost:8898/agency/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/درخواست-نمایندگی/",
+          "status": 301,
+          "location": "http://localhost:8898/agency/"
+        },
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-نمایندگی/",
+      "variant": "/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+      "full": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+      "finalUrl": "http://localhost:8898/agency/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+          "status": 301,
+          "location": "http://localhost:8898/agency/"
+        },
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-نمایندگی/",
+      "variant": "/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "full": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "finalUrl": "http://localhost:8898/agency/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+          "status": 301,
+          "location": "http://localhost:8898/agency/"
+        },
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/درخواست-نمایندگی/",
+      "variant": "/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+      "full": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+      "finalUrl": "http://localhost:8898/agency/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+          "status": 301,
+          "location": "http://localhost:8898/agency/"
+        },
+        {
+          "url": "http://localhost:8898/agency/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/تماس-با-ما/",
+      "variant": "/تماس-با-ما/",
+      "full": "http://localhost:8898/تماس-با-ما/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/تماس-با-ما/",
+      "finalUrl": "http://localhost:8898/contact/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/تماس-با-ما/",
+          "status": 301,
+          "location": "http://localhost:8898/contact/"
+        },
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/تماس-با-ما/",
+      "variant": "/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+      "full": "http://localhost:8898/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+      "finalUrl": "http://localhost:8898/contact/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+          "status": 301,
+          "location": "http://localhost:8898/contact/"
+        },
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/تماس-با-ما/",
+      "variant": "/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "full": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "finalUrl": "http://localhost:8898/contact/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+          "status": 301,
+          "location": "http://localhost:8898/contact/"
+        },
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/تماس-با-ما/",
+      "variant": "/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+      "full": "http://localhost:8898/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+      "finalUrl": "http://localhost:8898/contact/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+          "status": 301,
+          "location": "http://localhost:8898/contact/"
+        },
+        {
+          "url": "http://localhost:8898/contact/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/کارخانه/",
+      "variant": "/کارخانه/",
+      "full": "http://localhost:8898/کارخانه/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/کارخانه/",
+      "finalUrl": "http://localhost:8898/factory/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/کارخانه/",
+          "status": 301,
+          "location": "http://localhost:8898/factory/"
+        },
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/کارخانه/",
+      "variant": "/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+      "full": "http://localhost:8898/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+      "finalUrl": "http://localhost:8898/factory/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+          "status": 301,
+          "location": "http://localhost:8898/factory/"
+        },
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/کارخانه/",
+      "variant": "/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+      "full": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+      "finalUrl": "http://localhost:8898/factory/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+          "status": 301,
+          "location": "http://localhost:8898/factory/"
+        },
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/کارخانه/",
+      "variant": "/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+      "full": "http://localhost:8898/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+      "finalUrl": "http://localhost:8898/factory/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%DA%A9%D8%A7%D8%B1%D8%AE%D8%A7%D9%86%D9%87/",
+          "status": 301,
+          "location": "http://localhost:8898/factory/"
+        },
+        {
+          "url": "http://localhost:8898/factory/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/محصولات/",
+      "variant": "/محصولات/",
+      "full": "http://localhost:8898/محصولات/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/محصولات/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/محصولات/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/محصولات/",
+      "variant": "/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+      "full": "http://localhost:8898/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/محصولات/",
+      "variant": "/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "full": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/محصولات/",
+      "variant": "/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+      "full": "http://localhost:8898/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/products-legacy/",
+      "variant": "/products-legacy/",
+      "full": "http://localhost:8898/products-legacy/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products-legacy/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products-legacy/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/products-legacy/",
+      "variant": "/products-legacy/",
+      "full": "http://localhost:8898/products-legacy/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products-legacy/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products-legacy/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/products-legacy/",
+      "variant": "/products-legacy/",
+      "full": "http://localhost:8898/products-legacy/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products-legacy/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products-legacy/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/products-legacy/",
+      "variant": "/products-legacy/",
+      "full": "http://localhost:8898/products-legacy/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/products-legacy/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products-legacy/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-all-products/",
+      "variant": "/legacy-all-products/",
+      "full": "http://localhost:8898/legacy-all-products/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-all-products/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-all-products/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-all-products/",
+      "variant": "/legacy-all-products/",
+      "full": "http://localhost:8898/legacy-all-products/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-all-products/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-all-products/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-all-products/",
+      "variant": "/legacy-all-products/",
+      "full": "http://localhost:8898/legacy-all-products/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-all-products/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-all-products/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-all-products/",
+      "variant": "/legacy-all-products/",
+      "full": "http://localhost:8898/legacy-all-products/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-all-products/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-all-products/",
+          "status": 301,
+          "location": "http://localhost:8898/products/"
+        },
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-pizza/",
+      "variant": "/legacy-flavor-pizza/",
+      "full": "http://localhost:8898/legacy-flavor-pizza/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-pizza/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=pizza",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-pizza/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=pizza"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=pizza",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-pizza/",
+      "variant": "/legacy-flavor-pizza/",
+      "full": "http://localhost:8898/legacy-flavor-pizza/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-pizza/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=pizza",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-pizza/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=pizza"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=pizza",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-pizza/",
+      "variant": "/legacy-flavor-pizza/",
+      "full": "http://localhost:8898/legacy-flavor-pizza/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-pizza/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=pizza",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-pizza/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=pizza"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=pizza",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-pizza/",
+      "variant": "/legacy-flavor-pizza/",
+      "full": "http://localhost:8898/legacy-flavor-pizza/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-pizza/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=pizza",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-pizza/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=pizza"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=pizza",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-lemon/",
+      "variant": "/legacy-flavor-lemon/",
+      "full": "http://localhost:8898/legacy-flavor-lemon/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-lemon/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=lemon",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-lemon/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=lemon"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=lemon",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-lemon/",
+      "variant": "/legacy-flavor-lemon/",
+      "full": "http://localhost:8898/legacy-flavor-lemon/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-lemon/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=lemon",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-lemon/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=lemon"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=lemon",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-lemon/",
+      "variant": "/legacy-flavor-lemon/",
+      "full": "http://localhost:8898/legacy-flavor-lemon/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-lemon/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=lemon",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-lemon/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=lemon"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=lemon",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    },
+    {
+      "case": "/legacy-flavor-lemon/",
+      "variant": "/legacy-flavor-lemon/",
+      "full": "http://localhost:8898/legacy-flavor-lemon/",
+      "status": "PASS",
+      "reason": "ok",
+      "startUrl": "http://localhost:8898/legacy-flavor-lemon/",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=lemon",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/legacy-flavor-lemon/",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=lemon"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=lemon",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "hops": 1
+    }
+  ],
+  "queries": [
+    {
+      "from": "/محصولات/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=1",
+      "expectPath": "/products/",
+      "expectKeys": [
+        "gh_flavor",
+        "gh_sort",
+        "gh_q",
+        "paged"
+      ],
+      "full": "http://localhost:8898/محصولات/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=1",
+      "status": "PASS",
+      "reason": "ok",
+      "finalUrl": "http://localhost:8898/products/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=1",
+      "hops": 1,
+      "chain": [
+        {
+          "url": "http://localhost:8898/محصولات/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=1",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=1"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=1",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "from": "/products-legacy/?gh_sort=price&gh_q=chip",
+      "expectPath": "/products/",
+      "expectKeys": [
+        "gh_sort",
+        "gh_q"
+      ],
+      "full": "http://localhost:8898/products-legacy/?gh_sort=price&gh_q=chip",
+      "status": "PASS",
+      "reason": "ok",
+      "finalUrl": "http://localhost:8898/products/?gh_sort=price&gh_q=chip",
+      "hops": 1,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products-legacy/?gh_sort=price&gh_q=chip",
+          "status": 301,
+          "location": "http://localhost:8898/products/?gh_sort=price&gh_q=chip"
+        },
+        {
+          "url": "http://localhost:8898/products/?gh_sort=price&gh_q=chip",
+          "status": 200,
+          "location": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+    "uri": "/wholesale/?gh_ttfb_probe=1",
+    "elapsed_s": "3.5494",
+    "query_count": 69,
+    "query_time_s": 0.033065080642700195,
+    "peak_memory_mb": 8,
+    "theme": "ghahghah-theme",
+    "active_plugins": [
+        "ghahghah-core/ghahghah-core.php",
+        "wordpress-seo/wp-seo.php"
+    ],
+    "init_has_products_nav_sync": false,
+    "top_queries": [
+        {
+            "sql": "SELECT   wp_posts.*\r\n\t\t\t\t\t FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\r\n\t\t\t\t\t WHERE 1=1  AND ( \n  wp_term_relationships.term_t",
+            "time": 0.0014600753784179688,
+            "caller": "require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_actio"
+        },
+        {
+            "sql": "SELECT option_value FROM wp_options WHERE option_name = 'ghahghah_url_redirects' LIMIT 1",
+            "time": 0.0011470317840576172,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, ghah"
+        },
+        {
+            "sql": "SELECT option_value FROM wp_options WHERE option_name = 'ghahghah_hero_banner_pack' LIMIT 1",
+            "time": 0.0011439323425292969,
+            "caller": "require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_actio"
+        },
+        {
+            "sql": "SELECT * FROM wp_posts WHERE ID = 160 LIMIT 1",
+            "time": 0.0010139942169189453,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_head"
+        },
+        {
+            "sql": "SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (14,81,15,82,83,84,85,86,105,106,16,107,17,18) ORDER BY meta_id ASC",
+            "time": 0.0009679794311523438,
+            "caller": "require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_actio"
+        },
+        {
+            "sql": "SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (50,46,42,40,99,48,38,44,97) ORDER BY meta_id ASC",
+            "time": 0.0009288787841796875,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_temp"
+        },
+        {
+            "sql": "SELECT   wp_posts.*\r\n\t\t\t\t\t FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\r\n\t\t\t\t\t WHERE 1=1  AND ( \n  wp_term_relationships.term_t",
+            "time": 0.0008919239044189453,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_foot"
+        },
+        {
+            "sql": "SELECT post_id, meta_key, meta_value FROM wp_postmeta WHERE post_id IN (160) ORDER BY meta_id ASC",
+            "time": 0.0008661746978759766,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_head"
+        },
+        {
+            "sql": "SELECT   wp_posts.ID\r\n\t\t\t\t\t FROM wp_posts \r\n\t\t\t\t\t WHERE 1=1  AND wp_posts.post_type = 'ghahghah_product' AND ((wp_posts.post_status = 'publish'))\r\n\t\t\t\t\t \r\n\t\t\t\t\t ORDER BY wp_posts.p",
+            "time": 0.0007529258728027344,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_temp"
+        },
+        {
+            "sql": "SELECT DISTINCT t.term_id, tr.object_id\r\n\t\t\t FROM wp_terms AS t  INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN wp_term_relationships AS tr ON tr.term_taxon",
+            "time": 0.0007460117340087891,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_foot"
+        },
+        {
+            "sql": "SELECT * FROM wp_posts WHERE ID = 32 LIMIT 1",
+            "time": 0.0007131099700927734,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_foot"
+        },
+        {
+            "sql": "SELECT   wp_posts.*\r\n\t\t\t\t\t FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id)\r\n\t\t\t\t\t WHERE 1=1  AND ( \n  wp_term_relationships.term_t",
+            "time": 0.0006799697875976562,
+            "caller": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/ghahghah-theme/page-templates/wholesale-request.php'), get_head"
+        }
+    ]
+}

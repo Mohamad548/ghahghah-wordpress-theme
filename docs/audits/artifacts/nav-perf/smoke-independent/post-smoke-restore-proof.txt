@@ -1,0 +1,8 @@
+i Starting 'bash -lc echo STYLESHEET=$(wp option get stylesheet); echo PLUGINS=$(wp plugin list --status=active --field=name | tr "\n" ","); echo HERO=$(wp option get ghahghah_hero_banner_pack); echo SLIDES=$(wp eval "echo count((array)get_theme_mod(\"ghahghah_hero_slides\", array()));"); echo LOCS=$(wp eval "echo wp_json_encode(get_nav_menu_locations());")' on the cli container. 
+
+STYLESHEET=ghahghah-theme
+PLUGINS=ghahghah-core,wordpress-seo,
+HERO=flavour-optimized-1933x813-v1
+SLIDES=9
+LOCS={"primary":2,"mobile_bottom":3,"footer":4,"footer_business":5,"legal":6}
+√ Ran `bash -lc echo STYLESHEET=$(wp option get stylesheet); echo PLUGINS=$(wp plugin list --status=active --field=name | tr "\n" ","); echo HERO=$(wp option get ghahghah_hero_banner_pack); echo SLIDES=$(wp eval "echo count((array)get_theme_mod(\"ghahghah_hero_slides\", array()));"); echo LOCS=$(wp eval "echo wp_json_encode(get_nav_menu_locations());")` in 'cli'. (in 47s 322ms)

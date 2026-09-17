@@ -532,16 +532,23 @@ function ghahghah_products_archive_posts_where( string $where, WP_Query $query )
 add_filter( 'posts_where', 'ghahghah_products_archive_posts_where', 10, 2 );
 
 /**
- * Point primary «محصولات» menu item at the CPT archive.
+ * Point a location’s top-level «محصولات» item at the CPT archive.
  *
+ * Keeps the legacy `/محصولات/` page published; only menu destinations change.
+ *
+ * @param string $location Nav menu location slug (primary, mobile_bottom, footer, …).
  * @return bool True when a change was made.
  */
-function ghahghah_sync_primary_products_archive_link(): bool {
+function ghahghah_sync_products_archive_menu_link( string $location ): bool {
 	if ( ! post_type_exists( 'ghahghah_product' ) ) {
 		return false;
 	}
 
-	$menu_id = ghahghah_get_nav_menu_id_for_location( 'primary' );
+	if ( ! function_exists( 'ghahghah_get_nav_menu_id_for_location' ) || ! function_exists( 'ghahghah_find_primary_products_menu_item_id' ) ) {
+		return false;
+	}
+
+	$menu_id = ghahghah_get_nav_menu_id_for_location( $location );
 	if ( $menu_id <= 0 ) {
 		return false;
 	}
@@ -581,13 +588,24 @@ function ghahghah_sync_primary_products_archive_link(): bool {
 }
 
 /**
- * Wire primary «محصولات» menu item to the CPT archive (admin / once per request is fine).
+ * Point primary «محصولات» menu item at the CPT archive.
+ *
+ * @return bool True when a change was made.
+ */
+function ghahghah_sync_primary_products_archive_link(): bool {
+	return ghahghah_sync_products_archive_menu_link( 'primary' );
+}
+
+/**
+ * Wire «محصولات» menu items (header, bottom nav, footer) to the CPT archive.
  */
 function ghahghah_products_archive_after_nav_sync(): void {
 	if ( wp_installing() ) {
 		return;
 	}
-	ghahghah_sync_primary_products_archive_link();
+	ghahghah_sync_products_archive_menu_link( 'primary' );
+	ghahghah_sync_products_archive_menu_link( 'mobile_bottom' );
+	ghahghah_sync_products_archive_menu_link( 'footer' );
 }
 add_action( 'init', 'ghahghah_products_archive_after_nav_sync', 35 );
 

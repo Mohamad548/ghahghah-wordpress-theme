@@ -148,18 +148,43 @@ function loadExistingSamples() {
   if (!fs.existsSync(outDir)) return map;
   for (const name of fs.readdirSync(outDir)) {
     if (!name.endsWith('.json')) continue;
-    if (name === 'summary.json' || name === 'summary-partial.json' || name === 'manifest.json') continue;
+    if (
+      name === 'summary.json' ||
+      name === 'summary-partial.json' ||
+      name === 'manifest.json' ||
+      name === 'sample-validity-index.json' ||
+      name === 'scenario-plan.json'
+    ) {
+      continue;
+    }
     if (!name.startsWith(`${phase}__`)) continue;
     const full = path.join(outDir, name);
     try {
       const row = JSON.parse(fs.readFileSync(full, 'utf8'));
+      // Resume only VALID samples; INVALID/FAILED must be re-run.
+      if (row && row.validity && row.validity !== 'VALID') continue;
+      if (row && row.measured === false) continue;
+      if (row && row.ttfbMs == null) continue;
       if (row && row.sampleId) map.set(row.sampleId, { file: full, row });
-      else map.set(name, { file: full, row });
+      else map.set(name.replace(/\.json$/, ''), { file: full, row });
     } catch {
       // leave damaged files in place; do not delete
     }
   }
   return map;
+}
+
+function isResumableValidFile(filePath) {
+  if (!fs.existsSync(filePath)) return false;
+  try {
+    const row = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    if (row.validity && row.validity !== 'VALID') return false;
+    if (row.measured === false) return false;
+    if (row.ttfbMs == null) return false;
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 async function launch(puppeteer, { cacheDisabled, viewport }) {
@@ -729,6 +754,44 @@ function originsForTarget(inv, targetUrl) {
     }
   }
 
+  // Deduplicate by sampleId (same mode/device/cache/run/url) without dropping destinations.
+  const seenPlan = new Set();
+  const dedupedPlan = [];
+  let dupesRemoved = 0;
+  for (const job of plan) {
+    const id = sampleFileName(job).replace(/\.json$/, '');
+    if (seenPlan.has(id)) {
+      dupesRemoved++;
+      continue;
+    }
+    seenPlan.add(id);
+    dedupedPlan.push(job);
+  }
+  plan.length = 0;
+  plan.push(...dedupedPlan);
+
+  fs.writeFileSync(
+    path.join(outDir, 'scenario-plan.json'),
+    JSON.stringify(
+      {
+        at: new Date().toISOString(),
+        phase,
+        uniqueDestinations: destinations.length,
+        navClickTargets: navClicks.length,
+        devices: devicesGoto,
+        methods: SKIP_CLICK ? ['goto', 'reload'] : ['click', 'goto', 'reload'],
+        cacheModes: ['cache-disabled', 'cache-enabled-prepared'],
+        repeats: REPEATS,
+        plannedSamples: plan.length,
+        duplicatesRemoved: dupesRemoved,
+        destinations,
+        navClicks,
+      },
+      null,
+      2,
+    ),
+  );
+
   const rows = [];
   const completedKeys = [];
   const pendingKeys = [];
@@ -737,7 +800,7 @@ function originsForTarget(inv, targetUrl) {
     const fname = sampleFileName(job);
     const sampleId = fname.replace(/\.json$/, '');
     const filePath = path.join(outDir, fname);
-    if (RESUME && (existing.has(sampleId) || fs.existsSync(filePath))) {
+    if (RESUME && (existing.has(sampleId) || isResumableValidFile(filePath))) {
       const hit = existing.get(sampleId);
       const row = hit?.row || JSON.parse(fs.readFileSync(filePath, 'utf8'));
       rows.push(row);
@@ -790,7 +853,7 @@ function originsForTarget(inv, targetUrl) {
     const fname = sampleFileName(job);
     const sampleId = fname.replace(/\.json$/, '');
     const filePath = path.join(outDir, fname);
-    if (RESUME && fs.existsSync(filePath)) continue;
+    if (RESUME && isResumableValidFile(filePath)) continue;
 
     console.log(`${job.kind} ${job.targetUrl} ${job.device} ${job.cacheMode} #${job.runIndex}`);
     let row;
@@ -835,6 +898,13 @@ function originsForTarget(inv, targetUrl) {
     row.phase = phase;
     row.cacheMode = row.cacheMode || job.cacheMode;
     row.device = row.device || job.device;
+    row.validity =
+      row.measured === false || row.error
+        ? 'FAILED'
+        : row.ttfbMs != null
+          ? 'VALID'
+          : 'UNKNOWN';
+    row.validityReason = row.error || (row.validity === 'VALID' ? 'fresh-run' : 'no-ttfb');
 
     try {
       const saved = writeSampleAtomic(filePath, row);

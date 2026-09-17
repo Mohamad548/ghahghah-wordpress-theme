@@ -1,0 +1,104 @@
+{
+  "phase": "after",
+  "base": "http://localhost:8898/",
+  "at": "2026-09-17T06:51:07.047Z",
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "slow-load-keeps-active",
+      "ok": true,
+      "detail": "before=0 mid=0 after=0"
+    },
+    {
+      "name": "404-then-healthy-dot",
+      "ok": true,
+      "detail": "after404=0 afterHealthy=2"
+    },
+    {
+      "name": "decode-fail-then-healthy",
+      "ok": true,
+      "detail": "idx=0 healthy=2"
+    },
+    {
+      "name": "out-of-order-last-wins",
+      "ok": true,
+      "detail": "mid=0 midDot=0 live=\"اسلاید 1 از 9\" final=2"
+    },
+    {
+      "name": "controls-keyboard-swipe",
+      "ok": true,
+      "detail": {
+        "afterNext": 1,
+        "afterPrev": 0,
+        "afterDot": 4,
+        "afterKey": 5,
+        "afterSwipe": 6
+      }
+    },
+    {
+      "name": "nine-distinct-mobile",
+      "ok": true,
+      "detail": {
+        "distinct": 9,
+        "allDecoded": true
+      }
+    },
+    {
+      "name": "nine-distinct-desktop",
+      "ok": true,
+      "detail": {
+        "distinct": 9,
+        "allDecoded": true
+      }
+    },
+    {
+      "name": "initial-prefetch-budget",
+      "ok": true,
+      "detail": {
+        "keys": [
+          "01",
+          "02"
+        ],
+        "slidesWithSrc": 2
+      }
+    },
+    {
+      "name": "noscript-first-slide-visible",
+      "ok": true,
+      "detail": {
+        "hasActive": true,
+        "idx": "0",
+        "opacity": "1",
+        "visibility": "visible",
+        "src": "http://localhost:8898/wp-content/uploads/2026/09/01-cheese-flavour-banner-v2.webp",
+        "complete": true,
+        "nw": 390
+      }
+    },
+    {
+      "name": "reduced-motion-ready-and-autoplay",
+      "ok": true,
+      "detail": {
+        "interval": 5000,
+        "ready": true,
+        "transitionDuration": "0s",
+        "transitionProperty": "none",
+        "index": "0",
+        "waitMs": 7000,
+        "i1": "0",
+        "allZero": true,
+        "held": true
+      }
+    },
+    {
+      "name": "autoplay-advances",
+      "ok": true,
+      "detail": {
+        "interval": 5000,
+        "i0": 0,
+        "i1": 1
+      }
+    }
+  ]
+}

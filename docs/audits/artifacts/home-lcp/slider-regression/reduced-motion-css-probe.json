@@ -1,0 +1,12 @@
+{
+  "old": {
+    "transitionDuration": "0.75s, 0.75s, 0.75s",
+    "transitionProperty": "opacity, visibility, transform",
+    "willChange": "opacity, transform"
+  },
+  "neu": {
+    "transitionDuration": "0s",
+    "transitionProperty": "none",
+    "willChange": "auto"
+  }
+}

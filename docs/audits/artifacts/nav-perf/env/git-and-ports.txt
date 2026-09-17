@@ -1,0 +1,17 @@
+HEAD=4f2a49158f242e66c56be864763268af70befdb1
+BRANCH=fix/perf-navigation
+BASE=4f2a49158f242e66c56be864763268af70befdb1
+2026-09-17T08:04:11Z
+HTTP/1.1 200 OK
+Date: Thu, 17 Sep 2026 08:04:11 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.33
+Link: <http://localhost:8898/wp-json/>; rel="https://api.w.org/"
+Link: <http://localhost:8898/wp-json/wp/v2/pages/6>; rel="alternate"; title="JSON"; type="application/json"
+Link: <http://localhost:8898/>; rel=shortlink
+Content-Type: text/html; charset=UTF-8
+HTTP/1.1 200 OK
+Date: Thu, 17 Sep 2026 08:04:20 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.33
+Link: <http://localhost:8888/wp-json/>; rel="https://api.w.org/"

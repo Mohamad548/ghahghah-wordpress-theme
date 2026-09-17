@@ -1,0 +1,10 @@
+=== curl TTFB samples 2026-09-17T08:13:26Z ===
+200 ttfb=3.846881 total=3.847418 url=http://localhost:8898/
+200 ttfb=6.321549 total=6.322121 url=http://localhost:8898/
+200 ttfb=7.114702 total=7.115204 url=http://localhost:8898/
+200 ttfb=2.864312 total=2.864686 url=http://localhost:8898/products/
+200 ttfb=8.683350 total=8.684061 url=http://localhost:8898/products/
+200 ttfb=7.581272 total=7.581632 url=http://localhost:8898/products/
+200 ttfb=2.883953 total=2.884249 url=http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/
+200 ttfb=2.978132 total=2.978372 url=http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/
+200 ttfb=6.451787 total=6.452495 url=http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/

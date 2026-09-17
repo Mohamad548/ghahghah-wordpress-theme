@@ -1,0 +1,445 @@
+{
+  "uniqueProductHrefs": [
+    "http://localhost:8898/products/",
+    "http://localhost:8898/products/?gh_flavor=lemon",
+    "http://localhost:8898/products/?gh_flavor=vinegar",
+    "http://localhost:8898/products/?gh_flavor=pizza",
+    "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+    "http://localhost:8898/products/?gh_flavor=parsley_onion",
+    "http://localhost:8898/products/?gh_flavor=ketchup",
+    "http://localhost:8898/products/?gh_flavor=cheese",
+    "http://localhost:8898/products/?gh_flavor=chicken",
+    "http://localhost:8898/products/?gh_flavor=chili",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+    "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+  ],
+  "destinationCompare": {
+    "asciiFinal": "http://localhost:8898/products/",
+    "persianFinal": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+    "sameFinal": false,
+    "asciiChain": [
+      {
+        "url": "http://localhost:8898/products/",
+        "status": 200,
+        "location": null,
+        "host": "localhost:8898",
+        "pathname": "/products/",
+        "search": ""
+      }
+    ],
+    "persianChain": [
+      {
+        "url": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "status": 200,
+        "location": null,
+        "host": "localhost:8898",
+        "pathname": "/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "search": ""
+      }
+    ]
+  },
+  "desktopHeader": [
+    {
+      "href": "http://localhost:8898/products/",
+      "absolute": "http://localhost:8898/products/",
+      "text": "محصولات",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=lemon",
+      "absolute": "http://localhost:8898/products/?gh_flavor=lemon",
+      "text": "طعم لیمویی",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "absolute": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "text": "طعم سرکه‌ای",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=pizza",
+      "absolute": "http://localhost:8898/products/?gh_flavor=pizza",
+      "text": "طعم پیتزا",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "absolute": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "text": "طعم ماست موسیر",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "absolute": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "text": "طعم پیاز جعفری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "absolute": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "text": "طعم کچاپ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=cheese",
+      "absolute": "http://localhost:8898/products/?gh_flavor=cheese",
+      "text": "طعم پنیری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chicken",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chicken",
+      "text": "طعم مرغ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chili",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chili",
+      "text": "طعم فلفلی",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/",
+      "absolute": "http://localhost:8898/products/",
+      "text": "محصولات",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=lemon",
+      "absolute": "http://localhost:8898/products/?gh_flavor=lemon",
+      "text": "طعم لیمویی",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "absolute": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "text": "طعم سرکه‌ای",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=pizza",
+      "absolute": "http://localhost:8898/products/?gh_flavor=pizza",
+      "text": "طعم پیتزا",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "absolute": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "text": "طعم ماست موسیر",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "absolute": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "text": "طعم پیاز جعفری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "absolute": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "text": "طعم کچاپ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=cheese",
+      "absolute": "http://localhost:8898/products/?gh_flavor=cheese",
+      "text": "طعم پنیری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chicken",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chicken",
+      "text": "طعم مرغ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chili",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chili",
+      "text": "طعم فلفلی",
+      "classes": "site-nav__link"
+    }
+  ],
+  "desktopFooter": [
+    {
+      "href": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "absolute": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "text": "محصولات",
+      "classes": ""
+    }
+  ],
+  "mobileBottom": [
+    {
+      "href": "http://localhost:8898/products/",
+      "absolute": "http://localhost:8898/products/",
+      "text": "محصولات",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=lemon",
+      "absolute": "http://localhost:8898/products/?gh_flavor=lemon",
+      "text": "طعم لیمویی",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "absolute": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "text": "طعم سرکه‌ای",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=pizza",
+      "absolute": "http://localhost:8898/products/?gh_flavor=pizza",
+      "text": "طعم پیتزا",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "absolute": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "text": "طعم ماست موسیر",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "absolute": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "text": "طعم پیاز جعفری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "absolute": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "text": "طعم کچاپ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=cheese",
+      "absolute": "http://localhost:8898/products/?gh_flavor=cheese",
+      "text": "طعم پنیری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chicken",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chicken",
+      "text": "طعم مرغ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chili",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chili",
+      "text": "طعم فلفلی",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/",
+      "absolute": "http://localhost:8898/products/",
+      "text": "محصولات",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=lemon",
+      "absolute": "http://localhost:8898/products/?gh_flavor=lemon",
+      "text": "طعم لیمویی",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "absolute": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "text": "طعم سرکه‌ای",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=pizza",
+      "absolute": "http://localhost:8898/products/?gh_flavor=pizza",
+      "text": "طعم پیتزا",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "absolute": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "text": "طعم ماست موسیر",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "absolute": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "text": "طعم پیاز جعفری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "absolute": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "text": "طعم کچاپ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=cheese",
+      "absolute": "http://localhost:8898/products/?gh_flavor=cheese",
+      "text": "طعم پنیری",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chicken",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chicken",
+      "text": "طعم مرغ",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chili",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chili",
+      "text": "طعم فلفلی",
+      "classes": "site-nav__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=cheese",
+      "absolute": "http://localhost:8898/products/?gh_flavor=cheese",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "absolute": "http://localhost:8898/products/?gh_flavor=parsley_onion",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "absolute": "http://localhost:8898/products/?gh_flavor=shallot_yogurt",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=pizza",
+      "absolute": "http://localhost:8898/products/?gh_flavor=pizza",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "absolute": "http://localhost:8898/products/?gh_flavor=vinegar",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=lemon",
+      "absolute": "http://localhost:8898/products/?gh_flavor=lemon",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "absolute": "http://localhost:8898/products/?gh_flavor=ketchup",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chicken",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chicken",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/?gh_flavor=chili",
+      "absolute": "http://localhost:8898/products/?gh_flavor=chili",
+      "text": "",
+      "classes": "ghahghah-hero__link"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+      "absolute": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+      "text": "مشاهده محصول",
+      "classes": "ghahghah-featured__cta"
+    },
+    {
+      "href": "http://localhost:8898/products/",
+      "absolute": "http://localhost:8898/products/",
+      "text": "مشاهده همه محصولات",
+      "classes": "ghahghah-featured__card ghahghah-featured__card--all"
+    },
+    {
+      "href": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "absolute": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "text": "محصولات",
+      "classes": ""
+    },
+    {
+      "href": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "absolute": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "text": "محصولات",
+      "classes": "gg-bottom-nav__link"
+    }
+  ],
+  "surfaces": {
+    "desktop": {
+      "hasHeader": true,
+      "hasFooter": true,
+      "hasMobileNav": false,
+      "hasMobileMenu": false,
+      "headerHtmlHint": "site-header site-header--sticky",
+      "mobileNavHtmlHint": null
+    },
+    "mobile": {
+      "hasHeader": true,
+      "hasFooter": true,
+      "hasMobileNav": false,
+      "hasMobileMenu": false,
+      "headerHtmlHint": "site-header site-header--sticky",
+      "mobileNavHtmlHint": null
+    }
+  }
+}

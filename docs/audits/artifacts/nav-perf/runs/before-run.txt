@@ -1,0 +1,194 @@
+desktop-click cold=true #1
+{"ttfb":4712.5,"clickToReq":17.93017578125,"fcp":4868,"url":"http://localhost:8898/products/"}
+desktop-click cold=true #2
+{"ttfb":6374.600000000559,"clickToReq":21.342041015625,"fcp":6556,"url":"http://localhost:8898/products/"}
+desktop-click cold=true #3
+{"ttfb":6243.700000000186,"clickToReq":18.14697265625,"fcp":6408,"url":"http://localhost:8898/products/"}
+desktop-click cold=false #1
+{"ttfb":6320.5,"clickToReq":19.345947265625,"fcp":6424,"url":"http://localhost:8898/products/"}
+desktop-click cold=false #2
+{"ttfb":2867.7000000001863,"clickToReq":20.281005859375,"fcp":2976,"url":"http://localhost:8898/products/"}
+desktop-click cold=false #3
+{"ttfb":3318.5,"clickToReq":18.97900390625,"fcp":3416,"url":"http://localhost:8898/products/"}
+mobile-click cold=true #1
+{"ttfb":2687.4000000003725,"clickToReq":14.84814453125,"fcp":2800,"url":"http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"}
+mobile-click cold=true #2
+{"ttfb":6100.200000000186,"clickToReq":18.361083984375,"fcp":6220,"url":"http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"}
+mobile-click cold=true #3
+{"ttfb":6921.600000000559,"clickToReq":18.055908203125,"fcp":7064,"url":"http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"}
+mobile-click cold=false #1
+{"ttfb":2612.0999999996275,"clickToReq":11.656982421875,"fcp":2664,"url":"http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"}
+mobile-click cold=false #2
+{"ttfb":2815.4000000003725,"clickToReq":11.789794921875,"fcp":2868,"url":"http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"}
+mobile-click cold=false #3
+{"ttfb":3142.9000000003725,"clickToReq":18.56689453125,"fcp":3204,"url":"http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"}
+goto http://localhost:8898/products/ cold=true #1
+goto http://localhost:8898/products/ cold=true #2
+goto http://localhost:8898/products/ cold=true #3
+reload http://localhost:8898/products/ cold=true #1
+reload http://localhost:8898/products/ cold=true #2
+reload http://localhost:8898/products/ cold=true #3
+goto http://localhost:8898/products/ cold=false #1
+goto http://localhost:8898/products/ cold=false #2
+goto http://localhost:8898/products/ cold=false #3
+reload http://localhost:8898/products/ cold=false #1
+reload http://localhost:8898/products/ cold=false #2
+reload http://localhost:8898/products/ cold=false #3
+goto http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=true #1
+goto http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=true #2
+goto http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=true #3
+reload http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=true #1
+reload http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=true #2
+reload http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=true #3
+goto http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=false #1
+goto http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=false #2
+goto http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=false #3
+reload http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=false #1
+reload http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=false #2
+reload http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/ cold=false #3
+MEDIANS {
+  "click|desktop-header|cold|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 18.14697265625,
+    "redirectMs": 0,
+    "ttfbMs": 6243.700000000186,
+    "htmlReceiveMs": 6244.600000000559,
+    "fcpMs": 6408,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "click|desktop-header|warm|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 19.345947265625,
+    "redirectMs": 0,
+    "ttfbMs": 3318.5,
+    "htmlReceiveMs": 3319.7000000001863,
+    "fcpMs": 3416,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "click|mobile-bottom|cold|/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 18.055908203125,
+    "redirectMs": 0,
+    "ttfbMs": 6100.200000000186,
+    "htmlReceiveMs": 6101,
+    "fcpMs": 6220,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+    ]
+  },
+  "click|mobile-bottom|warm|/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 11.789794921875,
+    "redirectMs": 0,
+    "ttfbMs": 2815.4000000003725,
+    "htmlReceiveMs": 2816.300000000745,
+    "fcpMs": 2868,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+    ]
+  },
+  "goto||cold|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 9.3818359375,
+    "redirectMs": 0,
+    "ttfbMs": 3496.5,
+    "htmlReceiveMs": 3497.600000000559,
+    "fcpMs": 3676,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "reload||cold|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 7.01806640625,
+    "redirectMs": 0,
+    "ttfbMs": 6587.700000000186,
+    "htmlReceiveMs": 6588.5,
+    "fcpMs": 6748,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "goto||warm|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 12.738037109375,
+    "redirectMs": 0,
+    "ttfbMs": 10275,
+    "htmlReceiveMs": 10282.900000000373,
+    "fcpMs": 10448,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "reload||warm|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 11.5888671875,
+    "redirectMs": 0,
+    "ttfbMs": 6431.399999999441,
+    "htmlReceiveMs": 6433,
+    "fcpMs": 6544,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "goto||cold|/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 10.877197265625,
+    "redirectMs": 0,
+    "ttfbMs": 3561.5,
+    "htmlReceiveMs": 3562.5999999996275,
+    "fcpMs": 3784,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+    ]
+  },
+  "reload||cold|/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 9.964111328125,
+    "redirectMs": 0,
+    "ttfbMs": 5562.200000000186,
+    "htmlReceiveMs": 5562.9000000003725,
+    "fcpMs": 5704,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+    ]
+  },
+  "goto||warm|/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 5.89599609375,
+    "redirectMs": 0,
+    "ttfbMs": 2697.899999999441,
+    "htmlReceiveMs": 2698.7999999998137,
+    "fcpMs": 2752,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+    ]
+  },
+  "reload||warm|/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 8.420166015625,
+    "redirectMs": 0,
+    "ttfbMs": 2561.5999999996275,
+    "htmlReceiveMs": 2562.399999999441,
+    "fcpMs": 2612,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+    ]
+  }
+}

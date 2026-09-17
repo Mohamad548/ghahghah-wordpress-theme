@@ -1,0 +1,134 @@
+desktop-click cold=true #1
+{"ttfb":8550.600000000559,"clickToReq":24.837890625,"fcp":8804,"url":"http://localhost:8898/products/"}
+desktop-click cold=true #2
+{"ttfb":8580.5,"clickToReq":30.68603515625,"fcp":8788,"url":"http://localhost:8898/products/"}
+desktop-click cold=true #3
+{"ttfb":4163.200000000186,"clickToReq":28.01904296875,"fcp":4404,"url":"http://localhost:8898/products/"}
+desktop-click cold=false #1
+{"ttfb":4587,"clickToReq":37.5029296875,"fcp":4768,"url":"http://localhost:8898/products/"}
+desktop-click cold=false #2
+{"ttfb":4673.9000000003725,"clickToReq":36.291015625,"fcp":4840,"url":"http://localhost:8898/products/"}
+desktop-click cold=false #3
+{"ttfb":4678.299999999814,"clickToReq":34.0361328125,"fcp":14872,"url":"http://localhost:8898/products/"}
+mobile-click cold=true #1
+{"ttfb":9367.799999999814,"clickToReq":25.241943359375,"fcp":9620,"url":"http://localhost:8898/products/"}
+mobile-click cold=true #2
+{"ttfb":6430.700000000186,"clickToReq":33.091064453125,"fcp":6612,"url":"http://localhost:8898/products/"}
+mobile-click cold=true #3
+{"ttfb":2796.7999999998137,"clickToReq":14.92919921875,"fcp":2952,"url":"http://localhost:8898/products/"}
+mobile-click cold=false #1
+{"ttfb":2511.5,"clickToReq":24.0791015625,"fcp":2656,"url":"http://localhost:8898/products/"}
+mobile-click cold=false #2
+{"ttfb":5727.300000000745,"clickToReq":14.3779296875,"fcp":5844,"url":"http://localhost:8898/products/"}
+mobile-click cold=false #3
+{"ttfb":7086.700000000186,"clickToReq":28.011962890625,"fcp":7292,"url":"http://localhost:8898/products/"}
+goto http://localhost:8898/products/ cold=true #1
+goto http://localhost:8898/products/ cold=true #2
+goto http://localhost:8898/products/ cold=true #3
+reload http://localhost:8898/products/ cold=true #1
+reload http://localhost:8898/products/ cold=true #2
+reload http://localhost:8898/products/ cold=true #3
+goto http://localhost:8898/products/ cold=false #1
+goto http://localhost:8898/products/ cold=false #2
+goto http://localhost:8898/products/ cold=false #3
+reload http://localhost:8898/products/ cold=false #1
+reload http://localhost:8898/products/ cold=false #2
+reload http://localhost:8898/products/ cold=false #3
+MEDIANS {
+  "click|desktop-header|cold|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 28.01904296875,
+    "redirectMs": 0,
+    "ttfbMs": 8550.600000000559,
+    "htmlReceiveMs": 8551.800000000745,
+    "fcpMs": 8788,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "click|desktop-header|warm|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 36.291015625,
+    "redirectMs": 0,
+    "ttfbMs": 4673.9000000003725,
+    "htmlReceiveMs": 4675.299999999814,
+    "fcpMs": 4840,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "click|mobile-bottom|cold|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 25.241943359375,
+    "redirectMs": 0,
+    "ttfbMs": 6430.700000000186,
+    "htmlReceiveMs": 6431.4000000003725,
+    "fcpMs": 6612,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "click|mobile-bottom|warm|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 24.0791015625,
+    "redirectMs": 0,
+    "ttfbMs": 5727.300000000745,
+    "htmlReceiveMs": 5728.200000000186,
+    "fcpMs": 5844,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "goto||cold|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 10.44091796875,
+    "redirectMs": 0,
+    "ttfbMs": 8165.4000000003725,
+    "htmlReceiveMs": 8169.9000000003725,
+    "fcpMs": 8416,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "reload||cold|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 10.0400390625,
+    "redirectMs": 0,
+    "ttfbMs": 3036.199999999255,
+    "htmlReceiveMs": 3036.899999999441,
+    "fcpMs": 3184,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "goto||warm|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 6.55810546875,
+    "redirectMs": 0,
+    "ttfbMs": 6089.5,
+    "htmlReceiveMs": 6090.600000000559,
+    "fcpMs": 6156,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  },
+  "reload||warm|/products/": {
+    "n": 3,
+    "clickToDocumentRequestMs": 7.79296875,
+    "redirectMs": 0,
+    "ttfbMs": 2900.7999999998137,
+    "htmlReceiveMs": 2902.0999999996275,
+    "fcpMs": 2980,
+    "lcpMs": null,
+    "finals": [
+      "http://localhost:8898/products/"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "mode": "click",
+  "surface": "mobile-bottom",
+  "cold": false,
+  "runIndex": 1,
+  "viewport": {
+    "width": 390,
+    "height": 844,
+    "isMobile": true,
+    "hasTouch": true
+  },
+  "clickHref": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+  "finalUrl": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+  "title": "محصولات - قهقهه",
+  "h1": "محصولات",
+  "bodyClass": "wp-singular page-template-default page page-id-7 wp-embed-responsive wp-theme-ghahghah-theme has-ghahghah-bottom-nav",
+  "documentChain": [
+    {
+      "url": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "status": 200,
+      "redirectFrom": null,
+      "fromCache": true,
+      "encodedDataLength": 16460
+    }
+  ],
+  "clickToDocumentRequestMs": 11.656982421875,
+  "redirectMs": 0,
+  "queueingMs": null,
+  "waitingTtfbMs": 2617.729,
+  "ttfbMs": 2612.0999999996275,
+  "htmlReceiveMs": 2613.5,
+  "fcpMs": 2664,
+  "lcpMs": null,
+  "lcpStatus": "INVALID",
+  "navTiming": {
+    "redirectCount": 0,
+    "redirectMs": 0,
+    "ttfbMs": 2612.0999999996275,
+    "requestStart": 8.700000000186265,
+    "responseStart": 2620.7999999998137,
+    "responseEnd": 2622.2000000001863,
+    "domContentLoadedEventEnd": 2647.0999999996275,
+    "loadEventEnd": 2653.0999999996275,
+    "transferSize": 16255,
+    "encodedBodySize": 15955,
+    "startTime": 0
+  },
+  "resourceCount": 14
+}

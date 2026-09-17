@@ -114,7 +114,8 @@ function encVariants(persianPath) {
 
   const queryCases = [
     {
-      from: '/محصولات/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=2',
+      // Avoid paged>=2 here: empty archive pages 404 under WP when not enough posts.
+      from: '/محصولات/?gh_flavor=pizza&gh_sort=title&gh_q=test&paged=1',
       expectPath: '/products/',
       expectKeys: ['gh_flavor', 'gh_sort', 'gh_q', 'paged'],
     },

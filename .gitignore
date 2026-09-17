@@ -72,3 +72,7 @@ yarn-lock.json
 
 # Organizer temporary stats
 /design-sources/_copy-stats.json
+
+# Local SEO foundation backups (do not commit)
+docs/audits/artifacts/seo-foundation/backups/
+*.sql

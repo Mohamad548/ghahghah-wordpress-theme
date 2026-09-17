@@ -1,0 +1,53 @@
+{
+  "mode": "click",
+  "targetUrl": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+  "clickHref": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+  "cold": false,
+  "runIndex": 1,
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "isMobile": false,
+    "hasTouch": false
+  },
+  "measured": true,
+  "finalUrl": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+  "title": "تماس با ما - قهقهه",
+  "h1": "راه‌های ارتباط با قهقهه",
+  "bodyClass": "wp-singular page-template page-template-page-templates page-template-contact page-template-page-templatescontact-php page page-id-10 wp-embed-responsive wp-theme-ghahghah-theme has-ghahghah-bottom-nav",
+  "documentChain": [
+    {
+      "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "status": 200,
+      "redirectFrom": null,
+      "fromCache": true,
+      "encodedDataLength": 19403
+    },
+    {
+      "url": "https://maps.google.com/maps?q=35.286607,46.9149563&z=12&output=embed&hl=fa",
+      "status": null,
+      "redirectFrom": null,
+      "fromCache": null,
+      "encodedDataLength": null
+    }
+  ],
+  "clickToDocumentRequestMs": 22.359130859375,
+  "redirectMs": 0,
+  "redirectCount": 0,
+  "waitingTtfbMs": 6190.7429999999995,
+  "ttfbMs": 6180.199999999255,
+  "htmlReceiveMs": 6182.4000000003725,
+  "fcpMs": 6400,
+  "lcpMs": null,
+  "lcpStatus": "INVALID",
+  "navTiming": {
+    "redirectCount": 0,
+    "redirectMs": 0,
+    "ttfbMs": 6180.199999999255,
+    "requestStart": 17.300000000745058,
+    "responseStart": 6197.5,
+    "responseEnd": 6199.700000001118,
+    "transferSize": 19196,
+    "encodedBodySize": 18896
+  }
+}

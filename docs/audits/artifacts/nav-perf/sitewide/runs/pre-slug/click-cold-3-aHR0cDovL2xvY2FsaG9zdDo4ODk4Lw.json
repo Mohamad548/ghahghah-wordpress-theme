@@ -1,0 +1,46 @@
+{
+  "mode": "click",
+  "targetUrl": "http://localhost:8898/",
+  "clickHref": "http://localhost:8898/",
+  "cold": true,
+  "runIndex": 3,
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "isMobile": false,
+    "hasTouch": false
+  },
+  "measured": true,
+  "finalUrl": "http://localhost:8898/",
+  "title": "قهقهه - برند غذایی قهقهه",
+  "h1": "قهقهه",
+  "bodyClass": "home wp-singular page-template-default page page-id-6 wp-embed-responsive wp-theme-ghahghah-theme ghahghah-home-overlay has-ghahghah-bottom-nav",
+  "documentChain": [
+    {
+      "url": "http://localhost:8898/",
+      "status": 200,
+      "redirectFrom": null,
+      "fromCache": true,
+      "encodedDataLength": 21932
+    }
+  ],
+  "clickToDocumentRequestMs": 14.008056640625,
+  "redirectMs": 0,
+  "redirectCount": 0,
+  "waitingTtfbMs": 2279.9410000000003,
+  "ttfbMs": 2273.10000000149,
+  "htmlReceiveMs": 2274.5,
+  "fcpMs": 2484,
+  "lcpMs": null,
+  "lcpStatus": "INVALID",
+  "navTiming": {
+    "redirectCount": 0,
+    "redirectMs": 0,
+    "ttfbMs": 2273.10000000149,
+    "requestStart": 11.5,
+    "responseStart": 2284.60000000149,
+    "responseEnd": 2286,
+    "transferSize": 21731,
+    "encodedBodySize": 21431
+  }
+}

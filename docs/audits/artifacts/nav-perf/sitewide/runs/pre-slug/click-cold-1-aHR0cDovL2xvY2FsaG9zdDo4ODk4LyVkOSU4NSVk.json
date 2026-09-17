@@ -1,0 +1,46 @@
+{
+  "mode": "click",
+  "targetUrl": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+  "clickHref": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+  "cold": true,
+  "runIndex": 1,
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "isMobile": false,
+    "hasTouch": false
+  },
+  "measured": true,
+  "finalUrl": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+  "title": "مقالات - قهقهه",
+  "h1": "مقالات قهقهه",
+  "bodyClass": "blog wp-embed-responsive wp-theme-ghahghah-theme has-ghahghah-bottom-nav",
+  "documentChain": [
+    {
+      "url": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+      "status": 200,
+      "redirectFrom": null,
+      "fromCache": true,
+      "encodedDataLength": 18402
+    }
+  ],
+  "clickToDocumentRequestMs": 19.287841796875,
+  "redirectMs": 0,
+  "redirectCount": 0,
+  "waitingTtfbMs": 5743.735,
+  "ttfbMs": 5735.699999999255,
+  "htmlReceiveMs": 5736.5,
+  "fcpMs": 5908,
+  "lcpMs": null,
+  "lcpStatus": "INVALID",
+  "navTiming": {
+    "redirectCount": 0,
+    "redirectMs": 0,
+    "ttfbMs": 5735.699999999255,
+    "requestStart": 14.800000000745058,
+    "responseStart": 5750.5,
+    "responseEnd": 5751.300000000745,
+    "transferSize": 18357,
+    "encodedBodySize": 18057
+  }
+}

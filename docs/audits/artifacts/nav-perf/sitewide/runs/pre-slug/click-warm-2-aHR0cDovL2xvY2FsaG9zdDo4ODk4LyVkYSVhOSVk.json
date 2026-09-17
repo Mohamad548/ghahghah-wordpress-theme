@@ -1,0 +1,46 @@
+{
+  "mode": "click",
+  "targetUrl": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+  "clickHref": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+  "cold": false,
+  "runIndex": 2,
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "isMobile": false,
+    "hasTouch": false
+  },
+  "measured": true,
+  "finalUrl": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+  "title": "کارخانه - قهقهه",
+  "h1": "از دانه ذرت تا لحظه‌های خوشمزه",
+  "bodyClass": "wp-singular page-template page-template-page-templates page-template-factory-intro page-template-page-templatesfactory-intro-php page page-id-8 wp-embed-responsive wp-theme-ghahghah-theme ghahghah-factory-page-body has-ghahghah-bottom-nav",
+  "documentChain": [
+    {
+      "url": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+      "status": 200,
+      "redirectFrom": null,
+      "fromCache": true,
+      "encodedDataLength": 19149
+    }
+  ],
+  "clickToDocumentRequestMs": 15.69091796875,
+  "redirectMs": 0,
+  "redirectCount": 0,
+  "waitingTtfbMs": 5445.107999999999,
+  "ttfbMs": 5437.9000000003725,
+  "htmlReceiveMs": 5438.800000000745,
+  "fcpMs": 5544,
+  "lcpMs": null,
+  "lcpStatus": "INVALID",
+  "navTiming": {
+    "redirectCount": 0,
+    "redirectMs": 0,
+    "ttfbMs": 5437.9000000003725,
+    "requestStart": 12.699999999254942,
+    "responseStart": 5450.5999999996275,
+    "responseEnd": 5451.5,
+    "transferSize": 18944,
+    "encodedBodySize": 18644
+  }
+}

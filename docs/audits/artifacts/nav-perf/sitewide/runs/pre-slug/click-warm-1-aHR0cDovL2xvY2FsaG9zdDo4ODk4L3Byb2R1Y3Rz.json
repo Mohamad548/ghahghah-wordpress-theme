@@ -1,0 +1,46 @@
+{
+  "mode": "click",
+  "targetUrl": "http://localhost:8898/products/",
+  "clickHref": "http://localhost:8898/products/",
+  "cold": false,
+  "runIndex": 1,
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "isMobile": false,
+    "hasTouch": false
+  },
+  "measured": true,
+  "finalUrl": "http://localhost:8898/products/",
+  "title": "محصولات - قهقهه",
+  "h1": "همه محصولات قهقهه",
+  "bodyClass": "archive post-type-archive post-type-archive-ghahghah_product wp-embed-responsive wp-theme-ghahghah-theme has-ghahghah-bottom-nav",
+  "documentChain": [
+    {
+      "url": "http://localhost:8898/products/",
+      "status": 200,
+      "redirectFrom": null,
+      "fromCache": true,
+      "encodedDataLength": 19382
+    }
+  ],
+  "clickToDocumentRequestMs": 22.472900390625,
+  "redirectMs": 0,
+  "redirectCount": 0,
+  "waitingTtfbMs": 6912.285,
+  "ttfbMs": 6904.300000000745,
+  "htmlReceiveMs": 6905.300000000745,
+  "fcpMs": 7044,
+  "lcpMs": null,
+  "lcpStatus": "INVALID",
+  "navTiming": {
+    "redirectCount": 0,
+    "redirectMs": 0,
+    "ttfbMs": 6904.300000000745,
+    "requestStart": 14.399999998509884,
+    "responseStart": 6918.699999999255,
+    "responseEnd": 6919.699999999255,
+    "transferSize": 19337,
+    "encodedBodySize": 19037
+  }
+}

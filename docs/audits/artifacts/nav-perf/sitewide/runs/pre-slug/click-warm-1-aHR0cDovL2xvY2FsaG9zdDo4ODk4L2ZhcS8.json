@@ -1,0 +1,39 @@
+{
+  "mode": "click",
+  "targetUrl": "http://localhost:8898/faq/",
+  "clickHref": "http://localhost:8898/faq/",
+  "cold": false,
+  "runIndex": 1,
+  "viewport": {
+    "width": 1440,
+    "height": 900,
+    "isMobile": false,
+    "hasTouch": false
+  },
+  "measured": false,
+  "error": "nav-timeout:Waiting failed: 90000ms exceeded",
+  "finalUrl": "http://localhost:8898/",
+  "title": "قهقهه - برند غذایی قهقهه",
+  "h1": "قهقهه",
+  "bodyClass": "home wp-singular page-template-default page page-id-6 wp-embed-responsive wp-theme-ghahghah-theme ghahghah-home-overlay has-ghahghah-bottom-nav",
+  "documentChain": [],
+  "clickToDocumentRequestMs": null,
+  "redirectMs": 0,
+  "redirectCount": 0,
+  "waitingTtfbMs": 4335.199999999255,
+  "ttfbMs": 4335.199999999255,
+  "htmlReceiveMs": 4336.5,
+  "fcpMs": 4488,
+  "lcpMs": null,
+  "lcpStatus": "INVALID",
+  "navTiming": {
+    "redirectCount": 0,
+    "redirectMs": 0,
+    "ttfbMs": 4335.199999999255,
+    "requestStart": 3.300000000745058,
+    "responseStart": 4338.5,
+    "responseEnd": 4339.800000000745,
+    "transferSize": 21731,
+    "encodedBodySize": 21431
+  }
+}

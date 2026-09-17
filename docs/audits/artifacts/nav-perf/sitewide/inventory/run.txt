@@ -1,0 +1,9 @@
+{
+  "pages": 13,
+  "posts": 4,
+  "products": 0,
+  "linkRows": 907,
+  "uniqueDestinations": 27,
+  "navClickHrefs": 12
+}
+Wrote E:\word pares\ghahghah-fix-perf-images\docs\audits\artifacts\nav-perf\sitewide\inventory

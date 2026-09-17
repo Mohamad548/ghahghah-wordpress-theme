@@ -1,0 +1,94 @@
+destinations 25 navClicks 9 repeats 3
+click http://localhost:8898/ cold=true #1 vp=1440
+{"ok":true,"ttfb":2593.0999999996275,"clickToReq":21.5830078125,"fcp":2960,"url":"http://localhost:8898/"}
+click http://localhost:8898/ cold=true #2 vp=1440
+{"ok":true,"ttfb":5486.299999998882,"clickToReq":14.0830078125,"fcp":5804,"url":"http://localhost:8898/"}
+click http://localhost:8898/ cold=true #3 vp=1440
+{"ok":true,"ttfb":2273.10000000149,"clickToReq":14.008056640625,"fcp":2484,"url":"http://localhost:8898/"}
+click http://localhost:8898/ cold=false #1 vp=1440
+{"ok":true,"ttfb":2452.800000000745,"clickToReq":14.837890625,"fcp":2572,"url":"http://localhost:8898/"}
+click http://localhost:8898/ cold=false #2 vp=1440
+{"ok":true,"ttfb":1811.4000000003725,"clickToReq":11.950927734375,"fcp":1900,"url":"http://localhost:8898/"}
+click http://localhost:8898/ cold=false #3 vp=1440
+{"ok":true,"ttfb":4499.199999999255,"clickToReq":13.23291015625,"fcp":4584,"url":"http://localhost:8898/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/ cold=true #1 vp=1440
+{"ok":true,"ttfb":2494.699999999255,"clickToReq":14.0869140625,"fcp":2644,"url":"http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/ cold=true #2 vp=1440
+{"ok":true,"ttfb":2521.199999999255,"clickToReq":14.508056640625,"fcp":2664,"url":"http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/ cold=true #3 vp=1440
+{"ok":true,"ttfb":2209.199999999255,"clickToReq":11.551025390625,"fcp":2352,"url":"http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/ cold=false #1 vp=1440
+{"ok":true,"ttfb":6599.200000001118,"clickToReq":16.406005859375,"fcp":6696,"url":"http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/ cold=false #2 vp=1440
+{"ok":true,"ttfb":2222.2999999988824,"clickToReq":14.22607421875,"fcp":2348,"url":"http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/ cold=false #3 vp=1440
+{"ok":true,"ttfb":2375.5,"clickToReq":13.490966796875,"fcp":2652,"url":"http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"}
+click http://localhost:8898/products/ cold=true #1 vp=390
+{"ok":true,"ttfb":2511.89999999851,"clickToReq":12.619140625,"fcp":2692,"url":"http://localhost:8898/products/"}
+click http://localhost:8898/products/ cold=true #2 vp=1440
+{"ok":true,"ttfb":2948.2999999988824,"clickToReq":18.591796875,"fcp":3112,"url":"http://localhost:8898/products/"}
+click http://localhost:8898/products/ cold=true #3 vp=1440
+{"ok":true,"ttfb":2334.2999999988824,"clickToReq":17.080078125,"fcp":2520,"url":"http://localhost:8898/products/"}
+click http://localhost:8898/products/ cold=false #1 vp=1440
+{"ok":true,"ttfb":6904.300000000745,"clickToReq":22.472900390625,"fcp":7044,"url":"http://localhost:8898/products/"}
+click http://localhost:8898/products/ cold=false #2 vp=1440
+{"ok":true,"ttfb":2198.5999999996275,"clickToReq":17.705810546875,"fcp":2296,"url":"http://localhost:8898/products/"}
+click http://localhost:8898/products/ cold=false #3 vp=1440
+{"ok":true,"ttfb":5484.800000000745,"clickToReq":18.212890625,"fcp":5592,"url":"http://localhost:8898/products/"}
+click http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/ cold=true #1 vp=1440
+{"ok":true,"ttfb":5596.0999999996275,"clickToReq":16.173095703125,"fcp":5792,"url":"http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/"}
+click http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/ cold=true #2 vp=1440
+{"ok":true,"ttfb":5252,"clickToReq":17.169921875,"fcp":5444,"url":"http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/"}
+click http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/ cold=true #3 vp=1440
+{"ok":true,"ttfb":2484.9000000003725,"clickToReq":12.964111328125,"fcp":2668,"url":"http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/"}
+click http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/ cold=false #1 vp=1440
+{"ok":true,"ttfb":852.0999999996275,"clickToReq":30.886962890625,"fcp":1012,"url":"http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/"}
+click http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/ cold=false #2 vp=1440
+{"ok":true,"ttfb":5437.9000000003725,"clickToReq":15.69091796875,"fcp":5544,"url":"http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/"}
+click http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/ cold=false #3 vp=1440
+{"ok":true,"ttfb":2420.4000000003725,"clickToReq":26.166015625,"fcp":2536,"url":"http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/"}
+click http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/ cold=true #1 vp=1440
+{"ok":true,"ttfb":5735.699999999255,"clickToReq":19.287841796875,"fcp":5908,"url":"http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"}
+click http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/ cold=true #2 vp=1440
+{"ok":true,"ttfb":2258.5999999996275,"clickToReq":12.083984375,"fcp":2420,"url":"http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"}
+click http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/ cold=true #3 vp=1440
+{"ok":true,"ttfb":2432.4000000003725,"clickToReq":16.692138671875,"fcp":2588,"url":"http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"}
+click http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/ cold=false #1 vp=1440
+{"ok":true,"ttfb":2179.10000000149,"clickToReq":17.89501953125,"fcp":2276,"url":"http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"}
+click http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/ cold=false #2 vp=1440
+{"ok":true,"ttfb":3195.5999999996275,"clickToReq":17.10498046875,"fcp":3348,"url":"http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"}
+click http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/ cold=false #3 vp=1440
+{"ok":true,"ttfb":3303.5,"clickToReq":17.695068359375,"fcp":3440,"url":"http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"}
+click http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/ cold=true #1 vp=1440
+{"ok":true,"ttfb":8082.5999999996275,"clickToReq":19.001953125,"fcp":8356,"url":"http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"}
+click http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/ cold=true #2 vp=1440
+{"ok":true,"ttfb":4192.9000000003725,"clickToReq":23.801025390625,"fcp":4440,"url":"http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"}
+click http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/ cold=true #3 vp=1440
+{"ok":true,"ttfb":4115.199999999255,"clickToReq":21.712890625,"fcp":4376,"url":"http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"}
+click http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/ cold=false #1 vp=1440
+{"ok":true,"ttfb":6180.199999999255,"clickToReq":22.359130859375,"fcp":6400,"url":"http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"}
+click http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/ cold=false #2 vp=1440
+{"ok":true,"ttfb":8812.5,"clickToReq":25.919921875,"fcp":8996,"url":"http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"}
+click http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/ cold=false #3 vp=1440
+{"ok":true,"ttfb":4133.10000000149,"clickToReq":22.472900390625,"fcp":4292,"url":"http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/ cold=true #1 vp=1440
+{"ok":false,"ttfb":4608.0999999996275,"clickToReq":null,"fcp":4968,"url":"http://localhost:8898/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/ cold=true #2 vp=1440
+{"ok":false,"ttfb":4707.4000000003725,"clickToReq":null,"fcp":4940,"url":"http://localhost:8898/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/ cold=true #3 vp=1440
+{"ok":false,"ttfb":5869.5999999996275,"clickToReq":null,"fcp":6264,"url":"http://localhost:8898/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/ cold=false #1 vp=1440
+{"ok":false,"ttfb":4937.300000000745,"clickToReq":null,"fcp":5160,"url":"http://localhost:8898/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/ cold=false #2 vp=1440
+{"ok":false,"ttfb":8795.400000000373,"clickToReq":null,"fcp":9168,"url":"http://localhost:8898/"}
+click http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/ cold=false #3 vp=1440
+{"ok":false,"ttfb":5786.4000000003725,"clickToReq":null,"fcp":6044,"url":"http://localhost:8898/"}
+click http://localhost:8898/faq/ cold=true #1 vp=1440
+{"ok":false,"ttfb":6276.5999999996275,"clickToReq":null,"fcp":6580,"url":"http://localhost:8898/"}
+click http://localhost:8898/faq/ cold=true #2 vp=1440
+{"ok":false,"ttfb":4724.200000001118,"clickToReq":null,"fcp":4892,"url":"http://localhost:8898/"}
+click http://localhost:8898/faq/ cold=true #3 vp=1440
+{"ok":false,"ttfb":5014.5,"clickToReq":null,"fcp":5240,"url":"http://localhost:8898/"}
+click http://localhost:8898/faq/ cold=false #1 vp=1440
+{"ok":false,"ttfb":4335.199999999255,"clickToReq":null,"fcp":4488,"url":"http://localhost:8898/"}
+click http://localhost:8898/faq/ cold=false #2 vp=1440

@@ -1,0 +1,5454 @@
+[
+  {
+    "url": "http://localhost:8898/faq/",
+    "pathname": "/faq/",
+    "linkedFrom": [
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "پرسش‌های متداول"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "پرسش‌های متداول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 76,
+        "slug": "faq",
+        "title": "پرسش‌های متداول",
+        "url": "http://localhost:8898/faq/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/faq/",
+      "finalUrl": "http://localhost:8898/faq/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/faq/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/faq/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/faq/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+    "pathname": "/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+    "linkedFrom": [
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "ثبت درخواست نمایندگی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "ثبت درخواست نمایندگی"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/faq/",
+        "text": "رفتن به فرم درخواست نمایندگی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/faq/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/faq/",
+        "text": "رفتن به فرم درخواست نمایندگی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/faq/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "درخواست نمایندگی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "درخواست نمایندگی"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 32,
+        "slug": "%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c",
+        "title": "درخواست نمایندگی",
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+    "pathname": "/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+    "linkedFrom": [
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "بازگشت به بالا"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 13,
+        "slug": "%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c",
+        "title": "طعم لیمویی",
+        "url": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+      "finalUrl": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+    "pathname": "/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+    "linkedFrom": [
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "بازگشت به بالا"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 12,
+        "slug": "%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7",
+        "title": "طعم پیتزا",
+        "url": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+      "finalUrl": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+    "pathname": "/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+    "linkedFrom": [
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "بازگشت به بالا"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 11,
+        "slug": "%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa",
+        "title": "همه محصولات",
+        "url": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "finalUrl": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+    "pathname": "/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+    "linkedFrom": [
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/products/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/faq/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "تماس با ما"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "تماس"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "تماس با ما"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 10,
+        "slug": "%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7",
+        "title": "تماس با ما",
+        "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "finalUrl": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+    "pathname": "/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+    "linkedFrom": [
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "همه مطالب"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "همه مطالب"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "همه مقالات"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "معرفی کارخانه"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "کیفیت و تولید"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "اخبار قهقهه"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "آموزش و دانستنی‌ها"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "همه مقالات"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "معرفی کارخانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "کیفیت و تولید"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "اخبار قهقهه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "آموزش و دانستنی‌ها"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "مقالات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "مقالات"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 9,
+        "slug": "%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa",
+        "title": "مقالات",
+        "url": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+      "finalUrl": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+    "pathname": "/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+    "linkedFrom": [
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "بیشتر درباره کارخانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "بیشتر درباره کارخانه"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "کارخانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "کارخانه"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 8,
+        "slug": "%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87",
+        "title": "کارخانه",
+        "url": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+      "finalUrl": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+    "pathname": "/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+    "linkedFrom": [],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 7,
+        "slug": "%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa",
+        "title": "محصولات",
+        "url": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "finalUrl": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/",
+    "pathname": "/",
+    "linkedFrom": [
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "خانه"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "bottom-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "خانه"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/products/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "خانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "خانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خانه"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "بازگشت به صفحه اصلی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "بازگشت به صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خانه"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "بازگشت به صفحه اصلی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "بازگشت به صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خانه"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": ""
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": ""
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خانه"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خانه"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "صفحه اصلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خانه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خانه"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 6,
+        "slug": "%d8%b5%d9%81%d8%ad%d9%87-%d8%a7%d8%b5%d9%84%db%8c",
+        "title": "صفحه اصلی",
+        "url": "http://localhost:8898/"
+      },
+      {
+        "source": "home",
+        "type": "home",
+        "id": null,
+        "slug": "",
+        "title": "Home",
+        "url": "http://localhost:8898/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/",
+      "finalUrl": "http://localhost:8898/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "pathname": "/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "linkedFrom": [
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "bottom-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/products/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/faq/",
+        "text": "رفتن به فرم خرید عمده"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/faq/",
+        "text": "رفتن به فرم خرید عمده"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/faq/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "درخواست خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خرید عمده"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "خرید عمده"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 5,
+        "slug": "%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87",
+        "title": "درخواست خرید عمده",
+        "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/privacy-policy/",
+    "pathname": "/privacy-policy/",
+    "linkedFrom": [
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "حریم خصوصی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "حریم خصوصی"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 3,
+        "slug": "privacy-policy",
+        "title": "حریم خصوصی",
+        "url": "http://localhost:8898/privacy-policy/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/privacy-policy/",
+      "finalUrl": "http://localhost:8898/privacy-policy/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/privacy-policy/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/privacy-policy/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/privacy-policy/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/sample-page/",
+    "pathname": "/sample-page/",
+    "linkedFrom": [],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "page",
+        "id": 2,
+        "slug": "sample-page",
+        "title": "Sample Page",
+        "url": "http://localhost:8898/sample-page/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/sample-page/",
+      "finalUrl": "http://localhost:8898/sample-page/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/sample-page/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/sample-page/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/sample-page/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/wholesale-request-guide/",
+    "pathname": "/wholesale-request-guide/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "راهنمای درخواست خرید عمده"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "ادامه مطلب"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "راهنمای درخواست خرید عمده"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "ادامه مطلب"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "راهنمای درخواست خرید عمده"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "راهنمای درخواست خرید عمده"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "post",
+        "id": 68,
+        "slug": "wholesale-request-guide",
+        "title": "راهنمای درخواست خرید عمده",
+        "url": "http://localhost:8898/wholesale-request-guide/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/wholesale-request-guide/",
+      "finalUrl": "http://localhost:8898/wholesale-request-guide/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/wholesale-request-guide/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/wholesale-request-guide/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/wholesale-request-guide/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/snack-serving-ideas/",
+    "pathname": "/snack-serving-ideas/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "ایده‌هایی برای سرو اسنک"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "ادامه مطلب"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "ایده‌هایی برای سرو اسنک"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "ادامه مطلب"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "ایده‌هایی برای سرو اسنک"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "ایده‌هایی برای سرو اسنک"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "post",
+        "id": 67,
+        "slug": "snack-serving-ideas",
+        "title": "ایده‌هایی برای سرو اسنک",
+        "url": "http://localhost:8898/snack-serving-ideas/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/snack-serving-ideas/",
+      "finalUrl": "http://localhost:8898/snack-serving-ideas/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/snack-serving-ideas/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/snack-serving-ideas/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/snack-serving-ideas/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/snack-shapes-guide/",
+    "pathname": "/snack-shapes-guide/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "آشنایی با شکل‌های مختلف اسنک"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "ادامه مطلب"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "آشنایی با شکل‌های مختلف اسنک"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "ادامه مطلب"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "آشنایی با شکل‌های مختلف اسنک"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "آشنایی با شکل‌های مختلف اسنک"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "post",
+        "id": 66,
+        "slug": "snack-shapes-guide",
+        "title": "آشنایی با شکل‌های مختلف اسنک",
+        "url": "http://localhost:8898/snack-shapes-guide/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/snack-shapes-guide/",
+      "finalUrl": "http://localhost:8898/snack-shapes-guide/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/snack-shapes-guide/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/snack-shapes-guide/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/snack-shapes-guide/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/hello-world/",
+    "pathname": "/hello-world/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "Hello world!"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "Hello world!"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "مطالعه مقاله"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "post",
+        "id": 1,
+        "slug": "hello-world",
+        "title": "Hello world!",
+        "url": "http://localhost:8898/hello-world/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/hello-world/",
+      "finalUrl": "http://localhost:8898/hello-world/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/hello-world/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/hello-world/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/hello-world/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 99,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c",
+        "title": "چیپس ذرت قهقهه طعم فلفلی",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%81%d9%84%d9%81%d9%84%db%8c/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 97,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba",
+        "title": "چیپس ذرت قهقهه طعم مرغ",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%b1%d8%ba/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 38,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c",
+        "title": "چیپس ذرت قهقهه طعم لیمویی",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 40,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c",
+        "title": "چیپس ذرت قهقهه طعم سرکه‌ای",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d8%b3%d8%b1%da%a9%d9%87%d8%a7%db%8c/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 42,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7",
+        "title": "چیپس ذرت قهقهه طعم پیتزا",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 44,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1",
+        "title": "چیپس ذرت قهقهه طعم ماست موسیر",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%85%d8%a7%d8%b3%d8%aa-%d9%85%d9%88%d8%b3%db%8c%d8%b1/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 46,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c",
+        "title": "چیپس ذرت قهقهه طعم پیاز جعفری",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%a7%d8%b2-%d8%ac%d8%b9%d9%81%d8%b1%db%8c/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 50,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1",
+        "title": "چیپس ذرت قهقهه طعم پنیری",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+    "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+    "linkedFrom": [
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مشاهده محصول"
+      }
+    ],
+    "flavorsSeen": [],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "wp-rest",
+        "type": "ghahghah_product",
+        "id": 48,
+        "slug": "%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be",
+        "title": "چیپس ذرت قهقهه طعم کچاپ",
+        "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+      "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%da%a9%da%86%d8%a7%d9%be/",
+    "finalStatus": 200
+  },
+  {
+    "url": "http://localhost:8898/products/",
+    "pathname": "/products/",
+    "linkedFrom": [
+      {
+        "surface": "archive-seed",
+        "seed": "http://localhost:8898"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده همه محصولات"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": ""
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/",
+        "text": "مشاهده همه محصولات"
+      },
+      {
+        "surface": "bottom-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer-mobile",
+        "seed": "http://localhost:8898/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/products/",
+        "text": "بازگشت به بالا"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/products/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/products/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "همه محصولات همه"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "پنیری پنیری"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "کچاپ کچاپ"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "لیمویی لیمویی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "سرکه‌ای سرکه‌ای"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "مرغ مرغ"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "فلفلی فلفلی"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "ماست موسیر ماست موسیر"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "پیتزا پیتزا"
+      },
+      {
+        "surface": "main",
+        "seed": "http://localhost:8898/products/",
+        "text": "پیاز جعفری پیاز جعفری"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "همه محصولات همه"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "پنیری پنیری"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "کچاپ کچاپ"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "لیمویی لیمویی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "سرکه‌ای سرکه‌ای"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "مرغ مرغ"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "فلفلی فلفلی"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "ماست موسیر ماست موسیر"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "پیتزا پیتزا"
+      },
+      {
+        "surface": "cta-or-card",
+        "seed": "http://localhost:8898/products/",
+        "text": "پیاز جعفری پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/faq/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/faq/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/faq/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%84%db%8c%d9%85%d9%88%db%8c%db%8c/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%b7%d8%b9%d9%85-%d9%be%db%8c%d8%aa%d8%b2%d8%a7/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%87%d9%85%d9%87-%d9%85%d8%ad%d8%b5%d9%88%d9%84%d8%a7%d8%aa/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "header",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم فلفلی"
+      },
+      {
+        "surface": "footer",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "bottom",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "محصولات"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم لیمویی"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم سرکه‌ای"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پیتزا"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم ماست موسیر"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پیاز جعفری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم کچاپ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم پنیری"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم مرغ"
+      },
+      {
+        "surface": "mobileMenu",
+        "seed": "http://localhost:8898/%da%a9%d8%a7%d8%b1%d8%ae%d8%a7%d9%86%d9%87/",
+        "text": "طعم فلفلی"
+      }
+    ],
+    "flavorsSeen": [
+      "lemon",
+      "vinegar",
+      "pizza",
+      "shallot_yogurt",
+      "parsley_onion",
+      "ketchup",
+      "cheese",
+      "chicken",
+      "chili"
+    ],
+    "pagedSeen": false,
+    "meta": [
+      {
+        "source": "cpt-archive",
+        "type": "archive",
+        "id": null,
+        "slug": "products",
+        "title": "Products archive",
+        "url": "http://localhost:8898/products/"
+      }
+    ],
+    "document": {
+      "startUrl": "http://localhost:8898/products/",
+      "finalUrl": "http://localhost:8898/products/",
+      "finalStatus": 200,
+      "chain": [
+        {
+          "url": "http://localhost:8898/products/",
+          "status": 200,
+          "location": null,
+          "host": "localhost:8898",
+          "pathname": "/products/",
+          "search": ""
+        }
+      ]
+    },
+    "redirectCount": 0,
+    "finalUrl": "http://localhost:8898/products/",
+    "finalStatus": 200
+  }
+]

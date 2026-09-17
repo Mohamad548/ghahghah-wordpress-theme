@@ -53,5 +53,10 @@
     "http://localhost:8898/agency/",
     "http://localhost:8898/faq/",
     "http://localhost:8898/privacy-policy/"
-  ]
+  ],
+  "toolVersion": "nav-sitewide-measure/2.1.0",
+  "gitHead": "518644467ee9e2e740849ef2d8461bb813ac72d2",
+  "effectiveCodeSha": "60a8f033d1963bda48d36c0eb4838e63da723fdbf2448363e557faa01f40a229",
+  "settingsFingerprint": "1b354e427bd10e5d3994c0973105a94ba5fef5f2d0f190cdd4bbb0a1bd47380c",
+  "inventorySha": "9846d354688a1bbde2ff2b6af18fa3d496fc16612774d677db9dd63e922fbb10"
 }

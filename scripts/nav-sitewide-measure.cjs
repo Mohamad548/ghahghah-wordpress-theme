@@ -15,6 +15,7 @@ const path = require('path');
 const os = require('os');
 const crypto = require('crypto');
 const { spawnSync } = require('child_process');
+const meta = require('./lib/nav-measure-meta.cjs');
 
 const phase = process.argv[2] || 'post-slug';
 const inventoryDir = path.resolve(
@@ -36,8 +37,24 @@ const DEVICE_LIST = (process.env.NAV_DEVICES || 'desktop,mobile')
   .split(',')
   .map((s) => s.trim())
   .filter(Boolean);
+const REPO_ROOT = path.resolve(__dirname, '..');
 
 fs.mkdirSync(outDir, { recursive: true });
+
+const runContext = meta.buildRunContext({
+  repoRoot: REPO_ROOT,
+  base: BASE,
+  phase,
+  repeats: REPEATS,
+  devices: DEVICE_LIST,
+  skipClick: SKIP_CLICK,
+  inventoryPath: path.join(inventoryDir, 'inventory.json'),
+  smokeWindow: meta.DEFAULT_SMOKE_WINDOW,
+});
+
+function logLine(...parts) {
+  console.log([new Date().toISOString(), ...parts].join(' '));
+}
 
 function ensurePuppeteer() {
   try {
@@ -122,19 +139,21 @@ function writeSampleAtomic(filePath, row) {
     } catch {
       throw new Error(`Refusing overwrite of unreadable sample: ${filePath}`);
     }
-    const same =
-      existing.sampleId === row.sampleId &&
-      existing.targetUrl === row.targetUrl &&
-      existing.mode === row.mode &&
-      existing.device === row.device &&
-      existing.cacheMode === row.cacheMode &&
-      existing.runIndex === row.runIndex;
-    if (same && RESUME) {
+    const compat = meta.isResumeCompatible(existing, {
+      ...runContext,
+      sampleId: row.sampleId,
+      mode: row.mode,
+      device: row.device,
+      cacheMode: row.cacheMode,
+      targetUrl: row.targetUrl,
+      runIndex: row.runIndex,
+    });
+    if (compat.ok && RESUME) {
       return { wrote: false, resumed: true, row: existing };
     }
     throw new Error(
       `Sample collision / unwanted overwrite blocked: ${path.basename(filePath)} ` +
-        `(existing target=${existing.targetUrl} new=${row.targetUrl})`,
+        `(existing target=${existing.targetUrl} new=${row.targetUrl}; resume=${compat.reason})`,
     );
   }
   const tmp = filePath + '.tmp';
@@ -153,7 +172,8 @@ function loadExistingSamples() {
       name === 'summary-partial.json' ||
       name === 'manifest.json' ||
       name === 'sample-validity-index.json' ||
-      name === 'scenario-plan.json'
+      name === 'scenario-plan.json' ||
+      name === 'coverage-table.json'
     ) {
       continue;
     }
@@ -161,12 +181,18 @@ function loadExistingSamples() {
     const full = path.join(outDir, name);
     try {
       const row = JSON.parse(fs.readFileSync(full, 'utf8'));
-      // Resume only VALID samples; INVALID/FAILED must be re-run.
-      if (row && row.validity && row.validity !== 'VALID') continue;
-      if (row && row.measured === false) continue;
-      if (row && row.ttfbMs == null) continue;
-      if (row && row.sampleId) map.set(row.sampleId, { file: full, row });
-      else map.set(name.replace(/\.json$/, ''), { file: full, row });
+      const expected = {
+        ...runContext,
+        sampleId: row.sampleId || name.replace(/\.json$/, ''),
+        mode: row.mode,
+        device: row.device,
+        cacheMode: row.cacheMode,
+        targetUrl: row.targetUrl,
+        runIndex: row.runIndex,
+      };
+      const compat = meta.isResumeCompatible(row, expected);
+      if (!compat.ok) continue;
+      map.set(expected.sampleId, { file: full, row, resumeReason: compat.reason });
     } catch {
       // leave damaged files in place; do not delete
     }
@@ -174,17 +200,43 @@ function loadExistingSamples() {
   return map;
 }
 
-function isResumableValidFile(filePath) {
+function isResumableValidFile(filePath, job) {
   if (!fs.existsSync(filePath)) return false;
   try {
     const row = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    if (row.validity && row.validity !== 'VALID') return false;
-    if (row.measured === false) return false;
-    if (row.ttfbMs == null) return false;
-    return true;
+    return meta.isResumeCompatible(row, {
+      ...runContext,
+      sampleId: sampleFileName(job).replace(/\.json$/, ''),
+      mode: job.mode,
+      device: job.device,
+      cacheMode: job.cacheMode,
+      targetUrl: job.targetUrl,
+      runIndex: job.runIndex,
+    }).ok;
   } catch {
     return false;
   }
+}
+
+function stampMeta(row, startedAt, endedAt) {
+  const classified = meta.classifySampleValidity(
+    { ...row, startedAt, endedAt },
+    runContext.smokeWindow,
+  );
+  return {
+    ...row,
+    startedAt,
+    endedAt,
+    toolVersion: runContext.toolVersion,
+    gitHead: runContext.gitHead,
+    effectiveCodeSha: runContext.effectiveCodeSha,
+    settingsFingerprint: runContext.settingsFingerprint,
+    inventorySha: runContext.inventorySha,
+    smokeWindow: runContext.smokeWindow,
+    validity: classified.validity,
+    validityReason: classified.reason,
+    executionWindow: classified.window,
+  };
 }
 
 async function launch(puppeteer, { cacheDisabled, viewport }) {
@@ -732,8 +784,8 @@ function originsForTarget(inv, targetUrl) {
         for (const cold of [true, false]) {
           for (let i = 1; i <= REPEATS; i++) {
             const cacheMode = cold ? 'cache-disabled' : 'cache-enabled-prepared';
-            const meta = { mode: 'click', device, cacheMode, runIndex: i, targetUrl };
-            plan.push({ kind: 'click', cold, ...meta });
+            const jobMeta = { mode: 'click', device, cacheMode, runIndex: i, targetUrl };
+            plan.push({ kind: 'click', cold, ...jobMeta });
           }
         }
       }
@@ -776,6 +828,11 @@ function originsForTarget(inv, targetUrl) {
       {
         at: new Date().toISOString(),
         phase,
+        toolVersion: runContext.toolVersion,
+        gitHead: runContext.gitHead,
+        effectiveCodeSha: runContext.effectiveCodeSha,
+        settingsFingerprint: runContext.settingsFingerprint,
+        inventorySha: runContext.inventorySha,
         uniqueDestinations: destinations.length,
         navClickTargets: navClicks.length,
         devices: devicesGoto,
@@ -783,6 +840,12 @@ function originsForTarget(inv, targetUrl) {
         cacheModes: ['cache-disabled', 'cache-enabled-prepared'],
         repeats: REPEATS,
         plannedSamples: plan.length,
+        planned: {
+          click: plan.filter((j) => j.kind === 'click').length,
+          goto: plan.filter((j) => j.kind === 'goto').length,
+          reload: plan.filter((j) => j.kind === 'reload').length,
+          total: plan.length,
+        },
         duplicatesRemoved: dupesRemoved,
         destinations,
         navClicks,
@@ -800,7 +863,7 @@ function originsForTarget(inv, targetUrl) {
     const fname = sampleFileName(job);
     const sampleId = fname.replace(/\.json$/, '');
     const filePath = path.join(outDir, fname);
-    if (RESUME && (existing.has(sampleId) || isResumableValidFile(filePath))) {
+    if (RESUME && (existing.has(sampleId) || isResumableValidFile(filePath, job))) {
       const hit = existing.get(sampleId);
       const row = hit?.row || JSON.parse(fs.readFileSync(filePath, 'utf8'));
       rows.push(row);
@@ -820,6 +883,9 @@ function originsForTarget(inv, targetUrl) {
       todo: pendingKeys.length,
       repeats: REPEATS,
       devices: devicesGoto,
+      toolVersion: runContext.toolVersion,
+      settingsFingerprint: runContext.settingsFingerprint,
+      effectiveCodeSha: runContext.effectiveCodeSha,
     }),
   );
 
@@ -853,9 +919,10 @@ function originsForTarget(inv, targetUrl) {
     const fname = sampleFileName(job);
     const sampleId = fname.replace(/\.json$/, '');
     const filePath = path.join(outDir, fname);
-    if (RESUME && isResumableValidFile(filePath)) continue;
+    if (RESUME && isResumableValidFile(filePath, job)) continue;
 
-    console.log(`${job.kind} ${job.targetUrl} ${job.device} ${job.cacheMode} #${job.runIndex}`);
+    logLine(job.kind, job.targetUrl, job.device, job.cacheMode, `#${job.runIndex}`);
+    const startedAt = new Date().toISOString();
     let row;
     try {
       if (job.kind === 'click') {
@@ -893,18 +960,13 @@ function originsForTarget(inv, targetUrl) {
         error: String(err.message || err),
       };
     }
+    const endedAt = new Date().toISOString();
 
     row.sampleId = sampleId;
     row.phase = phase;
     row.cacheMode = row.cacheMode || job.cacheMode;
     row.device = row.device || job.device;
-    row.validity =
-      row.measured === false || row.error
-        ? 'FAILED'
-        : row.ttfbMs != null
-          ? 'VALID'
-          : 'UNKNOWN';
-    row.validityReason = row.error || (row.validity === 'VALID' ? 'fresh-run' : 'no-ttfb');
+    row = stampMeta(row, startedAt, endedAt);
 
     try {
       const saved = writeSampleAtomic(filePath, row);
@@ -932,11 +994,14 @@ function originsForTarget(inv, targetUrl) {
     console.log(
       JSON.stringify({
         ok: row.measured !== false,
+        validity: row.validity,
         ttfb: row.ttfbMs,
         clickToReq: row.clickToDocumentRequestMs,
         fcp: row.fcpMs,
         cacheMode: row.cacheMode,
         device: row.device,
+        startedAt: row.startedAt,
+        endedAt: row.endedAt,
         url: row.finalUrl || row.error,
       }),
     );

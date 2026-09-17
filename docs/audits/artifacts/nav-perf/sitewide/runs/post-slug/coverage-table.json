@@ -1,21 +1,244 @@
 {
-  "at": "2026-09-17T10:50:58.759Z",
+  "at": "2026-09-17T11:01:14.816Z",
   "measureStatus": "PARTIAL",
-  "partialReason": "Sitewide timing suite not complete: only a subset of planned 424 samples are VALID on disk; INVALID/FAILED preserved in invalid-kept and scheduled for re-run; NOT RUN remains for unfinished goto/reload matrix.",
-  "plannedTotal": 424,
+  "measureStatusReason": "completeCells=0/212; validSamples=0/424",
+  "note": "COMPLETE means planned VALID repeats are present — not a performance quality judgment. UNKNOWN samples are excluded from final PASS/COMPLETE.",
+  "plannedFromScenario": {
+    "plannedSamples": 424,
+    "plannedCells": 212,
+    "repeats": 2,
+    "devices": [
+      "desktop",
+      "mobile"
+    ],
+    "methods": [
+      "click",
+      "goto",
+      "reload"
+    ],
+    "cacheModes": [
+      "cache-disabled",
+      "cache-enabled-prepared"
+    ],
+    "uniqueDestinations": 22,
+    "navClickTargets": 9
+  },
   "sampleCounts": {
-    "VALID": 17,
-    "INVALID": 29,
+    "VALID": 0,
+    "INVALID": 0,
     "FAILED": 15,
-    "activeOnDisk": 17,
-    "keptOnDisk": 44
+    "UNKNOWN": 46,
+    "activeOnDisk": 0,
+    "archivedOnDisk": 61
   },
   "scenarioRowCounts": {
-    "PASS": 9,
+    "COMPLETE": 0,
+    "PARTIAL": 0,
     "FAILED": 8,
-    "INVALID": 14,
-    "NOT_RUN": 194
+    "INVALID": 0,
+    "UNKNOWN": 23,
+    "NOT_RUN": 181
   },
+  "outOfPlanCount": 0,
+  "outOfPlan": [],
+  "failureHistoryCount": 15,
+  "failureHistory": [
+    {
+      "file": "post-slug__click__desktop__cache-disabled__r1__3ea78329540e916b4326cb95276cef3119cc72c60f4d60afb1620fa05144fc5c.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/faq/",
+      "mode": "click",
+      "device": "desktop",
+      "cacheMode": "cache-disabled",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__desktop__cache-disabled__r2__3ea78329540e916b4326cb95276cef3119cc72c60f4d60afb1620fa05144fc5c.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/faq/",
+      "mode": "click",
+      "device": "desktop",
+      "cacheMode": "cache-disabled",
+      "runIndex": 2,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__desktop__cache-enabled-prepared__r1__3ea78329540e916b4326cb95276cef3119cc72c60f4d60afb1620fa05144fc5c.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/faq/",
+      "mode": "click",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__desktop__cache-enabled-prepared__r1__56f3c5476998d60ca1925dd340c3e74f5eb173e8f0ec4a10a527bd27da216d13.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/agency/",
+      "mode": "click",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__desktop__cache-enabled-prepared__r2__3ea78329540e916b4326cb95276cef3119cc72c60f4d60afb1620fa05144fc5c.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/faq/",
+      "mode": "click",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 2,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__desktop__cache-enabled-prepared__r2__56f3c5476998d60ca1925dd340c3e74f5eb173e8f0ec4a10a527bd27da216d13.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/agency/",
+      "mode": "click",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 2,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-disabled__r1__3ea78329540e916b4326cb95276cef3119cc72c60f4d60afb1620fa05144fc5c.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/faq/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-disabled__r1__56f3c5476998d60ca1925dd340c3e74f5eb173e8f0ec4a10a527bd27da216d13.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/agency/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-disabled__r1__8bd2fcf3aa589610bc98fa2f61e813f715b076b4cf4f9b4f24172cbca62cb4e2.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/wholesale/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-disabled__r2__56f3c5476998d60ca1925dd340c3e74f5eb173e8f0ec4a10a527bd27da216d13.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/agency/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "runIndex": 2,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-disabled__r2__8bd2fcf3aa589610bc98fa2f61e813f715b076b4cf4f9b4f24172cbca62cb4e2.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/wholesale/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "runIndex": 2,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-enabled-prepared__r1__56f3c5476998d60ca1925dd340c3e74f5eb173e8f0ec4a10a527bd27da216d13.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/agency/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-enabled-prepared__r1__8bd2fcf3aa589610bc98fa2f61e813f715b076b4cf4f9b4f24172cbca62cb4e2.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/wholesale/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 1,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-enabled-prepared__r2__56f3c5476998d60ca1925dd340c3e74f5eb173e8f0ec4a10a527bd27da216d13.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/agency/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 2,
+      "startedAt": null,
+      "endedAt": null
+    },
+    {
+      "file": "post-slug__click__mobile__cache-enabled-prepared__r2__8bd2fcf3aa589610bc98fa2f61e813f715b076b4cf4f9b4f24172cbca62cb4e2.json",
+      "archive": "invalid-kept",
+      "validity": "FAILED",
+      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "targetUrl": "http://localhost:8898/wholesale/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-enabled-prepared",
+      "runIndex": 2,
+      "startedAt": null,
+      "endedAt": null
+    }
+  ],
   "healthClean": {
     "coverage": 22,
     "coveragePass": 22,
@@ -27,13 +250,6 @@
     "queriesPass": 2,
     "queriesFail": 0
   },
-  "validityIndex": {
-    "VALID": 17,
-    "INVALID": 29,
-    "FAILED": 15,
-    "UNKNOWN": 0
-  },
-  "note": "Do not declare sitewide success while NOT_RUN or INVALID remain for required goto/reload coverage.",
   "rows": [
     {
       "url": "http://localhost:8898/faq/",
@@ -41,10 +257,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded; nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 2
+      "failedCount": 2,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -52,10 +270,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded; nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 2
+      "failedCount": 2,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -63,10 +283,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=1",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 1
+      "failedCount": 1,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -74,10 +296,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -85,10 +309,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -96,10 +322,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -107,10 +335,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -118,10 +348,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -129,10 +361,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -140,10 +374,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -151,10 +387,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/faq/",
@@ -162,21 +400,25 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-disabled",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -184,10 +426,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded; nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 2
+      "failedCount": 2,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -195,10 +439,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded; nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 2
+      "failedCount": 2,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -206,10 +452,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded; nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 2
+      "failedCount": 2,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -217,10 +465,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -228,10 +478,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -239,10 +491,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -250,10 +504,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -261,10 +517,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -272,10 +530,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -283,10 +543,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/agency/",
@@ -294,54 +556,64 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-disabled",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-disabled",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -349,10 +621,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -360,10 +634,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -371,10 +647,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -382,10 +660,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -393,10 +673,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -404,10 +686,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -415,10 +699,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/contact/",
@@ -426,54 +712,64 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-disabled",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-disabled",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -481,10 +777,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -492,10 +790,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -503,10 +803,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -514,10 +816,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -525,10 +829,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -536,10 +842,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -547,10 +855,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/articles/",
@@ -558,54 +868,64 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-disabled",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-disabled",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -613,10 +933,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -624,10 +946,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -635,10 +959,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -646,10 +972,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -657,10 +985,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -668,10 +998,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -679,10 +1011,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/factory/",
@@ -690,54 +1024,64 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-disabled",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-disabled",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
       "mode": "click",
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -745,10 +1089,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -756,10 +1102,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -767,10 +1115,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -778,10 +1128,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -789,10 +1141,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -800,10 +1154,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -811,10 +1167,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/",
@@ -822,32 +1180,38 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-disabled",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
       "mode": "click",
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -855,10 +1219,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded; nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 2
+      "failedCount": 2,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -866,10 +1232,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "FAILED",
-      "reason": "nav-timeout:Waiting failed: 90000ms exceeded; nav-timeout:Waiting failed: 90000ms exceeded",
+      "reason": "FAILED n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 2
+      "failedCount": 2,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -877,10 +1245,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -888,10 +1258,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -899,10 +1271,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -910,10 +1284,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -921,10 +1297,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -932,10 +1310,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -943,10 +1323,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale/",
@@ -954,10 +1336,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -965,10 +1349,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -976,10 +1362,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -987,10 +1375,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -998,10 +1388,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1009,10 +1401,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1020,10 +1414,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1031,10 +1427,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1042,10 +1440,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1053,10 +1453,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1064,10 +1466,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1075,10 +1479,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/privacy-policy/",
@@ -1086,51 +1492,51 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/wholesale-request-guide/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
-    },
-    {
-      "url": "http://localhost:8898/wholesale-request-guide/",
-      "mode": "goto",
-      "device": "desktop",
-      "cacheMode": "cache-disabled",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/wholesale-request-guide/",
-      "mode": "goto",
-      "device": "desktop",
-      "cacheMode": "cache-enabled-prepared",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale-request-guide/",
       "mode": "goto",
+      "device": "desktop",
+      "cacheMode": "cache-disabled",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/wholesale-request-guide/",
+      "mode": "goto",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/wholesale-request-guide/",
+      "mode": "goto",
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale-request-guide/",
@@ -1138,10 +1544,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale-request-guide/",
@@ -1149,10 +1557,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale-request-guide/",
@@ -1160,10 +1570,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale-request-guide/",
@@ -1171,10 +1583,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/wholesale-request-guide/",
@@ -1182,18 +1596,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/snack-serving-ideas/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1201,10 +1609,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1212,10 +1622,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1223,10 +1635,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1234,10 +1648,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1245,10 +1661,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1256,10 +1674,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1267,10 +1687,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-serving-ideas/",
@@ -1278,18 +1700,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/snack-shapes-guide/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1297,10 +1713,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1308,10 +1726,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1319,10 +1739,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1330,10 +1752,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1341,10 +1765,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1352,10 +1778,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1363,10 +1791,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/snack-shapes-guide/",
@@ -1374,18 +1804,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-pepper/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1393,10 +1817,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1404,10 +1830,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1415,10 +1843,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1426,10 +1856,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1437,10 +1869,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1448,10 +1882,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1459,10 +1895,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pepper/",
@@ -1470,18 +1908,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-chicken/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1489,10 +1921,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1500,10 +1934,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1511,10 +1947,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1522,10 +1960,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1533,10 +1973,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1544,10 +1986,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1555,10 +1999,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-chicken/",
@@ -1566,18 +2012,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-lemon/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1585,10 +2025,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1596,10 +2038,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1607,10 +2051,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1618,10 +2064,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1629,10 +2077,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1640,10 +2090,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1651,10 +2103,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-lemon/",
@@ -1662,18 +2116,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-vinegar/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1681,10 +2129,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1692,10 +2142,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1703,10 +2155,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1714,10 +2168,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1725,10 +2181,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1736,10 +2194,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1747,10 +2207,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-vinegar/",
@@ -1758,18 +2220,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-pizza/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1777,10 +2233,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1788,10 +2246,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1799,10 +2259,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1810,10 +2272,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1821,10 +2285,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1832,10 +2298,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1843,10 +2311,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-pizza/",
@@ -1854,18 +2324,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1873,10 +2337,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1884,10 +2350,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1895,10 +2363,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1906,10 +2376,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1917,10 +2389,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1928,10 +2402,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1939,10 +2415,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-shallot-yogurt/",
@@ -1950,18 +2428,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -1969,10 +2441,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -1980,10 +2454,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -1991,10 +2467,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -2002,10 +2480,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -2013,10 +2493,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -2024,10 +2506,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -2035,10 +2519,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-parsley-onion/",
@@ -2046,18 +2532,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-cheese/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2065,10 +2545,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2076,10 +2558,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2087,10 +2571,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2098,10 +2584,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2109,10 +2597,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2120,10 +2610,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2131,10 +2623,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-cheese/",
@@ -2142,18 +2636,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/corn-pellet-ketchup/",
-      "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
-      "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2161,10 +2649,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2172,10 +2662,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2183,10 +2675,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2194,10 +2688,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2205,10 +2701,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2216,10 +2714,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2227,10 +2727,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/corn-pellet-ketchup/",
@@ -2238,150 +2740,168 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "click",
-      "device": "desktop",
-      "cacheMode": "cache-disabled",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "click",
-      "device": "desktop",
-      "cacheMode": "cache-enabled-prepared",
-      "status": "PASS",
-      "reason": "VALID n=2/2",
-      "validCount": 2,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "click",
-      "device": "mobile",
-      "cacheMode": "cache-disabled",
-      "status": "PASS",
-      "reason": "VALID n=1/2",
-      "validCount": 1,
-      "invalidCount": 1,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/",
       "mode": "click",
-      "device": "mobile",
-      "cacheMode": "cache-enabled-prepared",
-      "status": "INVALID",
-      "reason": "smoke-window overlap only; awaiting re-run",
-      "validCount": 0,
-      "invalidCount": 2,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "goto",
       "device": "desktop",
       "cacheMode": "cache-disabled",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/products/",
-      "mode": "goto",
-      "device": "desktop",
-      "cacheMode": "cache-enabled-prepared",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "goto",
-      "device": "mobile",
-      "cacheMode": "cache-disabled",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "goto",
-      "device": "mobile",
-      "cacheMode": "cache-enabled-prepared",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "reload",
-      "device": "desktop",
-      "cacheMode": "cache-disabled",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "reload",
-      "device": "desktop",
-      "cacheMode": "cache-enabled-prepared",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "reload",
-      "device": "mobile",
-      "cacheMode": "cache-disabled",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/products/",
-      "mode": "reload",
-      "device": "mobile",
-      "cacheMode": "cache-enabled-prepared",
-      "status": "NOT RUN",
-      "reason": "no samples yet",
-      "validCount": 0,
-      "invalidCount": 0,
-      "failedCount": 0
-    },
-    {
-      "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
       "mode": "click",
-      "device": "—",
-      "cacheMode": "—",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "click",
+      "device": "mobile",
+      "cacheMode": "cache-enabled-prepared",
+      "status": "UNKNOWN",
+      "reason": "UNKNOWN n=2",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 2,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "goto",
+      "device": "desktop",
+      "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "not a nav-click candidate"
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "goto",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "goto",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "goto",
+      "device": "mobile",
+      "cacheMode": "cache-enabled-prepared",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "reload",
+      "device": "desktop",
+      "cacheMode": "cache-disabled",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "reload",
+      "device": "desktop",
+      "cacheMode": "cache-enabled-prepared",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "reload",
+      "device": "mobile",
+      "cacheMode": "cache-disabled",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
+    },
+    {
+      "url": "http://localhost:8898/products/",
+      "mode": "reload",
+      "device": "mobile",
+      "cacheMode": "cache-enabled-prepared",
+      "status": "NOT RUN",
+      "reason": "no samples",
+      "validCount": 0,
+      "invalidCount": 0,
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2389,10 +2909,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2400,10 +2922,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2411,10 +2935,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2422,10 +2948,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2433,10 +2961,12 @@
       "device": "desktop",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2444,10 +2974,12 @@
       "device": "desktop",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2455,10 +2987,12 @@
       "device": "mobile",
       "cacheMode": "cache-disabled",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     },
     {
       "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
@@ -2466,10 +3000,12 @@
       "device": "mobile",
       "cacheMode": "cache-enabled-prepared",
       "status": "NOT RUN",
-      "reason": "no samples yet",
+      "reason": "no samples",
       "validCount": 0,
       "invalidCount": 0,
-      "failedCount": 0
+      "failedCount": 0,
+      "unknownCount": 0,
+      "plannedRepeats": 2
     }
   ]
 }

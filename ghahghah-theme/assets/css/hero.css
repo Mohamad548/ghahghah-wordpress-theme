@@ -318,9 +318,11 @@
 
 @media (prefers-reduced-motion: reduce) {
 	.ghahghah-hero__slide,
+	.ghahghah-hero.is-ready .ghahghah-hero__slide,
 	.ghahghah-hero__nav,
 	.ghahghah-hero__dot {
 		transition: none;
+		will-change: auto;
 	}
 
 	.ghahghah-hero__progress {

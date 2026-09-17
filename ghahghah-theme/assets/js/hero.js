@@ -1,5 +1,6 @@
 /**
  * Homepage banner slider — nav, progress, swipe / drag.
+ * Lazy-hydrates deferred slides; last requested destination wins.
  */
 (() => {
 	'use strict';
@@ -24,8 +25,14 @@
 	const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 	const multi = slides.length > 1;
 	const swipeThreshold = 40;
+	const decodeTimeoutMs = 4000;
 
+	/** Currently visible / committed slide. */
 	let index = 0;
+	/** Latest destination the user (or timer) asked for. */
+	let requestedIndex = 0;
+	/** Monotonic token — only the latest request may commit UI. */
+	let requestToken = 0;
 	let timerId = 0;
 	let startedAt = 0;
 	let remaining = intervalMs;
@@ -37,7 +44,11 @@
 	let dragging = false;
 	let lockAxis = '';
 	let suppressClick = false;
-	let activating = false;
+
+	const normalize = (nextIndex) => {
+		const total = slides.length;
+		return ((nextIndex % total) + total) % total;
+	};
 
 	const announce = (i) => {
 		if (!live) {
@@ -94,29 +105,75 @@
 		slide.dataset.ghahghahHeroHydrated = '1';
 	};
 
+	/**
+	 * @param {Element|null|undefined} slide
+	 * @returns {Promise<boolean>} true only on successful load+decode
+	 */
 	const waitDecoded = (slide) => {
 		const img = slide?.querySelector('img');
 		if (!img) {
-			return Promise.resolve();
+			return Promise.resolve(false);
 		}
 		if (img.complete && img.naturalWidth > 0) {
-			return Promise.resolve();
+			if (!img.decode) {
+				return Promise.resolve(true);
+			}
+			return img
+				.decode()
+				.then(() => true)
+				.catch(() => false);
 		}
+
 		return new Promise((resolve) => {
 			let settled = false;
-			const done = () => {
+			let timeoutId = 0;
+
+			const cleanup = () => {
+				img.removeEventListener('load', onLoad);
+				img.removeEventListener('error', onError);
+				if (timeoutId) {
+					window.clearTimeout(timeoutId);
+					timeoutId = 0;
+				}
+			};
+
+			const finish = (ok) => {
 				if (settled) {
 					return;
 				}
 				settled = true;
-				resolve();
+				cleanup();
+				resolve(ok);
 			};
-			img.addEventListener('load', done, { once: true });
-			img.addEventListener('error', done, { once: true });
-			if (img.decode) {
-				img.decode().then(done).catch(done);
+
+			const onLoad = () => {
+				if (img.naturalWidth <= 0) {
+					finish(false);
+					return;
+				}
+				if (!img.decode) {
+					finish(true);
+					return;
+				}
+				img.decode().then(() => finish(true)).catch(() => finish(false));
+			};
+
+			const onError = () => {
+				finish(false);
+			};
+
+			img.addEventListener('load', onLoad);
+			img.addEventListener('error', onError);
+			timeoutId = window.setTimeout(() => finish(false), decodeTimeoutMs);
+
+			// Race: may have completed between the early check and listener attach.
+			if (img.complete) {
+				if (img.naturalWidth > 0) {
+					onLoad();
+				} else {
+					finish(false);
+				}
 			}
-			window.setTimeout(done, 4000);
 		});
 	};
 
@@ -135,32 +192,51 @@
 		announce(index);
 	};
 
-	const activate = (nextIndex, { restart = true } = {}) => {
-		const total = slides.length;
-		const target = ((nextIndex % total) + total) % total;
-		if (activating && target === index) {
-			return;
+	const restartTimerIfNeeded = (restart) => {
+		if (restart && multi && !reduceMotion && !paused) {
+			remaining = intervalMs;
+			setProgress(0);
+			startTimer();
+		} else if (!multi || reduceMotion) {
+			setProgress(0);
 		}
+	};
+
+	/**
+	 * Request a destination. UI commits only after that destination is ready,
+	 * and only if this request is still the latest (token).
+	 */
+	const activate = (nextIndex, { restart = true } = {}) => {
+		const target = normalize(nextIndex);
+		requestedIndex = target;
+		const token = ++requestToken;
+
+		// Pause autoplay while a destination is pending — avoid stacked timers.
+		clearTimer();
 
 		const run = async () => {
-			activating = true;
-			index = target;
-			hydrateSlide(slides[index]);
-			// Prefetch the following slide so the next advance is not blank.
+			hydrateSlide(slides[target]);
 			if (multi) {
-				hydrateSlide(slides[(index + 1) % total]);
+				hydrateSlide(slides[(target + 1) % slides.length]);
 			}
-			await waitDecoded(slides[index]);
-			applyActiveClasses();
 
-			if (restart && multi && !reduceMotion) {
-				remaining = intervalMs;
-				setProgress(0);
-				startTimer();
-			} else if (!multi || reduceMotion) {
-				setProgress(0);
+			const ok = await waitDecoded(slides[target]);
+
+			if (token !== requestToken) {
+				return;
 			}
-			activating = false;
+
+			if (!ok) {
+				// Keep the healthy displayed slide; unlock by resetting request to it.
+				requestedIndex = index;
+				restartTimerIfNeeded(restart);
+				return;
+			}
+
+			index = target;
+			requestedIndex = target;
+			applyActiveClasses();
+			restartTimerIfNeeded(restart);
 		};
 
 		run();
@@ -175,7 +251,7 @@
 		setProgress(1 - left / intervalMs);
 
 		if (left <= 16) {
-			activate(index + 1);
+			activate(requestedIndex + 1);
 			return;
 		}
 
@@ -205,6 +281,12 @@
 		if (!paused || !multi || reduceMotion || pointerActive) {
 			return;
 		}
+		// Do not resume autoplay while a destination is still loading.
+		if (requestedIndex !== index) {
+			paused = false;
+			root.classList.remove('is-paused');
+			return;
+		}
 		paused = false;
 		root.classList.remove('is-paused');
 		startTimer();
@@ -214,7 +296,7 @@
 		btn.addEventListener('click', (event) => {
 			event.preventDefault();
 			event.stopPropagation();
-			activate(index - 1);
+			activate(requestedIndex - 1);
 		});
 	});
 
@@ -222,7 +304,7 @@
 		btn.addEventListener('click', (event) => {
 			event.preventDefault();
 			event.stopPropagation();
-			activate(index + 1);
+			activate(requestedIndex + 1);
 		});
 	});
 
@@ -244,10 +326,10 @@
 		}
 		if (event.key === 'ArrowLeft') {
 			event.preventDefault();
-			activate(index + 1);
+			activate(requestedIndex + 1);
 		} else if (event.key === 'ArrowRight') {
 			event.preventDefault();
-			activate(index - 1);
+			activate(requestedIndex - 1);
 		}
 	});
 
@@ -285,9 +367,9 @@
 		if (moved && multi) {
 			suppressClick = true;
 			if (deltaX < 0) {
-				activate(index + 1);
+				activate(requestedIndex + 1);
 			} else {
-				activate(index - 1);
+				activate(requestedIndex - 1);
 			}
 		} else {
 			resume();
@@ -409,7 +491,7 @@
 					await img.decode();
 				}
 			} catch (err) {
-				/* ignore decode errors */
+				/* ignore decode errors on boot — slide 0 already painted from HTML */
 			}
 		}
 		// Two frames + short settle so LCP can commit while transitions are still off.

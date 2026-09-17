@@ -19,6 +19,7 @@ $ghahghah_includes = array(
 	'/inc/setup.php',
 	'/inc/assets.php',
 	'/inc/template-tags.php',
+	'/inc/jalali-date.php',
 	'/inc/header-settings.php',
 	'/inc/footer-settings.php',
 	'/inc/hero-settings.php',
@@ -45,6 +46,7 @@ $ghahghah_includes = array(
 	'/inc/nav-sync.php',
 	'/inc/bottom-nav.php',
 	'/inc/class-primary-nav-walker.php',
+	'/inc/url-migration/redirects.php',
 );
 
 if ( is_admin() ) {

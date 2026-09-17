@@ -597,12 +597,53 @@ function ghahghah_sync_primary_products_archive_link(): bool {
 }
 
 /**
+ * If footer and mobile_bottom share one menu, reattach footer to «دسترسی سریع».
+ *
+ * Prevents bottom-nav items from rendering in the footer quick column.
+ *
+ * @return bool True when locations changed.
+ */
+function ghahghah_ensure_footer_menu_location_distinct(): bool {
+	$locations = get_nav_menu_locations();
+	$footer_id = isset( $locations['footer'] ) ? absint( $locations['footer'] ) : 0;
+	$bottom_id = isset( $locations['mobile_bottom'] ) ? absint( $locations['mobile_bottom'] ) : 0;
+	if ( $footer_id <= 0 || $bottom_id <= 0 || $footer_id !== $bottom_id ) {
+		return false;
+	}
+
+	$menus = wp_get_nav_menus();
+	if ( ! is_array( $menus ) ) {
+		return false;
+	}
+
+	$candidate = 0;
+	foreach ( $menus as $menu ) {
+		if ( ! $menu instanceof WP_Term ) {
+			continue;
+		}
+		$name = (string) $menu->name;
+		if ( false !== strpos( $name, 'دسترسی' ) || false !== stripos( $name, 'quick' ) ) {
+			$candidate = (int) $menu->term_id;
+			break;
+		}
+	}
+	if ( $candidate <= 0 || $candidate === $bottom_id ) {
+		return false;
+	}
+
+	$locations['footer'] = $candidate;
+	set_theme_mod( 'nav_menu_locations', $locations );
+	return true;
+}
+
+/**
  * Wire «محصولات» menu items (header, bottom nav, footer) to the CPT archive.
  */
 function ghahghah_products_archive_after_nav_sync(): void {
 	if ( wp_installing() ) {
 		return;
 	}
+	ghahghah_ensure_footer_menu_location_distinct();
 	ghahghah_sync_products_archive_menu_link( 'primary' );
 	ghahghah_sync_products_archive_menu_link( 'mobile_bottom' );
 	ghahghah_sync_products_archive_menu_link( 'footer' );

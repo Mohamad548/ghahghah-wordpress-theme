@@ -47,11 +47,11 @@ $specs = array(
 		'alt_slugs'=> array( 'درخواست-خرید-عمده' ),
 	),
 	'agency'    => array(
-		'slug'     => 'representation',
+		'slug'     => 'agency',
 		'title'    => 'درخواست نمایندگی',
 		'template' => 'page-templates/agency-request.php',
 		'mod'      => 'ghahghah_agency_page_id',
-		'alt_slugs'=> array( 'درخواست-نمایندگی' ),
+		'alt_slugs'=> array( 'representation', 'درخواست-نمایندگی' ),
 	),
 );
 
@@ -97,6 +97,18 @@ foreach ( $specs as $key => $spec ) {
 			continue;
 		}
 		$created = true;
+	} else {
+		$current_slug = (string) get_post_field( 'post_name', (int) $page_id );
+		$desired_slug = sanitize_title( (string) $spec['slug'] );
+		if ( '' !== $desired_slug && $current_slug !== $desired_slug ) {
+			// Align existing page (found via Persian alt slug) to English slug without changing title/content.
+			wp_update_post(
+				array(
+					'ID'        => (int) $page_id,
+					'post_name' => $desired_slug,
+				)
+			);
+		}
 	}
 
 	$current_template = (string) get_page_template_slug( (int) $page_id );

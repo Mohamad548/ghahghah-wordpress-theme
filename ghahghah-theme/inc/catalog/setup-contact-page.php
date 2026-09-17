@@ -68,6 +68,13 @@ if ( $page_id <= 0 ) {
 		return;
 	}
 	$created = true;
+} elseif ( 'contact' !== (string) get_post_field( 'post_name', (int) $page_id ) ) {
+	wp_update_post(
+		array(
+			'ID'        => (int) $page_id,
+			'post_name' => 'contact',
+		)
+	);
 }
 
 $template = (string) get_page_template_slug( (int) $page_id );

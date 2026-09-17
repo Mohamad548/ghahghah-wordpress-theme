@@ -19,12 +19,12 @@ fs.mkdirSync(outDir, { recursive: true });
 const PAGES = [
   { id: 'home', path: '/' },
   { id: 'products', path: '/products/' },
-  { id: 'product', path: '/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/' },
-  { id: 'articles', path: encodeURI('/مقالات/') },
+  { id: 'product', path: '/products/corn-pellet-cheese/' },
+  { id: 'articles', path: '/articles/' },
   { id: 'article', path: '/snack-shapes-guide/' },
-  { id: 'wholesale', path: encodeURI('/درخواست-خرید-عمده/') },
-  { id: 'agency', path: encodeURI('/درخواست-نمایندگی/') },
-  { id: 'contact', path: encodeURI('/تماس-با-ما/') },
+  { id: 'wholesale', path: '/wholesale/' },
+  { id: 'agency', path: '/agency/' },
+  { id: 'contact', path: '/contact/' },
   { id: 'search', path: '/?s=اسنک' },
   { id: 'missing-404', path: '/this-page-does-not-exist-seo-404/' },
 ];

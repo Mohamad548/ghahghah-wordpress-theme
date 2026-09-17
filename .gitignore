@@ -75,4 +75,5 @@ yarn-lock.json
 
 # Local SEO foundation backups (do not commit)
 docs/audits/artifacts/seo-foundation/backups/
+docs/audits/artifacts/url-migration/backups/
 *.sql

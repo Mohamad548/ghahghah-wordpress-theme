@@ -134,6 +134,17 @@ foreach ( $manifest['products'] as $product ) {
 	if ( $existing_id > 0 ) {
 		$status = (string) get_post_status( $existing_id );
 		$action = 'skipped-existing';
+		$desired_slug = sanitize_title( $key );
+		$current_slug = (string) get_post_field( 'post_name', $existing_id );
+		if ( '' !== $desired_slug && $current_slug !== $desired_slug ) {
+			wp_update_post(
+				array(
+					'ID'        => $existing_id,
+					'post_name' => $desired_slug,
+				)
+			);
+			$action = 'updated-slug';
+		}
 		if ( $featured_id > 0 ) {
 			$current_thumb = (int) get_post_thumbnail_id( $existing_id );
 			if ( $current_thumb !== $featured_id ) {
@@ -169,6 +180,7 @@ foreach ( $manifest['products'] as $product ) {
 			'post_type'    => 'ghahghah_product',
 			'post_status'  => 'publish',
 			'post_title'   => $title,
+			'post_name'    => $key,
 			'post_content' => '',
 			'post_excerpt' => '',
 		),

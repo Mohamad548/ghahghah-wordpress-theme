@@ -88,5 +88,6 @@
     "bannerRequestCount": 9,
     "bannerTransferBytes": 2601,
     "slidesWithSrc": 9
-  }
+  },
+  "bannerTransferBytesNote": "INVALID for absolute byte totals: measured from Network.responseReceived.encodedDataLength (often incomplete / not final transfer). Historical median numbers below are preserved for audit trail only. Correct method: Network.loadingFinished.encodedDataLength matched by requestId (see after-transfer-check/)."
 }

@@ -1,6 +1,9 @@
 /**
  * Compatible Home LCP ×3: 390×844, isMobile=false, default DPR.
  * Usage: node scripts/home-lcp-po-compatible.cjs [phase] [outDir]
+ *
+ * bannerTransferBytes uses Network.loadingFinished.encodedDataLength
+ * matched by requestId (responseReceived.encodedDataLength is not final).
  */
 const fs = require('fs');
 const path = require('path');
@@ -36,6 +39,10 @@ function median(nums) {
   return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2;
 }
 
+function isBannerUrl(url) {
+  return /flavour-banner|banner-v2|\/\d{2}-[a-z0-9-]*banner/i.test(url);
+}
+
 (async () => {
   const puppeteer = ensurePuppeteer();
   const runs = [];
@@ -50,12 +57,24 @@ function median(nums) {
     const client = await page.createCDPSession();
     await client.send('Network.enable');
     await client.send('Network.setCacheDisabled', { cacheDisabled: true });
+    const bannerByRequestId = new Map();
     const banners = [];
     client.on('Network.responseReceived', (ev) => {
       const u = ev.response.url;
-      if (/flavour-banner|banner-v2|\/\d{2}-[a-z0-9-]*banner/i.test(u)) {
-        banners.push({ url: u, status: ev.response.status, encoded: ev.response.encodedDataLength });
+      if (isBannerUrl(u)) {
+        bannerByRequestId.set(ev.requestId, {
+          url: u,
+          status: ev.response.status,
+          encodedDataLength: 0,
+        });
       }
+    });
+    client.on('Network.loadingFinished', (ev) => {
+      const row = bannerByRequestId.get(ev.requestId);
+      if (!row) return;
+      row.encodedDataLength = ev.encodedDataLength || 0;
+      banners.push(row);
+      bannerByRequestId.delete(ev.requestId);
     });
     await page.evaluateOnNewDocument(() => {
       window.__gh = { lcp: [], cls: 0 };
@@ -100,7 +119,7 @@ function median(nums) {
       };
     });
     const uniqueBanners = [...new Set(banners.map((b) => b.url))];
-    const transfer = banners.reduce((s, b) => s + (b.encoded || 0), 0);
+    const transfer = banners.reduce((sum, b) => sum + (b.encodedDataLength || 0), 0);
     const row = {
       run: i,
       navMs,
@@ -109,6 +128,7 @@ function median(nums) {
       cls: data.cls,
       bannerRequestCount: uniqueBanners.length,
       bannerTransferBytes: transfer,
+      bannerTransferSource: 'Network.loadingFinished.encodedDataLength',
       slidesWithSrc: data.slidesWithSrc,
       active: data.active,
       ready: data.ready,
@@ -129,9 +149,12 @@ function median(nums) {
       throttling: 'none-lab',
       observer: 'LCP+CLS before navigation',
       noScroll: true,
+      label: 'narrow-desktop-no-throttling',
     },
     lighthouseMobileNote:
-      'LH --form-factor=mobile reports NO_LCP under Chrome mobile emulation; treated as invalid for LCP comparison',
+      'LH --form-factor=mobile reports NO_LCP under Chrome mobile emulation; treated as unresolved tooling interaction, not a definitive root cause',
+    bannerTransferNote:
+      'bannerTransferBytes from loadingFinished.encodedDataLength by requestId; prior responseReceived-based values are invalid',
     runs,
     validRunCount: valid.length,
     invalidRunCount: runs.length - valid.length,

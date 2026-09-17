@@ -1,0 +1,12 @@
+blog_public=0
+plugins=ghahghah-core,wordpress-seo,
+200 /
+200 /products/
+200 /products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/
+200 /%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/
+200 /snack-shapes-guide/
+200 /?s=test
+404 /this-page-does-not-exist-seo-404/
+200 /sitemap_index.xml
+h1_home=<h1 class="screen-reader-text">قهقهه
+yoast=2

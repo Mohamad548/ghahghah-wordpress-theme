@@ -1,0 +1,1458 @@
+{
+  "phase": "after",
+  "capturedAt": "2026-09-17T07:22:18.585Z",
+  "base": "http://localhost:8898",
+  "pages": [
+    {
+      "id": "home",
+      "url": "http://localhost:8898/",
+      "status": 200,
+      "title": "قهقهه - برند غذایی قهقهه",
+      "h1": [
+        "قهقهه"
+      ],
+      "h1Count": 1,
+      "metaDescription": "برند غذایی قهقهه؛ معرفی محصولات اسنک ذرت و محتوای سایت قهقهه.",
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "قهقهه - برند غذایی قهقهه"
+        ],
+        "description": [
+          "برند غذایی قهقهه؛ معرفی محصولات اسنک ذرت و محتوای سایت قهقهه."
+        ],
+        "url": [
+          "http://localhost:8898/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+        ],
+        "type": [
+          "website"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:8898/",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه - برند غذایی قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "about": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "datePublished": "2026-09-14T10:46:10+00:00",
+              "description": "برند غذایی قهقهه؛ معرفی محصولات اسنک ذرت و محتوای سایت قهقهه.",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/#breadcrumb"
+              },
+              "inLanguage": "fa-IR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:8898/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "products",
+      "url": "http://localhost:8898/products/",
+      "status": 200,
+      "title": "محصولات - قهقهه",
+      "h1": [
+        "همه محصولات قهقهه"
+      ],
+      "h1Count": 1,
+      "metaDescription": "فهرست محصولات اسنک ذرت قهقهه با طعم‌های گوناگون.",
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "محصولات - قهقهه"
+        ],
+        "description": [
+          "فهرست محصولات اسنک ذرت قهقهه با طعم‌های گوناگون."
+        ],
+        "url": [
+          "http://localhost:8898/products/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+        ],
+        "type": [
+          "website"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "http://localhost:8898/products/",
+              "url": "http://localhost:8898/products/",
+              "name": "محصولات - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:8898/products/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:8898/products/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:8898/wp-content/uploads/2026/09/pepper.webp",
+              "description": "فهرست محصولات اسنک ذرت قهقهه با طعم‌های گوناگون.",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/products/#breadcrumb"
+              },
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "fa-IR",
+              "@id": "http://localhost:8898/products/#primaryimage",
+              "url": "http://localhost:8898/wp-content/uploads/2026/09/pepper.webp",
+              "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/pepper.webp",
+              "width": 932,
+              "height": 1280,
+              "caption": "pepper"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/products/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "محصولات"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+      "status": 200,
+      "title": "چیپس ذرت قهقهه طعم پنیری - قهقهه",
+      "h1": [
+        "اسنک ذرت طعم پنیری"
+      ],
+      "h1Count": 1,
+      "metaDescription": null,
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "چیپس ذرت قهقهه طعم پنیری - قهقهه"
+        ],
+        "description": [
+          "اسنک ذرت قهقهه با طعم پنیری، عطر و مزه پنیر را روی بافت ترد ذرت می‌نشاند؛ انتخابی دلچسب برای هر زمان از روز."
+        ],
+        "url": [
+          "http://localhost:8898/products/چیپس-ذرت-قهقهه-طعم-پنیر/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/cheese.webp"
+        ],
+        "type": [
+          "article"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+              "url": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/",
+              "name": "چیپس ذرت قهقهه طعم پنیری - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:8898/wp-content/uploads/2026/09/cheese.webp",
+              "datePublished": "2026-09-14T18:23:42+00:00",
+              "dateModified": "2026-09-15T14:34:40+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/#breadcrumb"
+              },
+              "inLanguage": "fa-IR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "fa-IR",
+              "@id": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/#primaryimage",
+              "url": "http://localhost:8898/wp-content/uploads/2026/09/cheese.webp",
+              "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/cheese.webp",
+              "width": 938,
+              "height": 1280,
+              "caption": "cheese"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/products/%da%86%db%8c%d9%be%d8%b3-%d8%b0%d8%b1%d8%aa-%d9%82%d9%87%d9%82%d9%87%d9%87-%d8%b7%d8%b9%d9%85-%d9%be%d9%86%db%8c%d8%b1/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "محصولات",
+                  "item": "http://localhost:8898/products/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "چیپس ذرت قهقهه طعم پنیری"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "articles",
+      "url": "http://localhost:8898/%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA/",
+      "status": 200,
+      "title": "مقالات - قهقهه",
+      "h1": [
+        "مقالات قهقهه"
+      ],
+      "h1Count": 1,
+      "metaDescription": "مقالات و راهنماهای قهقهه درباره اسنک و سرو.",
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "مقالات - قهقهه"
+        ],
+        "description": [
+          "مقالات و راهنماهای قهقهه درباره اسنک و سرو."
+        ],
+        "url": [
+          "http://localhost:8898/مقالات/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+        ],
+        "type": [
+          "article"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "CollectionPage",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": [
+                "WebPage",
+                "CollectionPage"
+              ],
+              "@id": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+              "url": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/",
+              "name": "مقالات - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "datePublished": "2026-09-14T10:46:33+00:00",
+              "description": "مقالات و راهنماهای قهقهه درباره اسنک و سرو.",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/#breadcrumb"
+              },
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "مقالات"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "article",
+      "url": "http://localhost:8898/snack-shapes-guide/",
+      "status": 200,
+      "title": "آشنایی با شکل‌های مختلف اسنک - قهقهه",
+      "h1": [
+        "آشنایی با شکل‌های مختلف اسنک"
+      ],
+      "h1Count": 1,
+      "metaDescription": null,
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "آشنایی با شکل‌های مختلف اسنک - قهقهه"
+        ],
+        "description": [
+          "نگاهی به شکل و ظاهر اسنک‌ها؛ از مدل‌های قلمی تا مثلثی."
+        ],
+        "url": [
+          "http://localhost:8898/snack-shapes-guide/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg"
+        ],
+        "type": [
+          "article"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "Article",
+        "WebPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization",
+        "Person"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "@id": "http://localhost:8898/snack-shapes-guide/#article",
+              "isPartOf": {
+                "@id": "http://localhost:8898/snack-shapes-guide/"
+              },
+              "author": {
+                "name": "admin",
+                "@id": "http://localhost:8898/#/schema/person/843fbd10fd0c221d3b0829c37a3c002e"
+              },
+              "headline": "آشنایی با شکل‌های مختلف اسنک",
+              "datePublished": "2026-09-14T21:14:30+00:00",
+              "dateModified": "2026-09-14T21:16:47+00:00",
+              "mainEntityOfPage": {
+                "@id": "http://localhost:8898/snack-shapes-guide/"
+              },
+              "wordCount": 0,
+              "commentCount": 0,
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "image": {
+                "@id": "http://localhost:8898/snack-shapes-guide/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg",
+              "articleSection": [
+                "مطالب قهقهه"
+              ],
+              "inLanguage": "fa-IR",
+              "potentialAction": [
+                {
+                  "@type": "CommentAction",
+                  "name": "Comment",
+                  "target": [
+                    "http://localhost:8898/snack-shapes-guide/#respond"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:8898/snack-shapes-guide/",
+              "url": "http://localhost:8898/snack-shapes-guide/",
+              "name": "آشنایی با شکل‌های مختلف اسنک - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "http://localhost:8898/snack-shapes-guide/#primaryimage"
+              },
+              "image": {
+                "@id": "http://localhost:8898/snack-shapes-guide/#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg",
+              "datePublished": "2026-09-14T21:14:30+00:00",
+              "dateModified": "2026-09-14T21:16:47+00:00",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/snack-shapes-guide/#breadcrumb"
+              },
+              "inLanguage": "fa-IR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:8898/snack-shapes-guide/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "fa-IR",
+              "@id": "http://localhost:8898/snack-shapes-guide/#primaryimage",
+              "url": "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg",
+              "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg",
+              "width": 1080,
+              "height": 1072,
+              "caption": "اسنک‌های قلمی شیاردار زرد روی زمینه سفید"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/snack-shapes-guide/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "مقالات",
+                  "item": "http://localhost:8898/%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "آشنایی با شکل‌های مختلف اسنک"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "http://localhost:8898/#/schema/person/843fbd10fd0c221d3b0829c37a3c002e",
+              "name": "admin",
+              "image": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "https://secure.gravatar.com/avatar/be3221a6fac131657111728b4d912a877ec158b123d5db3afef3bd8a59784ece?s=96&d=mm&r=g",
+                "url": "https://secure.gravatar.com/avatar/be3221a6fac131657111728b4d912a877ec158b123d5db3afef3bd8a59784ece?s=96&d=mm&r=g",
+                "contentUrl": "https://secure.gravatar.com/avatar/be3221a6fac131657111728b4d912a877ec158b123d5db3afef3bd8a59784ece?s=96&d=mm&r=g",
+                "caption": "admin"
+              },
+              "sameAs": [
+                "http://localhost:8898"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wholesale",
+      "url": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B9%D9%85%D8%AF%D9%87/",
+      "status": 200,
+      "title": "درخواست خرید عمده - قهقهه",
+      "h1": [
+        "درخواست خرید عمده"
+      ],
+      "h1Count": 1,
+      "metaDescription": "فرم درخواست خرید عمده محصولات قهقهه.",
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "درخواست خرید عمده - قهقهه"
+        ],
+        "description": [
+          "فرم درخواست خرید عمده محصولات قهقهه."
+        ],
+        "url": [
+          "http://localhost:8898/درخواست-خرید-عمده/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+        ],
+        "type": [
+          "article"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+              "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/",
+              "name": "درخواست خرید عمده - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "datePublished": "2026-09-14T10:46:03+00:00",
+              "description": "فرم درخواست خرید عمده محصولات قهقهه.",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/#breadcrumb"
+              },
+              "inLanguage": "fa-IR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ae%d8%b1%db%8c%d8%af-%d8%b9%d9%85%d8%af%d9%87/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "درخواست خرید عمده"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agency",
+      "url": "http://localhost:8898/%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D9%86%D8%AF%DA%AF%DB%8C/",
+      "status": 200,
+      "title": "درخواست نمایندگی - قهقهه",
+      "h1": [
+        "درخواست نمایندگی قهقهه"
+      ],
+      "h1Count": 1,
+      "metaDescription": "فرم درخواست نمایندگی قهقهه.",
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "درخواست نمایندگی - قهقهه"
+        ],
+        "description": [
+          "فرم درخواست نمایندگی قهقهه."
+        ],
+        "url": [
+          "http://localhost:8898/درخواست-نمایندگی/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+        ],
+        "type": [
+          "article"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+              "url": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/",
+              "name": "درخواست نمایندگی - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "datePublished": "2026-09-14T15:07:58+00:00",
+              "description": "فرم درخواست نمایندگی قهقهه.",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/#breadcrumb"
+              },
+              "inLanguage": "fa-IR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "درخواست نمایندگی"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "url": "http://localhost:8898/%D8%AA%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7-%D9%85%D8%A7/",
+      "status": 200,
+      "title": "تماس با ما - قهقهه",
+      "h1": [
+        "راه‌های ارتباط با قهقهه"
+      ],
+      "h1Count": 1,
+      "metaDescription": "راه‌های ارتباط با قهقهه برای پرسش و پیگیری درخواست‌ها.",
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "تماس با ما - قهقهه"
+        ],
+        "description": [
+          "راه‌های ارتباط با قهقهه برای پرسش و پیگیری درخواست‌ها."
+        ],
+        "url": [
+          "http://localhost:8898/تماس-با-ما/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+        ],
+        "type": [
+          "article"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+              "url": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/",
+              "name": "تماس با ما - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "datePublished": "2026-09-14T10:46:41+00:00",
+              "description": "راه‌های ارتباط با قهقهه برای پرسش و پیگیری درخواست‌ها.",
+              "breadcrumb": {
+                "@id": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/#breadcrumb"
+              },
+              "inLanguage": "fa-IR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "http://localhost:8898/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "تماس با ما"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "url": "http://localhost:8898/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+      "status": 200,
+      "title": "You searched for اسنک - قهقهه",
+      "h1": [
+        "جستجو برای «اسنک»"
+      ],
+      "h1Count": 1,
+      "metaDescription": null,
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "You searched for اسنک - قهقهه"
+        ],
+        "description": [],
+        "url": [
+          "http://localhost:8898/search/اسنک/"
+        ],
+        "image": [
+          "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp"
+        ],
+        "type": [
+          "article"
+        ],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [
+          "summary_large_image"
+        ],
+        "title": [
+          "You searched for اسنک - قهقهه"
+        ]
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "CollectionPage",
+        "SearchResultsPage",
+        "ImageObject",
+        "BreadcrumbList",
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": [
+                "CollectionPage",
+                "SearchResultsPage"
+              ],
+              "@id": "http://localhost:8898/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+              "url": "http://localhost:8898/?s=%D8%A7%D8%B3%D9%86%DA%A9",
+              "name": "You searched for اسنک - قهقهه",
+              "isPartOf": {
+                "@id": "http://localhost:8898/#website"
+              },
+              "primaryImageOfPage": {
+                "@id": "#primaryimage"
+              },
+              "image": {
+                "@id": "#primaryimage"
+              },
+              "thumbnailUrl": "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg",
+              "breadcrumb": {
+                "@id": "#breadcrumb"
+              },
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "fa-IR",
+              "@id": "#primaryimage",
+              "url": "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg",
+              "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/snack-sticks-closeup.jpg",
+              "width": 1080,
+              "height": 1072,
+              "caption": "اسنک‌های قلمی شیاردار زرد روی زمینه سفید"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "http://localhost:8898/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "You searched for اسنک"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missing-404",
+      "url": "http://localhost:8898/this-page-does-not-exist-seo-404/",
+      "status": 404,
+      "title": "Page not found - قهقهه",
+      "h1": [
+        "اوه! این صفحه پیدا نشد"
+      ],
+      "h1Count": 1,
+      "metaDescription": null,
+      "robots": "noindex, nofollow",
+      "canonical": null,
+      "og": {
+        "title": [
+          "Page not found - قهقهه"
+        ],
+        "description": [],
+        "url": [],
+        "image": [],
+        "type": [],
+        "site_name": [
+          "قهقهه"
+        ]
+      },
+      "twitter": {
+        "card": [],
+        "title": []
+      },
+      "jsonLdBlockCount": 1,
+      "jsonLdTypes": [
+        "WebSite",
+        "Organization"
+      ],
+      "jsonLdErrors": [],
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "http://localhost:8898/#website",
+              "url": "http://localhost:8898/",
+              "name": "قهقهه",
+              "description": "برند غذایی قهقهه",
+              "publisher": {
+                "@id": "http://localhost:8898/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "http://localhost:8898/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "fa-IR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "http://localhost:8898/#organization",
+              "name": "قهقهه",
+              "url": "http://localhost:8898/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "fa-IR",
+                "@id": "http://localhost:8898/#/schema/logo/image/",
+                "url": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "contentUrl": "http://localhost:8898/wp-content/uploads/2026/09/ghahghah-logo-desktop.webp",
+                "width": 480,
+                "height": 295,
+                "caption": "قهقهه"
+              },
+              "image": {
+                "@id": "http://localhost:8898/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "productsPage2": {
+    "status": 404,
+    "canonical": null
+  }
+}

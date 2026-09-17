@@ -1,0 +1,5 @@
+Working directory: /e/word pares/ghahghah-fix-perf-images
+wp-env Node cwd: e:\word pares\ghahghah-fix-perf-images
+Using wp-env binary: /e/word pares/ghahghah-fix-perf-images/node_modules/@wordpress/env/bin/wp-env
+Resolved @wordpress/env version: unknown
+[FAIL] Expected @wordpress/env 11.x, got unknown

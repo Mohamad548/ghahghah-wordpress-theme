@@ -1,0 +1,11 @@
+{"id":"home","status":200,"h1":["قهقهه"],"title":"قهقهه - برند غذایی قهقهه"}
+{"id":"products","status":200,"h1":["همه محصولات قهقهه"],"title":"محصولات - قهقهه"}
+{"id":"product","status":200,"h1":["همه محصولات قهقهه"],"title":"محصولات - قهقهه"}
+{"id":"articles","status":200,"h1":["مقالات قهقهه"],"title":"مقالات - قهقهه"}
+{"id":"article","status":200,"h1":["آشنایی با شکل‌های مختلف اسنک"],"title":"آشنایی با شکل‌های مختلف اسنک - قهقهه"}
+{"id":"wholesale","status":200,"h1":["درخواست خرید عمده"],"title":"درخواست خرید عمده - قهقهه"}
+{"id":"agency","status":200,"h1":["درخواست نمایندگی قهقهه"],"title":"درخواست نمایندگی - قهقهه"}
+{"id":"contact","status":200,"h1":["راه‌های ارتباط با قهقهه"],"title":"تماس با ما - قهقهه"}
+{"id":"search","status":200,"h1":["جستجو برای «اسنک»"],"title":"You searched for اسنک - قهقهه"}
+{"id":"missing-404","status":404,"h1":["اوه! این صفحه پیدا نشد"],"title":"Page not found - قهقهه"}
+WROTE E:\word pares\ghahghah-fix-perf-images\docs\audits\artifacts\seo-foundation\after\summary.json

@@ -1,0 +1,44 @@
+{
+  "mobile": {
+    "h1": {
+      "text": "قهقهه",
+      "className": "screen-reader-text",
+      "visible": false
+    },
+    "distinct": 9,
+    "allDecoded": true,
+    "srcs": [
+      "0:390",
+      "1:390",
+      "2:390",
+      "3:390",
+      "4:390",
+      "5:390",
+      "6:390",
+      "7:390",
+      "8:390"
+    ],
+    "shot": "docs/audits/artifacts/seo-foundation/visual/home-mobile.png"
+  },
+  "desktop": {
+    "h1": {
+      "text": "قهقهه",
+      "className": "screen-reader-text",
+      "visible": false
+    },
+    "distinct": 9,
+    "allDecoded": true,
+    "srcs": [
+      "0:1933",
+      "1:1933",
+      "2:1933",
+      "3:1933",
+      "4:1933",
+      "5:1933",
+      "6:1933",
+      "7:1933",
+      "8:1933"
+    ],
+    "shot": "docs/audits/artifacts/seo-foundation/visual/home-desktop.png"
+  }
+}

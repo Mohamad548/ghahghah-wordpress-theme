@@ -42,6 +42,10 @@ function ghahghah_handle_bootstrap_site(): void {
 
 	check_admin_referer( 'ghahghah_bootstrap_site', 'ghahghah_bootstrap_nonce' );
 
+	if ( function_exists( 'ghahghah_ensure_bundled_core_plugin' ) ) {
+		ghahghah_ensure_bundled_core_plugin();
+	}
+
 	require_once GHAHGHAH_THEME_DIR . '/inc/catalog/import-products.php';
 	require_once GHAHGHAH_THEME_DIR . '/inc/catalog/setup-menus.php';
 	require_once GHAHGHAH_THEME_DIR . '/inc/catalog/bootstrap-site.php';

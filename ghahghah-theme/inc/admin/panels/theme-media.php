@@ -48,7 +48,13 @@ $core_ok = post_type_exists( 'ghahghah_product' );
 		<?php if ( ! $core_ok ) : ?>
 			<div class="ghahghah-status-banner is-warn">
 				<p class="ghahghah-status-banner__text">
-					<?php esc_html_e( 'افزونه Ghahghah Core فعال نیست — محصولات ساخته نمی‌شوند. ابتدا Core را فعال کنید.', 'ghahghah' ); ?>
+					<?php esc_html_e( 'افزونه Core هنوز فعال نشده. با فعال‌سازی قالب باید خودکار نصب شود؛ اگر نشد یک‌بار این دکمه را بزنید یا قالب را دوباره فعال کنید.', 'ghahghah' ); ?>
+				</p>
+			</div>
+		<?php else : ?>
+			<div class="ghahghah-status-banner is-ok">
+				<p class="ghahghah-status-banner__text">
+					<?php esc_html_e( 'Ghahghah Core فعال است — مثل ایران‌کالا، افزونه همراه قالب است و جدا نصب نمی‌خواهد.', 'ghahghah' ); ?>
 				</p>
 			</div>
 		<?php endif; ?>
@@ -70,10 +76,11 @@ $core_ok = post_type_exists( 'ghahghah_product' );
 		<?php endif; ?>
 
 		<ul class="ghahghah-field__help" style="margin:0 0 1rem;padding-inline-start:1.25rem;line-height:1.7;">
+			<li><?php esc_html_e( 'فعال‌سازی خودکار افزونه Core همراه قالب', 'ghahghah' ); ?></li>
 			<li><?php esc_html_e( 'محصولات پیش‌فرض کاتالوگ', 'ghahghah' ); ?></li>
-			<li><?php esc_html_e( 'برگه‌های تماس، کارخانه، عمده، نمایندگی، FAQ، حریم خصوصی', 'ghahghah' ); ?></li>
-			<li><?php esc_html_e( 'منوی اصلی / فوتر / موبایل', 'ghahghah' ); ?></li>
-			<li><?php esc_html_e( 'تصاویر قالب + پاکسازی تکراری‌ها', 'ghahghah' ); ?></li>
+			<li><?php esc_html_e( 'برگه‌های تماس، کارخانه، عمده، نمایندگی، FAQ، حریم خصوصی، معرفی طراح', 'ghahghah' ); ?></li>
+			<li><?php esc_html_e( 'منوی اصلی مثل لوکال: صفحه اصلی، محصولات (+ طعم‌ها)، کارخانه، مقالات، تماس با ما', 'ghahghah' ); ?></li>
+			<li><?php esc_html_e( 'مطالب اولیه + تصاویر قالب', 'ghahghah' ); ?></li>
 		</ul>
 
 		<button type="submit" class="ghahghah-btn ghahghah-btn--save">

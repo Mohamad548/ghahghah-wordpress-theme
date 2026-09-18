@@ -48,7 +48,7 @@ function ghahghah_is_designer_page(): bool {
 }
 
 /**
- * Public URL for the designer page (empty if missing).
+ * Public URL for the designer page (creates the page once if missing).
  */
 function ghahghah_get_designer_page_url(): string {
 	$page_id = absint( get_theme_mod( 'ghahghah_designer_page_id', 0 ) );
@@ -56,11 +56,22 @@ function ghahghah_get_designer_page_url(): string {
 		$by_path = get_page_by_path( 'mohammad-mahmoudi' );
 		if ( $by_path instanceof WP_Post && is_post_publicly_viewable( $by_path ) ) {
 			$page_id = (int) $by_path->ID;
+			set_theme_mod( 'ghahghah_designer_page_id', $page_id );
 		}
 	}
-	if ( $page_id <= 0 ) {
+
+	if ( $page_id <= 0 && function_exists( 'ghahghah_setup_designer_page' ) ) {
+		$result  = ghahghah_setup_designer_page();
+		$page_id = absint( $result['page_id'] ?? 0 );
+		if ( ! empty( $result['url'] ) && is_string( $result['url'] ) ) {
+			return $result['url'];
+		}
+	}
+
+	if ( $page_id <= 0 || ! is_post_publicly_viewable( $page_id ) ) {
 		return '';
 	}
+
 	$url = get_permalink( $page_id );
 	return is_string( $url ) ? $url : '';
 }

@@ -50,6 +50,7 @@ $ghahghah_includes = array(
 	'/inc/seo.php',
 	'/inc/performance.php',
 	'/inc/url-migration/redirects.php',
+	'/inc/bundled-core.php',
 );
 
 if ( is_admin() ) {

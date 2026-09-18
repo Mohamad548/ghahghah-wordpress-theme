@@ -258,6 +258,15 @@ function ghahghah_enqueue_assets(): void {
 		);
 	}
 
+	if ( function_exists( 'ghahghah_is_designer_page' ) && ghahghah_is_designer_page() ) {
+		wp_enqueue_style(
+			'ghahghah-designer-page',
+			GHAHGHAH_THEME_URI . '/assets/css/pages/designer.css',
+			array( 'ghahghah-core' ),
+			$theme_version
+		);
+	}
+
 	if ( is_404() ) {
 		wp_enqueue_style(
 			'ghahghah-404',

@@ -62,13 +62,14 @@ function ghahghah_get_articles_category_id(): int {
  */
 function ghahghah_get_articles_posts(): array {
 	$args = array(
-		'post_type'           => 'post',
-		'post_status'         => 'publish',
-		'posts_per_page'      => GHAHGHAH_ARTICLES_CAROUSEL_MAX,
-		'ignore_sticky_posts' => true,
-		'no_found_rows'       => true,
-		'orderby'             => 'date',
-		'order'               => 'DESC',
+		'post_type'              => 'post',
+		'post_status'            => 'publish',
+		'posts_per_page'         => GHAHGHAH_ARTICLES_CAROUSEL_MAX,
+		'ignore_sticky_posts'    => true,
+		'no_found_rows'          => true,
+		'orderby'                => 'date',
+		'order'                  => 'DESC',
+		'post_name__not_in'      => array( 'hello-world' ),
 	);
 
 	$cat_id = ghahghah_get_articles_category_id();
@@ -77,7 +78,30 @@ function ghahghah_get_articles_posts(): array {
 	}
 
 	$posts = get_posts( $args );
-	return is_array( $posts ) ? $posts : array();
+	if ( ! is_array( $posts ) ) {
+		return array();
+	}
+
+	// Drop WordPress default sample post even if the slug was changed.
+	return array_values(
+		array_filter(
+			$posts,
+			static function ( $post ): bool {
+				if ( ! $post instanceof WP_Post ) {
+					return false;
+				}
+				$title   = (string) $post->post_title;
+				$content = (string) $post->post_content;
+				if ( 'سلام دنیا!' === $title || 'Hello world!' === $title ) {
+					return false;
+				}
+				if ( false !== strpos( $content, 'به وردپرس خوش آمدید' ) || false !== stripos( $content, 'Welcome to WordPress' ) ) {
+					return false;
+				}
+				return true;
+			}
+		)
+	);
 }
 
 /**

@@ -204,7 +204,22 @@ $ghahghah_back    = (bool) ghahghah_get_footer_mod( 'ghahghah_footer_back_to_top
 
 		<div class="ghahghah-footer__meta">
 			<?php if ( '' !== $ghahghah_legal ) : ?>
-				<p class="ghahghah-footer__legal"><?php echo esc_html( $ghahghah_legal ); ?></p>
+				<?php
+				$ghahghah_designer_url = function_exists( 'ghahghah_get_designer_page_url' )
+					? ghahghah_get_designer_page_url()
+					: '';
+				?>
+				<p class="ghahghah-footer__legal">
+					<span class="ghahghah-footer__legal-copy"><?php echo esc_html( $ghahghah_legal ); ?></span>
+					<span class="ghahghah-footer__legal-sep" aria-hidden="true"> · </span>
+					<?php if ( '' !== $ghahghah_designer_url ) : ?>
+						<a class="ghahghah-footer__designer" href="<?php echo esc_url( $ghahghah_designer_url ); ?>">
+							<?php esc_html_e( 'توسعه و طراحی محمد محمودی', 'ghahghah' ); ?>
+						</a>
+					<?php else : ?>
+						<span class="ghahghah-footer__designer"><?php esc_html_e( 'توسعه و طراحی محمد محمودی', 'ghahghah' ); ?></span>
+					<?php endif; ?>
+				</p>
 			<?php endif; ?>
 
 			<div class="ghahghah-footer__meta-actions">

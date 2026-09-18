@@ -36,18 +36,7 @@ $ghahghah_front_has_sections = ghahghah_should_render_hero()
 	<?php get_template_part( 'template-parts/collab/site', 'collab' ); ?>
 	<?php get_template_part( 'template-parts/articles/site', 'articles' ); ?>
 
-	<?php if ( have_posts() ) : ?>
-		<section class="front-content" aria-label="<?php esc_attr_e( 'محتوای صفحه اصلی', 'ghahghah' ); ?>">
-			<div class="site-main__inner">
-				<?php
-				while ( have_posts() ) :
-					the_post();
-					the_content();
-				endwhile;
-				?>
-			</div>
-		</section>
-	<?php elseif ( ! $ghahghah_front_has_sections ) : ?>
+	<?php if ( ! $ghahghah_front_has_sections ) : ?>
 		<section class="front-intro" aria-labelledby="front-intro-title">
 			<div class="site-main__inner">
 				<h1 id="front-intro-title" class="front-intro__title"><?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?></h1>

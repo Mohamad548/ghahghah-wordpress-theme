@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GHAHGHAH_THEME_VERSION', '0.9.91' );
+define( 'GHAHGHAH_THEME_VERSION', '0.9.92' );
 define( 'GHAHGHAH_THEME_DIR', get_template_directory() );
 define( 'GHAHGHAH_THEME_URI', get_template_directory_uri() );
 
@@ -36,6 +36,7 @@ $ghahghah_includes = array(
 	'/inc/faq-settings.php',
 	'/inc/contact-page-settings.php',
 	'/inc/privacy-settings.php',
+	'/inc/designer-settings.php',
 	'/inc/error-404.php',
 	'/inc/products-archive-settings.php',
 	'/inc/blog-archive-settings.php',

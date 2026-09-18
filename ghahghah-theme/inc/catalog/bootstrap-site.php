@@ -27,6 +27,7 @@ function ghahghah_bootstrap_site( array $opts = array() ): array {
 			'media'    => true,
 			'pages'    => true,
 			'products' => true,
+			'articles' => true,
 			'menus'    => true,
 			'cleanup'  => true,
 		),
@@ -98,6 +99,7 @@ function ghahghah_bootstrap_site( array $opts = array() ): array {
 			'setup-request-pages.php',
 			'setup-faq-page.php',
 			'setup-privacy-page.php',
+			'setup-designer-page.php',
 		);
 		$ok_pages = true;
 		foreach ( $page_scripts as $script ) {
@@ -111,9 +113,31 @@ function ghahghah_bootstrap_site( array $opts = array() ): array {
 		$steps['pages'] = array(
 			'ok'      => $ok_pages,
 			'message' => $ok_pages
-				? __( 'برگه‌های تماس، کارخانه، عمده، نمایندگی، FAQ و حریم خصوصی آماده شدند.', 'ghahghah' )
+				? __( 'برگه‌های تماس، کارخانه، عمده، نمایندگی، FAQ، حریم خصوصی و معرفی طراح آماده شدند.', 'ghahghah' )
 				: __( 'برخی اسکریپت‌های برگه یافت نشد.', 'ghahghah' ),
 		);
+	}
+
+	if ( ! empty( $opts['articles'] ) ) {
+		if ( ! function_exists( 'ghahghah_import_starter_articles' ) ) {
+			require_once GHAHGHAH_THEME_DIR . '/inc/catalog/import-starter-articles.php';
+		}
+		$result             = ghahghah_import_starter_articles( array( 'publish' => true ) );
+		$steps['articles'] = array(
+			'ok'      => ! empty( $result['ok'] ),
+			'message' => (string) ( $result['message'] ?? '' ),
+		);
+
+		if ( function_exists( 'ghahghah_trash_default_sample_posts' ) ) {
+			$trashed_samples = ghahghah_trash_default_sample_posts();
+			if ( $trashed_samples > 0 ) {
+				$steps['articles']['message'] .= ' ' . sprintf(
+					/* translators: %d: trashed sample posts */
+					__( 'نمونه پیش‌فرض وردپرس: %d مورد به زباله‌دان منتقل شد.', 'ghahghah' ),
+					$trashed_samples
+				);
+			}
+		}
 	}
 
 	if ( ! empty( $opts['products'] ) ) {

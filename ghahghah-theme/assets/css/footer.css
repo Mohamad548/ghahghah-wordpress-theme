@@ -430,6 +430,19 @@
 	line-height: 1.65;
 }
 
+.ghahghah-footer__designer {
+	color: inherit;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+a.ghahghah-footer__designer:hover,
+a.ghahghah-footer__designer:focus-visible {
+	color: var(--gf-brand, #d71920);
+	text-decoration: underline;
+	text-underline-offset: 0.18em;
+}
+
 .ghahghah-footer__meta-actions {
 	display: flex;
 	flex-wrap: wrap;

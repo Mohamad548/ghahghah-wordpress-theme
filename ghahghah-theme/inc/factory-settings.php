@@ -67,41 +67,56 @@ function ghahghah_format_factory_title( string $title ): string {
 function ghahghah_get_factory_image(): ?array {
 	$id = absint( ghahghah_get_factory_mod( 'ghahghah_factory_image' ) );
 	if ( $id <= 0 || ! wp_attachment_is_image( $id ) ) {
-		return null;
+		$id = 0;
 	}
-
-	$url = wp_get_attachment_image_url( $id, 'large' );
-	if ( ! is_string( $url ) || '' === $url ) {
-		$url = wp_get_attachment_image_url( $id, 'full' );
-	}
-	if ( ! is_string( $url ) || '' === $url ) {
-		return null;
-	}
-
-	$meta   = wp_get_attachment_metadata( $id );
-	$width  = isset( $meta['width'] ) ? absint( $meta['width'] ) : 960;
-	$height = isset( $meta['height'] ) ? absint( $meta['height'] ) : 720;
 
 	$alt = trim( (string) ghahghah_get_factory_mod( 'ghahghah_factory_image_alt' ) );
-	if ( '' === $alt ) {
-		$alt = (string) get_post_meta( $id, '_wp_attachment_image_alt', true );
-	}
 	if ( '' === $alt ) {
 		$alt = (string) ghahghah_factory_setting_defaults()['ghahghah_factory_image_alt'];
 	}
 
-	$srcset = wp_get_attachment_image_srcset( $id, 'large' );
-	if ( ! is_string( $srcset ) ) {
-		$srcset = '';
+	if ( $id > 0 ) {
+		$url = wp_get_attachment_image_url( $id, 'large' );
+		if ( ! is_string( $url ) || '' === $url ) {
+			$url = wp_get_attachment_image_url( $id, 'full' );
+		}
+		if ( is_string( $url ) && '' !== $url ) {
+			$meta   = wp_get_attachment_metadata( $id );
+			$width  = isset( $meta['width'] ) ? absint( $meta['width'] ) : 960;
+			$height = isset( $meta['height'] ) ? absint( $meta['height'] ) : 720;
+			$meta_alt = (string) get_post_meta( $id, '_wp_attachment_image_alt', true );
+			if ( '' === trim( (string) ghahghah_get_factory_mod( 'ghahghah_factory_image_alt' ) ) && '' !== $meta_alt ) {
+				$alt = $meta_alt;
+			}
+			$srcset = wp_get_attachment_image_srcset( $id, 'large' );
+			if ( ! is_string( $srcset ) ) {
+				$srcset = '';
+			}
+
+			return array(
+				'id'     => $id,
+				'url'    => $url,
+				'width'  => max( 1, $width ),
+				'height' => max( 1, $height ),
+				'alt'    => $alt,
+				'srcset' => $srcset,
+				'sizes'  => '(max-width: 47.99rem) 100vw, 36vw',
+			);
+		}
+	}
+
+	$bundled = GHAHGHAH_THEME_DIR . '/assets/images/factory/factory-hero.webp';
+	if ( ! is_readable( $bundled ) ) {
+		return null;
 	}
 
 	return array(
-		'id'     => $id,
-		'url'    => $url,
-		'width'  => max( 1, $width ),
-		'height' => max( 1, $height ),
+		'id'     => 0,
+		'url'    => GHAHGHAH_THEME_URI . '/assets/images/factory/factory-hero.webp',
+		'width'  => 960,
+		'height' => 720,
 		'alt'    => $alt,
-		'srcset' => $srcset,
+		'srcset' => '',
 		'sizes'  => '(max-width: 47.99rem) 100vw, 36vw',
 	);
 }

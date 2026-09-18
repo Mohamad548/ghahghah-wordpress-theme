@@ -128,8 +128,12 @@ function ghahghah_get_theme_media_manifest(): array {
 	$add( 'brand/ghahghah-logo-mobile.webp', __( 'لوگوی موبایل قهقهه', 'ghahghah' ), '', 'ghahghah_header_logo_mobile' );
 	$add( 'brand/ghahghah-site-icon-512.png', __( 'آیکون سایت قهقهه', 'ghahghah' ), '', 'ghahghah_header_favicon' );
 
-	$add( 'factory/factory-hero.webp', __( 'تصویر صفحه کارخانه قهقهه', 'ghahghah' ), '', 'ghahghah_factory_page_hero_image_id' );
+	$add( 'factory/factory-hero.webp', __( 'تصویر کارخانه قهقهه', 'ghahghah' ), '', 'ghahghah_factory_page_hero_image_id' );
 	$add( 'factory/product-pack-fallback.webp', __( 'بسته محصول پیش‌فرض کارخانه', 'ghahghah' ) );
+
+	$add( 'collab/wholesale-banner.webp', __( 'بنر خرید عمده', 'ghahghah' ), '', 'ghahghah_collab_wholesale_image' );
+	$add( 'collab/agency-banner.webp', __( 'بنر نمایندگی', 'ghahghah' ), '', 'ghahghah_collab_agency_image' );
+	$add( 'steps/production-steps.webp', __( 'بنر مراحل تولید', 'ghahghah' ), '', 'ghahghah_steps_image' );
 
 	$add( 'wholesale/ghahghah_pizza_packshot_optimized.webp', __( 'تصویر صفحه خرید عمده', 'ghahghah' ), '', 'ghahghah_wholesale_image_id' );
 	$add( 'agency/ghahghah_parsley_onion_pack_optimized.webp', __( 'تصویر صفحه نمایندگی', 'ghahghah' ) );
@@ -263,6 +267,18 @@ function ghahghah_apply_theme_media_defaults( array $imported, bool $force_hero 
 		set_theme_mod( $mod, (int) $imported[ $path ] );
 	}
 
+	// Homepage factory strip uses the same hero asset as the factory page.
+	$factory_hero = 0;
+	if ( isset( $imported['factory/factory-hero.webp'] ) ) {
+		$factory_hero = (int) $imported['factory/factory-hero.webp'];
+	}
+	if ( $factory_hero <= 0 ) {
+		$factory_hero = absint( get_theme_mod( 'ghahghah_factory_page_hero_image_id', 0 ) );
+	}
+	if ( $factory_hero > 0 && absint( get_theme_mod( 'ghahghah_factory_image', 0 ) ) <= 0 ) {
+		set_theme_mod( 'ghahghah_factory_image', $factory_hero );
+	}
+
 	if ( ! function_exists( 'ghahghah_sanitize_hero_slides' ) || ! function_exists( 'ghahghah_hero_bundled_banners' ) ) {
 		return;
 	}
@@ -360,8 +376,7 @@ function ghahghah_sync_theme_media_library( bool $apply_defaults = true, bool $f
 }
 
 /**
- * Run sync once per theme version (activation or admin update).
- * Forces hero slide refresh so new bundled desktop banners replace old media IDs.
+ * Run sync once per theme version — deferred to avoid fatal timeouts on activate.
  */
 function ghahghah_maybe_sync_theme_media_library(): void {
 	$stored = (string) get_option( 'ghahghah_theme_media_sync_version', '' );
@@ -369,8 +384,118 @@ function ghahghah_maybe_sync_theme_media_library(): void {
 		return;
 	}
 
-	ghahghah_sync_theme_media_library( true, true );
-	update_option( 'ghahghah_theme_media_sync_version', GHAHGHAH_THEME_VERSION, false );
+	update_option( 'ghahghah_theme_media_sync_pending', '1', false );
+
+	if ( ! wp_next_scheduled( 'ghahghah_run_deferred_theme_media_sync' ) ) {
+		wp_schedule_single_event( time() + 3, 'ghahghah_run_deferred_theme_media_sync' );
+	}
 }
+
+/**
+ * Cron / fallback runner for deferred media sync.
+ */
+function ghahghah_run_deferred_theme_media_sync(): void {
+	$stored = (string) get_option( 'ghahghah_theme_media_sync_version', '' );
+	if ( $stored === GHAHGHAH_THEME_VERSION && '1' !== (string) get_option( 'ghahghah_theme_media_sync_pending', '' ) ) {
+		return;
+	}
+
+	@set_time_limit( 300 ); // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
+	if ( function_exists( 'wp_raise_memory_limit' ) ) {
+		wp_raise_memory_limit( 'admin' );
+	}
+
+	try {
+		ghahghah_sync_theme_media_library( true, true );
+		update_option( 'ghahghah_theme_media_sync_version', GHAHGHAH_THEME_VERSION, false );
+		delete_option( 'ghahghah_theme_media_sync_pending' );
+	} catch ( Throwable $e ) { // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedCatch
+		// Leave pending so admin can retry via Theme Media panel.
+	}
+}
+add_action( 'ghahghah_run_deferred_theme_media_sync', 'ghahghah_run_deferred_theme_media_sync' );
+
+/**
+ * If cron did not fire, finish pending sync on admin_init.
+ */
+function ghahghah_maybe_finish_pending_theme_media_sync(): void {
+	if ( '1' !== (string) get_option( 'ghahghah_theme_media_sync_pending', '' ) ) {
+		return;
+	}
+	ghahghah_run_deferred_theme_media_sync();
+}
+
 add_action( 'after_switch_theme', 'ghahghah_maybe_sync_theme_media_library' );
-add_action( 'admin_init', 'ghahghah_maybe_sync_theme_media_library' );
+add_action( 'admin_init', 'ghahghah_maybe_finish_pending_theme_media_sync', 30 );
+
+/**
+ * Trash duplicate Media Library copies of known theme assets (keep meta-tagged originals).
+ *
+ * @return array{trashed: int, kept: int}
+ */
+function ghahghah_cleanup_duplicate_theme_media(): array {
+	$stats = array(
+		'trashed' => 0,
+		'kept'    => 0,
+	);
+
+	if ( ! function_exists( 'ghahghah_get_theme_media_manifest' ) ) {
+		return $stats;
+	}
+
+	$basenames = array();
+	foreach ( ghahghah_get_theme_media_manifest() as $entry ) {
+		$path = (string) ( $entry['path'] ?? '' );
+		if ( '' === $path ) {
+			continue;
+		}
+		$basenames[ basename( $path ) ] = $path;
+	}
+
+	if ( array() === $basenames ) {
+		return $stats;
+	}
+
+	$query = new WP_Query(
+		array(
+			'post_type'      => 'attachment',
+			'post_status'    => 'inherit',
+			'posts_per_page' => 500,
+			'fields'         => 'ids',
+			'no_found_rows'  => true,
+		)
+	);
+
+	foreach ( $query->posts as $attachment_id ) {
+		$attachment_id = (int) $attachment_id;
+		$file          = get_attached_file( $attachment_id );
+		if ( ! is_string( $file ) || '' === $file ) {
+			continue;
+		}
+		$base = basename( $file );
+		if ( ! isset( $basenames[ $base ] ) ) {
+			continue;
+		}
+
+		$token = $basenames[ $base ];
+		$meta  = (string) get_post_meta( $attachment_id, '_ghahghah_theme_asset', true );
+		$cat   = (string) get_post_meta( $attachment_id, '_ghahghah_catalog_asset', true );
+		$keep  = ( $meta === $token ) || ( '' !== $cat && str_ends_with( $token, basename( $cat ) ) );
+
+		if ( $keep ) {
+			++$stats['kept'];
+			continue;
+		}
+
+		// Only trash if a canonical tagged copy exists.
+		$canonical = ghahghah_find_theme_media_attachment( $token );
+		if ( $canonical <= 0 || $canonical === $attachment_id ) {
+			continue;
+		}
+
+		wp_trash_post( $attachment_id );
+		++$stats['trashed'];
+	}
+
+	return $stats;
+}

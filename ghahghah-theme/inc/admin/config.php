@@ -142,7 +142,7 @@ function ghahghah_get_config_tabs(): array {
 		),
 		'theme-media'     => array(
 			'label'       => __( 'کتابخانه رسانه', 'ghahghah' ),
-			'description' => __( 'همگام‌سازی تصاویر فعال قالب با رسانه وردپرس', 'ghahghah' ),
+			'description' => __( 'راه‌اندازی اولیه سایت + همگام‌سازی تصاویر قالب', 'ghahghah' ),
 			'icon'        => 'featured',
 		),
 		'sms-settings'    => array(
@@ -362,7 +362,7 @@ function ghahghah_get_config_saved_message( string $tab ): string {
 		'mobile-footer'   => __( 'تغییرات فوتر موبایل ذخیره شد.', 'ghahghah' ),
 		'footer'          => __( 'تغییرات فوتر ذخیره شد.', 'ghahghah' ),
 		'archive-banners' => __( 'بنرهای آرشیو مقالات و محصولات ذخیره شد.', 'ghahghah' ),
-		'theme-media'     => __( 'تصاویر قالب با کتابخانه رسانه همگام‌سازی شد.', 'ghahghah' ),
+		'theme-media'     => __( 'راه‌اندازی / همگام‌سازی رسانه انجام شد.', 'ghahghah' ),
 		'seo'             => __( 'تنظیمات سئو ذخیره شد.', 'ghahghah' ),
 		'sms-settings'    => __( 'تنظیمات پیامک ذخیره شد.', 'ghahghah' ),
 	);

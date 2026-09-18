@@ -1,6 +1,6 @@
 <?php
 /**
- * Admin panel: sync bundled theme images to Media Library.
+ * Admin panel: theme media sync + one-click live site bootstrap.
  *
  * @package Ghahghah
  */
@@ -15,12 +15,84 @@ $manifest   = function_exists( 'ghahghah_get_theme_media_manifest' )
 	? ghahghah_get_theme_media_manifest()
 	: array();
 $last_saved = absint( get_theme_mod( 'ghahghah_theme_media_last_saved', 0 ) );
+$boot_last  = absint( get_theme_mod( 'ghahghah_bootstrap_last_run', 0 ) );
 $stats      = get_transient( 'ghahghah_theme_media_sync_stats' );
+$boot       = get_transient( 'ghahghah_bootstrap_result' );
 if ( is_array( $stats ) ) {
 	delete_transient( 'ghahghah_theme_media_sync_stats' );
 }
+if ( is_array( $boot ) ) {
+	delete_transient( 'ghahghah_bootstrap_result' );
+}
+$pending = '1' === (string) get_option( 'ghahghah_theme_media_sync_pending', '' );
+$core_ok = post_type_exists( 'ghahghah_product' );
 ?>
 <form class="ghahghah-panel-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+	<input type="hidden" name="action" value="ghahghah_bootstrap_site" />
+	<input type="hidden" name="ghahghah_return_tab" value="theme-media" />
+	<?php wp_nonce_field( 'ghahghah_bootstrap_site', 'ghahghah_bootstrap_nonce' ); ?>
+
+	<section class="ghahghah-panel-section">
+		<header class="ghahghah-panel-section__head">
+			<span class="ghahghah-panel-section__icon" aria-hidden="true">
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M5 19h14"/></svg>
+			</span>
+			<div>
+				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'راه‌اندازی اولیه سایت', 'ghahghah' ); ?></h3>
+				<p class="ghahghah-panel-section__desc">
+					<?php esc_html_e( 'با یک کلیک: همگام‌سازی رسانه، ساخت برگه‌ها، واردات محصولات، ساخت منوها و اتصال تصویر کارخانه.', 'ghahghah' ); ?>
+				</p>
+			</div>
+		</header>
+
+		<?php if ( ! $core_ok ) : ?>
+			<div class="ghahghah-status-banner is-warn">
+				<p class="ghahghah-status-banner__text">
+					<?php esc_html_e( 'افزونه Ghahghah Core فعال نیست — محصولات ساخته نمی‌شوند. ابتدا Core را فعال کنید.', 'ghahghah' ); ?>
+				</p>
+			</div>
+		<?php endif; ?>
+
+		<?php if ( is_array( $boot ) && ! empty( $boot['steps'] ) && is_array( $boot['steps'] ) ) : ?>
+			<div class="ghahghah-status-banner <?php echo ! empty( $boot['ok'] ) ? 'is-ok' : 'is-warn'; ?>">
+				<p class="ghahghah-status-banner__text">
+					<?php esc_html_e( 'نتیجه راه‌اندازی:', 'ghahghah' ); ?>
+				</p>
+				<ul style="margin:0.5rem 0 0;padding-inline-start:1.25rem;line-height:1.7;">
+					<?php foreach ( $boot['steps'] as $step_name => $step ) : ?>
+						<li>
+							<strong><?php echo esc_html( (string) $step_name ); ?>:</strong>
+							<?php echo esc_html( (string) ( $step['message'] ?? '' ) ); ?>
+						</li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
+		<?php endif; ?>
+
+		<ul class="ghahghah-field__help" style="margin:0 0 1rem;padding-inline-start:1.25rem;line-height:1.7;">
+			<li><?php esc_html_e( 'محصولات پیش‌فرض کاتالوگ', 'ghahghah' ); ?></li>
+			<li><?php esc_html_e( 'برگه‌های تماس، کارخانه، عمده، نمایندگی، FAQ، حریم خصوصی', 'ghahghah' ); ?></li>
+			<li><?php esc_html_e( 'منوی اصلی / فوتر / موبایل', 'ghahghah' ); ?></li>
+			<li><?php esc_html_e( 'تصاویر قالب + پاکسازی تکراری‌ها', 'ghahghah' ); ?></li>
+		</ul>
+
+		<button type="submit" class="ghahghah-btn ghahghah-btn--save">
+			<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M5 19h14"/></svg>
+			<?php esc_html_e( 'اجرای راه‌اندازی اولیه', 'ghahghah' ); ?>
+		</button>
+		<p class="ghahghah-field__help" style="margin-top:0.75rem;">
+			<?php
+			printf(
+				/* translators: %s: last run label */
+				esc_html__( 'آخرین اجرا: %s', 'ghahghah' ),
+				esc_html( ghahghah_format_config_last_saved( $boot_last ) )
+			);
+			?>
+		</p>
+	</section>
+</form>
+
+<form class="ghahghah-panel-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="margin-top:1rem;">
 	<input type="hidden" name="action" value="ghahghah_sync_theme_media" />
 	<input type="hidden" name="ghahghah_return_tab" value="theme-media" />
 	<?php wp_nonce_field( 'ghahghah_sync_theme_media', 'ghahghah_theme_media_nonce' ); ?>
@@ -33,16 +105,21 @@ if ( is_array( $stats ) ) {
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'همگام‌سازی تصاویر قالب', 'ghahghah' ); ?></h3>
 				<p class="ghahghah-panel-section__desc">
-					<?php esc_html_e( 'تمام تصاویر فعال قالب (بنرها، لوگو، محصولات، مقالات و …) در کتابخانه رسانه وردپرس قابل مشاهده می‌شوند.', 'ghahghah' ); ?>
+					<?php esc_html_e( 'فقط تصاویر داخل پوشه قالب را با کتابخانه رسانه هم‌تراز می‌کند (بدون ساخت برگه/محصول).', 'ghahghah' ); ?>
 				</p>
 			</div>
 		</header>
 
+		<?php if ( $pending ) : ?>
+			<div class="ghahghah-status-banner is-warn">
+				<p class="ghahghah-status-banner__text">
+					<?php esc_html_e( 'همگام‌سازی پس از فعال‌سازی قالب در صف است. همین صفحه را یک‌بار رفرش کنید یا دکمه زیر را بزنید.', 'ghahghah' ); ?>
+				</p>
+			</div>
+		<?php endif; ?>
+
 		<?php if ( is_array( $stats ) ) : ?>
 			<div class="ghahghah-status-banner is-ok">
-				<span class="ghahghah-status-banner__icon" aria-hidden="true">
-					<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>
-				</span>
 				<p class="ghahghah-status-banner__text">
 					<?php
 					printf(
@@ -68,17 +145,9 @@ if ( is_array( $stats ) ) {
 			?>
 		</p>
 
-		<ul class="ghahghah-field__help" style="margin:0 0 1rem;padding-inline-start:1.25rem;line-height:1.7;">
-			<li><?php esc_html_e( 'بنرهای اسلایدر صفحه اصلی (دسکتاپ و موبایل)', 'ghahghah' ); ?></li>
-			<li><?php esc_html_e( 'بنرهای آرشیو مقالات و محصولات', 'ghahghah' ); ?></li>
-			<li><?php esc_html_e( 'لوگو، آیکون سایت و تصاویر صفحات', 'ghahghah' ); ?></li>
-			<li><?php esc_html_e( 'تصاویر محصولات، مقالات و تزئینات', 'ghahghah' ); ?></li>
-		</ul>
-
 		<div class="ghahghah-field-grid">
-			<button type="submit" class="ghahghah-btn ghahghah-btn--save">
-				<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M8 3v6h8V3M8 21v-7h8v7"/></svg>
-				<?php esc_html_e( 'همگام‌سازی با کتابخانه رسانه', 'ghahghah' ); ?>
+			<button type="submit" class="ghahghah-btn ghahghah-btn--outline">
+				<?php esc_html_e( 'فقط همگام‌سازی رسانه', 'ghahghah' ); ?>
 			</button>
 			<a class="ghahghah-btn ghahghah-btn--ghost" href="<?php echo esc_url( admin_url( 'upload.php' ) ); ?>">
 				<?php esc_html_e( 'مشاهده کتابخانه رسانه', 'ghahghah' ); ?>

@@ -163,6 +163,22 @@ function ghahghah_sync_primary_flavor_menu_items(): bool {
 	}
 
 	$products = ghahghah_get_featured_products();
+	if ( array() === $products ) {
+		// Fresh installs may not have curated featured IDs yet — use full catalog.
+		$fallback = get_posts(
+			array(
+				'post_type'              => 'ghahghah_product',
+				'post_status'            => 'publish',
+				'posts_per_page'         => 24,
+				'orderby'                => 'menu_order title',
+				'order'                  => 'ASC',
+				'ignore_sticky_posts'    => true,
+				'no_found_rows'          => true,
+				'update_post_term_cache' => false,
+			)
+		);
+		$products = is_array( $fallback ) ? $fallback : array();
+	}
 	$wanted   = array();
 	foreach ( $products as $product ) {
 		if ( $product instanceof WP_Post ) {

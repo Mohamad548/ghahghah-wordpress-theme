@@ -160,6 +160,11 @@ function ghahghah_bootstrap_site( array $opts = array() ): array {
 			'ok'      => ! empty( $result['ok'] ),
 			'message' => (string) ( $result['message'] ?? '' ),
 		);
+
+		// Second pass after products exist: refresh flavor dropdown under «محصولات».
+		if ( function_exists( 'ghahghah_sync_nav_menus' ) ) {
+			ghahghah_sync_nav_menus();
+		}
 	}
 
 	if ( ! empty( $opts['cleanup'] ) && function_exists( 'ghahghah_cleanup_duplicate_theme_media' ) ) {

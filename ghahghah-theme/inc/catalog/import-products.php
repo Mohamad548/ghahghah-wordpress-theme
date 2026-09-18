@@ -224,6 +224,32 @@ function ghahghah_import_product_catalog(): array {
 		);
 	}
 
+	// Seed homepage featured / primary dropdown when unset.
+	$featured = function_exists( 'ghahghah_sanitize_featured_product_ids' )
+		? ghahghah_sanitize_featured_product_ids( get_theme_mod( 'ghahghah_featured_ids', array() ) )
+		: array();
+	if ( array() === $featured ) {
+		$all = get_posts(
+			array(
+				'post_type'              => 'ghahghah_product',
+				'post_status'            => 'publish',
+				'posts_per_page'         => 24,
+				'orderby'                => 'menu_order title',
+				'order'                  => 'ASC',
+				'fields'                 => 'ids',
+				'no_found_rows'          => true,
+				'ignore_sticky_posts'    => true,
+				'update_post_meta_cache' => false,
+				'update_post_term_cache' => false,
+			)
+		);
+		if ( is_array( $all ) && array() !== $all ) {
+			$ids = array_map( 'absint', $all );
+			set_theme_mod( 'ghahghah_featured_ids', $ids );
+			set_theme_mod( 'ghahghah_featured_enabled', true );
+		}
+	}
+
 	return array(
 		'ok'      => true,
 		'message' => sprintf(

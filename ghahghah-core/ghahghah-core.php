@@ -5,7 +5,7 @@
  * Description:       قابلیت‌های کسب‌وکاری برند قهقهه که باید مستقل از قالب باقی بمانند — کاتالوگ محصولات و زیرساخت فرم‌ها.
  * Version:           0.2.2
  * Requires at least: 6.4
- * Requires PHP:      8.2
+ * Requires PHP:      8.1
  * Author:            قهقهه
  * Author URI:        https://github.com/Mohamad548/ghahghah-wordpress-theme
  * Text Domain:       ghahghah-core

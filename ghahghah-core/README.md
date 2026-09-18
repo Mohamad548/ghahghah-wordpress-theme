@@ -4,7 +4,7 @@ Lightweight companion plugin for business features that must survive theme chang
 
 - Text domain: `ghahghah-core`
 - Namespace: `Ghahghah\Core`
-- Requires PHP 8.2+ and WordPress 6.4+
+- Requires PHP 8.1+ and WordPress 6.4+
 
 ## This phase
 

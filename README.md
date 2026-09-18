@@ -15,7 +15,7 @@ This is a **corporate product-catalog** website, not a WooCommerce shop: no pric
 
 ## Requirements
 
-- PHP **8.2+**
+- PHP **8.1+**
 - WordPress **6.4+**
 - Composer (for coding standards / tests; optional for runtime)
 - Node.js / npm and Docker Desktop (optional; for local `wp-env` smoke tests)

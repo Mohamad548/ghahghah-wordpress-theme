@@ -3,7 +3,7 @@
 Custom corporate WordPress theme for brand قهقهه.
 
 - Text domain: `ghahghah`
-- Requires PHP 8.2+ and WordPress 6.4+
+- Requires PHP 8.1+ and WordPress 6.4+
 - RTL-first, no page-builder dependency
 
 ## Responsibilities

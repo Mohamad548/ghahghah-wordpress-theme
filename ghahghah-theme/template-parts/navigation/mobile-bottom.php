@@ -33,7 +33,7 @@ if ( array() === $ghahghah_items ) {
 			<?php
 			$ghahghah_url   = isset( $ghahghah_item->url ) ? (string) $ghahghah_item->url : '';
 			$ghahghah_title = isset( $ghahghah_item->title ) ? (string) $ghahghah_item->title : '';
-			$ghahghah_icon  = ghahghah_get_bottom_nav_item_icon( (int) $ghahghah_item->ID );
+			$ghahghah_icon  = ghahghah_get_bottom_nav_item_icon( (int) $ghahghah_item->ID, $ghahghah_item );
 			$ghahghah_is_current = is_array( $ghahghah_current ) && (int) $ghahghah_current['index'] === (int) $ghahghah_index;
 			$ghahghah_aria = '';
 			$ghahghah_link_class = 'gg-bottom-nav__link';

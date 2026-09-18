@@ -56,16 +56,67 @@ function ghahghah_sanitize_bottom_nav_enabled( $value ): bool {
 }
 
 /**
- * Sanitize icon key; fallback to products.
+ * Sanitize icon key; empty/invalid returns empty string (caller may infer).
  *
  * @param mixed $value Raw value.
  */
 function ghahghah_sanitize_bottom_nav_icon_key( $value ): string {
 	$key = sanitize_key( (string) $value );
 	if ( ! in_array( $key, ghahghah_bottom_nav_allowed_icons(), true ) ) {
-		return 'products';
+		return '';
 	}
 	return $key;
+}
+
+/**
+ * Infer icon key from a menu item title / URL when meta is missing.
+ *
+ * @param WP_Post|object $item Nav menu item.
+ */
+function ghahghah_infer_bottom_nav_icon( $item ): string {
+	$title = '';
+	$url   = '';
+	if ( is_object( $item ) ) {
+		$title = isset( $item->title ) ? (string) $item->title : '';
+		$url   = isset( $item->url ) ? (string) $item->url : '';
+	}
+
+	$title_l = function_exists( 'mb_strtolower' ) ? mb_strtolower( $title ) : strtolower( $title );
+	$url_l   = strtolower( $url );
+	$home    = ghahghah_normalize_bottom_nav_url( home_url( '/' ) );
+	$norm    = ghahghah_normalize_bottom_nav_url( $url );
+
+	if ( $norm === $home || false !== strpos( $title_l, 'خانه' ) || false !== strpos( $title_l, 'home' ) ) {
+		return 'home';
+	}
+
+	if (
+		ghahghah_is_bottom_nav_products_archive_url( $url )
+		|| false !== strpos( $title_l, 'محصول' )
+		|| false !== strpos( $title_l, 'product' )
+		|| false !== strpos( $url_l, '/products' )
+		|| false !== strpos( $url_l, 'ghahghah_product' )
+	) {
+		return 'products';
+	}
+
+	if (
+		false !== strpos( $title_l, 'عمده' )
+		|| false !== strpos( $title_l, 'wholesale' )
+		|| false !== strpos( $url_l, 'wholesale' )
+	) {
+		return 'wholesale';
+	}
+
+	if (
+		false !== strpos( $title_l, 'تماس' )
+		|| false !== strpos( $title_l, 'contact' )
+		|| false !== strpos( $url_l, 'contact' )
+	) {
+		return 'contact';
+	}
+
+	return 'products';
 }
 
 /**
@@ -75,6 +126,9 @@ function ghahghah_sanitize_bottom_nav_icon_key( $value ): string {
  */
 function ghahghah_get_bottom_nav_icon_path( string $key ): string {
 	$key = ghahghah_sanitize_bottom_nav_icon_key( $key );
+	if ( '' === $key ) {
+		$key = 'products';
+	}
 	return GHAHGHAH_THEME_DIR . '/assets/icons/bottom-nav/' . $key . '.svg';
 }
 
@@ -221,13 +275,70 @@ function ghahghah_get_bottom_nav_items(): array {
 }
 
 /**
- * Icon key stored on a menu item.
+ * Icon key for a menu item (stored meta, else inferred from title/URL).
  *
- * @param int $menu_item_id Menu item post ID.
+ * @param int          $menu_item_id Menu item post ID.
+ * @param WP_Post|null $item         Optional nav menu item (for inference).
  */
-function ghahghah_get_bottom_nav_item_icon( int $menu_item_id ): string {
+function ghahghah_get_bottom_nav_item_icon( int $menu_item_id, $item = null ): string {
 	$raw = get_post_meta( $menu_item_id, GHAHGHAH_BOTTOM_NAV_ICON_META, true );
-	return ghahghah_sanitize_bottom_nav_icon_key( $raw );
+	$key = ghahghah_sanitize_bottom_nav_icon_key( $raw );
+	if ( '' !== $key ) {
+		return $key;
+	}
+
+	if ( ! is_object( $item ) ) {
+		$items = wp_get_nav_menu_items( ghahghah_get_bottom_nav_menu_id() );
+		if ( is_array( $items ) ) {
+			foreach ( $items as $candidate ) {
+				if ( $candidate instanceof WP_Post && (int) $candidate->ID === $menu_item_id ) {
+					$item = $candidate;
+					break;
+				}
+			}
+		}
+	}
+
+	if ( is_object( $item ) ) {
+		return ghahghah_infer_bottom_nav_icon( $item );
+	}
+
+	return 'products';
+}
+
+/**
+ * Persist inferred icons on mobile-bottom menu items that lack meta.
+ *
+ * @param int $menu_id Menu term ID.
+ * @return int Number of icons written.
+ */
+function ghahghah_sync_bottom_nav_item_icons( int $menu_id ): int {
+	if ( $menu_id <= 0 ) {
+		return 0;
+	}
+
+	$items = wp_get_nav_menu_items( $menu_id );
+	if ( ! is_array( $items ) || array() === $items ) {
+		return 0;
+	}
+
+	$written = 0;
+	foreach ( $items as $item ) {
+		if ( ! $item instanceof WP_Post || 0 !== (int) $item->menu_item_parent ) {
+			continue;
+		}
+		$existing = ghahghah_sanitize_bottom_nav_icon_key(
+			get_post_meta( $item->ID, GHAHGHAH_BOTTOM_NAV_ICON_META, true )
+		);
+		if ( '' !== $existing ) {
+			continue;
+		}
+		$key = ghahghah_infer_bottom_nav_icon( $item );
+		update_post_meta( $item->ID, GHAHGHAH_BOTTOM_NAV_ICON_META, $key );
+		++$written;
+	}
+
+	return $written;
 }
 
 /**
@@ -236,7 +347,8 @@ function ghahghah_get_bottom_nav_item_icon( int $menu_item_id ): string {
  * @param string $key Icon key.
  */
 function ghahghah_the_bottom_nav_icon_svg( string $key ): void {
-	$path = ghahghah_get_bottom_nav_icon_path( $key );
+	$key  = ghahghah_sanitize_bottom_nav_icon_key( $key );
+	$path = ghahghah_get_bottom_nav_icon_path( '' !== $key ? $key : 'products' );
 	if ( ! is_readable( $path ) ) {
 		$path = ghahghah_get_bottom_nav_icon_path( 'products' );
 	}
@@ -433,7 +545,7 @@ add_action( 'customize_register', 'ghahghah_bottom_nav_customize_register' );
  */
 function ghahghah_bottom_nav_menu_item_icon_fields( $item_id, $item, $depth = 0, $args = null, $id = 0 ): void { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter, Universal.NamingConventions.NoReservedKeywordParameterNames
 	$item_id = (int) $item_id;
-	$current = ghahghah_get_bottom_nav_item_icon( $item_id );
+	$current = ghahghah_get_bottom_nav_item_icon( $item_id, $item instanceof WP_Post ? $item : null );
 	$labels  = ghahghah_bottom_nav_icon_labels();
 	?>
 	<p class="field-ghahghah-bottom-nav-icon description description-wide">
@@ -478,6 +590,9 @@ function ghahghah_bottom_nav_save_menu_item_icon( int $menu_id, int $menu_item_d
 	}
 
 	$key = ghahghah_sanitize_bottom_nav_icon_key( $raw_map[ $menu_item_db_id ] );
+	if ( '' === $key ) {
+		return;
+	}
 	update_post_meta( $menu_item_db_id, GHAHGHAH_BOTTOM_NAV_ICON_META, $key );
 }
 add_action( 'wp_update_nav_menu_item', 'ghahghah_bottom_nav_save_menu_item_icon', 10, 2 );

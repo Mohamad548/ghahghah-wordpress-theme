@@ -33,11 +33,12 @@ function ghahghah_ensure_nav_menu( string $name ): int {
  * Add a custom/page/post link to a menu if not already present.
  *
  * @param int                  $menu_id Menu term ID.
- * @param array<string, mixed> $item    Keys: title, url, type, object, object_id.
+ * @param array<string, mixed> $item    Keys: title, url, type, object, object_id, icon.
+ * @return int Menu item ID (0 on skip/failure).
  */
-function ghahghah_ensure_menu_item( int $menu_id, array $item ): void {
+function ghahghah_ensure_menu_item( int $menu_id, array $item ): int {
 	if ( $menu_id <= 0 ) {
-		return;
+		return 0;
 	}
 
 	$title = sanitize_text_field( (string) ( $item['title'] ?? '' ) );
@@ -45,9 +46,10 @@ function ghahghah_ensure_menu_item( int $menu_id, array $item ): void {
 	$type  = (string) ( $item['type'] ?? 'custom' );
 	$obj   = (string) ( $item['object'] ?? 'custom' );
 	$oid   = absint( $item['object_id'] ?? 0 );
+	$icon  = isset( $item['icon'] ) ? sanitize_key( (string) $item['icon'] ) : '';
 
 	if ( '' === $title ) {
-		return;
+		return 0;
 	}
 
 	$items = wp_get_nav_menu_items( $menu_id );
@@ -56,15 +58,29 @@ function ghahghah_ensure_menu_item( int $menu_id, array $item ): void {
 			if ( ! $existing instanceof WP_Post ) {
 				continue;
 			}
+			$match = false;
 			if ( $oid > 0 && (int) $existing->object_id === $oid ) {
-				return;
+				$match = true;
+			} elseif ( '' !== $url && untrailingslashit( (string) $existing->url ) === untrailingslashit( $url ) ) {
+				$match = true;
+			} elseif ( $title === (string) $existing->title && 'custom' === $type ) {
+				$match = true;
 			}
-			if ( '' !== $url && untrailingslashit( (string) $existing->url ) === untrailingslashit( $url ) ) {
-				return;
+			if ( ! $match ) {
+				continue;
 			}
-			if ( $title === (string) $existing->title && 'custom' === $type ) {
-				return;
+			if ( '' !== $icon && function_exists( 'ghahghah_sanitize_bottom_nav_icon_key' ) ) {
+				$icon = ghahghah_sanitize_bottom_nav_icon_key( $icon );
+				if ( '' !== $icon ) {
+					$current = ghahghah_sanitize_bottom_nav_icon_key(
+						get_post_meta( $existing->ID, '_ghahghah_bottom_nav_icon', true )
+					);
+					if ( '' === $current ) {
+						update_post_meta( $existing->ID, '_ghahghah_bottom_nav_icon', $icon );
+					}
+				}
 			}
+			return (int) $existing->ID;
 		}
 	}
 
@@ -81,7 +97,19 @@ function ghahghah_ensure_menu_item( int $menu_id, array $item ): void {
 		$args['menu-item-url'] = $url;
 	}
 
-	wp_update_nav_menu_item( $menu_id, 0, $args );
+	$item_id = wp_update_nav_menu_item( $menu_id, 0, $args );
+	if ( is_wp_error( $item_id ) || $item_id <= 0 ) {
+		return 0;
+	}
+
+	if ( '' !== $icon && function_exists( 'ghahghah_sanitize_bottom_nav_icon_key' ) ) {
+		$icon = ghahghah_sanitize_bottom_nav_icon_key( $icon );
+		if ( '' !== $icon ) {
+			update_post_meta( (int) $item_id, '_ghahghah_bottom_nav_icon', $icon );
+		}
+	}
+
+	return (int) $item_id;
 }
 
 /**
@@ -131,7 +159,7 @@ function ghahghah_bootstrap_default_menus(): array {
 		}
 	}
 
-	$add_page = static function ( int $menu_id, int $page_id, string $fallback_title ) : void {
+	$add_page = static function ( int $menu_id, int $page_id, string $fallback_title, string $icon = '' ) : void {
 		if ( $page_id <= 0 ) {
 			return;
 		}
@@ -139,16 +167,17 @@ function ghahghah_bootstrap_default_menus(): array {
 		if ( ! is_string( $title ) || '' === $title ) {
 			$title = $fallback_title;
 		}
-		ghahghah_ensure_menu_item(
-			$menu_id,
-			array(
-				'title'     => $title,
-				'url'       => (string) get_permalink( $page_id ),
-				'type'      => 'post_type',
-				'object'    => 'page',
-				'object_id' => $page_id,
-			)
+		$payload = array(
+			'title'     => $title,
+			'url'       => (string) get_permalink( $page_id ),
+			'type'      => 'post_type',
+			'object'    => 'page',
+			'object_id' => $page_id,
 		);
+		if ( '' !== $icon ) {
+			$payload['icon'] = $icon;
+		}
+		ghahghah_ensure_menu_item( $menu_id, $payload );
 	};
 
 	if ( $primary_id > 0 ) {
@@ -223,6 +252,7 @@ function ghahghah_bootstrap_default_menus(): array {
 				'title' => __( 'خانه', 'ghahghah' ),
 				'url'   => $home_url,
 				'type'  => 'custom',
+				'icon'  => 'home',
 			)
 		);
 		if ( '' !== $products ) {
@@ -232,11 +262,16 @@ function ghahghah_bootstrap_default_menus(): array {
 					'title' => __( 'محصولات', 'ghahghah' ),
 					'url'   => $products,
 					'type'  => 'custom',
+					'icon'  => 'products',
 				)
 			);
 		}
-		$add_page( $mobile_id, $page_ids['wholesale'], __( 'خرید عمده', 'ghahghah' ) );
-		$add_page( $mobile_id, $page_ids['contact'], __( 'تماس', 'ghahghah' ) );
+		$add_page( $mobile_id, $page_ids['wholesale'], __( 'خرید عمده', 'ghahghah' ), 'wholesale' );
+		$add_page( $mobile_id, $page_ids['contact'], __( 'تماس', 'ghahghah' ), 'contact' );
+
+		if ( function_exists( 'ghahghah_sync_bottom_nav_item_icons' ) ) {
+			ghahghah_sync_bottom_nav_item_icons( $mobile_id );
+		}
 	}
 
 	$locations = get_theme_mod( 'nav_menu_locations', array() );

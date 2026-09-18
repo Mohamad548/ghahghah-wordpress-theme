@@ -59,6 +59,12 @@
 	--ghahghah-neutral-bg: #f7f7f5;
 	--ghahghah-content-width: 45rem;
 	--ghahghah-wide-width: 75rem;
+	/* Homepage / header shared content rail */
+	--ghahghah-home-max: 80rem;
+	--ghahghah-home-pad-m: 1.25rem;
+	--ghahghah-home-pad-d: 4rem;
+	/* Single vertical gap between homepage sections (applied once per shell) */
+	--ghahghah-section-y: 1.5rem;
 	--ghahghah-space-xs: 0.5rem;
 	--ghahghah-space-sm: 1rem;
 	--ghahghah-space-md: 1.5rem;
@@ -67,6 +73,18 @@
 	--ghahghah-font-primary: "Yekan Bakh FaNum", Tahoma, "Segoe UI", Arial, sans-serif;
 	--ghahghah-radius: 4px;
 	--ghahghah-border: 1px solid color-mix(in srgb, var(--ghahghah-dark-text) 12%, transparent);
+}
+
+@media (min-width: 48rem) {
+	:root {
+		--ghahghah-section-y: 1.75rem;
+	}
+}
+
+@media (min-width: 64rem) {
+	:root {
+		--ghahghah-section-y: 2rem;
+	}
 }
 
 *,

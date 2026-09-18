@@ -31,6 +31,7 @@ function ghahghah_save_hero_settings(): void {
 	set_theme_mod( 'ghahghah_hero_enabled', ! empty( $_POST['ghahghah_hero_enabled'] ) );
 	set_theme_mod( 'ghahghah_hero_interval', ghahghah_sanitize_hero_interval( wp_unslash( $_POST['ghahghah_hero_interval'] ?? GHAHGHAH_HERO_INTERVAL_DEFAULT ) ) );
 	set_theme_mod( 'ghahghah_hero_slides', ghahghah_sanitize_hero_slides_from_post( $desktop_ids, $mobile_ids, $links, $alts ) );
+	set_theme_mod( 'ghahghah_hero_last_saved', time() );
 
 	ghahghah_redirect_config_tab( 'hero' );
 }

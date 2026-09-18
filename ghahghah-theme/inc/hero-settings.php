@@ -106,7 +106,126 @@ function ghahghah_sanitize_hero_interval( $value ): int {
 }
 
 /**
+ * Public / production site origin for portable defaults (not local wp-env).
+ */
+function ghahghah_get_public_site_url(): string {
+	$url = (string) apply_filters( 'ghahghah_public_site_url', 'https://ghahghaheh.com' );
+	$url = esc_url_raw( untrailingslashit( $url ) );
+	return '' !== $url ? $url : 'https://ghahghaheh.com';
+}
+
+/**
+ * Known local / staging origins to strip when normalizing slide links.
+ *
+ * @return array<int, string>
+ */
+function ghahghah_get_local_site_origins(): array {
+	$origins = array(
+		untrailingslashit( home_url( '/' ) ),
+		untrailingslashit( site_url( '/' ) ),
+		'http://localhost:8888',
+		'https://localhost:8888',
+		'http://localhost:8898',
+		'https://localhost:8898',
+		'http://127.0.0.1:8888',
+		'http://127.0.0.1:8898',
+		'https://ghahghah.com',
+		'http://ghahghah.com',
+		'https://www.ghahghah.com',
+		'https://ghahghah.ir',
+		'http://ghahghah.ir',
+	);
+
+	$origins = array_values(
+		array_unique(
+			array_filter(
+				array_map(
+					static function ( string $origin ): string {
+						return untrailingslashit( $origin );
+					},
+					$origins
+				)
+			)
+		)
+	);
+
+	return $origins;
+}
+
+/**
+ * Convert an absolute same-site / local URL into a site-relative path.
+ *
+ * @param string $url Absolute or relative URL.
+ */
+function ghahghah_hero_link_to_relative( string $url ): string {
+	$url = trim( $url );
+	if ( '' === $url ) {
+		return '';
+	}
+
+	if ( '/' === $url[0] && 0 !== strpos( $url, '//' ) ) {
+		return $url;
+	}
+
+	$candidates = array_merge(
+		ghahghah_get_local_site_origins(),
+		array( ghahghah_get_public_site_url() )
+	);
+
+	foreach ( $candidates as $origin ) {
+		if ( '' === $origin ) {
+			continue;
+		}
+		if ( 0 === stripos( $url, $origin ) ) {
+			$path = substr( $url, strlen( $origin ) );
+			if ( false === $path || '' === $path ) {
+				return '/';
+			}
+			return '/' === $path[0] ? $path : '/' . $path;
+		}
+	}
+
+	return $url;
+}
+
+/**
+ * Resolve a stored slide link for front-end output (relative → current home).
+ *
+ * @param string $link Stored link.
+ */
+function ghahghah_resolve_hero_slide_link( string $link ): string {
+	$link = trim( $link );
+	if ( '' === $link ) {
+		return '';
+	}
+	if ( '/' === $link[0] && 0 !== strpos( $link, '//' ) ) {
+		return home_url( $link );
+	}
+	return $link;
+}
+
+/**
+ * Format a stored slide link for admin fields (relative → public domain).
+ *
+ * @param string $link Stored link.
+ */
+function ghahghah_format_hero_slide_link_for_admin( string $link ): string {
+	$link = trim( $link );
+	if ( '' === $link ) {
+		return '';
+	}
+
+	$relative = ghahghah_hero_link_to_relative( $link );
+	if ( '' !== $relative && '/' === $relative[0] && 0 !== strpos( $relative, '//' ) ) {
+		return ghahghah_get_public_site_url() . $relative;
+	}
+
+	return $link;
+}
+
+/**
  * Sanitize one slide link URL (empty allowed).
+ * Same-site / localhost URLs are stored as relative paths for portability.
  *
  * @param mixed $value Raw.
  */
@@ -115,9 +234,20 @@ function ghahghah_sanitize_hero_slide_link( $value ): string {
 	if ( '' === $raw ) {
 		return '';
 	}
-	if ( '/' === $raw[0] && 0 !== strpos( $raw, '//' ) ) {
-		return esc_url_raw( home_url( $raw ) );
+
+	$relative = ghahghah_hero_link_to_relative( $raw );
+	if ( '' !== $relative && '/' === $relative[0] && 0 !== strpos( $relative, '//' ) ) {
+		// Keep query string; escape path safely.
+		$parts = wp_parse_url( $relative );
+		if ( ! is_array( $parts ) ) {
+			return '';
+		}
+		$path  = isset( $parts['path'] ) ? (string) $parts['path'] : '/';
+		$query = isset( $parts['query'] ) ? '?' . $parts['query'] : '';
+		$frag  = isset( $parts['fragment'] ) ? '#' . $parts['fragment'] : '';
+		return $path . $query . $frag;
 	}
+
 	return esc_url_raw( $raw );
 }
 
@@ -447,7 +577,7 @@ function ghahghah_get_hero_banner_slides(): array {
 		$slides[] = array(
 			'desktop' => $desktop,
 			'mobile'  => $mobile,
-			'link'    => $row['link'],
+			'link'    => ghahghah_resolve_hero_slide_link( $row['link'] ),
 			'alt'     => $alt,
 		);
 	}

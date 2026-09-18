@@ -29,6 +29,8 @@ function ghahghah_handle_save_archive_banners(): void {
 		set_theme_mod( $key, ghahghah_sanitize_attachment_id( $raw ) );
 	}
 
+	set_theme_mod( 'ghahghah_archive_banners_last_saved', time() );
+
 	ghahghah_redirect_config_tab( 'archive-banners' );
 }
 add_action( 'admin_post_ghahghah_save_archive_banners', 'ghahghah_handle_save_archive_banners' );

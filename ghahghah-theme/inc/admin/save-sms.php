@@ -44,18 +44,9 @@ function ghahghah_handle_save_sms_settings(): void {
 	}
 
 	update_option( 'ghahghah_sms_settings', $out, false );
+	set_theme_mod( 'ghahghah_sms_last_saved', time() );
 
 	$tab = sanitize_key( wp_unslash( (string) ( $_POST['ghahghah_return_tab'] ?? 'sms-settings' ) ) );
-	wp_safe_redirect(
-		add_query_arg(
-			array(
-				'page'                => GHAHGHAH_CONFIG_PAGE,
-				GHAHGHAH_CONFIG_TAB_PARAM => $tab,
-				'updated'             => '1',
-			),
-			admin_url( 'admin.php' )
-		)
-	);
-	exit;
+	ghahghah_redirect_config_tab( $tab );
 }
 add_action( 'admin_post_ghahghah_save_sms_settings', 'ghahghah_handle_save_sms_settings' );

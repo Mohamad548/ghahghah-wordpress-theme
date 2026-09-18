@@ -86,6 +86,8 @@ if ( '' === $ghahghah_all_label ) {
 						$ghahghah_plink   = get_permalink( $ghahghah_pid );
 						$ghahghah_ptitle  = get_the_title( $ghahghah_pid );
 						$ghahghah_excerpt = get_the_excerpt( $ghahghah_pid );
+						$ghahghah_date    = get_the_date( '', $ghahghah_pid );
+						$ghahghah_date_iso = get_the_date( DATE_W3C, $ghahghah_pid );
 						if ( ! is_string( $ghahghah_plink ) || '' === $ghahghah_plink || '' === $ghahghah_ptitle ) {
 							continue;
 						}
@@ -112,6 +114,12 @@ if ( '' === $ghahghah_all_label ) {
 									?>
 								</a>
 								<div class="ghahghah-articles__body">
+									<?php if ( is_string( $ghahghah_date ) && '' !== $ghahghah_date ) : ?>
+										<p class="ghahghah-articles__date">
+											<svg class="ghahghah-articles__date-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+											<time datetime="<?php echo esc_attr( is_string( $ghahghah_date_iso ) ? $ghahghah_date_iso : '' ); ?>"><?php echo esc_html( $ghahghah_date ); ?></time>
+										</p>
+									<?php endif; ?>
 									<h3 class="ghahghah-articles__card-title">
 										<a href="<?php echo esc_url( $ghahghah_plink ); ?>"><?php echo esc_html( $ghahghah_ptitle ); ?></a>
 									</h3>

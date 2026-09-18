@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$d = ghahghah_seo_setting_defaults();
+$last_saved = absint( get_theme_mod( 'ghahghah_seo_last_saved', 0 ) );
 ?>
 <form class="ghahghah-panel-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 	<input type="hidden" name="action" value="ghahghah_save_seo" />
@@ -20,6 +20,9 @@ $d = ghahghah_seo_setting_defaults();
 
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
+			<span class="ghahghah-panel-section__icon" aria-hidden="true">
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'سئو صفحه اصلی', 'ghahghah' ); ?></h3>
 				<p class="ghahghah-panel-section__desc">
@@ -36,7 +39,7 @@ $d = ghahghah_seo_setting_defaults();
 				value="<?php echo esc_attr( (string) ghahghah_get_seo_mod( 'ghahghah_seo_home_title' ) ); ?>"
 				maxlength="70"
 			/>
-			<span class="ghahghah-field__hint"><?php esc_html_e( 'پیشنهاد: حداکثر حدود ۶۰ کاراکتر. نام برند را داخل عنوان بگذارید.', 'ghahghah' ); ?></span>
+			<span class="ghahghah-field__help"><?php esc_html_e( 'پیشنهاد: حداکثر حدود ۶۰ کاراکتر. نام برند را داخل عنوان بگذارید.', 'ghahghah' ); ?></span>
 		</label>
 
 		<label class="ghahghah-field">
@@ -46,7 +49,7 @@ $d = ghahghah_seo_setting_defaults();
 				rows="3"
 				maxlength="180"
 			><?php echo esc_textarea( (string) ghahghah_get_seo_mod( 'ghahghah_seo_home_description' ) ); ?></textarea>
-			<span class="ghahghah-field__hint"><?php esc_html_e( 'پیشنهاد: ۱۲۰ تا ۱۶۰ کاراکتر؛ محصول، شهر و اقدام کاربر را ذکر کنید.', 'ghahghah' ); ?></span>
+			<span class="ghahghah-field__help"><?php esc_html_e( 'پیشنهاد: ۱۲۰ تا ۱۶۰ کاراکتر؛ محصول، شهر و اقدام کاربر را ذکر کنید.', 'ghahghah' ); ?></span>
 		</label>
 
 		<label class="ghahghah-field">
@@ -57,12 +60,15 @@ $d = ghahghah_seo_setting_defaults();
 				value="<?php echo esc_attr( (string) ghahghah_get_seo_mod( 'ghahghah_seo_home_h1' ) ); ?>"
 				maxlength="90"
 			/>
-			<span class="ghahghah-field__hint"><?php esc_html_e( 'برای دسترس‌پذیری و سئو؛ به‌صورت بصری مخفی است و هویت برند را در طرح کلی سند نگه می‌دارد.', 'ghahghah' ); ?></span>
+			<span class="ghahghah-field__help"><?php esc_html_e( 'برای دسترس‌پذیری و سئو؛ به‌صورت بصری مخفی است و هویت برند را در طرح کلی سند نگه می‌دارد.', 'ghahghah' ); ?></span>
 		</label>
 	</section>
 
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
+			<span class="ghahghah-panel-section__icon" aria-hidden="true">
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="m21 16-4.5-4.5L9 19"/></svg>
+			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'تصویر اشتراک‌گذاری (Open Graph)', 'ghahghah' ); ?></h3>
 				<p class="ghahghah-panel-section__desc">
@@ -86,11 +92,15 @@ $d = ghahghah_seo_setting_defaults();
 
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
+			<span class="ghahghah-panel-section__icon" aria-hidden="true">
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h14"/></svg>
+			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'پوشش خودکار صفحات', 'ghahghah' ); ?></h3>
+				<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'برای صفحات دیگر، قالب عنوان و توضیح را از محتوای همان صفحه می‌سازد.', 'ghahghah' ); ?></p>
 			</div>
 		</header>
-		<ul class="ghahghah-field__hint" style="margin:0;padding-inline-start:1.25rem;line-height:1.7;">
+		<ul class="ghahghah-field__help" style="margin:0;padding-inline-start:1.25rem;line-height:1.7;">
 			<li><?php esc_html_e( 'محصولات: عنوان نمایشی + معرفی کوتاه', 'ghahghah' ); ?></li>
 			<li><?php esc_html_e( 'مقالات: عنوان نوشته + خلاصه', 'ghahghah' ); ?></li>
 			<li><?php esc_html_e( 'کارخانه، تماس، عمده، نمایندگی، FAQ: متن همان صفحه', 'ghahghah' ); ?></li>
@@ -99,7 +109,19 @@ $d = ghahghah_seo_setting_defaults();
 		</ul>
 	</section>
 
-	<p class="submit">
-		<button type="submit" class="button button-primary"><?php esc_html_e( 'ذخیره تنظیمات سئو', 'ghahghah' ); ?></button>
-	</p>
+	<div class="ghahghah-panel-form__footer">
+		<button type="submit" class="ghahghah-btn ghahghah-btn--save">
+			<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M8 3v6h8V3M8 21v-7h8v7"/></svg>
+			<?php esc_html_e( 'ذخیره تنظیمات', 'ghahghah' ); ?>
+		</button>
+		<p class="ghahghah-panel-form__meta">
+			<?php
+			printf(
+				/* translators: %s: last saved label */
+				esc_html__( 'آخرین ذخیره: %s', 'ghahghah' ),
+				esc_html( ghahghah_format_config_last_saved( $last_saved ) )
+			);
+			?>
+		</p>
+	</div>
 </form>

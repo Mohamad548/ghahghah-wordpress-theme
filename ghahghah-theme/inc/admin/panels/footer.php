@@ -31,6 +31,7 @@ $address         = (string) get_theme_mod( 'ghahghah_footer_address', $d['ghahgh
 $legal_text      = (string) get_theme_mod( 'ghahghah_footer_legal_text', $d['ghahghah_footer_legal_text'] );
 $privacy_page    = absint( get_theme_mod( 'ghahghah_footer_privacy_page_id', 0 ) );
 $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghahghah_footer_back_to_top'] );
+$last_saved      = absint( get_theme_mod( 'ghahghah_footer_last_saved', 0 ) );
 
 ?>
 
@@ -42,7 +43,7 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
 			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'برند فوتر', 'ghahghah' ); ?></h3>
@@ -69,7 +70,7 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h14"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h14"/></svg>
 			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'عناوین ستون‌ها و فهرست‌ها', 'ghahghah' ); ?></h3>
@@ -99,7 +100,7 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="8" rx="2"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="8" rx="2"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
 			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'نوار همکاری', 'ghahghah' ); ?></h3>
@@ -109,9 +110,14 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 
 		<label class="ghahghah-switch">
 			<input type="checkbox" name="ghahghah_footer_collab_enabled" value="1" <?php checked( $collab_enabled ); ?> />
-			<span><?php esc_html_e( 'نمایش نوار همکاری', 'ghahghah' ); ?></span>
+			<span class="ghahghah-switch__ui" aria-hidden="true"></span>
+			<span class="ghahghah-switch__label">
+				<strong><?php esc_html_e( 'نمایش نوار همکاری', 'ghahghah' ); ?></strong>
+				<small><?php esc_html_e( 'نوار روشن بالای فوتر با دو دکمه.', 'ghahghah' ); ?></small>
+			</span>
 		</label>
 
+		<div class="ghahghah-field-grid">
 		<label class="ghahghah-field">
 			<span class="ghahghah-field__label"><?php esc_html_e( 'عنوان نوار', 'ghahghah' ); ?></span>
 			<input type="text" name="ghahghah_footer_collab_title" value="<?php echo esc_attr( $collab_title ); ?>" />
@@ -137,7 +143,7 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 				)
 			);
 			?>
-			<p class="ghahghah-field__help"><?php esc_html_e( 'اگر خالی باشد، در صورت وجود از مقصد دکمه هدر (خرید عمده) استفاده می‌شود.', 'ghahghah' ); ?></p>
+			<span class="ghahghah-field__help"><?php esc_html_e( 'اگر خالی باشد، در صورت وجود از مقصد دکمه هدر (خرید عمده) استفاده می‌شود.', 'ghahghah' ); ?></span>
 		</label>
 
 		<label class="ghahghah-field">
@@ -157,12 +163,13 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 			);
 			?>
 		</label>
+		</div>
 	</section>
 
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.8.3 1.6.6 2.3a2 2 0 0 1-.5 2.1L8 9.1a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.7.3 1.5.5 2.3.6a2 2 0 0 1 1.7 2z"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.8.3 1.6.6 2.3a2 2 0 0 1-.5 2.1L8 9.1a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.7.3 1.5.5 2.3.6a2 2 0 0 1 1.7 2z"/></svg>
 			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'اطلاعات تماس', 'ghahghah' ); ?></h3>
@@ -205,9 +212,18 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 			<div class="ghahghah-steps-admin__row-head">
 				<span class="ghahghah-steps-admin__badge" data-ghahghah-social-badge><?php echo esc_html( sprintf( '%02d', $index + 1 ) ); ?></span>
 				<div class="ghahghah-steps-admin__tools">
-					<button type="button" class="button button-secondary" data-ghahghah-social-up><?php esc_html_e( 'بالا', 'ghahghah' ); ?></button>
-					<button type="button" class="button button-secondary" data-ghahghah-social-down><?php esc_html_e( 'پایین', 'ghahghah' ); ?></button>
-					<button type="button" class="button" data-ghahghah-social-remove><?php esc_html_e( 'حذف', 'ghahghah' ); ?></button>
+					<button type="button" class="ghahghah-btn ghahghah-btn--ghost ghahghah-btn--sm" data-ghahghah-social-up>
+						<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg>
+						<?php esc_html_e( 'بالا', 'ghahghah' ); ?>
+					</button>
+					<button type="button" class="ghahghah-btn ghahghah-btn--ghost ghahghah-btn--sm" data-ghahghah-social-down>
+						<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 10l6 6 6-6"/></svg>
+						<?php esc_html_e( 'پایین', 'ghahghah' ); ?>
+					</button>
+					<button type="button" class="ghahghah-btn ghahghah-btn--danger ghahghah-btn--sm" data-ghahghah-social-remove>
+						<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M9 7V5h6v2M8 7l1 12h6l1-12"/></svg>
+						<?php esc_html_e( 'حذف', 'ghahghah' ); ?>
+					</button>
 				</div>
 			</div>
 
@@ -248,7 +264,7 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 	<section class="ghahghah-panel-section" data-ghahghah-social-admin>
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
 			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'شبکه‌های اجتماعی', 'ghahghah' ); ?></h3>
@@ -263,7 +279,8 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 		</div>
 
 		<p class="ghahghah-steps-admin__actions">
-			<button type="button" class="button button-secondary" data-ghahghah-social-add>
+			<button type="button" class="ghahghah-btn ghahghah-btn--ghost" data-ghahghah-social-add>
+				<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
 				<?php esc_html_e( 'افزودن شبکه اجتماعی', 'ghahghah' ); ?>
 			</button>
 		</p>
@@ -286,7 +303,7 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8h14M7 16h10"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8h14M7 16h10"/></svg>
 			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'حقوقی و بازگشت به بالا', 'ghahghah' ); ?></h3>
@@ -314,13 +331,27 @@ $back_to_top     = (bool) get_theme_mod( 'ghahghah_footer_back_to_top', $d['ghah
 		</label>
 		<label class="ghahghah-switch">
 			<input type="checkbox" name="ghahghah_footer_back_to_top" value="1" <?php checked( $back_to_top ); ?> />
-			<span><?php esc_html_e( 'نمایش دکمه بازگشت به بالا', 'ghahghah' ); ?></span>
+			<span class="ghahghah-switch__ui" aria-hidden="true"></span>
+			<span class="ghahghah-switch__label">
+				<strong><?php esc_html_e( 'نمایش دکمه بازگشت به بالا', 'ghahghah' ); ?></strong>
+				<small><?php esc_html_e( 'دکمه شناور برای بازگشت به بالای صفحه.', 'ghahghah' ); ?></small>
+			</span>
 		</label>
 	</section>
 
 	<div class="ghahghah-panel-form__footer">
-		<button type="submit" class="button button-primary button-hero">
-			<?php esc_html_e( 'ذخیره فوتر', 'ghahghah' ); ?>
+		<button type="submit" class="ghahghah-btn ghahghah-btn--save">
+			<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M8 3v6h8V3M8 21v-7h8v7"/></svg>
+			<?php esc_html_e( 'ذخیره تنظیمات', 'ghahghah' ); ?>
 		</button>
+		<p class="ghahghah-panel-form__meta">
+			<?php
+			printf(
+				/* translators: %s: last saved label */
+				esc_html__( 'آخرین ذخیره: %s', 'ghahghah' ),
+				esc_html( ghahghah_format_config_last_saved( $last_saved ) )
+			);
+			?>
+		</p>
 	</div>
 </form>

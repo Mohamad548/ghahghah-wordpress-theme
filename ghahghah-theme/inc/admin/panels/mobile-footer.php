@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $logo_mobile = absint( get_theme_mod( 'ghahghah_footer_logo_mobile', 0 ) );
+$last_saved  = absint( get_theme_mod( 'ghahghah_mobile_footer_last_saved', 0 ) );
 
 ?>
 
@@ -23,7 +24,7 @@ $logo_mobile = absint( get_theme_mod( 'ghahghah_footer_logo_mobile', 0 ) );
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 18h4"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M6 16h12"/></svg>
 			</span>
 			<div>
 				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'فوتر موبایل', 'ghahghah' ); ?></h3>
@@ -41,19 +42,32 @@ $logo_mobile = absint( get_theme_mod( 'ghahghah_footer_logo_mobile', 0 ) );
 		);
 		?>
 
-		<div class="ghahghah-config-card" style="margin-top:1rem">
-			<p><?php esc_html_e( 'سایر تنظیمات فوتر (نوار همکاری، تماس، متن حقوقی و دکمه‌ها) در بخش «فوتر» دسکتاپ هستند.', 'ghahghah' ); ?></p>
-			<p>
-				<a href="<?php echo esc_url( ghahghah_get_config_tab_url( 'footer' ) ); ?>">
-					<?php esc_html_e( 'رفتن به تنظیمات فوتر دسکتاپ', 'ghahghah' ); ?>
-				</a>
+		<div class="ghahghah-status-banner is-warn">
+			<span class="ghahghah-status-banner__icon" aria-hidden="true">
+				<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+			</span>
+			<p class="ghahghah-status-banner__text">
+				<?php esc_html_e( 'سایر تنظیمات فوتر (نوار همکاری، تماس، متن حقوقی و دکمه‌ها) در بخش «فوتر» دسکتاپ هستند.', 'ghahghah' ); ?>
 			</p>
+			<a class="ghahghah-btn ghahghah-btn--solid" href="<?php echo esc_url( ghahghah_get_config_tab_url( 'footer' ) ); ?>">
+				<?php esc_html_e( 'تنظیمات فوتر', 'ghahghah' ); ?>
+			</a>
 		</div>
 	</section>
 
 	<div class="ghahghah-panel-form__footer">
-		<button type="submit" class="button button-primary button-hero">
-			<?php esc_html_e( 'ذخیره فوتر موبایل', 'ghahghah' ); ?>
+		<button type="submit" class="ghahghah-btn ghahghah-btn--save">
+			<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M8 3v6h8V3M8 21v-7h8v7"/></svg>
+			<?php esc_html_e( 'ذخیره تنظیمات', 'ghahghah' ); ?>
 		</button>
+		<p class="ghahghah-panel-form__meta">
+			<?php
+			printf(
+				/* translators: %s: last saved label */
+				esc_html__( 'آخرین ذخیره: %s', 'ghahghah' ),
+				esc_html( ghahghah_format_config_last_saved( $last_saved ) )
+			);
+			?>
+		</p>
 	</div>
 </form>

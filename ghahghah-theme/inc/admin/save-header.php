@@ -17,7 +17,27 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return array<int, string>
  */
 function ghahghah_allowed_return_tabs(): array {
-	return array( 'header', 'hero', 'featured', 'factory', 'steps', 'collab', 'articles', 'mobile-header', 'mobile-bottom', 'mobile-footer', 'footer', 'archive-banners', 'theme-media' );
+	return array(
+		'header',
+		'hero',
+		'featured',
+		'factory',
+		'steps',
+		'collab',
+		'articles',
+		'request-pages',
+		'factory-page',
+		'faq',
+		'contact-page',
+		'archive-banners',
+		'mobile-header',
+		'mobile-bottom',
+		'mobile-footer',
+		'footer',
+		'seo',
+		'theme-media',
+		'sms-settings',
+	);
 }
 
 /**
@@ -76,6 +96,7 @@ function ghahghah_handle_save_header_settings(): void {
 	set_theme_mod( 'ghahghah_header_cta_label', ghahghah_sanitize_header_cta_label( $cta_label ) );
 	set_theme_mod( 'ghahghah_header_cta_page_id', ghahghah_sanitize_header_cta_page_id( $cta_page ) );
 	set_theme_mod( 'ghahghah_header_sticky', ! empty( $_POST['ghahghah_header_sticky'] ) );
+	set_theme_mod( 'ghahghah_header_last_saved', time() );
 
 	ghahghah_redirect_config_tab( $return_tab );
 }
@@ -98,6 +119,7 @@ function ghahghah_handle_save_mobile_header_settings(): void {
 
 	set_theme_mod( 'ghahghah_header_logo_mobile', ghahghah_sanitize_attachment_id( $logo_mobile ) );
 	set_theme_mod( 'ghahghah_header_logo_width_mobile', ghahghah_sanitize_header_logo_width_mobile( $width_mobile ) );
+	set_theme_mod( 'ghahghah_mobile_header_last_saved', time() );
 
 	ghahghah_redirect_config_tab( 'mobile-header' );
 }
@@ -114,6 +136,7 @@ function ghahghah_handle_save_mobile_bottom_settings(): void {
 	check_admin_referer( 'ghahghah_save_mobile_bottom_settings', 'ghahghah_mobile_bottom_nonce' );
 
 	set_theme_mod( 'ghahghah_bottom_nav_enabled', ! empty( $_POST['ghahghah_bottom_nav_enabled'] ) );
+	set_theme_mod( 'ghahghah_mobile_bottom_last_saved', time() );
 
 	ghahghah_redirect_config_tab( 'mobile-bottom' );
 }

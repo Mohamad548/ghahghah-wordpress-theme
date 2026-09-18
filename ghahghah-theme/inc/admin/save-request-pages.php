@@ -39,14 +39,19 @@ function ghahghah_handle_save_request_pages(): void {
 	set_theme_mod( 'ghahghah_wholesale_page_id', absint( wp_unslash( $_POST['ghahghah_wholesale_page_id'] ?? 0 ) ) );
 	set_theme_mod( 'ghahghah_agency_page_id', absint( wp_unslash( $_POST['ghahghah_agency_page_id'] ?? 0 ) ) );
 	set_theme_mod( 'ghahghah_wholesale_image_id', absint( wp_unslash( $_POST['ghahghah_wholesale_image_id'] ?? 0 ) ) );
+	set_theme_mod( 'ghahghah_request_pages_last_saved', time() );
 
 	$tab = sanitize_key( wp_unslash( (string) ( $_POST['ghahghah_return_tab'] ?? 'request-pages' ) ) );
+	if ( 'request-pages' !== $tab ) {
+		$tab = 'request-pages';
+	}
+
 	wp_safe_redirect(
 		add_query_arg(
 			array(
 				'page'                    => GHAHGHAH_CONFIG_PAGE,
 				GHAHGHAH_CONFIG_TAB_PARAM => $tab,
-				'updated'                 => '1',
+				'ghahghah_saved'          => '1',
 			),
 			admin_url( 'admin.php' )
 		)

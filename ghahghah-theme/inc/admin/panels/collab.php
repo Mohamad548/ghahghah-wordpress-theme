@@ -1,6 +1,6 @@
 <?php
 /**
- * Collab (wholesale / agency) CTA configuration panel.
+ * Collab (wholesale / agency) banner configuration panel.
  *
  * @package Ghahghah
  */
@@ -11,22 +11,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$d       = ghahghah_collab_setting_defaults();
-$enabled = (bool) get_theme_mod( 'ghahghah_collab_enabled', $d['ghahghah_collab_enabled'] );
-$eyebrow = (string) get_theme_mod( 'ghahghah_collab_eyebrow', $d['ghahghah_collab_eyebrow'] );
-$title   = (string) get_theme_mod( 'ghahghah_collab_title', $d['ghahghah_collab_title'] );
-$text    = (string) get_theme_mod( 'ghahghah_collab_text', $d['ghahghah_collab_text'] );
-
-$w_title  = (string) get_theme_mod( 'ghahghah_collab_wholesale_title', $d['ghahghah_collab_wholesale_title'] );
-$w_text   = (string) get_theme_mod( 'ghahghah_collab_wholesale_text', $d['ghahghah_collab_wholesale_text'] );
-$w_button = (string) get_theme_mod( 'ghahghah_collab_wholesale_button', $d['ghahghah_collab_wholesale_button'] );
-
-$a_title  = (string) get_theme_mod( 'ghahghah_collab_agency_title', $d['ghahghah_collab_agency_title'] );
-$a_text   = (string) get_theme_mod( 'ghahghah_collab_agency_text', $d['ghahghah_collab_agency_text'] );
-$a_button = (string) get_theme_mod( 'ghahghah_collab_agency_button', $d['ghahghah_collab_agency_button'] );
-
-$wholesale_status = ghahghah_get_collab_form_status( 'wholesale' );
-$agency_status    = ghahghah_get_collab_form_status( 'agency' );
+$d          = ghahghah_collab_setting_defaults();
+$enabled    = (bool) get_theme_mod( 'ghahghah_collab_enabled', $d['ghahghah_collab_enabled'] );
+$w_image    = absint( get_theme_mod( 'ghahghah_collab_wholesale_image', 0 ) );
+$w_alt      = (string) get_theme_mod( 'ghahghah_collab_wholesale_image_alt', $d['ghahghah_collab_wholesale_image_alt'] );
+$a_image    = absint( get_theme_mod( 'ghahghah_collab_agency_image', 0 ) );
+$a_alt      = (string) get_theme_mod( 'ghahghah_collab_agency_image_alt', $d['ghahghah_collab_agency_image_alt'] );
+$last_saved = absint( get_theme_mod( 'ghahghah_collab_last_saved', 0 ) );
+$w_default  = ghahghah_get_collab_bundled_image_url( 'wholesale' );
+$a_default  = ghahghah_get_collab_bundled_image_url( 'agency' );
 ?>
 
 <form class="ghahghah-panel-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
@@ -37,122 +30,93 @@ $agency_status    = ghahghah_get_collab_form_status( 'agency' );
 	<section class="ghahghah-panel-section">
 		<header class="ghahghah-panel-section__head">
 			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="7" height="14" rx="1.5"/><rect x="14" y="5" width="7" height="14" rx="1.5"/></svg>
+				<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="7" height="14" rx="1.5"/><rect x="14" y="5" width="7" height="14" rx="1.5"/></svg>
 			</span>
 			<div>
-				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'نمایش و عنوان بخش', 'ghahghah' ); ?></h3>
-				<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'کارت‌ها فقط وقتی در سایت دیده می‌شوند که فرم مرتبط از Core آماده باشد.', 'ghahghah' ); ?></p>
+				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'نمایش بخش', 'ghahghah' ); ?></h3>
+				<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'دو بنر خرید عمده و نمایندگی در صفحه اصلی — بدون متن جداگانه.', 'ghahghah' ); ?></p>
 			</div>
 		</header>
 
-		<label class="ghahghah-field ghahghah-field--check">
+		<label class="ghahghah-switch">
 			<input type="checkbox" name="ghahghah_collab_enabled" value="1" <?php checked( $enabled ); ?> />
-			<span><?php esc_html_e( 'نمایش بخش خرید عمده و نمایندگی در صفحه اصلی', 'ghahghah' ); ?></span>
-		</label>
-
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'عنوان کوتاه', 'ghahghah' ); ?></span>
-			<input type="text" name="ghahghah_collab_eyebrow" value="<?php echo esc_attr( $eyebrow ); ?>" />
-		</label>
-
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'عنوان اصلی', 'ghahghah' ); ?></span>
-			<input type="text" name="ghahghah_collab_title" value="<?php echo esc_attr( $title ); ?>" />
-		</label>
-
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'توضیح', 'ghahghah' ); ?></span>
-			<textarea name="ghahghah_collab_text" rows="2"><?php echo esc_textarea( $text ); ?></textarea>
-		</label>
-	</section>
-
-	<section class="ghahghah-panel-section">
-		<header class="ghahghah-panel-section__head">
-			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h10M4 17h14"/></svg>
+			<span class="ghahghah-switch__ui" aria-hidden="true"></span>
+			<span class="ghahghah-switch__label">
+				<strong><?php esc_html_e( 'نمایش بنرهای عمده و نمایندگی در صفحه اصلی', 'ghahghah' ); ?></strong>
+				<small><?php esc_html_e( 'لینک هر بنر از برگه‌های خرید عمده / نمایندگی در تنظیمات مربوطه گرفته می‌شود.', 'ghahghah' ); ?></small>
 			</span>
-			<div>
-				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'وضعیت فرم‌ها', 'ghahghah' ); ?></h3>
-				<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'ثبت درخواست و پیامک در Core انجام می‌شود؛ قالب فقط فرم آماده را آشکار می‌کند.', 'ghahghah' ); ?></p>
-			</div>
-		</header>
-
-		<?php foreach ( array( $wholesale_status, $agency_status ) as $status ) : ?>
-			<div class="ghahghah-status-card ghahghah-status-card--<?php echo $status['available'] ? 'ok' : 'warn'; ?>">
-				<p>
-					<?php
-					echo esc_html( $status['label'] . ': ' );
-					if ( $status['available'] ) {
-						if ( 'preview' === $status['source'] ) {
-							esc_html_e( 'فقط پیش‌نمایش ظاهر (بدون ارسال)', 'ghahghah' );
-						} else {
-							esc_html_e( 'آماده اتصال', 'ghahghah' );
-						}
-					} else {
-						esc_html_e( 'هنوز آماده نیست — در خروجی عمومی نمایش داده نمی‌شود', 'ghahghah' );
-					}
-					?>
-				</p>
-			</div>
-		<?php endforeach; ?>
-
-		<label class="ghahghah-field ghahghah-field--check" style="margin-top:1rem">
-			<input type="checkbox" name="ghahghah_collab_preview_forms" value="1" <?php checked( (bool) get_theme_mod( 'ghahghah_collab_preview_forms', $d['ghahghah_collab_preview_forms'] ) ); ?> />
-			<span><?php esc_html_e( 'پیش‌نمایش کارت‌ها تا آماده شدن فرم Core (بدون ارسال درخواست/پیامک)', 'ghahghah' ); ?></span>
 		</label>
 	</section>
 
-	<section class="ghahghah-panel-section">
-		<header class="ghahghah-panel-section__head">
-			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 12h10"/></svg>
-			</span>
-			<div>
-				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'کارت خرید عمده', 'ghahghah' ); ?></h3>
-				<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'متن کارت قرمز سمت راست در دسکتاپ.', 'ghahghah' ); ?></p>
-			</div>
-		</header>
+	<div class="ghahghah-panel-grid ghahghah-panel-grid--2">
+		<section class="ghahghah-panel-section">
+			<header class="ghahghah-panel-section__head">
+				<span class="ghahghah-panel-section__icon" aria-hidden="true">
+					<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="m21 16-4.5-4.5L9 19"/></svg>
+				</span>
+				<div>
+					<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'بنر خرید عمده', 'ghahghah' ); ?></h3>
+					<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'تصویر را از کتابخانه رسانه انتخاب کنید.', 'ghahghah' ); ?></p>
+				</div>
+			</header>
 
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'عنوان کارت', 'ghahghah' ); ?></span>
-			<input type="text" name="ghahghah_collab_wholesale_title" value="<?php echo esc_attr( $w_title ); ?>" />
-		</label>
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'توضیح کارت', 'ghahghah' ); ?></span>
-			<textarea name="ghahghah_collab_wholesale_text" rows="2"><?php echo esc_textarea( $w_text ); ?></textarea>
-		</label>
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'متن دکمه', 'ghahghah' ); ?></span>
-			<input type="text" name="ghahghah_collab_wholesale_button" value="<?php echo esc_attr( $w_button ); ?>" />
-		</label>
-	</section>
+			<?php
+			ghahghah_admin_render_media_field(
+				'ghahghah_collab_wholesale_image',
+				__( 'تصویر بنر عمده', 'ghahghah' ),
+				__( 'پیشنهاد: WebP افقی · عرض حدود ۱۹۰۰ پیکسل', 'ghahghah' ),
+				$w_image,
+				$w_default
+			);
+			?>
 
-	<section class="ghahghah-panel-section">
-		<header class="ghahghah-panel-section__head">
-			<span class="ghahghah-panel-section__icon" aria-hidden="true">
-				<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><path d="M3 19c1.5-3 4-4.5 6-4.5S13.5 16 15 19"/></svg>
-			</span>
-			<div>
-				<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'کارت نمایندگی', 'ghahghah' ); ?></h3>
-				<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'متن کارت کرم سمت چپ در دسکتاپ.', 'ghahghah' ); ?></p>
-			</div>
-		</header>
+			<label class="ghahghah-field">
+				<span class="ghahghah-field__label"><?php esc_html_e( 'متن جایگزین (alt)', 'ghahghah' ); ?></span>
+				<input type="text" name="ghahghah_collab_wholesale_image_alt" value="<?php echo esc_attr( $w_alt ); ?>" maxlength="160" />
+			</label>
+		</section>
 
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'عنوان کارت', 'ghahghah' ); ?></span>
-			<input type="text" name="ghahghah_collab_agency_title" value="<?php echo esc_attr( $a_title ); ?>" />
-		</label>
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'توضیح کارت', 'ghahghah' ); ?></span>
-			<textarea name="ghahghah_collab_agency_text" rows="2"><?php echo esc_textarea( $a_text ); ?></textarea>
-		</label>
-		<label class="ghahghah-field">
-			<span class="ghahghah-field__label"><?php esc_html_e( 'متن دکمه', 'ghahghah' ); ?></span>
-			<input type="text" name="ghahghah_collab_agency_button" value="<?php echo esc_attr( $a_button ); ?>" />
-		</label>
-	</section>
+		<section class="ghahghah-panel-section">
+			<header class="ghahghah-panel-section__head">
+				<span class="ghahghah-panel-section__icon" aria-hidden="true">
+					<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="m21 16-4.5-4.5L9 19"/></svg>
+				</span>
+				<div>
+					<h3 class="ghahghah-panel-section__title"><?php esc_html_e( 'بنر نمایندگی', 'ghahghah' ); ?></h3>
+					<p class="ghahghah-panel-section__desc"><?php esc_html_e( 'تصویر را از کتابخانه رسانه انتخاب کنید.', 'ghahghah' ); ?></p>
+				</div>
+			</header>
 
-	<p class="submit">
-		<button type="submit" class="button button-primary"><?php esc_html_e( 'ذخیره تنظیمات', 'ghahghah' ); ?></button>
-	</p>
+			<?php
+			ghahghah_admin_render_media_field(
+				'ghahghah_collab_agency_image',
+				__( 'تصویر بنر نمایندگی', 'ghahghah' ),
+				__( 'پیشنهاد: WebP افقی · عرض حدود ۱۹۰۰ پیکسل', 'ghahghah' ),
+				$a_image,
+				$a_default
+			);
+			?>
+
+			<label class="ghahghah-field">
+				<span class="ghahghah-field__label"><?php esc_html_e( 'متن جایگزین (alt)', 'ghahghah' ); ?></span>
+				<input type="text" name="ghahghah_collab_agency_image_alt" value="<?php echo esc_attr( $a_alt ); ?>" maxlength="160" />
+			</label>
+		</section>
+	</div>
+
+	<div class="ghahghah-panel-form__footer">
+		<button type="submit" class="ghahghah-btn ghahghah-btn--save">
+			<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 3h11l3 3v15H5z"/><path d="M8 3v6h8V3M8 21v-7h8v7"/></svg>
+			<?php esc_html_e( 'ذخیره تنظیمات', 'ghahghah' ); ?>
+		</button>
+		<p class="ghahghah-panel-form__meta">
+			<?php
+			printf(
+				/* translators: %s: last saved label */
+				esc_html__( 'آخرین ذخیره: %s', 'ghahghah' ),
+				esc_html( ghahghah_format_config_last_saved( $last_saved ) )
+			);
+			?>
+		</p>
+	</div>
 </form>

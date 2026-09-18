@@ -28,6 +28,7 @@ function ghahghah_handle_sync_theme_media(): void {
 		$stats,
 		MINUTE_IN_SECONDS
 	);
+	set_theme_mod( 'ghahghah_theme_media_last_saved', time() );
 
 	ghahghah_redirect_config_tab( 'theme-media' );
 }

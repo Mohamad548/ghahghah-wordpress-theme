@@ -36,6 +36,7 @@ function ghahghah_save_factory_settings(): void {
 
 	set_theme_mod( 'ghahghah_factory_button_label', ghahghah_sanitize_hero_text( wp_unslash( $_POST['ghahghah_factory_button_label'] ?? '' ), 50 ) );
 	set_theme_mod( 'ghahghah_factory_button_page', ghahghah_sanitize_hero_page_id( wp_unslash( $_POST['ghahghah_factory_button_page'] ?? 0 ) ) );
+	set_theme_mod( 'ghahghah_factory_last_saved', time() );
 
 	ghahghah_redirect_config_tab( 'factory' );
 }

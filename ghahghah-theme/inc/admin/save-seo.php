@@ -57,18 +57,9 @@ function ghahghah_handle_save_seo(): void {
 		? ghahghah_sanitize_attachment_id( wp_unslash( $_POST['ghahghah_seo_og_image_id'] ?? 0 ) )
 		: absint( wp_unslash( $_POST['ghahghah_seo_og_image_id'] ?? 0 ) );
 	set_theme_mod( 'ghahghah_seo_og_image_id', $og_id );
+	set_theme_mod( 'ghahghah_seo_last_saved', time() );
 
 	$tab = isset( $_POST['ghahghah_return_tab'] ) ? sanitize_key( (string) wp_unslash( $_POST['ghahghah_return_tab'] ) ) : 'seo';
-	wp_safe_redirect(
-		add_query_arg(
-			array(
-				'page'           => GHAHGHAH_CONFIG_PAGE,
-				'tab'            => $tab,
-				'ghahghah_saved' => '1',
-			),
-			admin_url( 'admin.php' )
-		)
-	);
-	exit;
+	ghahghah_redirect_config_tab( $tab );
 }
 add_action( 'admin_post_ghahghah_save_seo', 'ghahghah_handle_save_seo' );

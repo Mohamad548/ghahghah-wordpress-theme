@@ -13,9 +13,9 @@
 	--ga-radius: 14px;
 	--ga-gap: 0.75rem;
 	--ga-visible: 1.2;
-	--ga-max: var(--ghahghah-wide-width, 75rem);
-	--ga-pad-m: var(--ghahghah-space-sm, 1rem);
-	--ga-pad-d: var(--ghahghah-space-xl, 4rem);
+	--ga-max: var(--ghahghah-home-max, 80rem);
+	--ga-pad-m: var(--ghahghah-home-pad-m, 1.25rem);
+	--ga-pad-d: var(--ghahghah-home-pad-d, 4rem);
 	background: var(--ga-bg);
 	color: var(--ga-text);
 	font-family: var(--ghahghah-font-primary, inherit);
@@ -25,7 +25,7 @@
 .ghahghah-articles__shell {
 	width: min(100% - (var(--ga-pad-m) * 2), var(--ga-max));
 	margin-inline: auto;
-	padding-block: var(--ghahghah-space-lg, 2.5rem);
+	padding-block: 0 var(--ghahghah-section-y, 1.5rem);
 	min-width: 0;
 }
 
@@ -211,6 +211,22 @@
 	min-width: 0;
 }
 
+.ghahghah-articles__date {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin: 0;
+	color: var(--ga-muted);
+	font-size: 0.78rem;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.ghahghah-articles__date-icon {
+	flex-shrink: 0;
+	opacity: 0.75;
+}
+
 .ghahghah-articles__card-title {
 	margin: 0;
 	font-size: 0.98rem;
@@ -287,7 +303,7 @@
 	}
 
 	.ghahghah-articles__shell {
-		padding-block: 3rem;
+		padding-block: 0 var(--ghahghah-section-y, 1.75rem);
 	}
 
 	.ghahghah-articles__title {
@@ -326,7 +342,7 @@
 
 	.ghahghah-articles__shell {
 		width: min(100% - (var(--ga-pad-d) * 2), var(--ga-max));
-		padding-block: var(--ga-pad-d);
+		padding-block: 0 var(--ghahghah-section-y, 2rem);
 	}
 
 	.ghahghah-articles__title {

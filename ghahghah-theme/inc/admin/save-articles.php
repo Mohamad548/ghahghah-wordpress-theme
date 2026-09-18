@@ -32,6 +32,7 @@ function ghahghah_save_articles_settings(): void {
 	set_theme_mod( 'ghahghah_articles_all_label', ghahghah_sanitize_hero_text( wp_unslash( $_POST['ghahghah_articles_all_label'] ?? '' ), 40 ) );
 	set_theme_mod( 'ghahghah_articles_more_label', ghahghah_sanitize_hero_text( wp_unslash( $_POST['ghahghah_articles_more_label'] ?? '' ), 40 ) );
 	set_theme_mod( 'ghahghah_articles_category', $cat );
+	set_theme_mod( 'ghahghah_articles_last_saved', time() );
 
 	ghahghah_redirect_config_tab( 'articles' );
 }

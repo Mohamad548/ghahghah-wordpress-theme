@@ -44,6 +44,7 @@ function ghahghah_handle_save_footer_settings(): void {
 	set_theme_mod( 'ghahghah_footer_legal_text', ghahghah_sanitize_footer_text( wp_unslash( $_POST['ghahghah_footer_legal_text'] ?? '' ), 160 ) );
 	set_theme_mod( 'ghahghah_footer_privacy_page_id', ghahghah_sanitize_footer_page_id( wp_unslash( $_POST['ghahghah_footer_privacy_page_id'] ?? 0 ) ) );
 	set_theme_mod( 'ghahghah_footer_back_to_top', ! empty( $_POST['ghahghah_footer_back_to_top'] ) );
+	set_theme_mod( 'ghahghah_footer_last_saved', time() );
 	// phpcs:enable WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 
 	ghahghah_redirect_config_tab( 'footer' );
@@ -62,6 +63,7 @@ function ghahghah_handle_save_mobile_footer_settings(): void {
 
 	// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 	set_theme_mod( 'ghahghah_footer_logo_mobile', ghahghah_sanitize_attachment_id( wp_unslash( $_POST['ghahghah_footer_logo_mobile'] ?? 0 ) ) );
+	set_theme_mod( 'ghahghah_mobile_footer_last_saved', time() );
 
 	ghahghah_redirect_config_tab( 'mobile-footer' );
 }

@@ -80,6 +80,7 @@ function ghahghah_save_featured_settings(): void {
 	}
 
 	set_theme_mod( 'ghahghah_featured_ids', ghahghah_sanitize_featured_product_ids( $ids ) );
+	set_theme_mod( 'ghahghah_featured_last_saved', time() );
 
 	if ( function_exists( 'ghahghah_sync_primary_flavor_menu_items' ) ) {
 		ghahghah_sync_primary_flavor_menu_items();

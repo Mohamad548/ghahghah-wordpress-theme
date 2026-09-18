@@ -62,17 +62,9 @@ function ghahghah_handle_save_contact_page(): void {
 		}
 	}
 
+	set_theme_mod( 'ghahghah_contact_page_last_saved', time() );
+
 	$tab = isset( $_POST['ghahghah_return_tab'] ) ? sanitize_key( (string) wp_unslash( $_POST['ghahghah_return_tab'] ) ) : 'contact-page';
-	wp_safe_redirect(
-		add_query_arg(
-			array(
-				'page'    => GHAHGHAH_CONFIG_PAGE,
-				'tab'     => $tab,
-				'updated' => '1',
-			),
-			admin_url( 'admin.php' )
-		)
-	);
-	exit;
+	ghahghah_redirect_config_tab( $tab );
 }
 add_action( 'admin_post_ghahghah_save_contact_page', 'ghahghah_handle_save_contact_page' );

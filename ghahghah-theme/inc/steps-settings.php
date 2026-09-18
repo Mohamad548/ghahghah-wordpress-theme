@@ -11,21 +11,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/** Soft cap for admin/storage safety (not a fixed design of four). */
-const GHAHGHAH_STEPS_MAX = 12;
-
 /**
- * Default theme mods for production steps (disabled until editor content exists).
+ * Default theme mods for production steps.
  *
  * @return array<string, mixed>
  */
 function ghahghah_steps_setting_defaults(): array {
 	return array(
-		'ghahghah_steps_enabled' => false,
-		'ghahghah_steps_eyebrow' => '',
-		'ghahghah_steps_title'   => '',
-		'ghahghah_steps_text'    => '',
-		'ghahghah_steps_items'   => array(),
+		'ghahghah_steps_enabled'   => false,
+		'ghahghah_steps_image'     => 0,
+		'ghahghah_steps_image_alt' => __( 'اینفوگرافیک مراحل تولید محصول قهقهه', 'ghahghah' ),
 	);
 }
 
@@ -42,94 +37,74 @@ function ghahghah_get_steps_mod( string $key ) {
 }
 
 /**
- * Sanitize a list of production steps from admin POST or stored value.
- *
- * @param mixed $raw Raw steps.
- * @return array<int, array{title: string, text: string}>
+ * Bundled production-steps image URL (theme fallback).
  */
-function ghahghah_sanitize_steps_items( $raw ): array {
-	if ( is_string( $raw ) ) {
-		$decoded = json_decode( $raw, true );
-		$raw     = is_array( $decoded ) ? $decoded : array();
+function ghahghah_get_steps_bundled_image_url(): string {
+	$path = GHAHGHAH_THEME_DIR . '/assets/images/steps/production-steps.webp';
+	if ( ! is_readable( $path ) ) {
+		return '';
 	}
-
-	if ( ! is_array( $raw ) ) {
-		return array();
-	}
-
-	$out = array();
-	foreach ( $raw as $row ) {
-		if ( count( $out ) >= GHAHGHAH_STEPS_MAX ) {
-			break;
-		}
-		if ( ! is_array( $row ) ) {
-			continue;
-		}
-		$title = ghahghah_sanitize_hero_text( $row['title'] ?? '', 80 );
-		$text  = ghahghah_sanitize_hero_multiline( $row['text'] ?? '', 500 );
-		if ( '' === $title && '' === $text ) {
-			continue;
-		}
-		$out[] = array(
-			'title' => $title,
-			'text'  => $text,
-		);
-	}
-
-	return $out;
+	return GHAHGHAH_THEME_URI . '/assets/images/steps/production-steps.webp';
 }
 
 /**
- * Sanitize steps posted as parallel title/text arrays (order preserved).
+ * Resolved production-steps image (Media Library preferred, then bundled asset).
  *
- * @param mixed $titles Titles array.
- * @param mixed $texts  Texts array.
- * @return array<int, array{title: string, text: string}>
+ * @return array{id: int, url: string, width: int, height: int, alt: string, srcset: string, sizes: string}|null
  */
-function ghahghah_sanitize_steps_items_from_post( $titles, $texts ): array {
-	$titles = is_array( $titles ) ? $titles : array();
-	$texts  = is_array( $texts ) ? $texts : array();
-	$keys   = array_unique( array_merge( array_keys( $titles ), array_keys( $texts ) ) );
-	$rows   = array();
-
-	foreach ( $keys as $key ) {
-		$rows[] = array(
-			'title' => $titles[ $key ] ?? '',
-			'text'  => $texts[ $key ] ?? '',
-		);
+function ghahghah_get_steps_image(): ?array {
+	$id  = absint( ghahghah_get_steps_mod( 'ghahghah_steps_image' ) );
+	$alt = trim( (string) ghahghah_get_steps_mod( 'ghahghah_steps_image_alt' ) );
+	if ( '' === $alt ) {
+		$alt = (string) ghahghah_steps_setting_defaults()['ghahghah_steps_image_alt'];
 	}
 
-	return ghahghah_sanitize_steps_items( $rows );
-}
-
-/**
- * Steps with non-empty title (numbers come from order).
- *
- * @return array<int, array{title: string, text: string}>
- */
-function ghahghah_get_steps_items(): array {
-	$items = ghahghah_get_steps_mod( 'ghahghah_steps_items' );
-	$items = ghahghah_sanitize_steps_items( $items );
-	$out   = array();
-
-	foreach ( $items as $item ) {
-		if ( '' === $item['title'] ) {
-			continue;
+	if ( $id > 0 && wp_attachment_is_image( $id ) ) {
+		$url = wp_get_attachment_image_url( $id, 'full' );
+		if ( ! is_string( $url ) || '' === $url ) {
+			$url = wp_get_attachment_image_url( $id, 'large' );
 		}
-		$out[] = $item;
+		if ( is_string( $url ) && '' !== $url ) {
+			$meta   = wp_get_attachment_metadata( $id );
+			$width  = isset( $meta['width'] ) ? absint( $meta['width'] ) : 1933;
+			$height = isset( $meta['height'] ) ? absint( $meta['height'] ) : 814;
+
+			$meta_alt = (string) get_post_meta( $id, '_wp_attachment_image_alt', true );
+			if ( '' === trim( (string) ghahghah_get_steps_mod( 'ghahghah_steps_image_alt' ) ) && '' !== $meta_alt ) {
+				$alt = $meta_alt;
+			}
+
+			$srcset = wp_get_attachment_image_srcset( $id, 'full' );
+			if ( ! is_string( $srcset ) ) {
+				$srcset = '';
+			}
+
+			return array(
+				'id'     => $id,
+				'url'    => $url,
+				'width'  => max( 1, $width ),
+				'height' => max( 1, $height ),
+				'alt'    => $alt,
+				'srcset' => $srcset,
+				'sizes'  => '(max-width: 75rem) 100vw, 75rem',
+			);
+		}
 	}
 
-	return $out;
-}
+	$bundled = ghahghah_get_steps_bundled_image_url();
+	if ( '' === $bundled ) {
+		return null;
+	}
 
-/**
- * Zero-padded step index for display (FaNum font maps digits).
- *
- * @param int $index 1-based index.
- */
-function ghahghah_format_step_number( int $index ): string {
-	$index = max( 1, $index );
-	return sprintf( '%02d', $index );
+	return array(
+		'id'     => 0,
+		'url'    => $bundled,
+		'width'  => 1933,
+		'height' => 814,
+		'alt'    => $alt,
+		'srcset' => '',
+		'sizes'  => '(max-width: 75rem) 100vw, 75rem',
+	);
 }
 
 /**
@@ -143,14 +118,5 @@ function ghahghah_should_render_steps(): bool {
 		return false;
 	}
 
-	$steps = ghahghah_get_steps_items();
-	if ( count( $steps ) < 1 ) {
-		return false;
-	}
-
-	$title   = trim( (string) ghahghah_get_steps_mod( 'ghahghah_steps_title' ) );
-	$eyebrow = trim( (string) ghahghah_get_steps_mod( 'ghahghah_steps_eyebrow' ) );
-	$text    = trim( (string) ghahghah_get_steps_mod( 'ghahghah_steps_text' ) );
-
-	return '' !== $title || '' !== $eyebrow || '' !== $text || count( $steps ) > 0;
+	return null !== ghahghah_get_steps_image();
 }

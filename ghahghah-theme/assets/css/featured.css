@@ -10,12 +10,12 @@
 	--gfx-muted: #5c5660;
 	--gfx-red: #d71920;
 	--gfx-yellow: #f5b400;
-	--gfx-max: 80rem; /* 1280px */
+	--gfx-max: var(--ghahghah-home-max, 80rem);
 	--gfx-gap: 0.75rem; /* 12px mobile */
 	--gfx-radius: 16px;
 	--gfx-pad-card: 0.75rem; /* 12px */
-	--gfx-pad-m: 1.25rem; /* 20px */
-	--gfx-pad-d: 4rem;
+	--gfx-pad-m: var(--ghahghah-home-pad-m, 1.25rem);
+	--gfx-pad-d: var(--ghahghah-home-pad-d, 4rem);
 	--gfx-visible: 1.2;
 	--gfx-media-h: 13.5rem; /* room for full pack on mobile */
 	background: var(--gfx-bg);
@@ -27,7 +27,7 @@
 .ghahghah-featured__shell {
 	width: min(100% - (var(--gfx-pad-m) * 2), var(--gfx-max));
 	margin-inline: auto;
-	padding-block: 1.5rem 2.5rem;
+	padding-block: var(--ghahghah-section-y, 1.5rem);
 	min-width: 0;
 }
 
@@ -326,7 +326,7 @@
 	}
 
 	.ghahghah-featured__shell {
-		padding-block: 1.5rem 3rem;
+		padding-block: var(--ghahghah-section-y, 1.75rem);
 	}
 
 	.ghahghah-featured__head {
@@ -388,7 +388,7 @@
 
 	.ghahghah-featured__shell {
 		width: min(100% - (var(--gfx-pad-d) * 2), var(--gfx-max));
-		padding-block: 1.5rem var(--gfx-pad-d);
+		padding-block: var(--ghahghah-section-y, 2rem);
 	}
 
 	.ghahghah-featured__title {

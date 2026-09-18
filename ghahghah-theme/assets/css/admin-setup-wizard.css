@@ -1,0 +1,175 @@
+/**
+ * Ghahghah first-run setup wizard.
+ */
+
+.ghahghah-wizard {
+	max-width: 52rem;
+	margin: 2rem auto;
+	font-family: Tahoma, "Segoe UI", sans-serif;
+}
+
+.ghahghah-wizard__card {
+	background: #fff;
+	border: 1px solid #e5e1db;
+	border-radius: 16px;
+	padding: 1.75rem 1.5rem 1.5rem;
+	box-shadow: 0 12px 32px rgb(18 38 58 / 6%);
+}
+
+.ghahghah-wizard__eyebrow {
+	margin: 0 0 0.35rem;
+	color: #d71920;
+	font-weight: 700;
+	font-size: 0.85rem;
+}
+
+.ghahghah-wizard__title {
+	margin: 0;
+	font-size: 1.55rem;
+	line-height: 1.4;
+	color: #12263a;
+}
+
+.ghahghah-wizard__lead {
+	margin: 0.65rem 0 0;
+	color: #5c5660;
+	line-height: 1.7;
+}
+
+.ghahghah-wizard__steps {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 0.4rem;
+	list-style: none;
+	margin: 1.5rem 0 1.25rem;
+	padding: 0;
+}
+
+.ghahghah-wizard__step {
+	display: grid;
+	gap: 0.35rem;
+	justify-items: center;
+	text-align: center;
+	opacity: 0.45;
+}
+
+.ghahghah-wizard__step.is-current,
+.ghahghah-wizard__step.is-done {
+	opacity: 1;
+}
+
+.ghahghah-wizard__step-index {
+	width: 1.75rem;
+	height: 1.75rem;
+	border-radius: 999px;
+	background: #f1ece4;
+	border: 1px solid #e5e1db;
+	counter-increment: gh-step;
+}
+
+.ghahghah-wizard__steps {
+	counter-reset: gh-step;
+}
+
+.ghahghah-wizard__step-index::before {
+	content: counter(gh-step);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: #12263a;
+}
+
+.ghahghah-wizard__step.is-done .ghahghah-wizard__step-index {
+	background: #d71920;
+	border-color: #d71920;
+	color: #fff;
+}
+
+.ghahghah-wizard__step.is-done .ghahghah-wizard__step-index::before {
+	content: "✓";
+	color: #fff;
+}
+
+.ghahghah-wizard__step.is-current .ghahghah-wizard__step-index {
+	border-color: #d71920;
+	box-shadow: 0 0 0 3px rgb(215 25 32 / 15%);
+}
+
+.ghahghah-wizard__step-label {
+	font-size: 0.78rem;
+	font-weight: 700;
+	color: #12263a;
+}
+
+.ghahghah-wizard__pane {
+	display: none;
+	padding: 1rem 0 0.25rem;
+}
+
+.ghahghah-wizard__pane.is-active {
+	display: block;
+}
+
+.ghahghah-wizard__pane h2 {
+	margin: 0 0 0.4rem;
+	font-size: 1.15rem;
+	color: #12263a;
+}
+
+.ghahghah-wizard__pane p {
+	margin: 0;
+	color: #5c5660;
+	line-height: 1.7;
+}
+
+.ghahghah-wizard__checklist {
+	margin: 0.9rem 0 0;
+	padding-inline-start: 1.2rem;
+	color: #12263a;
+	line-height: 1.8;
+}
+
+.ghahghah-wizard__success {
+	margin-top: 0.75rem !important;
+	color: #0b7a3b !important;
+	font-weight: 700;
+}
+
+.ghahghah-wizard__log {
+	margin: 0.85rem 0 0;
+	padding: 0.75rem 0.9rem;
+	border-radius: 10px;
+	background: #f7f4ea;
+	border: 1px solid #e8e2d6;
+	color: #3d3840;
+	font-size: 0.86rem;
+	line-height: 1.65;
+	word-break: break-word;
+}
+
+.ghahghah-wizard__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.65rem;
+	margin-top: 1.25rem;
+}
+
+.ghahghah-wizard__actions .button-primary {
+	background: #d71920;
+	border-color: #d71920;
+}
+
+.ghahghah-wizard__actions .button-primary:hover,
+.ghahghah-wizard__actions .button-primary:focus {
+	background: #b9141b;
+	border-color: #b9141b;
+}
+
+@media (max-width: 640px) {
+	.ghahghah-wizard__steps {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}

@@ -31,6 +31,7 @@ require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-contact-page.php';
 require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-archive-banners.php';
 require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-theme-media.php';
 require_once GHAHGHAH_THEME_DIR . '/inc/admin/save-seo.php';
+require_once GHAHGHAH_THEME_DIR . '/inc/admin/setup-wizard.php';
 
 /**
  * Register the top-level theme configuration menu.

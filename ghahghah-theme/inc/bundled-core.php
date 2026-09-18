@@ -153,7 +153,8 @@ function ghahghah_ensure_bundled_core_plugin(): array {
 }
 
 /**
- * One-shot after theme switch: core plugin + full site bootstrap.
+ * One-shot after theme switch: ensure bundled Core is present.
+ * Full demo content runs via the multi-step setup wizard (not silently).
  */
 function ghahghah_after_switch_theme_install_bundle(): void {
 	if ( ! current_user_can( 'activate_plugins' ) && ! current_user_can( 'switch_themes' ) ) {
@@ -162,12 +163,6 @@ function ghahghah_after_switch_theme_install_bundle(): void {
 
 	$core = ghahghah_ensure_bundled_core_plugin();
 	update_option( 'ghahghah_bundled_core_last', $core, false );
-
-	// Defer heavy bootstrap so CPT registration from the fresh plugin is ready.
-	update_option( 'ghahghah_bootstrap_pending', '1', false );
-	if ( ! wp_next_scheduled( 'ghahghah_run_deferred_site_bootstrap' ) ) {
-		wp_schedule_single_event( time() + 2, 'ghahghah_run_deferred_site_bootstrap' );
-	}
 }
 add_action( 'after_switch_theme', 'ghahghah_after_switch_theme_install_bundle', 5 );
 

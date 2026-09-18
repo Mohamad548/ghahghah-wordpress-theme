@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GHAHGHAH_THEME_VERSION', '0.9.95' );
+define( 'GHAHGHAH_THEME_VERSION', '0.9.96' );
 define( 'GHAHGHAH_THEME_DIR', get_template_directory() );
 define( 'GHAHGHAH_THEME_URI', get_template_directory_uri() );
 

@@ -356,13 +356,13 @@ h6 {
 	direction: ltr;
 }
 
-/* Mobile: logo overlays toward hamburger — no extra column width / no horizontal scroll */
+/* Mobile: logo overlays beside hamburger (physical right), CTA+search stay left */
 .site-header__menu-button {
 	grid-column: 3;
 	grid-row: 1;
 	justify-self: end;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -381,18 +381,20 @@ h6 {
 	grid-column: 1 / -1;
 	grid-row: 1;
 	display: flex;
+	/* Keep LTR so flex-end = beside hamburger on the right (not next to خرید عمده) */
 	justify-content: flex-end;
 	align-items: center;
 	min-width: 0;
-	padding-inline-end: calc(2.75rem + 0.2rem);
+	padding-right: calc(2.75rem + 0.25rem);
+	padding-left: 0;
 	pointer-events: none;
 	z-index: 0;
-	direction: rtl;
+	direction: ltr;
 }
 
 .site-header__brand-slot .site-brand {
 	pointer-events: auto;
-	max-width: min(7rem, 42vw);
+	max-width: min(7.5rem, 38vw);
 }
 
 .site-header__mobile-end {
@@ -402,9 +404,8 @@ h6 {
 	align-items: center;
 	justify-content: flex-start;
 	gap: 0.35rem;
-	z-index: 1;
+	z-index: 2;
 	min-width: 0;
-	max-width: 100%;
 	min-height: 2.75rem;
 	direction: rtl;
 }
@@ -414,6 +415,7 @@ h6 {
 	align-items: center;
 	justify-content: center;
 	flex: 0 0 auto;
+	flex-shrink: 0;
 	width: 2.55rem;
 	height: 2.55rem;
 	margin: 0;

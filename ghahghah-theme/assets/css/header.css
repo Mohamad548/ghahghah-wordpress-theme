@@ -40,17 +40,17 @@
 	display: grid;
 	grid-template-columns: auto minmax(0, 1fr) 2.75rem;
 	align-items: center;
-	column-gap: 0.5rem;
+	column-gap: 0.35rem;
 	width: min(100% - (var(--ghahghah-header-pad-mobile) * 2), var(--ghahghah-header-max));
 	min-height: var(--ghahghah-header-min-mobile);
 	margin-inline: auto;
 	padding-block: 0.75rem;
 	position: relative;
-	/* Physical slots: left bulk CTA, center logo, right hamburger */
+	/* Physical slots: left bulk CTA, center-right logo, right hamburger */
 	direction: ltr;
 }
 
-/* Mobile: [bulk CTA | centered logo | hamburger] */
+/* Mobile: [bulk CTA | logo near hamburger | hamburger] */
 .site-header__menu-button {
 	grid-column: 3;
 	grid-row: 1;
@@ -72,11 +72,13 @@
 }
 
 .site-header__brand-slot {
-	grid-column: 1 / -1;
+	grid-column: 2;
 	grid-row: 1;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
+	min-width: 0;
+	padding-inline-end: 0.1rem;
 	pointer-events: none;
 	z-index: 0;
 	direction: rtl;

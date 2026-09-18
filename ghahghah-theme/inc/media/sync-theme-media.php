@@ -135,6 +135,9 @@ function ghahghah_get_theme_media_manifest(): array {
 	$add( 'collab/agency-banner.webp', __( 'بنر نمایندگی', 'ghahghah' ), '', 'ghahghah_collab_agency_image' );
 	$add( 'steps/production-steps.webp', __( 'بنر مراحل تولید', 'ghahghah' ), '', 'ghahghah_steps_image' );
 
+	$add( 'designer/profile.jpg', __( 'تصویر محمد محمودی', 'ghahghah' ) );
+	$add( 'designer/maktab-certificate.jpg', __( 'گواهینامه React مکتب شریف — محمد محمودی', 'ghahghah' ), '', 'ghahghah_designer_certificate_image_id' );
+
 	$add( 'wholesale/ghahghah_pizza_packshot_optimized.webp', __( 'تصویر صفحه خرید عمده', 'ghahghah' ), '', 'ghahghah_wholesale_image_id' );
 	$add( 'agency/ghahghah_parsley_onion_pack_optimized.webp', __( 'تصویر صفحه نمایندگی', 'ghahghah' ) );
 	$add( 'contact/corn-isolated-transparent-optimized.webp', __( 'تصویر تزئینی صفحه تماس', 'ghahghah' ) );

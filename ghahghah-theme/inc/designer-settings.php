@@ -11,12 +11,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+/** Bump when default designer page body should be refreshed. */
+const GHAHGHAH_DESIGNER_CONTENT_VERSION = 2;
+
 /**
  * Default lead for the designer page.
  */
 function ghahghah_designer_page_defaults(): array {
 	return array(
-		'ghahghah_designer_page_lead' => __( 'طراح و توسعه‌دهنده وب‌سایت قهقهه — معرفی کوتاه، تخصص‌ها، سابقه و مدارک.', 'ghahghah' ),
+		'ghahghah_designer_page_lead' => __( 'توسعه‌دهنده فرانت‌اند — ساخت تجربهٔ وب دقیق، سریع و قابل‌مقیاس', 'ghahghah' ),
 	);
 }
 
@@ -63,25 +66,98 @@ function ghahghah_get_designer_page_url(): string {
 }
 
 /**
- * Default Persian content for Mohammad Mahmoudi's about page.
+ * Bundled media URL for a designer asset under assets/images/designer/.
+ *
+ * @param string $file Filename.
+ */
+function ghahghah_get_designer_bundled_image_url( string $file ): string {
+	$file = ltrim( str_replace( '\\', '/', $file ), '/' );
+	$token = 'designer/' . $file;
+
+	if ( function_exists( 'ghahghah_find_theme_media_attachment' ) ) {
+		$id = ghahghah_find_theme_media_attachment( $token );
+		if ( $id > 0 ) {
+			$url = wp_get_attachment_image_url( $id, 'large' );
+			if ( ! is_string( $url ) || '' === $url ) {
+				$url = wp_get_attachment_url( $id );
+			}
+			if ( is_string( $url ) && '' !== $url ) {
+				return $url;
+			}
+		}
+	}
+
+	$path = GHAHGHAH_THEME_DIR . '/assets/images/' . $token;
+	if ( ! is_readable( $path ) ) {
+		return '';
+	}
+
+	return GHAHGHAH_THEME_URI . '/assets/images/' . $token;
+}
+
+/**
+ * Profile photo URL.
+ */
+function ghahghah_get_designer_profile_url(): string {
+	return ghahghah_get_designer_bundled_image_url( 'profile.jpg' );
+}
+
+/**
+ * Maktab Sharif certificate image URL.
+ */
+function ghahghah_get_designer_certificate_url(): string {
+	$id = absint( get_theme_mod( 'ghahghah_designer_certificate_image_id', 0 ) );
+	if ( $id > 0 ) {
+		$url = wp_get_attachment_image_url( $id, 'large' );
+		if ( ! is_string( $url ) || '' === $url ) {
+			$url = wp_get_attachment_url( $id );
+		}
+		if ( is_string( $url ) && '' !== $url ) {
+			return $url;
+		}
+	}
+
+	return ghahghah_get_designer_bundled_image_url( 'maktab-certificate.jpg' );
+}
+
+/**
+ * Default Persian content for Mohammad Mahmoudi's about page (from portfolio).
  */
 function ghahghah_designer_default_content(): string {
 	$blocks = array(
-		'<!-- wp:paragraph --><p>من <strong>محمد محمودی</strong> هستم؛ طراح و توسعه‌دهنده وب با تمرکز روی وردپرس، رابط کاربری راست‌چین و ساخت قالب‌های اختصاصی برند.</p><!-- /wp:paragraph -->',
-		'<!-- wp:paragraph --><p>این وب‌سایت (قهقهه) از صفر به‌صورت قالب اختصاصی وردپرس طراحی و پیاده‌سازی شده است؛ از صفحه اصلی و کاتالوگ محصولات تا فرم‌های همکاری، پنل تنظیمات و بهینه‌سازی موبایل.</p><!-- /wp:paragraph -->',
+		'<!-- wp:paragraph --><p>من <strong>محمد محمودی</strong> هستم؛ توسعه‌دهنده فرانت‌اند با تمرکز روی وردپرس، رابط کاربری راست‌چین و ساخت تجربه‌های وب دقیق و سریع. از سال ۲۰۲۰ فروشگاه‌ها و افزونه‌های اختصاصی وردپرس ساخته‌ام و قالب <strong>قهقهه</strong> را به‌صورت تم اختصاصی طراحی و پیاده‌سازی کرده‌ام.</p><!-- /wp:paragraph -->',
+		'<!-- wp:paragraph --><p>من یک توسعه‌دهنده پرشور فرانت‌اند هستم با چندین سال تجربه در طراحی و توسعه وب‌سایت‌های کاربردی. از سال ۲۰۲۰ با وردپرس فروشگاه‌های تجارت الکترونیک ساختم و در سال ۲۰۲۳ برای ارتقای مهارت‌ها در دورهٔ React و Next.js مکتب شریف (+۴۰۰ ساعت) ثبت‌نام کردم. همیشه کیفیت و دقت را اولویت می‌دهم و هدفم ساخت تجربیات کاربری منحصربه‌فرد است.</p><!-- /wp:paragraph -->',
 		'<!-- wp:heading --><h2 class="wp-block-heading">تخصص‌ها</h2><!-- /wp:heading -->',
-		'<!-- wp:list --><ul class="wp-block-list"><li>طراحی و توسعه قالب وردپرس اختصاصی (RTL / فارسی)</li><li>پیاده‌سازی UI/UX برندمحور برای وب‌سایت‌های شرکتی و کاتالوگ</li><li>HTML، CSS و JavaScript مدرن با تمرکز روی عملکرد و تجربه موبایل</li><li>PHP و معماری تمیز در وردپرس (تنظیمات قالب، رسانه، بوت‌استرپ محتوا)</li><li>بهینه‌سازی سرعت، دسترس‌پذیری و سئوی پایه</li></ul><!-- /wp:list -->',
+		'<!-- wp:list --><ul class="wp-block-list"><li>طراحی و توسعه قالب وردپرس اختصاصی (RTL / فارسی)</li><li>ووکامرس، افزونه‌های اختصاصی، AJAX و پنل ادمین</li><li>HTML، CSS، JavaScript، Tailwind؛ React / Next.js برای پنل‌های مکمل</li><li>بهینه‌سازی سرعت (Core Web Vitals) و تجربه موبایل</li><li>ساخت فروشگاه‌ها و ابزارهای محتوا از وردپرس تا Next.js</li></ul><!-- /wp:list -->',
 		'<!-- wp:heading --><h2 class="wp-block-heading">سابقه و همکاری‌ها</h2><!-- /wp:heading -->',
-		'<!-- wp:paragraph --><p>طراحی و توسعه کامل قالب و افزونه همراه برند غذایی <strong>قهقهه</strong>؛ شامل هویت بصری دیجیتال، صفحات معرفی کارخانه، مطالب، فروش عمده و نمایندگی، و پنل مدیریت محتوای سایت.</p><!-- /wp:paragraph -->',
-		'<!-- wp:paragraph --><p>سابقه کار روی پروژه‌های وب اختصاصی با نیاز به ظاهر برندمحور، محتوای فارسی و راه‌اندازی سریع روی هاست‌های واقعی.</p><!-- /wp:paragraph -->',
-		'<!-- wp:heading --><h2 class="wp-block-heading">مدارک و گواهی‌ها</h2><!-- /wp:heading -->',
-		'<!-- wp:paragraph --><p>این بخش را از پیشخوان وردپرس ویرایش کنید و مدارک، دوره‌ها یا گواهی‌های خود را اضافه نمایید. نمونه ساختار:</p><!-- /wp:paragraph -->',
-		'<!-- wp:list --><ul class="wp-block-list"><li>گواهی / مدرک تخصصی طراحی وب یا توسعه فرانت‌اند</li><li>گواهی مرتبط با وردپرس یا برنامه‌نویسی</li><li>سایر مدارک حرفه‌ای مرتبط با طراحی و توسعه نرم‌افزار</li></ul><!-- /wp:list -->',
+		'<!-- wp:list --><ul class="wp-block-list"><li><strong>۲۰۲۰</strong> — شروع با وردپرس و فروشگاه‌های تجارت الکترونیک</li><li><strong>۲۰۲۲</strong> — توسعه فرانت و سفارشی‌سازی ووکامرس در شاهین تجارت اطمینان</li><li><strong>۲۰۲۳</strong> — بوت‌کمپ React / Next.js مکتب شریف (+۴۰۰ ساعت)</li><li><strong>اکنون</strong> — توسعه‌دهنده Front-End در کسرا امیننس؛ پنل‌های Next.js، یکپارچه‌سازی وردپرس و بهینه‌سازی سرعت</li><li>طراحی و توسعه کامل قالب اختصاصی برند غذایی <strong>قهقهه</strong></li></ul><!-- /wp:list -->',
+		'<!-- wp:heading --><h2 class="wp-block-heading">تحصیلات و مدارک</h2><!-- /wp:heading -->',
+		'<!-- wp:list --><ul class="wp-block-list"><li>کاردانی مهندسی نقشه‌برداری — دانشکده فنی کسرا کرمانشاه — ۱۳۹۳ تا ۱۳۹۵</li><li>گواهینامه دوره React — مکتب شریف — ۱۴۰۲ / ۲۰۲۳ (+۴۰۰ ساعت)</li></ul><!-- /wp:list -->',
 		'<!-- wp:heading --><h2 class="wp-block-heading">ارتباط</h2><!-- /wp:heading -->',
-		'<!-- wp:paragraph --><p>برای همکاری در طراحی و توسعه وب‌سایت یا قالب اختصاصی وردپرس می‌توانید از طریق GitHub با من در ارتباط باشید: <a href="https://github.com/Mohamad548" target="_blank" rel="noopener noreferrer">github.com/Mohamad548</a></p><!-- /wp:paragraph -->',
+		'<!-- wp:paragraph --><p>ایمیل: <a href="mailto:mahmodim222@gmail.com">mahmodim222@gmail.com</a> · تلفن: <a href="tel:+989185480383" dir="ltr">09185480383</a></p><!-- /wp:paragraph -->',
+		'<!-- wp:paragraph --><p>پورتفolio: <a href="https://mohamadmahmodi.ir" target="_blank" rel="noopener noreferrer">mohamadmahmodi.ir</a> · LinkedIn: <a href="https://www.linkedin.com/in/mohamadmahmodi/" target="_blank" rel="noopener noreferrer">mohamadmahmodi</a> · GitHub: <a href="https://github.com/Mohamad548" target="_blank" rel="noopener noreferrer">Mohamad548</a></p><!-- /wp:paragraph -->',
 	);
 
 	return implode( "\n\n", $blocks );
+}
+
+/**
+ * Whether designer page content should be refreshed to the bundled default.
+ *
+ * @param WP_Post $post Page post.
+ */
+function ghahghah_designer_content_needs_refresh( WP_Post $post ): bool {
+	$stored = absint( get_post_meta( $post->ID, '_ghahghah_designer_content_version', true ) );
+	if ( $stored < GHAHGHAH_DESIGNER_CONTENT_VERSION ) {
+		return true;
+	}
+
+	$content = (string) $post->post_content;
+	return (
+		'' === trim( $content )
+		|| false !== strpos( $content, 'این بخش را از پیشخوان وردپرس ویرایش کنید' )
+		|| false !== strpos( $content, 'گواهی / مدرک تخصصی طراحی وب' )
+	);
 }
 
 /**
@@ -145,6 +221,7 @@ function ghahghah_setup_designer_page(): array {
 		}
 		$page_id = (int) $page_id;
 		$created = true;
+		update_post_meta( $page_id, '_ghahghah_designer_content_version', GHAHGHAH_DESIGNER_CONTENT_VERSION );
 	}
 
 	$current = get_post( $page_id );
@@ -158,8 +235,9 @@ function ghahghah_setup_designer_page(): array {
 		if ( $current instanceof WP_Post && 'publish' !== $current->post_status ) {
 			$update['post_status'] = 'publish';
 		}
-		if ( $current instanceof WP_Post && '' === trim( (string) $current->post_content ) ) {
+		if ( $current instanceof WP_Post && ghahghah_designer_content_needs_refresh( $current ) ) {
 			$update['post_content'] = ghahghah_designer_default_content();
+			update_post_meta( $page_id, '_ghahghah_designer_content_version', GHAHGHAH_DESIGNER_CONTENT_VERSION );
 		}
 		if ( $current instanceof WP_Post && ( '' === trim( (string) $current->post_title ) || 'Designer' === $current->post_title ) ) {
 			$update['post_title'] = 'محمد محمودی';
@@ -173,6 +251,22 @@ function ghahghah_setup_designer_page(): array {
 	update_post_meta( $page_id, $meta_key, '1' );
 	update_post_meta( $page_id, '_wp_page_template', 'page-templates/designer.php' );
 	set_theme_mod( 'ghahghah_designer_page_id', $page_id );
+
+	// Bind profile as featured image when available.
+	if ( function_exists( 'ghahghah_find_theme_media_attachment' ) && ! has_post_thumbnail( $page_id ) ) {
+		$profile_id = ghahghah_find_theme_media_attachment( 'designer/profile.jpg' );
+		if ( $profile_id > 0 ) {
+			set_post_thumbnail( $page_id, $profile_id );
+		}
+	}
+
+	$cert_id = absint( get_theme_mod( 'ghahghah_designer_certificate_image_id', 0 ) );
+	if ( $cert_id <= 0 && function_exists( 'ghahghah_find_theme_media_attachment' ) ) {
+		$cert_id = ghahghah_find_theme_media_attachment( 'designer/maktab-certificate.jpg' );
+		if ( $cert_id > 0 ) {
+			set_theme_mod( 'ghahghah_designer_certificate_image_id', $cert_id );
+		}
+	}
 
 	$url = get_permalink( $page_id );
 
